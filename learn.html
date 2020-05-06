@@ -4,421 +4,672 @@ Strongly Typed by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html lang="en"> <!--tells the browser the language of the content is English-->
+<html lang="en">
+<!--tells the browser the language of the content is English-->
 <script type="text/javascript">
-function unhide(divID) {
-var item = document.getElementById(divID);
-if (item) {
-item.className=(item.className=='hidden')?'unhidden':'hidden';
-}
-}
-</script> 
+    function unhide(divID) {
+        var item = document.getElementById(divID);
+        if (item) {
+            item.className = (item.className == 'hidden') ? 'unhidden' : 'hidden';
+        }
+    }
+</script>
+
 <head>
-<title>Resources for students</title>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-<link rel="stylesheet" href="assets/css/main.css" />
+    <title>Resources for students</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
 </head>
+
 <body class="homepage is-preload">
-<div id="page-wrapper">
+    <div id="page-wrapper">
 
-<!-- Header -->
-        <section id="header">
-            <div class="container">
+		<!-- Header -->
+		<section id="header">
+			<div class="container">
 
-                <!-- Logo -->
-              <h1 id="logo">Roman Korol</h1>
-                <p><a href="http://www.cce.caltech.edu/chemgrad">Graduate student</a> @ <a style="colorcolor:#FF6C0C;" href="http://www.caltech.edu/">Caltech</a> in <a href="http://www.cce.caltech.edu">Chemical Theory</a></p>
-                <!-- Nav -->
-              <nav id="nav">
-                        <ul>
-                            <li><a class="icon fa-home" href="index.html"><span>Home</span></a></li>         
-                            <li><a class="icon fa-university" href="research.html"><span>Research</span></a>
-                                <ul>
-                                    <li><a href="research.html#theory">Theory</a></li>
-                                    <li><a href="research.html#experiment">Experiments</a></li>
-                                </ul>
-                            </li>
-                            <li><a class="icon fa-retweet" href="news.html"><span>News</span></a></li>
-                            <li>
-                                <a class="icon fa-book" href="learn.html"><span>Resources</span></a>
-                                <ul>
-                                    <li><a href="learn.html#sci">Science</a></li>
-                                    <li><a href="learn.html#soft">Software</a></li>
-                                    <li><a href="learn.html#code">Coding</a></li>
-                                    <li><a href="learn.html#oppportune">Opportunities</a></li>
-                                    <li><a href="learn.html#kids">Kids &#38; Teens</a></li>
-                                </ul>
-                            </li>
-                            <li><a class="icon fa-paper-plane-o" href="activities.html">
-                            <span>Activities</span></a>
-                                <ul>
-                                    <li><a href="activities.html#act1">Teaching</a></li>
-                                    <li><a href="activities.html#act2">Linguistics</a></li>
-                                    <li><a href="activities.html#act3">Music</a></li>
-                                    <li><a href="activities.html#act4">Reading</a></li>
-                                    <li><a href="activities.html#act5">Dance</a></li>
-                                    <li><a href="activities.html#act6">Being Ukrainian</a></li>
-                                </ul>
-                            </li>
-                            <!--<li>
-                                <a class="icon fa-user" href="me.html"><span>About me</span></a>
-                                <ul>
-                                    <li><a href="me.html#me4">Undergrad</a></li>
-                                    <li><a href="me.html#me3">High School</a></li>
-                                    <li><a href="me.html#me2">Middle school</a></li>
-                                    <li><a href="me.html#me1">Childhood</a></li>
-                                </ul>    
-                            </li>-->
+				<!-- Logo -->
+				<h1 id="logo">Roman Korol</h1>
+				<p><a href="http://www.cce.caltech.edu/chemgrad">Graduate student</a> 
+					@ <a href="http://www.caltech.edu/">Caltech</a> 
+					in <a href="http://www.cce.caltech.edu">Chemical Theory</a></p>
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a class="icon fa-home" href="index.html"><span>Home</span></a></li>
+						<li><a class="icon fa-university" href="research.html"><span>Research</span></a>
+							<!--<ul>
+											<li><a href="research.html#theory">Theory</a></li>
+                                            <li><a href="research.html#experiment">Experiments</a></li>
+                                        </ul>-->
+						</li>
+						<li><a class="icon fa-retweet" href="news.html"><span>News</span></a></li>
+						<li>
+							<a class="icon fa-book" href="learn.html"><span>Resources</span></a>
+							<ul>
+								<li><a href="learn.html#sci">Science</a></li>
+								<li><a href="learn.html#soft">Software</a></li>
+								<li><a href="learn.html#code">Coding</a></li>
+								<li><a href="learn.html#oppportune">Opportunities</a></li>
+								<li><a href="learn.html#kids">Kids &#38; Teens</a></li>
+							</ul>
+						</li>
+						<li><a class="icon fa-paper-plane-o" href="activities.html">
+								<span>Activities</span></a>
+							<ul>
+								<li><a href="activities.html#act1">Teaching</a></li>
+								<li><a href="activities.html#act2">Linguistics</a></li>
+								<li><a href="activities.html#act3">Music</a></li>
+								<li><a href="activities.html#act4">Reading</a></li>
+								<li><a href="activities.html#act5">Dance</a></li>
+								<li><a href="activities.html#act6">Being Ukrainian</a></li>
+							</ul>
+						</li>
+						<!--<li>
+                                    	<a class="icon fa-user" href="me.html"><span>About me</span></a>
+                                    	<ul>
+											<li><a href="me.html#me4">Undergrad</a></li>
+											<li><a href="me.html#me3">High School</a></li>
+											<li><a href="me.html#me2">Middle school</a></li>
+											<li><a href="me.html#me1">Childhood</a></li>
+										</ul>    
+                                    </li>-->
 
-                        </ul>
-                    </nav>
+					</ul>
+				</nav>
 
-            </div>
-        </section>
+			</div>
+		</section>
 
-    <!-- Main -->
+        <!-- Main -->
         <section id="main">
             <div class="container">
                 <div id="content">
 
 
-<!-- Post -->
-         <article class="box post">
-                            <header>
-                                <h2 id="sci"> <strong>Science</strong> | <a href="#soft">Software</a> | <a href="#code">Coding</a> | <a href="#opportune">Opportunities</a> | <a href="#kids">Kids&#38;teens</a></h2>
-                            </header>
-<!--                                    <h3>WARNING!</h3>
-                                <p>There are thousands of different courses out there and it is very easy to get lost within this plethora of information available (this definetely happened to me). In addition to there being MANY courses, they are all entangled: one needs to know some calculus to be able to do any physics etc.</p>
-                                <p>What I did was to stick to the university-taught courses and more or less follow a curiculum. This doesn't make it easy or fast, but it does at least stops you from pointlessly trying to learn something without the prerequisite knowledge, assumed by the instructor.</p>
-                                <p>Here I am presenting a table with the recommended course codes. Each column roughly corresponds to one academic year. Parentheses are used to clerify the action of "," i.e. and and "/", i.e. exclusive or. Thus multiple slash-separated courses are more or less equivalent with the one I like most first.</p>
-                                <p>Finally, feel free to disregard this table, browse through the courses and pick for yourself. But I suggest you pay attention to approximate level and the prerequisites I list.</p>-->
-<!--text hover-->
-                <h3><a href="javascript:unhide('high');">High school preparation (Show/Hide)</a></h3>
-                    <ul id="high" class="hidden">
-<!--High school chem-->                                
-                        <li>
-                        <em><a target="_blanck" href="http://ocw.uci.edu/courses/chem_1p_preparation_for_chemistry.html">Preparation for Chemistry</a>, Chem 1P, Eric Potma, UCI</em> (<a href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7k3kp5B4jQbIA99gh73RFsh">video lectures</a>). 
-                            <br>Key concepts: atoms and molecules, matter, organic compounds.
-                       <!--Recover Khan academy one-->
-</li>
-
-<!--High school organic chem--> 
-                        <li>
-                            <em><a target="_blanck" href="https://www.khanacademy.org/science/organic-chemistry">Organic high school Chemistry</a></em>. 
-                            <br>Key concepts: resoncence, stereochemistry, hydrocarbons and organic nomenclature.                              
-</li>
-<!--High school math-->                                
-
-                        <li>
-                        <em><a target="_blanck" href="https://www.khanacademy.org/math/high-school-math">High school math</a></em>. 
-                        <p>Key concepts: functions; trigonometry; solving equations, systems and inequalities; geometry; statistics.
-                        <br><span>OR</span><br>
-                        <em><a target="_blanck" href="https://www.youtube.com/playlist?list=PL1xF7Py1h3uzsMQJ5CUTPk9TYRi7AhLr2">Classic Arithmetic</a> and <a target="_blanck" href="https://www.youtube.com/playlist?list=PL1xF7Py1h3uzsMQJ5CUTPk9TYRi7AhLr2">Classic Algebra</a> by an MIT Professor Herbert Gross</em>. 
-                        <br>Key concepts: numbers and fractions, word problems, algebra, functions; solving equations, systems and inequalities.
-                        <br><span>OR</span><br>
-                        <em><a target="_blanck" href="http://ocw.uci.edu/courses/math_1a1b_precalculus.html">Pre-Calculus</a> Math 1A/1B, UCI</em> (video lectures: <a href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7nWaNL-XBIRx2aFoS1X5bsJ">Algebra and Geometry Review</a>, <a href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7mjHzimkozFOV9psVR36CN_">Functions and Graphs</a>, <a href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7msvh07a-Y-VzU8Er8qOaya">Trigonometry</a>, <a href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7m3VGKbaEhz1il853lgh_k6">Polynomials and Rational Functions</a>), <a href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7l6m71Kea3nB4mZbqRVwaea">Exponentials and Logarithms</a>. 
-                        <br>Key concepts: algebra, functions; trigonometry, polynomials, rational and exponential functions.
-</li>
-<!--High school physics-->
-                        <li>
-                        <em><a target="_blanck" href="https://www.khanacademy.org/science/physics">High school physics</a></em>. 
-                        <br>Key concepts: motion (kinematics and dynamics), basic E&amp;M, modern physics.     
-                        <br><span>OR</span><br>
-                        <ol>                            
-                        <li><em><a target="_blanck" href="https://www.khanacademy.org/science/ap-physics-1">AP Physics 1</a></em>. 
-                        <p>Key concepts: motion (kinematics and dynamics), basic E&amp;M, modern physics.</p> 
-                        </li>
-                        <li>
-                        <em><a target="_blanck" href="https://www.khanacademy.org/science/ap-physics-2">AP Physics 2</a></em>. 
-                        <p>Key concepts: basic E&amp;M, modern physics.</p>
-                        </li>
-                        </ol>
-</li>
-<!--High school astronomy-->                                
-                        <li>
-                        <em><a target="_blanck" href="https://www.khanacademy.org/science/cosmology-and-astronomy">Cosmology and Astronomy</a></em>. 
-                            <p>Key concepts: cosmic scale, stars, Earth</p>
-</li>
-<!--High school biology-->                                                                
-                        <li>
-                        <em><a target="_blanck" href="https://www.khanacademy.org/science/biology">High school Biology</a></em>. 
-                            <p>Key concepts: molecular biology, cells, genetics, evolution, ecology.</p>
-</li>
-
-                    </ul>
-                <h3><a href="javascript:unhide('first');">First year of University (Show/Hide)</a></h3>
-                    <div class=hidden id="first">
-                <h5><a href="javascript:unhide('first_th');">Theoretical Chemist (Show/Hide)</a></h5>
-                    <ul class="hidden" id="first_th">
-<!--Chem Mathematica-->                                      
-                        <li>
-                        <em><a target="_blanck" href="https://eee.uci.edu/18f/40605/index.html">Scientific Computing Skills</a>, Chem5, Douglas Tobias, UCI</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7mcZfYTRhu1P8hPTizewI_x">video lectures</a>).
-                            <br>Key concepts: scientific computing in chemistry using Mathematica.
-                            <br>Prerequisites: High school math and chemistry
-                        </li>
-<!--Programming-->                                    
-                        <li>
-                        <em><a target="_blanck" href="https://www.youtube.com/playlist?list=PLE18841CABEA24090">Structure and Interpretation of Computer Programs</a>, MIT 6.001, Hal Abelson and Gerald Jay Sussman, 1986</em>. 
-                        <br> Alternative version: <em><a target="_blanck" href="https://www.youtube.com/playlist?list=PL7BcsI5ueSNFPCEisbaoQ0kXIDX9rR5FF">Structure and Interpretation of Computer Programs</a>, MIT 6.001, Eric Grimson, 2004</em>.
-                            <br>Key concepts: scheme, data sbstraction, meta-cercular evaluator, regiser machines.
-                            <br>Prerequisites: High school math
-                        </li>
-<!--Calculus Gross-->                                    
-                        <li>
-                        <ol>
-                        <li>
-                            <em><a target="_blanck" href="https://ocw.mit.edu/resources/res-18-006-calculus-revisited-single-variable-calculus-fall-2010/">Single Variable Calculus</a>, MIT 18.006 Calculus Revisited, Herbert Gross, 1970</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PL3B08AE665AB9002A">video lectures</a>).
-                            <br>Key concepts: functions, limits, derivatives and integrals in one variable, series and sequences.
-                            <br>Prerequisites: High school math
-                        </li>
-
-                        <li>
-                        <em><a target="_blanck" href="https://ocw.mit.edu/resources/res-18-007-calculus-revisited-multivariable-calculus-fall-2011/">Multivariable Calculus</a>, MIT 18.007 Calculus Revisited, Herbert Gross, 1971</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PL1C22D4DED943EF7B">video lectures</a>).
-                            <br>Key concepts: vector calculus, partial derivatives, matrices, multiple integrals.
-                        </li>
-
-
-                        <li>
-                        <em><a target="_blanck" href="https://ocw.mit.edu/resources/res-18-008-calculus-revisited-complex-variables-differential-equations-and-linear-algebra-fall-2011/">Complex Variables, Differential Equations, and Linear Algebra</a>, MIT 18.007 Calculus Revisited, Herbert Gross, 1972</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PLD971E94905A70448">video lectures</a>).
-                            <br>Key concepts: complex variables, ODE, linear algebra.
-                        </li>
-                            </ol>
-</li>
-<!--Probability-->                               
-                        <li>
-                        <em><a target="_blanck" href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/">Probabilistic Systems Analysis and Applied Probability</a>, MIT 6.041, John Tsitsiklis, Fall 2013</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PLUl4u3cNGP60A3XMwZ5sep719_nh95qOe">video lectures from Fall 2010 and recitations from Fall, 2013</a>).
-                            <br>Key concepts: Probability, random variables, random process, laws of large numbers, inference.
-                            <br>Prerequisites: High school math
-                        <br><span>OR</span><br>
-                        <ol>
-                        <li>
-                        <em><a target="_blanck" href="http://ocw.uci.edu/courses/math_131a_introduction_to_probability_and_statistics.html">Introduction to Probability and Statistics</a>, Math 131A, Michael C. Cranston, UCI</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7l-ML8sMNFHx0CY7jyudZq2">video lectures</a>).
-                            <br>Key concepts: Axiomatic definition of probability, random variables, probability distributions, expectation.
-                            <br>Prerequisites: High school math
-                        </li>
-
-                        <li>
-                        <em><a target="_blanck" href="http://ocw.uci.edu/courses/math_131b_introduction_to_probability_and_statistics.html">Introduction to Probability and Statistics</a>, Math 131B, Michael C. Cranston, UCI</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7kcLcp0qHUDOp6f5JKmA8Aq">video lectures</a>).
-                            <br>Key concepts: Point estimation, interval estimating, and testing hypotheses, Bayesian approaches to inference.
-                        </li>
-                        </ol>
-</li>
-<!--Yale Physics-->
-                        <li>
-                        <ol>
+                    <!-- Post -->
+                    <article class="box post">
+                        <header>
+                            <h2 id="sci"> <strong>Science</strong> | <a href="#soft">Software</a>
+                                | <a href="#code">Coding</a> | <a href="#opportune">Opportunities</a>
+                                | <a href="#kids">Kids&#38;teens</a></h2>
+                        </header>
+                        <!--                        <h3>WARNING!</h3>
+                                <p>
+                                    There are thousands of different courses out there and it is very easy to get lost 
+                                    within this plethora of information available (this definitely happened to me). 
+                                    In addition to there being MANY courses, they are all entangled: 
+                                    one needs to know some calculus to be able to do any physics etc.
+                                </p>
+                                <p>
+                                    What I did was to stick to the university-taught courses and more or less 
+                                    follow a curriculum. This doesn't make it easy or fast, but it does at least 
+                                    stops you from pointlessly trying to learn something without the prerequisite knowledge, 
+                                    assumed by the instructor.
+                                </p>
+                                <p>
+                                    Here I am presenting a table with the recommended course codes. 
+                                    Each column roughly corresponds to one academic year. 
+                                    Parentheses are used to clarify the action of "," i.e. and and "/", i.e. exclusive or. 
+                                    Thus multiple slash-separated courses are more or less equivalent with the one I like most first.
+                                </p>
+                                <p>
+                                    Finally, feel free to disregard this table, browse through the courses and pick for yourself. 
+                                    But I suggest you pay attention to approximate level and the prerequisites I list.
+                                </p>-->
+                        <!--text hover-->
+                        <h3><a href="javascript:unhide('high');">High school (Show/Hide)</a></h3>
+                        <ul id="high" class="hidden">
                             <li>
-                        <em><a target="_blanck" href="https://oyc.yale.edu/physics/phys-200">Fundamentals of Physics I</a>, PHYS 200, Ramamurti Shankar, Fall 2008</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PLFE3074A4CB751B2B">video lectures from Fall 2008</a>).
-                            <br>Key concepts: mechanics, relativity, thermodynamics.
-                            <br>Prerequisites: High school math and physics
-                        </li>
-
-                        <li>
-                        <em><a target="_blanck" href="https://oyc.yale.edu/physics/phys-201">Fundamentals of Physics II</a>, PHYS 201, Ramamurti Shankar, Fall 2008</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PLD07B2225BB40E582">video lectures from Fall 2008</a>).
-                            <p>Key concepts: electricity, magnetism, optics and quantum mechanics.
-                        </li>
-                        </ol>
-</li>
-                    </ul>
-                <h5><a href="javascript:unhide('first_exp');">Experimental Chemist (Show/Hide)</a></h5>
-                        <ul class="hidden" id="first_exp">
-<!--Intro Chem-->
-                        <li>
-                       <ol>
+                                <em><a target="_blanck"
+                                        href="https://causetutoring.org/online-extra-help-sessions-during-covid-19/">Zoom
+                                        science &amp; math tutoring</a>,
+                                    <a href="https://causetutoring.org/">CAUSE Tutoring</a>, Canada</em>
+                            </li>
+                            <!--High school chem-->
                             <li>
-                            <em><a target="_blanck" href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7kTjN4O2MNzf5YfeiIx7SGI">General Chemistry</a>, UCI Chem1A, 2014</em>. 
-                            <p>Key concepts: atomic structure, bonding, gases.
-                            <br>Prerequisites: High school chemistry, physics and math</p>
+                                <em><a target="_blanck"
+                                        href="http://ocw.uci.edu/courses/chem_1p_preparation_for_chemistry.html">Preparation
+                                        for Chemistry</a>, Chem 1P, Eric Potma, UCI</em> (<a
+                                    href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7k3kp5B4jQbIA99gh73RFsh">video
+                                    lectures</a>).
+                                <br>Key concepts: atoms and molecules, matter, organic compounds.
+                                <!--Recover Khan academy one-->
                             </li>
 
+                            <!--High school organic chem-->
                             <li>
-                            <em><a target="_blanck" href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7mco4Yb_aYDD8wHMPVYhQrU">General Chemistry</a>, UCI Chem1B, 2014</em>. 
-                            <p>Key concepts: intermolecular forces, thermodynamics, equilibrium.
+                                <em><a target="_blanck"
+                                        href="https://www.khanacademy.org/science/organic-chemistry">Organic high school
+                                        Chemistry</a></em>.
+                                <br>Key concepts: resonance, stereochemistry, hydrocarbons and organic nomenclature.
+                            </li>
+                            <!--High school math-->
+
+                            <li>
+                                <em><a target="_blanck" href="https://www.khanacademy.org/math/high-school-math">High
+                                        school math</a></em>.
+                                <p>Key concepts: functions; trigonometry; solving equations, systems and inequalities;
+                                    geometry; statistics.
+                                    <br><span>OR</span><br>
+                                    <em><a target="_blanck"
+                                            href="https://www.youtube.com/playlist?list=PL1xF7Py1h3uzsMQJ5CUTPk9TYRi7AhLr2">Classic
+                                            Arithmetic</a> and <a target="_blanck"
+                                            href="https://www.youtube.com/playlist?list=PL1xF7Py1h3uzsMQJ5CUTPk9TYRi7AhLr2">Classic
+                                            Algebra</a> by an MIT Professor Herbert Gross</em>.
+                                    <br>Key concepts: numbers and fractions, word problems, algebra, functions; solving
+                                    equations, systems and inequalities.
+                                    <br><span>OR</span><br>
+                                    <em><a target="_blanck"
+                                            href="http://ocw.uci.edu/courses/math_1a1b_precalculus.html">Pre-Calculus</a>
+                                        Math 1A/1B, UCI</em> (video lectures: <a
+                                        href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7nWaNL-XBIRx2aFoS1X5bsJ">Algebra
+                                        and Geometry Review</a>, <a
+                                        href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7mjHzimkozFOV9psVR36CN_">Functions
+                                        and Graphs</a>, <a
+                                        href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7msvh07a-Y-VzU8Er8qOaya">Trigonometry</a>,
+                                    <a href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7m3VGKbaEhz1il853lgh_k6">Polynomials
+                                        and Rational Functions</a>), <a
+                                        href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7l6m71Kea3nB4mZbqRVwaea">Exponentials
+                                        and Logarithms</a>.
+                                    <br>Key concepts: algebra, functions; trigonometry, polynomials, rational and
+                                    exponential functions.
+                            </li>
+                            <!--High school physics-->
+                            <li>
+                                <em><a target="_blanck" href="https://www.khanacademy.org/science/physics">High school
+                                        physics</a></em>.
+                                <br>Key concepts: motion (kinematics and dynamics), basic E&amp;M, modern physics.
+                                <br><span>OR</span><br>
+                                <ol>
+                                    <li><em><a target="_blanck"
+                                                href="https://www.khanacademy.org/science/ap-physics-1">AP Physics
+                                                1</a></em>.
+                                        <p>Key concepts: motion (kinematics and dynamics), basic E&amp;M, modern
+                                            physics.</p>
+                                    </li>
+                                    <li>
+                                        <em><a target="_blanck"
+                                                href="https://www.khanacademy.org/science/ap-physics-2">AP Physics
+                                                2</a></em>.
+                                        <p>Key concepts: basic E&amp;M, modern physics.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <!--High school astronomy-->
+                            <li>
+                                <em><a target="_blanck"
+                                        href="https://www.khanacademy.org/science/cosmology-and-astronomy">Cosmology and
+                                        Astronomy</a></em>.
+                                <p>Key concepts: cosmic scale, stars, Earth</p>
+                            </li>
+                            <!--High school biology-->
+                            <li>
+                                <em><a target="_blanck" href="https://www.khanacademy.org/science/biology">High school
+                                        Biology</a></em>.
+                                <p>Key concepts: molecular biology, cells, genetics, evolution, ecology.</p>
                             </li>
 
-                            <li>
-                            <em><a target="_blanck" href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7kyUsEvFYRK8rBsZHRBckvz">General Chemistry</a>, UCI Chem1C, 2014</em>. 
-                            <p>Key concepts: Acids and bases, equilibrium in solution, electrochemistry, kinetics.
-                            </li>
-                        </ol>
-                        <br><span>OR</span><br>
-                        <em><a target="_blanck" href="https://ocw.mit.edu/courses/materials-science-and-engineering/3-091sc-introduction-to-solid-state-chemistry-fall-2010/">Introduction to Solid State Chemistry</a>, MIT 3.091, Donald Sadoway, Fall 2010</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PL36EC6A6180271B0F">video lectures from Fall 2010</a>).
-                        <br>Key concepts: atoms and bonding, kinetics, materials and solids, X-ray diffraction.
-                        <br>Prerequisites: High school chemistry, physics and math
-</li>
-<!--Calculus-->
-                        <li>
-                            <ol>
-                            <li>
-                        <em><a target="_blanck" href="https://ocw.mit.edu/courses/mathematics/18-01-single-variable-calculus-fall-2006/">Single Variable Calculus</a>, MIT 8.01, David Jerison, Fall 2006</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PL590CCC2BC5AF3BC1">video lectures from Fall 2006</a>).
-                            <br>Key concepts: limits, derivatives and integrals in one variable, series and sequences, Taylor series.
-                            <br>Prerequisites: High school math
-                        </li>
+                        </ul>
+                        <h3><a href="javascript:unhide('first');">First year of University (Show/Hide)</a></h3>
+                        <div class=hidden id="first">
+                            <h5><a href="javascript:unhide('first_th');">Theoretical Chemist (Show/Hide)</a></h5>
+                            <ul class="hidden" id="first_th">
+                                <!--Chem Mathematica-->
+                                <li>
+                                    <em><a target="_blanck" href="https://eee.uci.edu/18f/40605/index.html">Scientific
+                                            Computing Skills</a>, Chem5, Douglas Tobias, UCI</em> (<a target="_blanck"
+                                        href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7mcZfYTRhu1P8hPTizewI_x">video
+                                        lectures</a>).
+                                    <br>Key concepts: scientific computing in chemistry using Mathematica.
+                                    <br>Prerequisites: High school math and chemistry
+                                </li>
+                                <!--Programming-->
+                                <li>
+                                    <em><a target="_blanck"
+                                            href="https://www.youtube.com/playlist?list=PLE18841CABEA24090">Structure
+                                            and Interpretation of Computer Programs</a>, MIT 6.001, Hal Abelson and
+                                        Gerald Jay Sussman, 1986</em>.
+                                    <br> Alternative version: <em><a target="_blanck"
+                                            href="https://www.youtube.com/playlist?list=PL7BcsI5ueSNFPCEisbaoQ0kXIDX9rR5FF">Structure
+                                            and Interpretation of Computer Programs</a>, MIT 6.001, Eric Grimson,
+                                        2004</em>.
+                                    <br>Key concepts: scheme, data abstraction, meta-circular evaluator, register
+                                    machines.
+                                    <br>Prerequisites: High school math
+                                </li>
+                                <!--Calculus Gross-->
+                                <li>
+                                    <ol>
+                                        <li>
+                                            <em><a target="_blanck"
+                                                    href="https://ocw.mit.edu/resources/res-18-006-calculus-revisited-single-variable-calculus-fall-2010/">Single
+                                                    Variable Calculus</a>, MIT 18.006 Calculus Revisited, Herbert Gross,
+                                                1970</em> (<a target="_blanck"
+                                                href="https://www.youtube.com/playlist?list=PL3B08AE665AB9002A">video
+                                                lectures</a>).
+                                            <br>Key concepts: functions, limits, derivatives and integrals in one
+                                            variable, series and sequences.
+                                            <br>Prerequisites: High school math
+                                        </li>
 
-                        <li>
-                        <em><a target="_blanck" href="https://ocw.mit.edu/courses/mathematics/18-02-multivariable-calculus-fall-2007/">Multivariable Calculus</a>, MIT 8.02, Denis Auroux, Fall 2007</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PL4C4C8A7D06566F38">video lectures from Fall 2007</a>).
-                            <br>Key concepts: vectors and matrices, partial derivatives, multiple integrals, Stokes' theorem.
-                        </li>
-                            </ol>
-                        </li>
-<!--Lewin Physics-->
-                        <li>
-                        <ol>
-                        <li>
-                        <em><a target="_blanck" href="https://www.youtube.com/playlist?list=PLUdYlQf0_sSsb2tNcA3gtgOt8LGH6tJbr">Classical Mechanics</a>, MIT 8.01, Walter Lewin, Fall 1999</em>.
-                        <br>Alternative version:<em><a target="_blanck" href="https://ocw.mit.edu/courses/physics/8-01sc-classical-mechanics-fall-2016/">Classical Mechanics</a>, MIT 8.01, Fall 2016</em>.
-                            <br>Key concepts: mechanics, elasticity and hydrostatics, oscillations.
-                            <br>Prerequisites: high school physics and math
-                        </li>
+                                        <li>
+                                            <em><a target="_blanck"
+                                                    href="https://ocw.mit.edu/resources/res-18-007-calculus-revisited-multivariable-calculus-fall-2011/">Multivariable
+                                                    Calculus</a>, MIT 18.007 Calculus Revisited, Herbert Gross,
+                                                1971</em> (<a target="_blanck"
+                                                href="https://www.youtube.com/playlist?list=PL1C22D4DED943EF7B">video
+                                                lectures</a>).
+                                            <br>Key concepts: vector calculus, partial derivatives, matrices, multiple
+                                            integrals.
+                                        </li>
 
-                        <li>
-                        <em><a target="_blanck" href="https://www.youtube.com/playlist?list=PLUdYlQf0_sSsfcNOPSNPQKHDhSjTJATPu">Electricity and Magnetism</a>, MIT 8.02, Walter Lewin, Spring 2002</em> (<a href="https://www.youtube.com/playlist?list=PLyQSN7X0ro200pTRGPkPp4kBEzFrSbZ3c">with help sessions</a>).
-                        <br>Key concepts: electricity, magnetism, light.
-                        </li>
 
-                        <li>
-                        <em><a target="_blanck" href="https://www.youtube.com/playlist?list=PLyQSN7X0ro22WeXM2QCKJm2NP_xHpGV89">Vibrations and Waves</a>, MIT 8.03, Walter Lewin, Fall 2004</em>.
-                        <br>Key concepts: oscillators: SHO, damped and driven oscillations; EM waves; light waves.
-                        </li>
-                        </ol>
-                        </li>
- <!--Python-->                                
-                       <li>
-                        <em><a target="_blanck" href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/">Introduction to Computer Science and Programming in Python</a>, MIT 6.001, Ana Bell, Fall 2016</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA">video lectures from Fall 2016</a>).
-                            <br>Key concepts: principles of computation, basic Python, recursion, sorting.
-                            <br>Prerequisites: High school math
-</li>
-                       </ul>
+                                        <li>
+                                            <em><a target="_blanck"
+                                                    href="https://ocw.mit.edu/resources/res-18-008-calculus-revisited-complex-variables-differential-equations-and-linear-algebra-fall-2011/">Complex
+                                                    Variables, Differential Equations, and Linear Algebra</a>, MIT
+                                                18.007 Calculus Revisited, Herbert Gross, 1972</em> (<a target="_blanck"
+                                                href="https://www.youtube.com/playlist?list=PLD971E94905A70448">video
+                                                lectures</a>).
+                                            <br>Key concepts: complex variables, ODE, linear algebra.
+                                        </li>
+                                    </ol>
+                                </li>
+                                <!--Probability-->
+                                <li>
+                                    <em><a target="_blanck"
+                                            href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/">Probabilistic
+                                            Systems Analysis and Applied Probability</a>, MIT 6.041, John Tsitsiklis,
+                                        Fall 2013</em> (<a target="_blanck"
+                                        href="https://www.youtube.com/playlist?list=PLUl4u3cNGP60A3XMwZ5sep719_nh95qOe">video
+                                        lectures from Fall 2010 and recitations from Fall, 2013</a>).
+                                    <br>Key concepts: Probability, random variables, random process, laws of large
+                                    numbers, inference.
+                                    <br>Prerequisites: High school math
+                                    <br><span>OR</span><br>
+                                    <ol>
+                                        <li>
+                                            <em><a target="_blanck"
+                                                    href="http://ocw.uci.edu/courses/math_131a_introduction_to_probability_and_statistics.html">Introduction
+                                                    to Probability and Statistics</a>, Math 131A, Michael C. Cranston,
+                                                UCI</em> (<a target="_blanck"
+                                                href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7l-ML8sMNFHx0CY7jyudZq2">video
+                                                lectures</a>).
+                                            <br>Key concepts: Axiomatic definition of probability, random variables,
+                                            probability distributions, expectation.
+                                            <br>Prerequisites: High school math
+                                        </li>
 
-                    <h5><a href="javascript:unhide('first_syn');">Synthetic Chemist (Show/Hide)</a></h5>
-                       <ul class="hidden" id="first_syn">
-<!--Chem-->
-                        <li>
-                        <em><a target="_blanck" href="https://ocw.mit.edu/courses/chemistry/5-111sc-principles-of-chemical-science-fall-2014/">Principles of Chemical Science I</a>, MIT 5.111</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PLUl4u3cNGP63LOmB3_O0xbgZVZibxj4rb">video lectures from Fall 2014</a>).
-                        <br>Alternative version: <em><a target="_blanck" href="https://ocw.mit.edu/courses/chemistry/5-112-principles-of-chemical-science-fall-2005/">Principles of Chemical Science</a>, MIT 5.112</em> (<a target="_blanck" href="https://www.youtube.com/watch?v=dxR06Mi8ExI&list=PLB3953F4F875AB0B3">video lectures from Fall 2005</a>). 
-                            <br>Key concepts: atomic structure, bonding, thermodynamics and equilibrium, RedOx reactions, kinetics.
-                            <br>Prerequisites: High school chemistry, physics and math
-                            </li>
-<!--Bio-->                                   
-                           <li>
-                            <em><a target="_blanck" href="https://ib.berkeley.edu/courses/bio1b/">Biology 1B</a>, Berkeley </em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PLc4NR94y7KueF7hZ3GG9PObWOghdr5RSx">video lectures from Fall 2010</a>. 
-                            <br>Key concepts: Ecology, Evolution and Botany.
-                            <br>Prerequisites: High school biology
-                        </li>
-<!--Cell bio-->  
-                        <li>
-                            <em><a target="_blanck" href="https://ocw.mit.edu/courses/biology/7-012-introduction-to-biology-fall-2004/">Introduction to Biology</a>, MIT 7.012</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PL9F0B2048DA4690AF">video lectures from Fall 2004</a>). 
-                            <br>Key concepts: biochemistry, genetics, molecular biology, and cell biology.
-                            <br>Prerequisites: High school biology
-                        </li>
-<!--Calculus-->
-                        <li>
-                        <em><a target="_blanck" href="http://ocw.uci.edu/courses/math_2a_calculus_i.html"> Calculus I</a> and <a target="_blanck" href="http://ocw.uci.edu/courses/math_2b_calculus.html"> Calculus II</a>, Math 2A and 2B, German Andres Enciso Ruiz and Natalia Komarova, UCI</em> (video lectures: <a target="_blanck" href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7mTBoA3dZ5Ajp0Nn8OymkwB">part A</a>, <a target="_blanck" href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7mxsWrqTwndCBFXAKC0Xho9">part B</a>, ).
-                            <br>Key concepts: limits, derivatives and integrals in one variable, parametric curves.
-                            <br>Prerequisites: High school math
-</li>
-<!--UCI Physics-->
-                        <li>
-                        <ol>
-                        <li>
-                        <em><a target="_blanck" href="http://ocw.uci.edu/courses/physics_3a_basic_physics.html">Basic Physics I</a>, Physics 3A, Michael Dennin, UCI</em> (<a href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7muCxPmiI7cEpjLsPYDukNg">video lectures</a>.
-                            <br>Key concepts: kinematics and Newtonian dynamics, vectors; motion, force, and energy.
-                            <br>Prerequisites: High school math and physics
-                        </li>
+                                        <li>
+                                            <em><a target="_blanck"
+                                                    href="http://ocw.uci.edu/courses/math_131b_introduction_to_probability_and_statistics.html">Introduction
+                                                    to Probability and Statistics</a>, Math 131B, Michael C. Cranston,
+                                                UCI</em> (<a target="_blanck"
+                                                href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7kcLcp0qHUDOp6f5JKmA8Aq">video
+                                                lectures</a>).
+                                            <br>Key concepts: Point estimation, interval estimating, and testing
+                                            hypotheses, Bayesian approaches to inference.
+                                        </li>
+                                    </ol>
+                                </li>
+                                <!--Yale Physics-->
+                                <li>
+                                    <ol>
+                                        <li>
+                                            <em><a target="_blanck"
+                                                    href="https://oyc.yale.edu/physics/phys-200">Fundamentals of Physics
+                                                    I</a>, PHYS 200, Ramamurti Shankar, Fall 2008</em> (<a
+                                                target="_blanck"
+                                                href="https://www.youtube.com/playlist?list=PLFE3074A4CB751B2B">video
+                                                lectures from Fall 2008</a>).
+                                            <br>Key concepts: mechanics, relativity, thermodynamics.
+                                            <br>Prerequisites: High school math and physics
+                                        </li>
 
-                        <li>
-                        <em><a target="_blanck" href="http://ocw.uci.edu/courses/physics_3b_basic_physics_ii.html">Basic Physics II</a>, Physics 3B, Roger McWilliams, UCI</em> (<a href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7nElgsDr7JYypEDIG5yiQMF">video lectures</a>.
-                            <br>Key concepts: fluid mechanics, thermodynamics,electrostatics, magnetism.
-                        </li>
+                                        <li>
+                                            <em><a target="_blanck"
+                                                    href="https://oyc.yale.edu/physics/phys-201">Fundamentals of Physics
+                                                    II</a>, PHYS 201, Ramamurti Shankar, Fall 2008</em> (<a
+                                                target="_blanck"
+                                                href="https://www.youtube.com/playlist?list=PLD07B2225BB40E582">video
+                                                lectures from Fall 2008</a>).
+                                            <p>Key concepts: electricity, magnetism, optics and quantum mechanics.
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ul>
+                            <h5><a href="javascript:unhide('first_exp');">Experimental Chemist (Show/Hide)</a></h5>
+                            <ul class="hidden" id="first_exp">
+                                <!--Intro Chem-->
+                                <li>
+                                    <ol>
+                                        <li>
+                                            <em><a target="_blanck"
+                                                    href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7kTjN4O2MNzf5YfeiIx7SGI">General
+                                                    Chemistry</a>, UCI Chem1A, 2014</em>.
+                                            <p>Key concepts: atomic structure, bonding, gases.
+                                                <br>Prerequisites: High school chemistry, physics and math</p>
+                                        </li>
 
-                        <li>
-                        <em><a target="_blanck" href="http://ocw.uci.edu/courses/physics_3c_basic_physics_iii.html">Basic Physics III</a>, Physics 3C, Michael Smy, UCI</em> (<a href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7mmMhdzgyldusRm1sbfJLnW">video lectures</a>.
-                            <br>Key concepts: waves and sound, optics, quantum concepts, atomic and nuclear physics, and relativity.
-                        </li>
-                        </ol>
-                        </li>
-                    </ul>
-                    <ul> 
-<!--Lin Algebra-->
-                       <li>
-                        <em><a target="_blanck" href="https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/">Linear Algebra</a>, MIT 8.06, Gilbert Strang, Spring 2011</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PL221E2BBF13BECF6C">video lectures from Spring 2006 and recitations from Spring, 2011</a>).
-                            <br>Key concepts: matrices, Gram-Schmidt, spectral theorem, similar matrices, singular value decomposition.
-                            <br>Prerequisites: High school math
-</li>
-<!--Diff equations-->
-                        <li>
-                        <em><a target="_blanck" href="https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/">Ordinary Differential Equations</a>, MIT 8.03, Haynes Miller and Arthur Mattuck, Spring 2011</em> (<a target="_blanck" href="https://www.youtube.com/watch?v=76WdBlGpxVw&list=PL64BDFBDA2AF24F7E">video lectures from Spring 2006 and recitations from Spring, 2011</a>).
-                            <br>Key concepts: linear 1st and 2nd order ODE, Fourier analysis and Laplace transform, systems of ODE's.
-                            <br>Prerequisites: High school math
-</li>
-<!--Astrophysics-->
-                        <li>
-                        <em><a target="_blanck" href="http://ocw.uci.edu/courses/physics_20b_cosmology.html">Cosmology</a>, Physics 20B, James Bullock, UCI</em> (<a href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7k6iBjOjThLJGozZAY4OD_w">video lectures</a>.
-                            <p>Key concepts: Kepler, Newton, Solar system, Galaxy, Black Holes, Big Bang, Dark matter and energy.
-                            <br>Prerequisites: <a href="#1Ma2a1">1Ma2a</a>, <a href="#1Ph0a1">1Ph0a</a></p>
-                        </li>
-                    </ul>
+                                        <li>
+                                            <em><a target="_blanck"
+                                                    href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7mco4Yb_aYDD8wHMPVYhQrU">General
+                                                    Chemistry</a>, UCI Chem1B, 2014</em>.
+                                            <p>Key concepts: intermolecular forces, thermodynamics, equilibrium.
+                                        </li>
 
-             </div>
-                <h3><a href="javascript:unhide('undergrad');">Advanced Undergraduate level (Show/Hide)</a></h3>
-                    <div class=hidden id="undergrad">
-                     <h5><a href="javascript:unhide('under_the');">Theoretical Chemist (Show/Hide)</a></h5>
-                        <ul class=hidden id="under_the">
-<!--Phys Mathematica-->                                 
-                        <li>
-                        <em><a target="_blanck" href="http://ocw.uci.edu/courses/physics_50_math_methods.html">Physics 50: Math Methods</a>, Physics 50, Michael Dennin, UCI</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7nHzkddoGu8Qov2rLweTPyk">video lectures</a>).
-                            <br>Key concepts: Mathematica and its applications to linear algebra, differential equations, and complex functions. Fourier series and Fourier transforms.
-                            <br>Prerequisites: Basic Mathematica knowledge or Chem 5 mathematica course (first year, theoretical chemist option), first year physics.
-                        </li>
-<!--Stanford programming-->                            
-                        <li> <em><a target="_blanck" href="https://www.youtube.com/playlist?list=PL9D558D49CA734A02">Programming Paradigms</a>, CS107, Stanford</em>.
-                            <br>Key concepts: C, Assembly, C++, Concurrent Programming, Scheme, and Python.
-                        </li>
-<!--Abstract Algebra-->
-                        <li>
-                        <em><a target="_blanck" href="https://www.extension.harvard.edu/open-learning-initiative/abstract-algebra">Abstract Algebra</a>, Mathematics 122, Benedict Gross</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PLelIK3uylPMGzHBuR3hLMHrYfMqWWsmx5">video lectures</a>). 
-                        <br>Key concepts:  groups, rings, vector spaces, theory of fields.
-                        <br>Prerequisites: First year linear algebra
-                        </li>
-<!--Real Analysis-->                            
-                        <li>
-                        <em><a target="_blanck" href="http://analysisyawp.blogspot.com/">Real Analysis</a>, Math131, Francis Su, Spring 2010, Harvey Mudd College</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PL0E754696F72137EC">video lectures</a>). 
-                        <br>Key concepts: construction of Rationals, Cantor diagonalization, Heine-Borel thrm, compactmess, uniform continuity, Taylor's thrm.
-                        <br>Prerequisites: Advanced understanding of first year calculus.
-                        </li>
-<!--Mechanics (Goldstrein)-->
-                        <li>
-                        <em><a target="_blanck" href="https://www.youtube.com/playlist?list=PLoRUNeJAicqbQPmKv3HNBIlcydy0CAI7k">Classical Mechanics</a> (Goldstein), Jacob Linder, NTNU, 2012</em>. 
-                        <br>Key concepts:  Lagrangian and Hamiltonian Mechanics, conservation Laws, integrability, Noether's theorems.
-                        <br>Prerequisites: First year Physics and Math
-                        </li>
-<!--Some EandM here-->
-<!--CFT-->                            
-                        <li>
-                        <em><a target="_blanck" href="https://www.youtube.com/playlist?list=PLbMVogVj5nJRYLTwyuusiiFchFU-WvElW">Classical Field Theory</a>, Suresh Govindarajan, IIT Madras</em>. 
-                        <br><!--Key concepts: <br>-->
-                        Prerequisites: Classical mechanics
-                        </li>
-<!--Physics Quantum-->
-                        <li>
-                        <ol>
-                        <li>
-                        <em><a target="_blanck" href="https://ocw.mit.edu/courses/physics/8-04-quantum-physics-i-spring-2013/">Quantum Physics I</a>, Allan Adams, MIT 8.04, Spring 2013</em> (<a href="https://www.youtube.com/playlist?list=PLUl4u3cNGP61-9PEhRognw5vryrSEVLPr">video lectures from Spring, 2013</a>. 
-                        <br>Key concepts:  wave mechanics, Schrödinger's equation, box potential, SHO, angular momentum, hydrogen atom.
-                        <br>Prerequisites: First year Physics and Math
-                        </li>
+                                        <li>
+                                            <em><a target="_blanck"
+                                                    href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7kyUsEvFYRK8rBsZHRBckvz">General
+                                                    Chemistry</a>, UCI Chem1C, 2014</em>.
+                                            <p>Key concepts: Acids and bases, equilibrium in solution, electrochemistry,
+                                                kinetics.
+                                        </li>
+                                    </ol>
+                                    <br><span>OR</span><br>
+                                    <em><a target="_blanck"
+                                            href="https://ocw.mit.edu/courses/materials-science-and-engineering/3-091sc-introduction-to-solid-state-chemistry-fall-2010/">Introduction
+                                            to Solid State Chemistry</a>, MIT 3.091, Donald Sadoway, Fall 2010</em> (<a
+                                        target="_blanck"
+                                        href="https://www.youtube.com/playlist?list=PL36EC6A6180271B0F">video lectures
+                                        from Fall 2010</a>).
+                                    <br>Key concepts: atoms and bonding, kinetics, materials and solids, X-ray
+                                    diffraction.
+                                    <br>Prerequisites: High school chemistry, physics and math
+                                </li>
+                                <!--Calculus-->
+                                <li>
+                                    <ol>
+                                        <li>
+                                            <em><a target="_blanck"
+                                                    href="https://ocw.mit.edu/courses/mathematics/18-01-single-variable-calculus-fall-2006/">Single
+                                                    Variable Calculus</a>, MIT 8.01, David Jerison, Fall 2006</em> (<a
+                                                target="_blanck"
+                                                href="https://www.youtube.com/playlist?list=PL590CCC2BC5AF3BC1">video
+                                                lectures from Fall 2006</a>).
+                                            <br>Key concepts: limits, derivatives and integrals in one variable, series
+                                            and sequences, Taylor series.
+                                            <br>Prerequisites: High school math
+                                        </li>
 
-                        <li>
-                        <em><a target="_blanck" href="https://ocw.mit.edu/courses/physics/8-05-quantum-physics-ii-fall-2013/">Quantum Physics II</a>, Barton Zwiebach, MIT 8.05, Fall 2013</em> (<a href="https://www.youtube.com/playlist?list=PLUl4u3cNGP61-9PEhRognw5vryrSEVLPr">video lectures from Spring, 2013</a>. 
-                        <br>Key concepts:  Heisenberg picture (matrix mechanics), general structure of QM, hermiticity.
-                        </li>
-                        </ol>
-                        <br><span>OR</span><br>
-                        <em><a target="_blanck" href="https://www.youtube.com/playlist?list=PLB3CF07ACB3DBC849">Quantum Mechanics</a>, J.J. Binney, Oxford</em>. 
-                        <br><!--Key concepts:  <br>-->
-                        Prerequisites: First year Physics and Math
-                        </li>
-<!--Chem Quantum MIT - there are new ones
+                                        <li>
+                                            <em><a target="_blanck"
+                                                    href="https://ocw.mit.edu/courses/mathematics/18-02-multivariable-calculus-fall-2007/">Multivariable
+                                                    Calculus</a>, MIT 8.02, Denis Auroux, Fall 2007</em> (<a
+                                                target="_blanck"
+                                                href="https://www.youtube.com/playlist?list=PL4C4C8A7D06566F38">video
+                                                lectures from Fall 2007</a>).
+                                            <br>Key concepts: vectors and matrices, partial derivatives, multiple
+                                            integrals, Stokes' theorem.
+                                        </li>
+                                    </ol>
+                                </li>
+                                <!--Lewin Physics-->
+                                <li>
+                                    <ol>
+                                        <li>
+                                            <em><a target="_blanck"
+                                                    href="https://www.youtube.com/playlist?list=PLUdYlQf0_sSsb2tNcA3gtgOt8LGH6tJbr">Classical
+                                                    Mechanics</a>, MIT 8.01, Walter Lewin, Fall 1999</em>.
+                                            <br>Alternative version:<em><a target="_blanck"
+                                                    href="https://ocw.mit.edu/courses/physics/8-01sc-classical-mechanics-fall-2016/">Classical
+                                                    Mechanics</a>, MIT 8.01, Fall 2016</em>.
+                                            <br>Key concepts: mechanics, elasticity and hydrostatics, oscillations.
+                                            <br>Prerequisites: high school physics and math
+                                        </li>
+
+                                        <li>
+                                            <em><a target="_blanck"
+                                                    href="https://www.youtube.com/playlist?list=PLUdYlQf0_sSsfcNOPSNPQKHDhSjTJATPu">Electricity
+                                                    and Magnetism</a>, MIT 8.02, Walter Lewin, Spring 2002</em> (<a
+                                                href="https://www.youtube.com/playlist?list=PLyQSN7X0ro200pTRGPkPp4kBEzFrSbZ3c">with
+                                                help sessions</a>).
+                                            <br>Key concepts: electricity, magnetism, light.
+                                        </li>
+
+                                        <li>
+                                            <em><a target="_blanck"
+                                                    href="https://www.youtube.com/playlist?list=PLyQSN7X0ro22WeXM2QCKJm2NP_xHpGV89">Vibrations
+                                                    and Waves</a>, MIT 8.03, Walter Lewin, Fall 2004</em>.
+                                            <br>Key concepts: oscillators: SHO, damped and driven oscillations; EM
+                                            waves; light waves.
+                                        </li>
+                                    </ol>
+                                </li>
+                                <!--Python-->
+                                <li>
+                                    <em><a target="_blanck"
+                                            href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/">Introduction
+                                            to Computer Science and Programming in Python</a>, MIT 6.001, Ana Bell, Fall
+                                        2016</em> (<a target="_blanck"
+                                        href="https://www.youtube.com/playlist?list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA">video
+                                        lectures from Fall 2016</a>).
+                                    <br>Key concepts: principles of computation, basic Python, recursion, sorting.
+                                    <br>Prerequisites: High school math
+                                </li>
+                            </ul>
+
+                            <h5><a href="javascript:unhide('first_syn');">Synthetic Chemist (Show/Hide)</a></h5>
+                            <ul class="hidden" id="first_syn">
+                                <!--Chem-->
+                                <li>
+                                    <em><a target="_blanck"
+                                            href="https://ocw.mit.edu/courses/chemistry/5-111sc-principles-of-chemical-science-fall-2014/">Principles
+                                            of Chemical Science I</a>, MIT 5.111</em> (<a target="_blanck"
+                                        href="https://www.youtube.com/playlist?list=PLUl4u3cNGP63LOmB3_O0xbgZVZibxj4rb">video
+                                        lectures from Fall 2014</a>).
+                                    <br>Alternative version: <em><a target="_blanck"
+                                            href="https://ocw.mit.edu/courses/chemistry/5-112-principles-of-chemical-science-fall-2005/">Principles
+                                            of Chemical Science</a>, MIT 5.112</em> (<a target="_blanck"
+                                        href="https://www.youtube.com/watch?v=dxR06Mi8ExI&list=PLB3953F4F875AB0B3">video
+                                        lectures from Fall 2005</a>).
+                                    <br>Key concepts: atomic structure, bonding, thermodynamics and equilibrium, RedOx
+                                    reactions, kinetics.
+                                    <br>Prerequisites: High school chemistry, physics and math
+                                </li>
+                                <!--Bio-->
+                                <li>
+                                    <em><a target="_blanck" href="https://ib.berkeley.edu/courses/bio1b/">Biology
+                                            1B</a>, Berkeley </em> (<a target="_blanck"
+                                        href="https://www.youtube.com/playlist?list=PLc4NR94y7KueF7hZ3GG9PObWOghdr5RSx">video
+                                        lectures from Fall 2010</a>.
+                                    <br>Key concepts: Ecology, Evolution and Botany.
+                                    <br>Prerequisites: High school biology
+                                </li>
+                                <!--Cell bio-->
+                                <li>
+                                    <em><a target="_blanck"
+                                            href="https://ocw.mit.edu/courses/biology/7-012-introduction-to-biology-fall-2004/">Introduction
+                                            to Biology</a>, MIT 7.012</em> (<a target="_blanck"
+                                        href="https://www.youtube.com/playlist?list=PL9F0B2048DA4690AF">video lectures
+                                        from Fall 2004</a>).
+                                    <br>Key concepts: biochemistry, genetics, molecular biology, and cell biology.
+                                    <br>Prerequisites: High school biology
+                                </li>
+                                <!--Calculus-->
+                                <li>
+                                    <em><a target="_blanck" href="http://ocw.uci.edu/courses/math_2a_calculus_i.html">
+                                            Calculus I</a> and <a target="_blanck"
+                                            href="http://ocw.uci.edu/courses/math_2b_calculus.html"> Calculus II</a>,
+                                        Math 2A and 2B, German Andres Enciso Ruiz and Natalia Komarova, UCI</em> (video
+                                    lectures: <a target="_blanck"
+                                        href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7mTBoA3dZ5Ajp0Nn8OymkwB">part
+                                        A</a>, <a target="_blanck"
+                                        href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7mxsWrqTwndCBFXAKC0Xho9">part
+                                        B</a>, ).
+                                    <br>Key concepts: limits, derivatives and integrals in one variable, parametric
+                                    curves.
+                                    <br>Prerequisites: High school math
+                                </li>
+                                <!--UCI Physics-->
+                                <li>
+                                    <ol>
+                                        <li>
+                                            <em><a target="_blanck"
+                                                    href="http://ocw.uci.edu/courses/physics_3a_basic_physics.html">Basic
+                                                    Physics I</a>, Physics 3A, Michael Dennin, UCI</em> (<a
+                                                href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7muCxPmiI7cEpjLsPYDukNg">video
+                                                lectures</a>.
+                                            <br>Key concepts: kinematics and Newtonian dynamics, vectors; motion, force,
+                                            and energy.
+                                            <br>Prerequisites: High school math and physics
+                                        </li>
+
+                                        <li>
+                                            <em><a target="_blanck"
+                                                    href="http://ocw.uci.edu/courses/physics_3b_basic_physics_ii.html">Basic
+                                                    Physics II</a>, Physics 3B, Roger McWilliams, UCI</em> (<a
+                                                href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7nElgsDr7JYypEDIG5yiQMF">video
+                                                lectures</a>.
+                                            <br>Key concepts: fluid mechanics, thermodynamics,electrostatics, magnetism.
+                                        </li>
+
+                                        <li>
+                                            <em><a target="_blanck"
+                                                    href="http://ocw.uci.edu/courses/physics_3c_basic_physics_iii.html">Basic
+                                                    Physics III</a>, Physics 3C, Michael Smy, UCI</em> (<a
+                                                href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7mmMhdzgyldusRm1sbfJLnW">video
+                                                lectures</a>.
+                                            <br>Key concepts: waves and sound, optics, quantum concepts, atomic and
+                                            nuclear physics, and relativity.
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ul>
+                            <ul>
+                                <!--Lin Algebra-->
+                                <li>
+                                    <em><a target="_blanck"
+                                            href="https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/">Linear
+                                            Algebra</a>, MIT 8.06, Gilbert Strang, Spring 2011</em> (<a target="_blanck"
+                                        href="https://www.youtube.com/playlist?list=PL221E2BBF13BECF6C">video lectures
+                                        from Spring 2006 and recitations from Spring, 2011</a>).
+                                    <br>Key concepts: matrices, Gram-Schmidt, spectral theorem, similar matrices,
+                                    singular value decomposition.
+                                    <br>Prerequisites: High school math
+                                </li>
+                                <!--Diff equations-->
+                                <li>
+                                    <em><a target="_blanck"
+                                            href="https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/">Ordinary
+                                            Differential Equations</a>, MIT 8.03, Haynes Miller and Arthur Mattuck,
+                                        Spring 2011</em> (<a target="_blanck"
+                                        href="https://www.youtube.com/watch?v=76WdBlGpxVw&list=PL64BDFBDA2AF24F7E">video
+                                        lectures from Spring 2006 and recitations from Spring, 2011</a>).
+                                    <br>Key concepts: linear 1st and 2nd order ODE, Fourier analysis and Laplace
+                                    transform, systems of ODE's.
+                                    <br>Prerequisites: High school math
+                                </li>
+                                <!--Astrophysics-->
+                                <li>
+                                    <em><a target="_blanck"
+                                            href="http://ocw.uci.edu/courses/physics_20b_cosmology.html">Cosmology</a>,
+                                        Physics 20B, James Bullock, UCI</em> (<a
+                                        href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7k6iBjOjThLJGozZAY4OD_w">video
+                                        lectures</a>.
+                                    <p>Key concepts: Kepler, Newton, Solar system, Galaxy, Black Holes, Big Bang, Dark
+                                        matter and energy.
+                                        <br>Prerequisites: <a href="#1Ma2a1">1Ma2a</a>, <a href="#1Ph0a1">1Ph0a</a></p>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <h3><a href="javascript:unhide('undergrad');">Advanced Undergraduate level (Show/Hide)</a></h3>
+                        <div class=hidden id="undergrad">
+                            <h5><a href="javascript:unhide('under_the');">Theoretical Chemist (Show/Hide)</a></h5>
+                            <ul class=hidden id="under_the">
+                                <!--Phys Mathematica-->
+                                <li>
+                                    <em><a target="_blanck"
+                                            href="http://ocw.uci.edu/courses/physics_50_math_methods.html">Physics 50:
+                                            Math Methods</a>, Physics 50, Michael Dennin, UCI</em> (<a target="_blanck"
+                                        href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7nHzkddoGu8Qov2rLweTPyk">video
+                                        lectures</a>).
+                                    <br>Key concepts: Mathematica and its applications to linear algebra, differential
+                                    equations, and complex functions. Fourier series and Fourier transforms.
+                                    <br>Prerequisites: Basic Mathematica knowledge or Chem 5 mathematica course (first
+                                    year, theoretical chemist option), first year physics.
+                                </li>
+                                <!--Stanford programming-->
+                                <li> <em><a target="_blanck"
+                                            href="https://www.youtube.com/playlist?list=PL9D558D49CA734A02">Programming
+                                            Paradigms</a>, CS107, Stanford</em>.
+                                    <br>Key concepts: C, Assembly, C++, Concurrent Programming, Scheme, and Python.
+                                </li>
+                                <!--Abstract Algebra-->
+                                <li>
+                                    <em><a target="_blanck"
+                                            href="https://www.extension.harvard.edu/open-learning-initiative/abstract-algebra">Abstract
+                                            Algebra</a>, Mathematics 122, Benedict Gross</em> (<a target="_blanck"
+                                        href="https://www.youtube.com/playlist?list=PLelIK3uylPMGzHBuR3hLMHrYfMqWWsmx5">video
+                                        lectures</a>).
+                                    <br>Key concepts: groups, rings, vector spaces, theory of fields.
+                                    <br>Prerequisites: First year linear algebra
+                                </li>
+                                <!--Real Analysis-->
+                                <li>
+                                    <em><a target="_blanck" href="http://analysisyawp.blogspot.com/">Real Analysis</a>,
+                                        Math131, Francis Su, Spring 2010, Harvey Mudd College</em> (<a target="_blanck"
+                                        href="https://www.youtube.com/playlist?list=PL0E754696F72137EC">video
+                                        lectures</a>).
+                                    <br>Key concepts: construction of Rationals, Cantor diagonalization, Heine-Borel
+                                    thrm, compactness, uniform continuity, Taylor's thrm.
+                                    <br>Prerequisites: Advanced understanding of first year calculus.
+                                </li>
+                                <!--Mechanics (Goldstein)-->
+                                <li>
+                                    <em><a target="_blanck"
+                                            href="https://www.youtube.com/playlist?list=PLoRUNeJAicqbQPmKv3HNBIlcydy0CAI7k">Classical
+                                            Mechanics</a> (Goldstein), Jacob Linder, NTNU, 2012</em>.
+                                    <br>Key concepts: Lagrangian and Hamiltonian Mechanics, conservation Laws,
+                                    integrability, Noether's theorems.
+                                    <br>Prerequisites: First year Physics and Math
+                                </li>
+                                <!--Some E and M here-->
+                                <!--CFT-->
+                                <li>
+                                    <em><a target="_blanck"
+                                            href="https://www.youtube.com/playlist?list=PLbMVogVj5nJRYLTwyuusiiFchFU-WvElW">Classical
+                                            Field Theory</a>, Suresh Govindarajan, IIT Madras</em>.
+                                    <br>
+                                    <!--Key concepts: <br>-->
+                                    Prerequisites: Classical mechanics
+                                </li>
+                                <!--Physics Quantum-->
+                                <li>
+                                    <ol>
+                                        <li>
+                                            <em><a target="_blanck"
+                                                    href="https://ocw.mit.edu/courses/physics/8-04-quantum-physics-i-spring-2013/">Quantum
+                                                    Physics I</a>, Allan Adams, MIT 8.04, Spring 2013</em> (<a
+                                                href="https://www.youtube.com/playlist?list=PLUl4u3cNGP61-9PEhRognw5vryrSEVLPr">video
+                                                lectures from Spring, 2013</a>.
+                                            <br>Key concepts: wave mechanics, Schrödinger's equation, box potential,
+                                            SHO, angular momentum, hydrogen atom.
+                                            <br>Prerequisites: First year Physics and Math
+                                        </li>
+
+                                        <li>
+                                            <em><a target="_blanck"
+                                                    href="https://ocw.mit.edu/courses/physics/8-05-quantum-physics-ii-fall-2013/">Quantum
+                                                    Physics II</a>, Barton Zwiebach, MIT 8.05, Fall 2013</em> (<a
+                                                href="https://www.youtube.com/playlist?list=PLUl4u3cNGP61-9PEhRognw5vryrSEVLPr">video
+                                                lectures from Spring, 2013</a>.
+                                            <br>Key concepts: Heisenberg picture (matrix mechanics), general structure
+                                            of QM, hermiticity.
+                                        </li>
+                                    </ol>
+                                    <br><span>OR</span><br>
+                                    <em><a target="_blanck"
+                                            href="https://www.youtube.com/playlist?list=PLB3CF07ACB3DBC849">Quantum
+                                            Mechanics</a>, J.J. Binney, Oxford</em>.
+                                    <br>
+                                    <!--Key concepts:  <br>-->
+                                    Prerequisites: First year Physics and Math
+                                </li>
+                                <!--Chem Quantum MIT - there are new ones
 Inorganic:
 https://ocw.mit.edu/courses/chemistry/5-04-principles-of-inorganic-chemistry-ii-fall-2008/
 https://ocw.mit.edu/courses/chemistry/5-05-principles-of-inorganic-chemistry-iii-spring-2005/
@@ -453,394 +704,646 @@ http://www.its.caltech.edu/~xcchen/courses/physics129.html
 http://www.its.caltech.edu/~xcchen/courses/physics223.html
 -->
 
-<!-- Python course at Caltech and UCSD
+                                <!-- Python course at Caltech and UCSD
 https://engineering.ucsb.edu/~shell/che210d/assignments.html
 http://justinbois.github.io/bootcamp/2018/schedule.html-->
-<!--Stat Mech-->
-                        <li>
-                        <em><a target="_blanck" href="http://www.theory.caltech.edu/people/preskill/ph12c/index.html">Statistical Mechanics</a>, Physics 12C, John Preskill, Caltech</em> (<a href="https://www.youtube.com/playlist?list=PL0ojjrEqIyPzgJUUW76koGcSCy6OGtDRI">video lectures from Spring, 2011</a>. 
-                        <br>Key concepts: counting of states and entropy, microcanonical, canonical and Gibbs ensember, identical perticles, phase transition, diffusion. 
-                        <br>Prerequisites: Physics quantum
-                        </li>
-                        </ul>
-                    <h5><a href="javascript:unhide('under_exp');">Experimental Chemist (Show/Hide)</a></h5>
-                        <ul class=hidden id="under_exp">
-<!--McBride-->
-                        <li>
+                                <!--Stat Mech-->
+                                <li>
+                                    <em><a target="_blanck"
+                                            href="http://www.theory.caltech.edu/people/preskill/ph12c/index.html">Statistical
+                                            Mechanics</a>, Physics 12C, John Preskill, Caltech</em> (<a
+                                        href="https://www.youtube.com/playlist?list=PL0ojjrEqIyPzgJUUW76koGcSCy6OGtDRI">video
+                                        lectures from Spring, 2011</a>.
+                                    <br>Key concepts: counting of states and entropy, microcanonical, canonical and
+                                    Gibbs ensemble, identical particles, phase transition, diffusion.
+                                    <br>Prerequisites: Physics quantum
+                                </li>
+                            </ul>
+                            <h5><a href="javascript:unhide('under_exp');">Experimental Chemist (Show/Hide)</a></h5>
+                            <ul class=hidden id="under_exp">
+                                <!--McBride-->
+                                <li>
+                                    <ol>
+                                        <li>
+                                            <em><a target="_blanck" href="https://oyc.yale.edu/NODE/66">Freshman Organic
+                                                    Chemistry I</a>, CHEM 125A, J. Michael McBride, Yale</em> (<a
+                                                target="_blanck"
+                                                href="https://www.youtube.com/playlist?list=PL3F629F73640F831D">video
+                                                lectures from Fall 2008</a>).
+                                            <p>Key concepts: Rigorous introduction to bonding in molecules, orbitals and
+                                                reactivity, history of chemistry, stereochemistry, transition state
+                                                theory.
+                                                <br>Prerequisites: First year chemistry, physics and math
+                                        </li>
+
+                                        <li>
+                                            <em><a target="_blanck" href="https://oyc.yale.edu/NODE/71">Freshman Organic
+                                                    Chemistry II</a>, CHEM 125B, J. Michael McBride, Yale</em> (<a
+                                                target="_blanck"
+                                                href="https://www.youtube.com/playlist?list=PLB572BA3ED0F700F1">video
+                                                lectures from Spring 2011</a>).
+                                            <br>Key concepts: Organic mechanisms, NMR spectroscopy.
+                                        </li>
+                                    </ol>
+                                </li>
+                                <!--Thermo and Kinetics MIT-->
+                                <li>
+                                    <em><a target="_blanck"
+                                            href="https://ocw.mit.edu/courses/chemistry/5-60-thermodynamics-kinetics-spring-2008/">Thermodynamics
+                                            &#38; Kinetics</a>, MIT 5.60, Keith A. Nelson, Spring 2008</em> (<a
+                                        target="_blanck"
+                                        href="https://www.youtube.com/playlist?list=PLA62087102CC93765">video lectures
+                                        from Spring 2008</a>).
+                                    <br>Key concepts: thermodynamics, equilibria, kinetics and catalysis.
+                                    <br>Prerequisites: First year calculus, chemistry and physics.
+                                </li>
+                                <!--Solid state-->
+                                <li>
+                                    <em><a target="_blanck"
+                                            href="https://www.youtube.com/playlist?list=PLaNkJORnlhZnC6E3z1-i7WERkferhQDzq">Solid
+                                            State Basics</a>, Steven H. Simon, Oxford</em>.
+                                    <br>Key concepts: electrons in metals, basic chemistry, reciprocal lattice, band
+                                    theory, magnetism.
+                                    <br>First year physics
+                                </li>
+                            </ul>
+
+                            <h5><a href="javascript:unhide('under_syn');">Synthetic Chemist (Show/Hide)</a></h5>
+                            <ul class=hidden id="under_syn">
+                                <!--UCI Organic Chem-->
+                                <li>
+                                    <ol>
+                                        <li>
+                                            <em><a target="_blanck"
+                                                    href="http://ocw.uci.edu/courses/chem_51a_organic_chemistry.html">Organic
+                                                    Chemistry</a>, Chem 51A, Susan King, UCI</em> (<a target="_blanck"
+                                                href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7mjll_2I34SguRYiCOILUxD">video
+                                                lectures</a>).
+                                            <br>Alternative version: <em><a target="_blanck"
+                                                    href="http://ocw.uci.edu/courses/chem_51a_organic_chemistry_nowick.html">Organic
+                                                    Chemistry</a>, Chem 51A, James Nowick, UCI</em> (<a target="_blanck"
+                                                href="https://www.youtube.com/playlist?list=PL6539BAED55972D64">video
+                                                lectures from 2009</a>).
+                                            <br>Key concepts: mechanistically emphasized survey of organic reactions.
+                                            <br>Prerequisites: First year chemistry
+                                        </li>
+
+                                        <li>
+                                            <em><a target="_blanck"
+                                                    href="http://ocw.uci.edu/courses/chem_51b_organic_chemistry.html">Organic
+                                                    Chemistry</a>, CHEM 51B, Susan King, UCI</em> (<a target="_blanck"
+                                                href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7mVCA9CybcHUltOLp0GPJJ3">video
+                                                lectures</a>).
+                                            <br>Alternative version:<em><a target="_blanck"
+                                                    href="http://ocw.uci.edu/courses/chem_51b_organic_chemistry_van_vranken.html">Organic
+                                                    Chemistry</a>, CHEM 51B, David Van Vranken, Winter, 2013 UCI</em>
+                                            (<a target="_blanck"
+                                                href="https://www.youtube.com/playlist?list=PLwRdjDrWEPxA500GsmOUjOZ93dRplBCIh">video
+                                                lectures</a>).
+                                            <br>Key concepts: mechanistically emphasized survey of organic reactions.
+                                        </li>
+
+                                        <li>
+                                            <em><a target="_blanck"
+                                                    href="http://ocw.uci.edu/courses/chem_51c_organic_chemistry.html">Organic
+                                                    Chemistry</a>, CHEM 51C, Susan King, UCI</em> (<a target="_blanck"
+                                                href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7nqVjmYjBSZOkjln_K31ATj">video
+                                                lectures</a>).
+                                            <br>Alternative version:<em><a target="_blanck"
+                                                    href="http://ocw.uci.edu/courses/chem_51c_organic_chemistry_nowick.html">Organic
+                                                    Chemistry</a>, CHEM 51C, James Nowick, UCI</em> (<a target="_blanck"
+                                                href="https://www.youtube.com/playlist?list=PL47B3E3FDB175BB8B">video
+                                                lectures</a>).
+                                            <br>Key concepts: mechanistically emphasized survey of organic reactions.
+                                        </li>
+
+                                        <li>
+                                            <em><a target="_blanck"
+                                                    href="http://ocw.uci.edu/courses/chem_125_advanced_organic_chemistry.html">Advanced
+                                                    Organic Chemistry</a>, CHEM 125, James Nowick, UCI</em> (<a
+                                                target="_blanck"
+                                                href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7mfiAfa8nNwbY6RT2ZPDF9K">video
+                                                lectures</a>).
+                                            <p>Key concepts: mechanistically emphasized survey of organic reactions.
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ul>
+                            <ul>
+                                <!--UCI Chem Quantum-->
+                                <li>
+                                    <ol>
+                                        <li>
+                                            <em><a target="_blanck"
+                                                    href="http://ocw.uci.edu/courses/chem_131a_quantum_principles.html">Quantum
+                                                    Principles</a>, Chem 131A, A.J. Shaka, UCI</em> (<a target="_blanck"
+                                                href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7nTiUs5sDP6PMiFnUXuFdhG">video
+                                                lectures</a>).
+                                            <br>Key concepts: angular momentum, spin, hydrogen atom, spectroscopy,
+                                            approximation methods, Born-Oppenheimer, MO theory.
+                                            <br>Prerequisites: First year calculus, chemistry and physics.
+                                        </li>
+
+                                        <li>
+                                            <em><a target="_blanck"
+                                                    href="http://ocw.uci.edu/courses/chem_131b_molecular_structure_and_elementary_statistical_mechanics.html">
+                                                    Molecular Structure &#38; Statistical Mechanics</a>, CHEM 131B,
+                                                Rachel Martin, UCI</em> (<a target="_blanck"
+                                                href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7nPsoPwfvT7LiZKQ0zxKSUW">video
+                                                lectures</a>).
+                                            <br>Key concepts: Group theory, spectroscopy, statistical mechanics.
+                                        </li>
+
+                                        <li>
+                                            <em><a target="_blanck"
+                                                    href="http://ocw.uci.edu/courses/chem_131c_thermodynamics_and_chemical_dynamics.html">Thermodynamics
+                                                    and Chemical Dynamics</a>, CHEM 131C, Reginald Penner, UCI</em> (<a
+                                                target="_blanck"
+                                                href="https://www.youtube.com/playlist?list=PL3F3C30431F2E7076">video
+                                                lectures</a>).
+                                            <br>Key concepts: thermodynamics, transition state theory.
+                                        </li>
+                                    </ol>
+                                </li>
+                                <!--UCI Inorganic Chem-->
+                                <li>
+                                    <em><a target="_blanck"
+                                            href="http://ocw.uci.edu/courses/chem_107_inorganic_chemistry.html">Inorganic
+                                            Chemistry</a>, CHEM 107, Matthew Law, UCI</em> (<a target="_blanck"
+                                        href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7kGnKLTbdwZ3IGVNXK43k7S">video
+                                        lectures</a>).
+                                    <br>Key concepts: symmetry, main group and transition metal chemistry, MO theory,
+                                    Jahn-Teller effect.
+                                    <br>Prerequisites: First year chemistry, physics and math
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <h3><a href="javascript:unhide('grad');">Graduate level (Show/Hide)</a></h3>
+                        <div class=hidden id="grad">
+                            <h5><a href="javascript:unhide('grad_the');">Theoretical Chemist (Show/Hide)</a></h5>
+                            <ul class=hidden id="grad_the">
+                                <!--Advanced QM-->
+                                <li>
+                                    <strong id="#2Ph3c1">2Ph3c1</strong> <em><a target="_blanck"
+                                            href="https://www.youtube.com/playlist?list=PLDfPUNusx1Eo60qx3Od2KLUL4b7VDPo9F">Advanced
+                                            quantum theory</a>, Tobias Osborne, TU Delft, Summer, 2016</em>
+                                    <p>Key concepts: Many-particle quantum mechanics, second quantization.
+                                        <br>Prerequisites: Real Analysis, Group theory, Physics Undergrad Quantum
+                                </li>
+                                <!--Quant Info-->
+                                <li>
+                                    <em><a target="_blanck"
+                                            href="https://www.youtube.com/playlist?list=PLDfPUNusx1EoBAn8vXYjcF95R7mI_eR6o">Mathematical
+                                            methods of quantum information theory</a>, TU Delft</em>
+                                    <br>
+                                    <!--Key concepts: Many-particle quantum mechanics, second quantization.
+                        <br>-->Prerequisites: Advanced Quantum Mechanics
+                                </li>
+                                <!--Physics math techniques Madras-->
+                                <li>
+                                    <em><a target="_blanck"
+                                            href="https://www.youtube.com/playlist?list=PLiUVvsKxTUr66oLF6Pzirc1EgSstMbRZR">Selected
+                                            Topics in Mathematical Physics</a>, V. Balakrishnan, IIT Madras, Fall
+                                        2013</em>
+                                    <br>Key concepts: analytic complex functions, calculus of residues, linear response
+                                    theory, Laplace and Fourier transform, Green's functions, Group of rotations.
+                                    <br>Prerequisites: Strong Undergraduate physics and math
+                                </li>
+                                <!--Bender asymptotic-->
+                                <li>
+                                    <em><a target="_blanck"
+                                            href="https://www.youtube.com/playlist?list=PLFMKfDJ8QzbOU-_WsJR6H5rKASs7Sbip_">Mathematical
+                                            Physics</a>, Carl Bender (Washington University), PSI, Phys624, Fall
+                                        2011</em>
+                                    <br>Key concepts: Asymptotic series, summation of divergent series.
+                                    <br>Prerequisites: Advanced calculus
+                                </li>
+                                <!--QFT Tong-->
+                                <li>
+                                    <em><a target="_blanck" href="http://www.damtp.cam.ac.uk/user/tong/qft.html">Quantum
+                                            Field Theory</a>, David Tong, Cambridge, Fall 2013</em> (<a
+                                        href="https://www.youtube.com/playlist?list=PLaNkJORnlhZlVkrpQVvCTVvGAMIlXL88Y">video
+                                        lectures from PSI, Fall, 2009</a>.
+                                    <br>Key concepts: CFT, quantization, Dirac equation.
+                                    <br>Prerequisites: Advanced Quantum
+                                </li>
+                            </ul>
+                            <h5><a href="javascript:unhide('grad_exp');">Experimental Chemist (Show/Hide)</a></h5>
+                            <ul class=hidden id="grad_exp">
+                                <li>
+                                    <ol>
+                                        <li>
+                                            <em><a target="_blanck"
+                                                    href="https://ocw.mit.edu/courses/physics/8-421-atomic-and-optical-physics-i-spring-2014/">Atomic
+                                                    and Optical Physics I</a>, Wolfgang Ketterle, MIT 8.421, Spring
+                                                2014</em> (<a
+                                                href="https://www.youtube.com/playlist?list=PLUl4u3cNGP62FPGcyFJkzhqq9c5cHCK32">video
+                                                lectures from Spring, 2014</a>.
+                                            <br>Key concepts: interaction of radiation with atoms, dressed atom
+                                            formalism, masers and lasers, cavity QED; structure of atoms; time reversal,
+                                            parity violations, Bell's inequalities.
+                                        </li>
+
+                                        <li>
+                                            <em><a target="_blanck"
+                                                    href="https://ocw.mit.edu/courses/physics/8-422-atomic-and-optical-physics-ii-spring-2013/">Atomic
+                                                    and Optical Physics II</a>, Wolfgang Ketterle, MIT 8.422, Spring
+                                                2013</em> (<a
+                                                href="https://www.youtube.com/playlist?list=PLUl4u3cNGP62uOSArqLf4vNLiZtgIRm1K">video
+                                                lectures from Spring, 2013</a>.
+                                            <br>Key concepts: light-squeezed states; multi-photon processes, Raman
+                                            scattering; superradiance; trapping and cooling; quantum scattering theory,
+                                            ultra-cold collisions.
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ul>
+                            <h5><a href="javascript:unhide('grad_syn');">Synthetic Chemist (Show/Hide)</a></h5>
+                            <ul class=hidden id="grad_syn">
+                                <!--Organic mechanisms-->
+                                <li>
+                                    <ol>
+                                        <li>
+                                            <em><a target="_blanck"
+                                                    href="https://canvas.eee.uci.edu/courses/12820">Organic Reactions
+                                                    Mechanisms I</a>, Chem 201, David Van Vranken, UCI</em> (<a
+                                                target="_blanck"
+                                                href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7mHQaOx9Crb0A3D_RHuenAB">video
+                                                lectures</a>).
+                                            <br>Key concepts: MO theory, aromaticity, carbonium ion, free radicals,
+                                            carbenes and carbanions, photochemistry.
+                                            <br>Prerequisites: Advanced Undergrad Organic Chemistry
+                                        </li>
+
+                                        <li>
+                                            <em><a target="_blanck"
+                                                    href="http://ocw.uci.edu/courses/chem_202_organic_reaction_mechanisms_ii.html">Organic
+                                                    Reactions Mechanisms II</a>, Chem 202, David Van Vranken, UCI</em>
+                                            (<a target="_blanck"
+                                                href="https://www.youtube.com/playlist?list=PLaLOVNqqD-2Ed7LXPGYMcDkW6UvdKrRJo">video
+                                                lectures</a>).
+                                            <br>Key concepts: mechanisms, kinetics, conformational analysis,
+                                            computational methods, stereoelectronics, catalysis.
+                                        </li>
+
+                                        <li>
+                                            <em><a target="_blanck"
+                                                    href="http://ocw.uci.edu/courses/chem_203_organic_spectroscopy.html">Organic
+                                                    Spectroscopy</a>, Chem 203, James Nowick, UCI</em> (<a
+                                                target="_blanck"
+                                                href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7lkH_qALcZ6u7Z214W_TLxv">video
+                                                lectures</a>).
+                                            <br>Key concepts: mass spectrometry; ultraviolet, chiroptical, infrared, and
+                                            nuclear magnetic resonance spectroscopy.
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ul>
+                            <ul>
+                                <!--Kardar's stat Mech-->
+                                <li>
+                                    <ol>
+                                        <li>
+                                            <em><a target="_blanck"
+                                                    href="https://ocw.mit.edu/courses/physics/8-333-statistical-mechanics-i-statistical-mechanics-of-particles-fall-2013/">Statistical
+                                                    Mechanics I</a>, Mehran Kardar, MIT 8.333, Fall 2013</em> (<a
+                                                href="https://www.youtube.com/playlist?list=PLUl4u3cNGP60gl3fdUTKRrt5t_GPx2sRg">video
+                                                lectures from Fall, 2013</a>.
+                                            <br>Key concepts: thermodynamics, probability theory, kinetic theory,
+                                            classical statistical mechanics, interacting systems, quantum statistical
+                                            mechanics, and identical particles.
+                                            <br>Undergraduate Statistical Mechanics
+                                        </li>
+
+                                        <li>
+                                            <em><a target="_blanck"
+                                                    href="https://ocw.mit.edu/courses/physics/8-334-statistical-mechanics-ii-statistical-physics-of-fields-spring-2014/">Statistical
+                                                    Mechanics II</a>, Mehran Kardar, MIT 8.334, Spring 2014</em> (<a
+                                                href="https://www.youtube.com/playlist?list=PLUl4u3cNGP63HkEHvYaNJiO0UCUmY0Ts7">video
+                                                lectures from Spring, 2014</a>.
+                                            <br>Key concepts: Landau-Ginzburg, Scaling Hypothesis, Renormalization
+                                            Group.
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div>
+                            <p><a href="javascript:unhide('reps');">Click here to see a list of all the course
+                                    repositories that I know of... Have fun!</a></p>
+                            <div id="reps" class="hidden">
+                                <ul>
+                                    <li>Free online course repositories:
+                                        <ol>
+                                            <li><a href="https://www.class-central.com/">Class Central</a></li>
+                                            <li><a href="https://www.coursera.org/browse">Coursera</a></li>
+                                            <li><a href="https://www.khanacademy.org/">Khan Academy</a></li>
+                                            <li><a href="https://www.edx.org/course">edX</a></li>
+                                            <li><a href="https://academicearth.org/">Academic Earth</a></li>
+                                        </ol>
+                                    </li>
+
+                                    <li>University-specific online learning platforms:
+                                        <ol>
+                                            <li><a href="https://ocw.mit.edu/index.htm">MIT Opencourseware</a></li>
+                                            <li><a href="https://www.extension.harvard.edu/open-learning-initiative">Harvard
+                                                    open learning initiative</a></li>
+                                            <li><a href="https://www.berkeley.edu/academics/online-learning">UC Berkeley
+                                                    Online learning</a></li>
+                                            <li><a href="http://online.caltech.edu/courses">Caltech</a></li>
+                                            <li><a href="https://online.stanford.edu/courses">Stanford online</a></li>
+                                            <li><a href="http://ocw.uci.edu/courses">UCI Open</a></li>
+                                            <li><a href="https://ocw.tudelft.nl/">TU Delft Opencourseware</a></li>
+                                            <li><a href="https://www.youtube.com/user/nptelhrd">Indian National Program
+                                                    on Technology and Advanced Learning</a></li>
+                                            <li><a href="http://pirsa.org/">Perimeter Institute Recorded Seminar
+                                                    Archive</a></li>
+                                        </ol>
+                                    </li>
+
+                                    <li>Commercial learning platforms with a free trial:
+                                        <ol>
+                                            <li><a href="https://www.udemy.com/">Udemy</a></li>
+                                            <li><a href="https://brilliant.org/">Brilliant</a></li>
+                                            <li><a href="https://www.lynda.com/">Lynda</a></li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                                <!--Ukrainian<a href="https://prometheus.org.ua/courses/">Prometeus</a>and https://www.youtube.com/channel/UCwqvKZUOvQCkAwTDn8klp0g-->
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Post -->
+                    <article class="box post">
+                        <header>
+                            <h2 id="soft"><a href="#sci">Science</a> |<strong>Software</strong> | <a
+                                    href="#code">Coding</a> | <a href="#opportune">Opportunities</a> | <a
+                                    href="#kids">Kids&#38;teens</a></h2>
+                        </header>
                         <ol>
-                        <li>
-                        <em><a target="_blanck" href="https://oyc.yale.edu/NODE/66">Freshman Organic Chemistry I</a>, CHEM 125A, J. Michael McBride, Yale</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PL3F629F73640F831D">video lectures from Fall 2008</a>). 
-                        <p>Key concepts: Rigorous introduction to bonding in molecules, orbitals and reactivity, history of chemistry, stereochemistry, transition state theory.
-                        <br>Prerequisites: First year chemistry, physics and math
-                        </li>
+                            <!--Clouds-->
+                            <li> Use one (or more) of the <strong>cloud storage</strong> services. The most popular are:
+                                <a href="https://www.dropbox.com" target="_blank">Dropbox</a>,
+                                <a href="https://www.google.com/drive" target="_blank">Google Drive</a>
+                                and <a href="https://onedrive.live.com/" target="_blank">Onedrive</a>. All three of
+                                those will give you some space for free. Dropbox also gives you referral bonus space,
+                                so make sure to sign-up using my <a href="https://db.tt/juPXt1J2"
+                                    target="_blank">referral link</a>! Thanks :)
+                                <p>You might also be eligible for extra space from your university or company or if you
+                                    purchase a Samsung or an HTC phone.
+                                    The benefits of cloud storage are enormous: faster and easier sharing of data,
+                                    access from multiple computers, better back-up, etc.</p>
+                            </li>
+                            <!--Latex-->
+                            <li><a href="https://www.latex-project.org" target="_blank"><strong>Latex</strong></a> is a
+                                typesetting language for mathematicians, scientists and engineers. You can use it to
+                                write thesis, articles, notes etc. - once you learn it, it's much easier to type math
+                                with Latex. There are two commonly used tutorials for it: a <a
+                                    href="http://www.tug.org/begin.html" target="_blank"><strong>shorter
+                                        one</strong></a> and a <a href="https://tobi.oetiker.ch/lshort/lshort.pdf"
+                                    target="_blank"><strong>more extensive one</strong></a>
+                                You can also print and use this <a href="http://www.stdout.org/~winston/latex/"
+                                    target="_blank">cheat sheet</a>.
+                            </li>
+                            <!--Citation-->
+                            <li>
+                                Use a citation manager. Everybody has their own preference, but <a target="_blank"
+                                    href="https://www.mendeley.com/download-desktop/"><strong>Mendeley</strong></a> is a
+                                common choise. It is free and available for desktop and mobile; it allows to save papers
+                                with highlights, notes etc. and automatically connects to your Mendeley profile.
+                                <br><a href="http://www.citethisforme.com" target="_blank"><strong>Cite this for
+                                        me</strong></a> allows you to quickly manage a few citations online. It saves
+                                time when you are working on a small report with up to 10 citations.
+                                <br>Other common citation managers are: <a target="_blank"
+                                    href="https://endnote.com/downloads/"><strong>Endnote</strong></a> and <a
+                                    target="_blank" href="https://www.zotero.org/"><strong>Zotero</strong></a>. Caltech
+                                supports the licence for Zotero, find out if your school is paying for one of them. But
+                                beware, that your privileges will expire once you graduate and you might lose your
+                                account or be forced to pay for it. There are ways to export your citations from one
+                                manager to the other, but well... it's a pain.
+                            </li>
+                            <!--Researcher-->
+                            <li>
+                                Stay on top of the research you have to follow with the mobile app called <a
+                                    href="https://www.researcher-app.com/"><strong>Researcher</strong></a>. It allows
+                                you to track specific journals, keywords and browse through the abstracts of newly
+                                published articles in the news feed. You can then bookmark an item that caught your
+                                attention
+                            </li>
+                            <!--Notepad++-->
+                            <li>
+                                <a href="https://notepad-plus-plus.org/" target="_blank"><strong>Notepad++</strong></a>
+                                is my preferred text editor on Windows machines. It's tiny, lightning fast and has what
+                                one needs to code and edit text files.
+                            </li>
+                            <!--Code-->
+                            <li>
+                                I use <a target="_blank" href="https://code.visualstudio.com/"><strong>Visual Studio
+                                        Code</strong></a> to edit, compile and run trial code. It has multi-language
+                                support and cool interface with many useful and user-friendly features. It requires some
+                                disk space, but not an autrocious amount and it runs smoothly. Other popular IDE's are:
+                                <a href="https://visualstudio.microsoft.com/vs/">Visual studio IDE</a> is very heavy; <a
+                                    href="https://www.eclipse.org/downloads/">Eclipse</a>, <a
+                                    href="https://codelite.org/">CodeLite IDE</a>; <a
+                                    href="https://www.jetbrains.com/clion/">Clion</a> focuses on C-languages and <a
+                                    href="https://netbeans.org/">NetBeans</a> focuses on Java; <a
+                                    href="https://developer.apple.com/xcode/">Xcode</a> is tailored for Mac development;
+                                according to <a href="https://www.anaconda.com/what-is-anaconda/">Anaconda</a>, it is
+                                the most popular for Data Science with R and Python.
+                            </li>
 
-                        <li>
-                        <em><a target="_blanck" href="https://oyc.yale.edu/NODE/71">Freshman Organic Chemistry II</a>, CHEM 125B, J. Michael McBride, Yale</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PLB572BA3ED0F700F1">video lectures from Spring 2011</a>). 
-                        <br>Key concepts: Organic mechanisms, NMR spectroscopy.
-                        </li>
-                        </ol>
-                        </li>                            
-<!--Thermo and Kinetics MIT-->
-                        <li>
-                        <em><a target="_blanck" href="https://ocw.mit.edu/courses/chemistry/5-60-thermodynamics-kinetics-spring-2008/">Thermodynamics &#38; Kinetics</a>, MIT 5.60,  Keith A. Nelson, Spring 2008</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PLA62087102CC93765">video lectures from Spring 2008</a>). 
-                        <br>Key concepts: thermodynamics, equilibria, kinetics and catalysis.
-                        <br>Prerequisites: First year calculus, chemistry and physics. 
-                        </li>
-<!--Solid state-->
-                       <li>
-                        <em><a target="_blanck" href="https://www.youtube.com/playlist?list=PLaNkJORnlhZnC6E3z1-i7WERkferhQDzq">Solid State Basics</a>, Steven H. Simon, Oxford</em>. 
-                        <br>Key concepts: electrons in metals, basic chemistry, reciprocal lattice, band theory, magnatism. 
-                        <br>First year physics
-                        </li>
-                        </ul>
-
-                    <h5><a href="javascript:unhide('under_syn');">Synthetic Chemist (Show/Hide)</a></h5>
-                        <ul class=hidden id="under_syn">
-<!--UCI Organic Chem-->                            
-                        <li>
-                        <ol>
-                        <li>
-                        <em><a target="_blanck" href="http://ocw.uci.edu/courses/chem_51a_organic_chemistry.html">Organic Chemistry</a>, Chem 51A, Susan King, UCI</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7mjll_2I34SguRYiCOILUxD">video lectures</a>). 
-                        <br>Alternative version: <em><a target="_blanck" href="http://ocw.uci.edu/courses/chem_51a_organic_chemistry_nowick.html">Organic Chemistry</a>, Chem 51A, James Nowick, UCI</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PL6539BAED55972D64">video lectures from 2009</a>). 
-                        <br>Key concepts: mechanistically emphesized survey of organic reactions.
-                        <br>Prerequisites: First year chemistry
-                        </li>
-
-                        <li>    
-                        <em><a target="_blanck" href="http://ocw.uci.edu/courses/chem_51b_organic_chemistry.html">Organic Chemistry</a>, CHEM 51B, Susan King, UCI</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7mVCA9CybcHUltOLp0GPJJ3">video lectures</a>). 
-                        <br>Alternative version:<em><a target="_blanck" href="http://ocw.uci.edu/courses/chem_51b_organic_chemistry_van_vranken.html">Organic Chemistry</a>, CHEM 51B, David Van Vranken, Winter, 2013 UCI</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PLwRdjDrWEPxA500GsmOUjOZ93dRplBCIh">video lectures</a>). 
-                        <br>Key concepts: mechanistically emphesized survey of organic reactions.
-                        </li>
-
-                        <li>    
-                        <em><a target="_blanck" href="http://ocw.uci.edu/courses/chem_51c_organic_chemistry.html">Organic Chemistry</a>, CHEM 51C, Susan King, UCI</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7nqVjmYjBSZOkjln_K31ATj">video lectures</a>). 
-                        <br>Alternative version:<em><a target="_blanck" href="http://ocw.uci.edu/courses/chem_51c_organic_chemistry_nowick.html">Organic Chemistry</a>, CHEM 51C, James Nowick, UCI</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PL47B3E3FDB175BB8B">video lectures</a>).
-                        <br>Key concepts: mechanistically emphesized survey of organic reactions.
-                        </li>
-
-                        <li>    
-                        <em><a target="_blanck" href="http://ocw.uci.edu/courses/chem_125_advanced_organic_chemistry.html">Advanced Organic Chemistry</a>, CHEM 125, James Nowick, UCI</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7mfiAfa8nNwbY6RT2ZPDF9K">video lectures</a>). 
-                            <p>Key concepts: mechanistically emphesized survey of organic reactions.
-                        </li>
-                        </ol>
-                        </li>
-                        </ul>
-                                   <ul>
-<!--UCI Chem Quantum-->                            
-                        <li>
-                        <ol>
-                        <li>
-                        <em><a target="_blanck" href="http://ocw.uci.edu/courses/chem_131a_quantum_principles.html">Quantum Principles</a>, Chem 131A, A.J. Shaka, UCI</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7nTiUs5sDP6PMiFnUXuFdhG">video lectures</a>). 
-                        <br>Key concepts: angular momentum, spin, hydrogen atom, spectroscopy, approximation methods, Born-Oppenheimer, MO theory.
-                        <br>Prerequisites: First year calculus, chemistry and physics. 
-                        </li>
-
-                        <li>    
-                        <em><a target="_blanck" href="http://ocw.uci.edu/courses/chem_131b_molecular_structure_and_elementary_statistical_mechanics.html"> Molecular Structure &#38; Statistical Mechanics</a>, CHEM 131B, Rachel Martin, UCI</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7nPsoPwfvT7LiZKQ0zxKSUW">video lectures</a>). 
-                        <br>Key concepts: Group theory, spectroscopy, statistical mechanics.
-                        </li>
-
-                        <li>    
-                        <em><a target="_blanck" href="http://ocw.uci.edu/courses/chem_131c_thermodynamics_and_chemical_dynamics.html">Thermodynamics and Chemical Dynamics</a>, CHEM 131C, Reginald Penner, UCI</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PL3F3C30431F2E7076">video lectures</a>). 
-                        <br>Key concepts: thermodynamics, transition state theory.
-                        </li>
-                        </ol>
-                        </li>
-<!--UCI Inorganic Chem-->                             
-                       <li>    
-                        <em><a target="_blanck" href="http://ocw.uci.edu/courses/chem_107_inorganic_chemistry.html">Inorganic Chemistry</a>, CHEM 107, Matthew Law, UCI</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7kGnKLTbdwZ3IGVNXK43k7S">video lectures</a>). 
-                        <br>Key concepts: symmetry, main group and transition metal chemistry, MO theory, Jahn-Teller effect.
-                        <br>Prerequisites: First year chemistry, physics and math
-                        </li>
-                        </ul>
-
-            </div>
-             
-                <h3><a href="javascript:unhide('grad');">Graduate level (Show/Hide)</a></h3>
-             <div class=hidden id="grad">
-                     <h5><a href="javascript:unhide('grad_the');">Theoretical Chemist (Show/Hide)</a></h5>
-                        <ul class=hidden id="grad_the">
-<!--Advanced QM-->
-                        <li>
-                        <strong id="#2Ph3c1">2Ph3c1</strong> <em><a target="_blanck" href="https://www.youtube.com/playlist?list=PLDfPUNusx1Eo60qx3Od2KLUL4b7VDPo9F">Advanced quantum theory</a>, Tobias Osborne, TU Deflt, Summer, 2016</em> 
-                        <p>Key concepts: Many-particle quantum mechanics, second quantization.
-                        <br>Prerequisites: Real Analysis, Group theory, Physics Undergrad Quantum
-                        </li>
-<!--Quant Info-->
-                        <li>
-                        <em><a target="_blanck" href="https://www.youtube.com/playlist?list=PLDfPUNusx1EoBAn8vXYjcF95R7mI_eR6o">Mathematical methods of quantum information theory</a>, TU Deflt</em> 
-                        <br><!--Key concepts: Many-particle quantum mechanics, second quantization.
-                        <br>-->Prerequisites: Advanced Quantum Mechanics 
-                        </li>
-<!--Physics math techniques Madras-->
-                        <li>
-                        <em><a target="_blanck" href="https://www.youtube.com/playlist?list=PLiUVvsKxTUr66oLF6Pzirc1EgSstMbRZR">Selected Topics in Mathematical Physics</a>, V. Balakrishnan, IIT Madras, Fall 2013</em> 
-                        <br>Key concepts: analytic complex functions, calculus of residues, linear response theory, Laplace and Fourier transform, Green's functions, Group of rotations.
-                        <br>Prerequisites: Strong Undergraduate physics and math
-                        </li>
-<!--Bender asymptotics-->
-                        <li>
-                        <em><a target="_blanck" href="https://www.youtube.com/playlist?list=PLFMKfDJ8QzbOU-_WsJR6H5rKASs7Sbip_">Mathematical Physics</a>, Carl Bender (Washington University), PSI, Phys624, Fall 2011</em> 
-                        <br>Key concepts: Asymptototic series, summation of divergent series.
-                        <br>Prerequisites: Advanced calculus
-                        </li>
-<!--QFT Tong-->
-                        <li>
-                        <em><a target="_blanck" href="http://www.damtp.cam.ac.uk/user/tong/qft.html">Quantum Field Theory</a>, David Tong, Cambridge, Fall 2013</em> (<a href="https://www.youtube.com/playlist?list=PLaNkJORnlhZlVkrpQVvCTVvGAMIlXL88Y">video lectures from PSI, Fall, 2009</a>. 
-                        <br>Key concepts: CFT, quantization, Dirac equation.
-                        <br>Prerequisites: Advanced Quantum
-                        </li>
-                        </ul>
-                    <h5><a href="javascript:unhide('grad_exp');">Experimental Chemist (Show/Hide)</a></h5>
-                        <ul class=hidden id="grad_exp">
-                        <li>
-                        <ol>
-                        <li>
-                        <em><a target="_blanck" href="https://ocw.mit.edu/courses/physics/8-421-atomic-and-optical-physics-i-spring-2014/">Atomic and Optical Physics I</a>, Wolfgang Ketterle, MIT 8.421, Spring 2014</em> (<a href="https://www.youtube.com/playlist?list=PLUl4u3cNGP62FPGcyFJkzhqq9c5cHCK32">video lectures from Spring, 2014</a>. 
-                        <br>Key concepts: interaction of radiation with atoms, dressed atom formalism, masers and lasers, cavity QED; structure of atoms; time reversal, parity violations, Bell's inequalities.
-                        </li>
-
-                        <li>
-                        <em><a target="_blanck" href="https://ocw.mit.edu/courses/physics/8-422-atomic-and-optical-physics-ii-spring-2013/">Atomic and Optical Physics II</a>, Wolfgang Ketterle, MIT 8.422, Spring 2013</em> (<a href="https://www.youtube.com/playlist?list=PLUl4u3cNGP62uOSArqLf4vNLiZtgIRm1K">video lectures from Spring, 2013</a>. 
-                        <br>Key concepts: light-squeezed states; multi-photon processes, Raman scattering; superradiance; trapping and cooling; quantum scattering theory, ultracold collisions.
-                        </li>
-                        </ol>
-                        </li>
-                        </ul>
-                    <h5><a href="javascript:unhide('grad_syn');">Synthetic Chemist (Show/Hide)</a></h5>
-                        <ul class=hidden id="grad_syn">
-<!--Organic mechanisms-->
-                        <li>
-                        <ol>
-                        <li>
-                        <em><a target="_blanck" href="https://canvas.eee.uci.edu/courses/12820">Organic Reactions Mechanisms I</a>, Chem 201, David Van Vranken, UCI</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7mHQaOx9Crb0A3D_RHuenAB">video lectures</a>). 
-                        <br>Key concepts: MO theory, aromaticity, carbonium ion, free radicals, carbenes and carbanions, photochemistry.
-                        <br>Prerequisites: Advanced Undergrad Organic Chemistry
-                        </li>
-
-                        <li>
-                        <em><a target="_blanck" href="http://ocw.uci.edu/courses/chem_202_organic_reaction_mechanisms_ii.html">Organic Reactions Mechanisms II</a>, Chem 202, David Van Vranken, UCI</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PLaLOVNqqD-2Ed7LXPGYMcDkW6UvdKrRJo">video lectures</a>). 
-                        <br>Key concepts: mechanisms, kinetics, conformational analysis, computational methods, stereoelectronics, catalysis.
-                        </li>
-
-                        <li>
-                        <em><a target="_blanck" href="http://ocw.uci.edu/courses/chem_203_organic_spectroscopy.html">Organic Spectroscopy</a>, Chem 203, James Nowick, UCI</em> (<a target="_blanck" href="https://www.youtube.com/playlist?list=PLqOZ6FD_RQ7lkH_qALcZ6u7Z214W_TLxv">video lectures</a>). 
-                        <br>Key concepts: mass spectrometry; ultraviolet, chiroptical, infrared, and nuclear magnetic resonance spectroscopy.
-                        </li>
-                        </ol>
-                        </li>
-                        </ul>
-                   <ul>
-<!--Kardar's stat Mech-->
-                        <li>
-                        <ol>
-                        <li>
-                        <em><a target="_blanck" href="https://ocw.mit.edu/courses/physics/8-333-statistical-mechanics-i-statistical-mechanics-of-particles-fall-2013/">Statistical Mechanics I</a>, Mehran Kardar, MIT 8.333, Fall 2013</em> (<a href="https://www.youtube.com/playlist?list=PLUl4u3cNGP60gl3fdUTKRrt5t_GPx2sRg">video lectures from Fall, 2013</a>. 
-                        <br>Key concepts: thermodynamics, probability theory, kinetic theory, classical statistical mechanics, interacting systems, quantum statistical mechanics, and identical particles.
-                        <br>Undergraduate Statistical Mechanics
-                        </li>
-
-                        <li>
-                        <em><a target="_blanck" href="https://ocw.mit.edu/courses/physics/8-334-statistical-mechanics-ii-statistical-physics-of-fields-spring-2014/">Statistical Mechanics II</a>, Mehran Kardar, MIT 8.334, Spring 2014</em> (<a href="https://www.youtube.com/playlist?list=PLUl4u3cNGP63HkEHvYaNJiO0UCUmY0Ts7">video lectures from Spring, 2014</a>. 
-                        <br>Key concepts: Landau-Ginzburg, Scaling Hypothesis, Renormalization Group.
-                        </li>
-                        </ol>
-                        </li>
-                        </ul>
-
-                 </div>
-             
-                <div>
-                <p><a href="javascript:unhide('reps');">Click here to see a list of all the course repositories that I know of... Have fun!</a></p>
-                <div id="reps" class="hidden">
-                <ul>
-                    <li>Free online course repositories:
-                        <ol>
-                            <li><a href="https://www.class-central.com/">Class Central</a></li>
-                            <li><a href="https://www.coursera.org/browse">Coursera</a></li>
-                            <li><a href="https://www.khanacademy.org/">Khan Academy</a></li>
-                            <li><a href="https://www.edx.org/course">edX</a></li>
-                            <li><a href="https://academicearth.org/">Academic Earth</a></li>
-                        </ol>
-                    </li>
-
-                    <li>University-specific online learning platforms: 
-                        <ol>
-                            <li><a href="https://ocw.mit.edu/index.htm">MIT Opencourseware</a></li>
-                        <li><a href="https://www.extension.harvard.edu/open-learning-initiative">Harvard open learning initiative</a></li> 
-                        <li><a href="https://www.berkeley.edu/academics/online-learning">UC Berkeley Online learning</a></li>
-                        <li><a href="http://online.caltech.edu/courses">Caltech</a></li>
-                        <li><a href="https://online.stanford.edu/courses">Stanford online</a></li> 
-                        <li><a href="http://ocw.uci.edu/courses">UCI Open</a></li>
-                        <li><a href="https://ocw.tudelft.nl/">TU Delft Opencourseware</a></li>
-                        <li><a href="https://www.youtube.com/user/nptelhrd">Indian National Program on Technology and Advanced Learning</a></li>
-                        <li><a href="http://pirsa.org/">Perimeter Institute Recorded Seminar Archive</a></li>
-                        </ol>
-                        </li>
-
-                        <li>Commercial learning platforms with a free trial: 
-                            <ol>
-                                <li><a href="https://www.udemy.com/">Udemy</a></li> 
-                                <li><a href="https://brilliant.org/">Brilliant</a></li>
-                                <li><a href="https://www.lynda.com/">Lynda</a></li>
-                            </ol>
-                        </li>
-                </ul>
-<!--Ukrainian<a href="https://prometheus.org.ua/courses/">Prometeus</a>and https://www.youtube.com/channel/UCwqvKZUOvQCkAwTDn8klp0g--> 
-                </div>
-                </div>
-       </article>                            
-<!-- Post -->
-                <article class="box post">
-                    <header>
-                        <h2 id="soft"><a href="#sci">Science</a> |<strong>Software</strong> | <a href="#code">Coding</a> | <a href="#opportune">Opportunities</a> | <a href="#kids">Kids&#38;teens</a></h2>
-                    </header>
-                    <ol>
-<!--Clouds-->
-                     <li> Use one (or more) of the <strong>cloud storage</strong> services. The most popular are: 
-                     <a href="https://www.dropbox.com" target="_blank">Dropbox</a>, 
-                     <a href="https://www.google.com/drive" target="_blank">Google Drive</a>
-                     and <a href="https://onedrive.live.com/" target="_blank">Onedrive</a>. All three of those will give you some space for free. Dropbox also gives you referral bonus space,
-                    so make sure to sign-up using my <a href="https://db.tt/juPXt1J2" target="_blank">referral link</a>! Thanks :)
-                     <p>You might also be eligible for extra space from your university or company or if you purchase a Samsung or an HTC phone.
-                     The benefits of cloud storage are enormous: faster and easier sharing of data, access from multiple computers, better back-up, etc.</p>
-                    </li>
-<!--Latex-->
-                        <li><a href="https://www.latex-project.org" target="_blank"><strong>Latex</strong></a> is a typesetting language for mathematicians, scientists and engineers. You can use it to write thesis, articles, notes etc. - once you learn it, it's much easier to type math with Latex. There are two commonly used tutorials for it: a <a href="http://www.tug.org/begin.html" target="_blank"><strong>shorter one</strong></a> and a <a href="https://tobi.oetiker.ch/lshort/lshort.pdf" target="_blank"><strong>more extensive one</strong></a>
-                        You can also print and use this <a href="http://www.stdout.org/~winston/latex/" target="_blank">cheat sheet</a>.
-                    </li>
-<!--Citation-->
-                    <li>
-                    Use a citation manager. Everybody has their own preference, but <a target="_blank" href="https://www.mendeley.com/download-desktop/"><strong>Mendeley</strong></a> is a common choise. It is free and available for desctop and mobile; it allows to save papers with highlights, notes etc. and automatically connects to your Mendeley profile. 
-                    <br><a href="http://www.citethisforme.com" target="_blank"><strong>Cite this for me</strong></a> allows you to quickly manage a few citations online. It saves time when you are working on a small report with up to 10 citations.
-                        <br>Other common citation managers are: <a target="_blank" href="https://endnote.com/downloads/"><strong>Endnote</strong></a> and  <a target="_blank" href="https://www.zotero.org/"><strong>Zotero</strong></a>. Caltech supports the licence for Zotero, find out if your school is paying for one of them. But beware, that your privilages will expire once you graduate and you might lose your account or be forced to pay for it. There are ways to export your citations from one manager to the other, but well... it's a pain.
-                    </li>
-<!--Researcher-->
-                    <li>
-                    Stay on top of the research you have to follow with the mobile app called <a href="https://www.researcher-app.com/"><strong>Researcher</strong></a>. It allows you to track specific journals, keywords and browse through the abstracts of newly published articles in the news feed. You can then bookmark an item that caught your attention
-                        </li>
-<!--Notepad++-->
-                    <li> 
-                        <a href="https://notepad-plus-plus.org/" target="_blank"><strong>Notepad++</strong></a> is my preferred text editor on Windows machines. It's tiny, lightning fast and has what one needs to code and edit text files.
-                    </li>
-<!--Code-->
-                    <li> 
-                    I use <a target="_blank" href="https://code.visualstudio.com/"><strong>Visual Studio Code</strong></a> to edit, compile and run trial code. It has multi-language support and cool interface with many useful and user-friendly features. It requires some disk space, but not an autrocious amount and it runs smoothly. Other popular IDE's are: <a href="https://visualstudio.microsoft.com/vs/">Visual studio IDE</a> is very heavy; <a href="https://www.eclipse.org/downloads/">Eclipse</a>, <a href="https://codelite.org/">CodeLite IDE</a>; <a href="https://www.jetbrains.com/clion/">Clion</a> focuses on C-languages and <a href="https://netbeans.org/">NetBeans</a> focuses on Java; <a href="https://developer.apple.com/xcode/">Xcode</a> is tailored for Mac development; according to <a href="https://www.anaconda.com/what-is-anaconda/">Anaconda</a>, it is the most popular for Data Science with R and Python.
-                        </li>
-
-<!--    <li>QTGrace</li>
+                            <!--    <li>QTGrace</li>
                                                         <li> If you don't have an e-mail of a form <strong> first_name.last_name@something</strong> try to set it up.
-                    Preferrably it is with the extension of your organization (e.g. university, company etc.).
-                    If not, the <a>gmail.com</a> or other common extensions are great too. If the standart form is taken, try something similar, as described <a href="https://mashable.com/2012/06/04/gmail-address-custom/#.bTLb.kTwmqq" target="_blank">here</a>.
+                    Preferably it is with the extension of your organization (e.g. university, company etc.).
+                    If not, the <a>gmail.com</a> or other common extensions are great too. If the standard form is taken, try something similar, as described <a href="https://mashable.com/2012/06/04/gmail-address-custom/#.bTLb.kTwmqq" target="_blank">here</a>.
                     Use this e-mail for important/professional things only. Have a different e-mail account for subscriptions, temporary contacts etc. 
                      </li>-->
-                    </ol>
-            </article>
-<!-- Post -->
-                <article class="box post">
-                    <header>
-                        <h2 id="code"> <a href="#sci">Science</a> | <a href="#soft">Software</a> | <strong>Coding</strong> | <a href="#opportune">Opportunities</a> | <a href="#kids">Kids&#38;teens</a></h2>
-                    </header>
+                        </ol>
+                    </article>
+                    <!-- Post -->
+                    <article class="box post">
+                        <header>
+                            <h2 id="code"> <a href="#sci">Science</a> | <a href="#soft">Software</a> |
+                                <strong>Coding</strong> | <a href="#opportune">Opportunities</a> | <a
+                                    href="#kids">Kids&#38;teens</a></h2>
+                        </header>
 
-                    <ol>
-<!--DataCamp-->                        
-                    <li><a href="https://www.datacamp.com" target="_blank"><strong>DataCamp</strong></a> has a selection of courses on 
-                    <em>R</em>, <em>Python</em>, <em>Statistics</em> and <em>Data analysis</em>.
-                    </li>
-<!--Interactive vim tutorial-->
-                    <li><a href="https://www.openvim.com" target="_blank"><strong>Interactive vim tutorial</strong></a> vim is a
-                    popular text editor in Linux-based systems. Print and use a 
-                        <a href="http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html" target="_blank">graphical cheat sheet</a>
-                    or a <a href="https://www.cheatography.com/ericg/cheat-sheets/vi-editor/" target="_blank">more conventional one.
-                        </a></li>  
-<!--Cheatsheet wallpaper-->
-                    <li>This <a href="https://kernel.fuhrer.web.id/download-linux-wallpapers-that-are-also-cheat-sheets/" target="_blank">
-                        <strong>Cheatsheet wallpaper</strong></a> is really nice way to have the <em>shell</em>, <em><a href="https://www.emacswiki.org/emacs/SiteMap" target="_blank">Emacs</a></em> and <em><a href="https://www.vim.org/docs.php" target="_blank">vim</a></em> commands at your fingertips.
-                    </li>
-<!--Website-->
-                    <li> Set up your own <strong>web-site</strong>. Not only will it be fun and useful exercise as you will learn html and css, you will have an opportunity to stand out! I found 
-                    <a href="https://www.elsevier.com/connect/creating-a-simple-and-effective-academic-personal-website">this link</a>
-                    and the templates from <strong><a href="http://html5up.net/">HTML5</a></strong> to be immensely helpful. I used 
-                    <a href="https://html5up.net/strongly-typed">this template</a> from them for the web-site you are browsing now. I also used <a href="http://brackets.io" target="_blank"><strong>brackets</strong></a> to edit the html file.
-                        <p>You do need a domain to host a web-site. Check if your school/organization is hosting for free. Otherwise, you will need to purchase a domain. On the bright side, you will have freedom of choice for your domain name! <a href="https://firstsiteguide.com/choose-domain/" target="_blank">This website</a> discusses the issue.</p>
-                        </li>
-                    <li>Check out a bunch of educational and fun coding games in the <a href="#kids">Kids&#38;teens</a> section!</li>
-                    </ol>
-            </article>
-<!-- Opportunities -->
-                <article class="box post">
-                    <header>
-                        <h2 id="opportune"> <a href="#sci">Science</a> | <a href="#soft">Software</a> | <a href="#code">Coding</a> | <strong>Opportunities </strong> | <a href="#kids">Kids&#38;teens</a></h2>
-                    </header>
-                <table class="border">
-                      <tr>
-                        <th>High School students</th>
-                        <td><a href="https://perimeterinstitute.ca/outreach/students/programs/international-summer-school-young-physicists">International summer school for young physicists</a>, Perimeter Institute, Canada;
-                        <br><a href="https://student.societyforscience.org/isef-faq">Intel ISEF competition</a>;
-                        <br>CERN's <a href="http://scool.web.cern.ch/">S'Cool Lab</a> and <a href="http://beamline-for-schools.web.cern.ch/">Beamline for schools</a> programs
-                          </td>
-                      </tr>
-                      <tr>
-                        <th>High School graduates</th>
-                        <td><a href="http://future.utoronto.ca/pearson">Pearson (international) Scholarship</a> at the University of Toronto;
-                        <br><a href="http://www.ox.ac.uk/admissions/undergraduate/fees-and-funding/oxford-support/reach-oxford-scholarship">Oxford's Reach scholarship</a> and the <a href="http://www.ox.ac.uk/admissions/graduate/fees-and-funding/fees-funding-and-scholarship-search/hill-foundation-scholarships">Hill foundation</a> scholarship for Russian citizens;
-                        <br><a href="https://www.cambridgetrust.org/scholarships/?country=all&degree=Undergraduate&subject=all&college=all&submit=Search">Cambridge scholarships</a>, etc.
-                          </td>
-                      </tr>
-                     <tr>
-                        <th>Undergrad students</th>
-                         <td><a href="https://www.weizmann.ac.il/feinberg/admissions/young-weizmann-scholars/about-program">Young Weizmann Scholars</a>, and <a href="https://www.weizmann.ac.il/feinberg/admissions/kupcinet-getz-international-summer-school/about-program-0">Kupzinet-Getz International Summer School</a> in Israel;
-                        <br><a href="https://amgenscholars.com/">Amgen Scholars</a> Undergraduate Summer Research Program in Science and Biotechnology;
-                        <br><a href="https://groups.oist.jp/grad/research-interns">OIST Research Internships</a> in Japan;
-                        <br><a href="http://sfp.caltech.edu/programs/surf">Caltech summer research, SURF</a> in California, USA;
-                        <br><a href="https://cqiqc.physics.utoronto.ca/programs/index.html">CQIQC Program</a> in Toronto, Canada;
-                        <br><a href="https://perimeterinstitute.ca/training/undergraduate-students/undergraduate-theoretical-physics-summer-program">Undergraduate Summer Programs</a> at the Perimeter Institute, Canada;
-                        <br><a href="https://www.daad.de/rise/en/rise-germany/find-an-internship/">Internships in Germany</a>.
-                         </td>
-                    </tr>
-                    <tr>
-                        <th>Graduate students</th>
-                         <td><a href="https://www.telluridescience.org/schools/tellurideschoolontheoreticalchemistry#">Telluride Science Research Center schools</a> in the USA;
-                        <br><a href="https://www.cecam.org/schools.html">CECAM Summer schools</a> in Europe
-                        </td>
-                    </tr>
-                    </table>  
+                        <ol>
+                            <!--DataCamp-->
+                            <li><a href="https://www.datacamp.com" target="_blank"><strong>DataCamp</strong></a> has a
+                                selection of courses on
+                                <em>R</em>, <em>Python</em>, <em>Statistics</em> and <em>Data analysis</em>.
+                            </li>
+                            <!--Interactive vim tutorial-->
+                            <li><a href="https://www.openvim.com" target="_blank"><strong>Interactive vim
+                                        tutorial</strong></a> vim is a
+                                popular text editor in Linux-based systems. Print and use a
+                                <a href="http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html"
+                                    target="_blank">graphical cheat sheet</a>
+                                or a <a href="https://www.cheatography.com/ericg/cheat-sheets/vi-editor/"
+                                    target="_blank">more conventional one.
+                                </a></li>
+                            <!--Cheatsheet wallpaper-->
+                            <li>This <a
+                                    href="https://kernel.fuhrer.web.id/download-linux-wallpapers-that-are-also-cheat-sheets/"
+                                    target="_blank">
+                                    <strong>Cheatsheet wallpaper</strong></a> is really nice way to have the
+                                <em>shell</em>, <em><a href="https://www.emacswiki.org/emacs/SiteMap"
+                                        target="_blank">Emacs</a></em> and <em><a href="https://www.vim.org/docs.php"
+                                        target="_blank">vim</a></em> commands at your fingertips.
+                            </li>
+                            <!--Website-->
+                            <li> Set up your own <strong>web-site</strong>. Not only will it be fun and useful exercise
+                                as you will learn html and css, you will have an opportunity to stand out! I found
+                                <a
+                                    href="https://www.elsevier.com/connect/creating-a-simple-and-effective-academic-personal-website">this
+                                    link</a>
+                                and the templates from <strong><a href="http://html5up.net/">HTML5</a></strong> to be
+                                immensely helpful. I used
+                                <a href="https://html5up.net/strongly-typed">this template</a> from them for the
+                                web-site you are browsing now. I also used <a href="http://brackets.io"
+                                    target="_blank"><strong>brackets</strong></a> to edit the html file.
+                                <p>You do need a domain to host a web-site. Check if your school/organization is hosting
+                                    for free. Otherwise, you will need to purchase a domain. On the bright side, you
+                                    will have freedom of choice for your domain name! <a
+                                        href="https://firstsiteguide.com/choose-domain/" target="_blank">This
+                                        website</a> discusses the issue.</p>
+                            </li>
+                            <li>Check out a bunch of educational and fun coding games in the <a
+                                    href="#kids">Kids&#38;teens</a> section!</li>
+                        </ol>
+                    </article>
+                    <!-- Opportunities -->
+                    <article class="box post">
+                        <header>
+                            <h2 id="opportune"> <a href="#sci">Science</a> | <a href="#soft">Software</a> | <a
+                                    href="#code">Coding</a> | <strong>Opportunities </strong> | <a
+                                    href="#kids">Kids&#38;teens</a></h2>
+                        </header>
+                        <table class="border">
+                            <tr>
+                                <th>High School students</th>
+                                <td><a
+                                        href="https://perimeterinstitute.ca/outreach/students/programs/international-summer-school-young-physicists">International
+                                        summer school for young physicists</a>, Perimeter Institute, Canada;
+                                    <br><a href="https://student.societyforscience.org/isef-faq">Intel ISEF
+                                        competition</a>;
+                                    <br>CERN's <a href="http://scool.web.cern.ch/">S'Cool Lab</a> and <a
+                                        href="http://beamline-for-schools.web.cern.ch/">Beamline for schools</a>
+                                    programs
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>High School graduates</th>
+                                <td><a href="http://future.utoronto.ca/pearson">Pearson (international) Scholarship</a>
+                                    at the University of Toronto;
+                                    <br><a
+                                        href="http://www.ox.ac.uk/admissions/undergraduate/fees-and-funding/oxford-support/reach-oxford-scholarship">Oxford's
+                                        Reach scholarship</a> and the <a
+                                        href="http://www.ox.ac.uk/admissions/graduate/fees-and-funding/fees-funding-and-scholarship-search/hill-foundation-scholarships">Hill
+                                        foundation</a> scholarship for Russian citizens;
+                                    <br><a
+                                        href="https://www.cambridgetrust.org/scholarships/?country=all&degree=Undergraduate&subject=all&college=all&submit=Search">Cambridge
+                                        scholarships</a>, etc.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Undergrad students</th>
+                                <td><a
+                                        href="https://www.weizmann.ac.il/feinberg/admissions/young-weizmann-scholars/about-program">Young
+                                        Weizmann Scholars</a>, and <a
+                                        href="https://www.weizmann.ac.il/feinberg/admissions/kupcinet-getz-international-summer-school/about-program-0">Kupzinet-Getz
+                                        International Summer School</a> in Israel;
+                                    <br><a href="https://amgenscholars.com/">Amgen Scholars</a> Undergraduate Summer
+                                    Research Program in Science and Biotechnology;
+                                    <br><a href="https://groups.oist.jp/grad/research-interns">OIST Research
+                                        Internships</a> in Japan;
+                                    <br><a href="http://sfp.caltech.edu/programs/surf">Caltech summer research, SURF</a>
+                                    in California, USA;
+                                    <br><a href="https://cqiqc.physics.utoronto.ca/programs/index.html">CQIQC
+                                        Program</a> in Toronto, Canada;
+                                    <br><a
+                                        href="https://perimeterinstitute.ca/training/undergraduate-students/undergraduate-theoretical-physics-summer-program">Undergraduate
+                                        Summer Programs</a> at the Perimeter Institute, Canada;
+                                    <br><a
+                                        href="https://www.daad.de/rise/en/rise-germany/find-an-internship/">Internships
+                                        in Germany</a>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Graduate students</th>
+                                <td><a
+                                        href="https://www.telluridescience.org/schools/tellurideschoolontheoreticalchemistry#">Telluride
+                                        Science Research Center schools</a> in the USA;
+                                    <br><a href="https://www.cecam.org/schools.html">CECAM Summer schools</a> in Europe
+                                </td>
+                            </tr>
+                        </table>
 
 
-<!--High school: Flex, Fullbright</li>, CERN, X-lab, https://www.ukraineglobalscholars.org/ others - try to find repository-->
-             </article>
-<!-- Kids -->
-                <article class="box post">
-                    <header>
-                        <h2 id="kids"> <a href="#sci">Science</a> | <a href="#soft">Software</a> | <a href="#code">Coding</a> | <a href="#opportune">Opportunities </a> | <strong>Kids&#38;teens</strong></h2>
-                    </header>
-<!--									<span class="image featured"><img src="images/pic04.jpg" alt="" /></span>-->
-                    <ol>
-<!--Read-->                                        
-                    <li>
-                    If you are a <strong>bookworm</strong> like me, you never have enough time to read. I found a solution that works for me. <a href="https://www.overdrive.com/"><strong>Overdrive</strong></a> is an app, that offers access to thousands of e-books and audiobooks, that can be borrowed from your local library. All you need is a library card (the membership is typically free) and you can listen to the audiobooks any time you perform a chore, commute on public transit etc. Make sure to listen it on 1.5 speed at least! Otherwise the reading is painfully slow...
-                    <p>I am also happy with the <a href="https://www.goodreads.com/"><strong>Goodreads</strong></a> account to keep the books you read straight and to see what your friends are reading.</p>
-                    </li>
-<!--Science videos-->
-                    <li>
-                    Short videos explaining scientific concepts: <a href="https://ed.ted.com/"><strong>TED Ed</strong></a>, <a href="https://thecrashcourse.com/"><strong>Crash Course</strong></a>, <a href="http://www.socratica.com/"><strong>Socratica</strong></a>, <a href="https://www.scishow.com/"><strong>Scishow</strong></a> and many others. Most of these have their corresponding Youtube channels, many with kid-friendly versions. Enjoy!
-                    </li>
-<!--fast type-->
-                    <li>
-                    Learn to <strong>type fast</strong> with the websites like <a href="https://www.typingstudy.com/">Touch Typing study</a>, or <a href="https://www.typingclub.com/">TypingClub</a>, or my favorite <a href="https://www.typing.com/">typing.com</a>
-                    </li>
-<!--Coding games-->
-                    <li>
-                    Learn how to code with <a href="https://www.codecademy.com/"><strong>Codecademy</strong></a>, play the <a href="https://codecombat.com/"><strong>Code Combat</strong></a> game or code your own game on this website called <a href="https://www.codingame.com/start"><strong>Coding Game</strong></a>. You can also use <a href="https://scratch.mit.edu/about"><strong>Scratch</strong></a> to code stuff!
-                    </li>
-                    </ol>
-            </article>
+                        <!--High school: Flex, Fullbright</li>, CERN, X-lab, https://www.ukraineglobalscholars.org/ others - try to find repository-->
+                    </article>
+                    <!-- Kids -->
+                    <article class="box post">
+                        <header>
+                            <h2 id="kids"> <a href="#sci">Science</a> | <a href="#soft">Software</a> | <a
+                                    href="#code">Coding</a> | <a href="#opportune">Opportunities </a> |
+                                <strong>Kids&#38;teens</strong></h2>
+                        </header>
+                        <!--									<span class="image featured"><img src="images/pic04.jpg" alt="" /></span>-->
+                        <ol>
+                            <!--Read-->
+                            <li>
+                                If you are a <strong>bookworm</strong> like me, you never have enough time to read. I
+                                found a solution that works for me. <a
+                                    href="https://www.overdrive.com/"><strong>Overdrive</strong></a> is an app, that
+                                offers access to thousands of e-books and audiobooks, that can be borrowed from your
+                                local library. All you need is a library card (the membership is typically free) and you
+                                can listen to the audiobooks any time you perform a chore, commute on public transit
+                                etc. Make sure to listen it on 1.5 speed at least! Otherwise the reading is painfully
+                                slow...
+                                <p>I am also happy with the <a
+                                        href="https://www.goodreads.com/"><strong>Goodreads</strong></a> account to keep
+                                    the books you read straight and to see what your friends are reading.</p>
+                            </li>
+                            <!--Science videos-->
+                            <li>
+                                Short videos explaining scientific concepts: <a href="https://ed.ted.com/"><strong>TED
+                                        Ed</strong></a>, <a href="https://thecrashcourse.com/"><strong>Crash
+                                        Course</strong></a>, <a
+                                    href="http://www.socratica.com/"><strong>Socratica</strong></a>, <a
+                                    href="https://www.scishow.com/"><strong>Scishow</strong></a> and many others. Most
+                                of these have their corresponding Youtube channels, many with kid-friendly versions.
+                                Enjoy!
+                            </li>
+                            <!--fast type-->
+                            <li>
+                                Learn to <strong>type fast</strong> with the websites like <a
+                                    href="https://www.typingstudy.com/">Touch Typing study</a>, or <a
+                                    href="https://www.typingclub.com/">TypingClub</a>, or my favorite <a
+                                    href="https://www.typing.com/">typing.com</a>
+                            </li>
+                            <!--Coding games-->
+                            <li>
+                                Learn how to code with <a
+                                    href="https://www.codecademy.com/"><strong>Codecademy</strong></a>, play the <a
+                                    href="https://codecombat.com/"><strong>Code Combat</strong></a> game or code your
+                                own game on this website called <a href="https://www.codingame.com/start"><strong>Coding
+                                        Game</strong></a>. You can also use <a
+                                    href="https://scratch.mit.edu/about"><strong>Scratch</strong></a> to code stuff!
+                            </li>
+                        </ol>
+                    </article>
 
 
                 </div>
             </div>
         </section>
-<!-- Footer -->
+        <!-- Footer -->
         <section id="footer">
             <div class="container">
                 <div class="row aln-center">
@@ -850,16 +1353,19 @@ http://justinbois.github.io/bootcamp/2018/schedule.html-->
                     </div>-->
 
                     <div class="col-2 col-4-small">
-                            <a href="https://gymnasia21.lutsk.ua/" class="image featured"><img src="images/Logos/Lutsk_himnasia.jpg" alt="School #21" /></a>
+                        <a href="https://gymnasia21.lutsk.ua/" class="image featured"><img
+                                src="images/Logos/Lutsk_himnasia.jpg" alt="School #21" /></a>
                     </div>
-                            <!--<div class="col-2 col-4-small">
+                    <!--<div class="col-2 col-4-small">
 <a href="https://www.utoronto.ca/" class="image featured"><img src="images/Logos/Utoronto.svg" alt="University of Toronto" /></a>
-                    </div>		-->					
+                    </div>		-->
                     <div class="col-4 col-8-small">
-                        <a href="https://www.chem.utoronto.ca" class="image featured"><img src="images/Logos/Chem_UofT.png" alt="University of Toronto" /></a>
-                    </div>							
+                        <a href="https://www.chem.utoronto.ca" class="image featured"><img
+                                src="images/Logos/Chem_UofT.png" alt="University of Toronto" /></a>
+                    </div>
                     <div class="col-6 col-12-small" style="text-align:center">
-                                <a href="http://www.caltech.edu/" class="image featured"><img src="images/Logos/Caltech_Logo.svg" alt="Caltech" /></a>
+                        <a href="http://www.caltech.edu/" class="image featured"><img
+                                src="images/Logos/Caltech_Logo.svg" alt="Caltech" /></a>
                     </div>
 
                     <!--<div class="col-3 col-6-small">
@@ -870,11 +1376,11 @@ http://justinbois.github.io/bootcamp/2018/schedule.html-->
                 </div>
             </div>
 
-				<div class="container">
-					<header>
-						<h2>Questions or comments? <strong>Get in touch:</strong></h2>
-					</header>
-					<!--<div class="row">
+            <div class="container">
+                <header>
+                    <h2>Questions or comments? <strong>Get in touch:</strong></h2>
+                </header>
+                <!--<div class="row">
 						
 						<div class="col-6 col-12-medium">
 								<section>
@@ -898,69 +1404,79 @@ http://justinbois.github.io/bootcamp/2018/schedule.html-->
 							</div>
 							
 							<div class="col-6 col-12-medium">-->
-								<section>
-										<div class="row">
-										<div class="col-8">
-											<ul class="icons">
-                                                <li class="icon fa-home" style="font-size:22px;">
-													132 Noyes building<br>
-                                                </li>
-                                                <!--<li class="icon fa-phone" style="font-size:22px;">
+                <section>
+                    <div class="row">
+                        <div class="col-8">
+                            <ul class="icons">
+                                <li class="icon fa-home" style="font-size:22px;">
+                                    132 Noyes building<br>
+                                </li>
+                                <!--<li class="icon fa-phone" style="font-size:22px;">
 												</li>-->
-												<li class="icon fa-at" style="font-size:22px;">
-                                                	<a href="mailto:roman@caltech.edu">roman@caltech.edu</a>
-												</li>
-												<li class="icon fa-envelope" style="font-size:22px;">
-												1200 E. California Blvd<br>
-                                                    Mailcode: MC 127-72<br>
-													Pasadena, CA 91125, 
-                                                    USA
-                                                </li>
-								            </ul>
-										</div>
-										<div class="col-2">
-											<ul class="icons">
-												<a href="https://scholar.google.com.ua/citations?hl=en&user=YAAMduoAAAAJ" target="_blank">
-													<li class="icon fa-google-plus-square fa-3x"></li></a>
-												<a href="https://www.linkedin.com/in/roman-korol-a08656a8/" target="_blank">
-													<li class="icon fa-linkedin-square fa-3x"></li></a>
-												<a href="https://www.researchgate.net/profile/Roman_Korol" target="_blank">
-													<li class="icon fa-address-card fa-3x"></li></a>
-													<!--<li class="image featured"><img src="images/Logos/researchgate-brands.svg"></li></a>
+                                <li class="icon fa-at" style="font-size:22px;">
+                                    <a href="mailto:roman@caltech.edu">roman@caltech.edu</a>
+                                </li>
+                                <li class="icon fa-envelope" style="font-size:22px;">
+                                    1200 E. California Blvd<br>
+                                    Mailcode: MC 127-72<br>
+                                    Pasadena, CA 91125,
+                                    USA
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-2">
+                            <ul class="icons">
+                                <a href="https://scholar.google.com.ua/citations?hl=en&user=YAAMduoAAAAJ"
+                                    target="_blank">
+                                    <li class="icon fa-google-plus-square fa-3x"></li>
+                                </a>
+                                <a href="https://www.linkedin.com/in/roman-korol-a08656a8/" target="_blank">
+                                    <li class="icon fa-linkedin-square fa-3x"></li>
+                                </a>
+                                <a href="https://www.researchgate.net/profile/Roman_Korol" target="_blank">
+                                    <li class="icon fa-address-card fa-3x"></li>
+                                </a>
+                                <!--<li class="image featured"><img src="images/Logos/researchgate-brands.svg"></li></a>
 													<i class="fab fa-researchgate"></i>-->
-												<a href="https://academictree.org/chemistry/tree.php?pid=749712">
-													<li class="icon fa-sitemap fa-3x"></li></a>
-												
-											</ul>
-										</div>
-										<div class="col-2">
-											<ul class="icons">
-												<a href="https://www.facebook.com/korolrom.ukr" target="_blank">
-													<li class="icon fa-facebook-square fa-3x"></li></a>
-												<a href="https://twitter.com/RomanKorol7" target="_blank">
-													<li class="icon fa-twitter-square fa-3x"></li></a>
-												<a href="https://www.youtube.com/channel/UC-fv1tHbhu8BYR2feLiwtCQ" target="_blank">
-													<li class="icon fa-youtube fa-3x"></li></a>
-												<a href="https://www.goodreads.com/user/show/53633079-roman-korol" target="_blank">
-													<li class="icon fa-book fa-3x"></li></a>
-                                            </ul>	
-									</div>
-									</div>
-								</section>
-							
-						<!--</div></div>-->
-					</div>
+                                <a href="https://academictree.org/chemistry/tree.php?pid=749712" target="_blank">
+                                    <li class="icon fa-sitemap fa-3x"></li>
+                                </a>
+
+                            </ul>
+                        </div>
+                        <div class="col-2">
+                            <ul class="icons">
+                                <a href="https://www.facebook.com/korolrom.ukr" target="_blank">
+                                    <li class="icon fa-facebook-square fa-3x"></li>
+                                </a>
+                                <a href="https://twitter.com/RomanKorol7" target="_blank">
+                                    <li class="icon fa-twitter-square fa-3x"></li>
+                                </a>
+                                <a href="https://www.youtube.com/channel/UC-fv1tHbhu8BYR2feLiwtCQ" target="_blank">
+                                    <li class="icon fa-youtube fa-3x"></li>
+                                </a>
+                                <a href="https://www.goodreads.com/user/show/53633079-roman-korol" target="_blank">
+                                    <li class="icon fa-book fa-3x"></li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!--</div></div>-->
+            </div>
             <div id="copyright" class="container">
                 <ul class="links">
-                    <li>&copy; RK 2018. All rights reserved.</li><li>Original Design by <a href="http://html5up.net">HTML5 UP</a></li>
+                    <li>&copy; RK 2018. All rights reserved.</li>
+                    <li>Original Design by <a href="http://html5up.net">HTML5 UP</a></li>
                 </ul>
             </div>
-    </section>
-           </div>
+        </section>
+    </div>
 
 
 
-<!-- Scripts -->
+    <!-- Scripts -->
     <script src="assets/js/modal.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.dropotron.min.js"></script>
@@ -970,4 +1486,5 @@ http://justinbois.github.io/bootcamp/2018/schedule.html-->
     <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
