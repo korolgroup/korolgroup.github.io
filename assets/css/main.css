@@ -37,14 +37,9 @@ ol, ul {
 	list-style: none;
 }
 
-blockquote, q {
-	quotes: none;
+q {
+	font-style: italic;
 }
-
-	blockquote:before, blockquote:after, q:before, q:after {
-		content: '';
-		content: none;
-	}
 
 table {
 	border-collapse: collapse;

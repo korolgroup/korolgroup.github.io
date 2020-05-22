@@ -23,11 +23,11 @@
 
 				<!-- Logo -->
 				<h1 id="logo">Roman Korol</h1>
-				<p><a href="http://www.cce.caltech.edu/chemgrad">Graduate student</a> 
-					@ <a href="http://www.caltech.edu/">Caltech</a> 
+				<p><a href="http://www.cce.caltech.edu/chemgrad">Graduate student</a>
+					@ <a href="http://www.caltech.edu/">Caltech</a>
 					in <a href="http://www.cce.caltech.edu">Chemical Theory</a></p>
 				<!-- Nav -->
-				<nav id="nav">
+				<nav id="nav" role="navigation" aria-label="main menu">
 					<ul>
 						<li><a class="icon fa-home" href="index.html"><span>Home</span></a></li>
 						<li><a class="icon fa-university" href="research.html"><span>Research</span></a>
@@ -74,6 +74,7 @@
 			</div>
 		</section>
 
+
         <!-- Main -->
         <section id="main">
             <div class="container">
@@ -90,7 +91,7 @@
                                 </header>
 
                                 <header>
-                                    <h2><strong id="2020">2020</strong> | <a href="#2019">2019</a> | <a
+                                    <h2><strong id="2020"><time datetime="2020">2020</time></strong> | <a href="#2019"><time datetime="2019">2019</time></a> | <a
                                             href="#2018">2018</a></h2>
                                 </header>
                                 <!--PhD candidate-->
@@ -100,7 +101,7 @@
                                 <!-- Berkeley statmech-->
 
                                 <header>
-                                    <h2><a href="#2020">2020</a> | <strong id="2019">2019</strong> | <a
+                                    <h2><a href="#2020"><time datetime="2020">2020</time></a> | <strong id="2019"><time datetime="2019">2019</time></strong> | <a
                                             href="#2018">2018</a></h2>
                                 </header>
                                 <!-- Yosemite-->
@@ -111,14 +112,14 @@
 
                                     <article class="box excerpt">
                                         <header>
-                                            <span class="date"> July 29 - August 2</span>
+                                            <span class="date"> <time datetime="2019-07-29">July 29</date> - <time datetime="2019-08-02">August 2</date></span>
                                             <h3>Telluride School on Theoretical Chemistry</h3>
                                         </header>
                                         <div class="row aln-center">
                                             <div class="col-6">
-                                                <a class="image featured"
-                                                    title="The school was housed in the orange brick building at the basin of the mountain. Photo-credit: Meagan Mulcair"><img
-                                                        class="myBtn_multi" src="images/news/school.jpg" alt=""></a>
+                                                <a class="image featured">
+                                                  <img title="The school was housed in the orange brick building at the basin of the mountain. Photo-credit: Meagan Mulcair"
+                                                        class="myBtn_multi" src="images/news/school.jpg" alt="An orange brick building at the basin of the mountain, where the lectures were held."></a>
 
                                                 <!-- The Modal -->
                                                 <div class="modal modal_multi">
@@ -128,8 +129,8 @@
                                                 </div>
                                             </div>
                                             <div class="col-6">
-                                                <a class="image featured" title="Photo-credit: Meagan Mulcair"><img
-                                                        class="myBtn_multi" src="images/news/mountains.jpg" alt=""></a>
+                                                <a class="image featured"><img title="Photo-credit: Meagan Mulcair"
+                                                        class="myBtn_multi" src="images/news/mountains.jpg" alt="Mountains as seen from a gondola."></a>
 
                                                 <!-- The Modal -->
                                                 <div class="modal modal_multi">
@@ -160,9 +161,9 @@
                                         knowledge and amazing pictures.
                                         <div class="row aln-center">
                                             <div class="col-6">
-                                                <a class="image featured"
-                                                    title="Rainbows always remind me of Walter Lewin lectures: primary bow at 42&deg, Alexander dark band and an inverted secondary bow."><img
-                                                        class="myBtn_multi" src="images/news/rainbow.jpg" alt=""></a>
+                                                <a class="image featured">
+                                                  <img title="Rainbows always remind me of Walter Lewin lectures: primary bow at 42&deg, Alexander dark band and an inverted secondary bow."
+                                                        class="myBtn_multi" src="images/news/rainbow.jpg" alt="Double rainbow"></a>
 
                                                 <!-- The Modal -->
                                                 <div class="modal modal_multi">
@@ -172,8 +173,8 @@
                                                 </div>
                                             </div>
                                             <div class="col-6">
-                                                <a class="image featured" title="Photo-credit: Meagan Mulcair"><img
-                                                        class="myBtn_multi" src="images/news/gondolas.jpg" alt=""></a>
+                                                <a class="image featured" ><img title="Photo-credit: Meagan Mulcair"
+                                                        class="myBtn_multi" src="images/news/gondolas.jpg" alt="gondolas with the rain droplets on them, highlighted by the setting sun"></a>
 
                                                 <!-- The Modal -->
                                                 <div class="modal modal_multi">
@@ -193,13 +194,13 @@
 
                                     <article class="box excerpt">
                                         <header>
-                                            <span class="date">January 11-13</span>
+                                            <span class="date"><time datetime="2019-01-11">January 11-13</date></span>
                                             <h3>Berkeley Statistical Mechanics Meeting</h3>
                                         </header>
                                         <div class="row aln-center">
                                             <div class="col-8">
-                                                <a class="image featured" title=""><img class="myBtn_multi"
-                                                        src="images/news/trip_to_Berkeley.jpg" alt=""></a>
+                                                <a class="image featured"><img class="myBtn_multi" title="Group van trip to the meeting"
+                                                        src="images/news/trip_to_Berkeley.jpg" alt="A panorama-selfie of Miller group in the van driving to the meeting together."></a>
 
                                                 <!-- The Modal -->
                                                 <div class="modal modal_multi">
@@ -210,8 +211,9 @@
                                                 </div>
                                             </div>
                                             <div class="col-4">
-                                                <a class="image featured" title=""><img class="myBtn_multi"
-                                                        src="images/news/Poster_Spain.png" alt=""></a>
+                                                <a class="image featured"><img class="myBtn_multi"
+                                                        src="images/news/Poster_Spain.png" srcset="images/news/Poster_Spain_1.png 0.3x"
+                                                        alt="The poster I presented at the meeting on conductance of DNA"></a>
 
                                                 <!-- The Modal -->
                                                 <div class="modal modal_multi">
@@ -231,7 +233,7 @@
                                     </article>
                                 </li>
                                 <header>
-                                    <h2><a href="#2020">2020</a> | <a href="#2019">2019</a> | <strong
+                                    <h2><a href="#2020"><time datetime="2020">2020</time></a> | <a href="#2019"><time datetime="2019">2019</time></a> | <strong
                                             id="2018">2018</strong></h2>
                                 </header>
                                 <!--Joined Miller-->
@@ -239,7 +241,7 @@
                                     <!-- Excerpt -->
                                     <article class="box excerpt">
                                         <header>
-                                            <span class="date">December 5</span>
+                                            <span class="date"><time datetime="2018-12-05">December 5</date></span>
                                             <h3>Joined Miller group</h3>
                                         </header>
                                         It's official!!! I am a member of the Miller group.
@@ -252,13 +254,13 @@
 
                                     <article class="box excerpt">
                                         <header>
-                                            <span class="date">November 24</span>
+                                            <span class="date"><time datetime="2018-11-24">November 24</date></span>
                                             <h3>Holodomor remembrance</h3>
                                         </header>
                                         <div class="row aln-center">
                                             <div class="col-4">
-                                                <a class="image featured" title=""><img src="images/news/candle.jpg"
-                                                        alt=""></a>
+                                                <a class="image featured"><img src="images/news/candle.jpg"
+                                                        alt="A lit candle"></a>
                                             </div>
                                             <div class="col-8">
                                                 Every year in the evening of the fourth Saturday of November Ukrainians
@@ -266,7 +268,7 @@
                                                 deaths of 3-10 million people (according to different estimates) in a
                                                 purposefully inflicted famine (named <a target="_blank"
                                                     href="https://en.wikipedia.org/wiki/Holodomor">Holodomor</a>) under
-                                                the rule of Stalin in 1932-33. My candle was lit this year, I grieve and
+                                                the rule of Stalin in <time datetime="1932">1932-33</date>. My candle was lit this year, I grieve and
                                                 remember.
                                             </div>
                                         </div>
@@ -279,13 +281,13 @@
                                     <!-- Excerpt -->
                                     <article class="box excerpt">
                                         <header>
-                                            <span class="date">November 3</span>
+                                            <span class="date"><time datetime="2018-11-03">November 3</date></span>
                                             <h3>Ukrainian-Brazilian festival</h3>
                                         </header>
                                         <div class="row aln-center">
                                             <div class="col-3">
-                                                <a class="image featured" title=""><img class="myBtn_multi"
-                                                        src="images/news/Brazilfest1.jpg" alt=""></a>
+                                                <a class="image featured"><img class="myBtn_multi"
+                                                        src="images/news/Brazilfest1.jpg" alt="An advertisement inviting people to the Ukrainian-Brazilian festival on November third, 2018 in Barnsdall Art Part. There is a picture of a woman wearing blue-and-yellow dress, flowers and ribbons."></a>
 
                                                 <!-- The Modal -->
                                                 <div class="modal modal_multi">
@@ -295,8 +297,8 @@
                                                 </div>
                                             </div>
                                             <div class="col-5">
-                                                <a class="image featured" title=""><img class="myBtn_multi"
-                                                        src="images/news/Brazilfest2.jpg" alt=""></a>
+                                                <a class="image featured"><img class="myBtn_multi"
+                                                        src="images/news/Brazilfest2.jpg" alt="A collage of pictures from the festival featuring dancing, Brazilian and Ukrainian food and souvenirs, Ukrainian national clothes, artists."></a>
 
                                                 <!-- The Modal -->
                                                 <div class="modal modal_multi">
@@ -306,8 +308,8 @@
                                                 </div>
                                             </div>
                                             <div class="col-4">
-                                                <a class="image featured" title=""><img class="myBtn_multi"
-                                                        src="images/news/Brazilfest3.jpg" alt=""></a>
+                                                <a class="image featured"><img class="myBtn_multi"
+                                                        src="images/news/Brazilfest3.jpg" alt="Models wearing traditional Ukrainian clothes from different regions."></a>
 
                                                 <!-- The Modal -->
                                                 <div class="modal modal_multi">
@@ -334,13 +336,13 @@
                                     <!-- Excerpt -->
                                     <article class="box excerpt">
                                         <header>
-                                            <span class="date">October 14</span>
+                                            <span class="date"><time datetime="2018-10-14">October 14</date></span>
                                             <h3>Fabulous Fall Flying Fair</h3>
                                         </header>
                                         <div class="row aln-center">
                                             <div class="col-4">
-                                                <a class="image featured" title=""><img class="myBtn_multi"
-                                                        src="images/news/plane1.jpg" alt=""></a>
+                                                <a class="image featured"><img class="myBtn_multi"
+                                                        src="images/news/plane1.jpg" alt="A picture of a small plane taken from inside another plane"></a>
 
                                                 <!-- The Modal -->
                                                 <div class="modal modal_multi">
@@ -350,8 +352,8 @@
                                                 </div>
                                             </div>
                                             <div class="col-4">
-                                                <a class="image featured" title=""><img class="myBtn_multi"
-                                                        src="images/news/plane2.jpg" alt=""></a>
+                                                <a class="image featured"><img class="myBtn_multi"
+                                                        src="images/news/plane2.jpg" alt="Roman in the co-pilot seat experiencing the feeling of flying a small plane."></a>
 
                                                 <!-- The Modal -->
                                                 <div class="modal modal_multi">
@@ -361,8 +363,8 @@
                                                 </div>
                                             </div>
                                             <div class="col-4">
-                                                <a class="image featured" title=""><img class="myBtn_multi"
-                                                        src="images/news/plane3.jpeg" alt=""></a>
+                                                <a class="image featured"><img class="myBtn_multi"
+                                                        src="images/news/plane3.jpeg" alt="The view from a plane window over Pasadena"></a>
 
                                                 <!-- The Modal -->
                                                 <div class="modal modal_multi">
@@ -385,13 +387,13 @@
                                     <!-- Excerpt -->
                                     <article class="box excerpt">
                                         <header>
-                                            <span class="date">September 18</span>
+                                            <span class="date"><time datetime="2018-09-18">September 18</date></span>
                                             <h3>Started at Caltech</h3>
                                         </header>
                                         <div class="row aln-center">
                                             <div class="col-5">
-                                                <a class="image featured" title=""><img class="myBtn_multi"
-                                                        src="images/Logos/Caltech_seal.png" alt=""></a>
+                                                <a class="image featured"><img class="myBtn_multi"
+                                                        src="images/Logos/Caltech_seal.png" alt="Official seal of Caltech: an orange filled circle with two arms holding the torch in the middle. 1891 is written on the left. 'California institute of Technology' wraps on the outer edge of the circle."></a>
                                                 <!-- The Modal -->
                                                 <div class="modal modal_multi">
 
@@ -412,13 +414,13 @@
                                     <!-- Excerpt -->
                                     <article class="box excerpt">
                                         <header>
-                                            <span class="date">August 27-31</span>
+                                            <span class="date"><time datetime="2018-08-27">August 27-31</date></span>
                                             <h3>CECAM BIOMOLECTRO Conference</h3>
                                         </header>
                                         <div class="row aln-center">
                                             <div class="col-5">
-                                                <a class="image featured" title=""><img class="myBtn_multi"
-                                                        src="images/news/CECAM_Info.png" alt=""></a>
+                                                <a class="image featured" ><img class="myBtn_multi"
+                                                        src="images/news/CECAM_Info.png" alt="Poster advertisement of Biomolectro - a biomolecular electronics conference in the Autonomos University of Madrid, Spain."></a>
 
                                                 <!-- The Modal -->
                                                 <div class="modal modal_multi">
@@ -429,7 +431,8 @@
                                             </div>
                                             <div class="col-7">
                                                 <a class="image featured" title="Participants of the conference"><img
-                                                        class="myBtn_multi" src="images/news/CECAM_all.png" alt=""></a>
+                                                        class="myBtn_multi" src="images/news/CECAM_all.png" srcset="images/news/CECAM_all_1.png  0.3x"
+                                                        alt="Participants of the conference (a group of about a hundred people) looking up at the camera."></a>
 
                                                 <!-- The Modal -->
                                                 <div class="modal modal_multi">
@@ -460,12 +463,12 @@
                                     <!-- Excerpt -->
                                     <article class="box excerpt">
                                         <header>
-                                            <span class="date">August 15-20</span>
+                                            <span class="date"><time datetime="2018-08-15">August 15-20</date></span>
                                             <h3>FRI Media Camp</h3>
                                         </header>
                                         <div class="row aln-center">
                                             <div class="col-6">
-                                                <a class="image featured" title=""><img class="myBtn_multi"
+                                                <a class="image featured"><img class="myBtn_multi"
                                                         src="images/news/FRI1.jpg" alt=""></a>
 
                                                 <!-- The Modal -->
@@ -476,14 +479,15 @@
                                                 </div>
                                             </div>
                                             <div class="col-6">
-                                                <a class="image featured" title=""><img class="myBtn_multi"
-                                                        src="images/news/FRI2.jpg" alt=""></a>
+                                                <a class="image featured" ><img class="myBtn_multi" src="images/news/FRI2.jpg" srcset="images/news/FRI2_1.jpg 0.3x"
+                                                        alt="Roman standing next to a tree listening to a lecture. Trees and a lake in the background. Other people in the foreground."></a>
 
                                                 <!-- The Modal -->
                                                 <div class="modal modal_multi">
 
                                                     <span class="close close_multi">×</span>
-                                                    <img class="modal-content" src="images/news/FRI2.jpg" alt="">
+                                                    <img class="modal-content" src="images/news/FRI2.jpg" 
+                                                    alt="A group of people (about thirty) listening to a lecture outside. There are trees and tents in the background.">
                                                 </div>
                                             </div>
 
@@ -494,8 +498,8 @@
                                                 fake news, SMM, photography, and creative writing.
 
                                                 <div class="col-6">
-                                                    <a class="image featured" title=""><img class="myBtn_multi"
-                                                            src="images/news/FRI3.jpg" alt=""></a>
+                                                    <a class="image featured" ><img class="myBtn_multi"
+                                                            src="images/news/FRI3.jpg" alt="A giant fire, surrounded by a semicircle of people a safe distance away."></a>
 
                                                     <!-- The Modal -->
                                                     <div class="modal modal_multi">
@@ -506,8 +510,8 @@
                                                 </div>
 
                                                 <div class="col-6">
-                                                    <a class="image featured" title=""><img class="myBtn_multi"
-                                                            src="images/news/FRI_end.png" alt=""></a>
+                                                    <a class="image featured" ><img class="myBtn_multi"
+                                                            src="images/news/FRI_end.png" alt="A gif, where approximately thirty people mostly in white shirts throw red, green, blue and yellow holi dyes over themselves and others and get sprayed with color."></a>
 
                                                     <!-- The Modal -->
                                                     <div class="modal modal_multi">
@@ -525,14 +529,14 @@
                                     <!-- Excerpt -->
                                     <article class="box excerpt">
                                         <header>
-                                            <span class="date">July 21</span>
+                                            <span class="date"><time datetime="2018-07-21">July 21</date></span>
                                             <h3>Capital Ukrainian Festival</h3>
                                         </header>
                                         <div class="row aln-center">
                                             <div class="col-6">
                                                 <a class="image featured"><img class="myBtn_multi"
                                                         title="Volyn dance is energetic and jumpy, it comes from (and is called after) my native province in Ukraine."
-                                                        src="images/news/Ottawa_Volyn.jpg" alt=""></a>
+                                                        src="images/news/Ottawa_Volyn.jpg" alt="Four couples performing at the stage. Desna name and logo can be seen in the back."></a>
 
                                                 <!-- The Modal -->
                                                 <div class="modal modal_multi">
@@ -547,7 +551,7 @@
                                                 <a class="image featured"><img class="myBtn_multi"
                                                         src="images/news/Ottawa_gypsy.jpg"
                                                         title="Gypsy dance fills audience with energy and drive thanks to its fast pace and bright costumes"
-                                                        alt=""></a>
+                                                        alt="Girls in bright long dresses are filling up the stage."></a>
 
                                                 <!-- The Modal -->
                                                 <div class="modal modal_multi">
@@ -571,12 +575,12 @@
                                     <!-- Excerpt -->
                                     <article class="box excerpt">
                                         <header>
-                                            <span class="date">July 15-19</span>
+                                            <span class="date"><time datetime="2018-07-15">July 15-19</date></span>
                                             <h3>28<sup>th</sup> CSTCC</h3>
                                         </header>
                                         <div class="row aln-center">
                                             <div class="col-6">
-                                                <a class="image featured" title=""><img class="myBtn_multi"
+                                                <a class="image featured" ><img class="myBtn_multi"
                                                         src="images/news/CSTCC_2018%20Poster.jpg" alt=""></a>
 
                                                 <!-- The Modal -->
@@ -584,18 +588,18 @@
 
                                                     <span class="close close_multi">×</span>
                                                     <img class="modal-content" src="images/news/CSTCC_2018%20Poster.jpg"
-                                                        alt="">
+                                                        alt="Roman next to his poster wearing a University of Toronto Chemistry T-shirt">
                                                 </div>
                                             </div>
                                             <div class="col-6">
-                                                <a class="image featured" title=""><img class="myBtn_multi"
+                                                <a class="image featured" ><img class="myBtn_multi"
                                                         src="images/news/CSTCC_2018.jpg" alt=""></a>
 
                                                 <!-- The Modal -->
                                                 <div class="modal modal_multi">
 
                                                     <span class="close close_multi">×</span>
-                                                    <img class="modal-content" src="images/news/CSTCC_2018.jpg" alt="">
+                                                    <img class="modal-content" src="images/news/CSTCC_2018.jpg" alt="Certificate for the best poster award">
                                                 </div>
                                             </div>
                                         </div>
@@ -612,24 +616,25 @@
                                     <!-- Excerpt -->
                                     <article class="box excerpt">
                                         <header>
-                                            <span class="date">June 15</span>
+                                            <span class="date"><time datetime="2018-06-15">June 15</date></span>
                                             <h3>Finally a proud UofT Graduate</h3>
                                         </header>
                                         <div class="row aln-center">
                                             <div class="col-4">
-                                                <a class="image featured" title=""><img class="myBtn_multi"
-                                                        src="images/news/grad.JPG" alt=""></a>
+                                                <a class="image featured" ><img class="myBtn_multi"
+                                                        src="images/news/grad.JPG" alt="Roman inside a life sized picture frame around the University college tower of the University of Toronto. He is holding his Bachelors diploma."></a>
 
                                                 <!-- The Modal -->
                                                 <div class="modal modal_multi">
 
                                                     <span class="close close_multi">×</span>
-                                                    <img class="modal-content" src="images/news/grad2.jpg" alt="">
+                                                    <img class="modal-content" src="images/news/grad2.jpg" alt="Roman is now jumping in the same picture frame">
                                                 </div>
                                             </div>
                                             <div class="col-4">
-                                                <a class="image featured" title=""><img class="myBtn_multi"
-                                                        src="images/news/grad3.JPG" alt=""></a>
+                                                <a class="image featured" ><img class="myBtn_multi"
+                                                        src="images/news/grad3.JPG" srcset="images/news/grad3_1.JPG 0.3x"
+                                                        alt="Roman and his parents in front of the CN Tower."></a>
 
                                                 <!-- The Modal -->
                                                 <div class="modal modal_multi">
@@ -639,14 +644,15 @@
                                                 </div>
                                             </div>
                                             <div class="col-4">
-                                                <a class="image featured" title=""><img class="myBtn_multi"
+                                                <a class="image featured" ><img class="myBtn_multi"
                                                         src="images/news/grad4.JPG" alt=""></a>
 
                                                 <!-- The Modal -->
                                                 <div class="modal modal_multi">
 
                                                     <span class="close close_multi">×</span>
-                                                    <img class="modal-content" src="images/news/grad4.JPG" alt="">
+                                                    <img class="modal-content" src="images/news/grad4.JPG" 
+                                                    alt="Roman and his friends from Undergrad: Katherine Burton and Menandro Cruz next to the chemistry building.">
                                                 </div>
                                             </div>
                                         </div>
@@ -658,13 +664,13 @@
                                     <!-- Excerpt -->
                                     <article class="box excerpt">
                                         <header>
-                                            <span class="date">May 27</span>
+                                            <span class="date"><time datetime="2018-05-26">May 27</date></span>
                                             <h3>Desna Year end Performance</h3>
                                         </header>
                                         <div class="row aln-center">
                                             <div class="col-6">
-                                                <a class="image featured" title=""><img class="myBtn_multi"
-                                                        src="images/news/Gypsy.jpg" alt=""></a>
+                                                <a class="image featured" ><img class="myBtn_multi"
+                                                        src="images/news/Gypsy.jpg" alt="A girl is dancing on the floor in the middle, two guys are applauding her. Other people are dancing in the background."></a>
 
                                                 <!-- The Modal -->
                                                 <div class="modal modal_multi">
@@ -674,8 +680,9 @@
                                                 </div>
                                             </div>
                                             <div class="col-6">
-                                                <a class="image featured" title=""><img class="myBtn_multi"
-                                                        src="images/news/Country.png" alt=""></a>
+                                                <a class="image featured" ><img class="myBtn_multi"
+                                                        src="images/news/Country.png" srcset="images/news/Country_1.png 0.3x"
+                                                        alt="A gif of Roman jumping over a girl as part of the Canadiana dance 'Country'"></a>
 
                                                 <!-- The Modal -->
                                                 <div class="modal modal_multi">
@@ -702,14 +709,14 @@
                                     <!-- Excerpt -->
                                     <article class="box excerpt">
                                         <header>
-                                            <span class="date">May 26</span>
+                                            <span class="date"><time datetime="2018-05-26">May 26</date></span>
                                             <h3>Vyshyvanka day in Toronto</h3>
                                         </header>
                                         <div class="row aln-center">
                                             <div class="col-6">
                                                 <a class="image featured"><img class="myBtn_multi"
                                                         title="The team of volunteers at the Toronto Vyshyvanka day 2018"
-                                                        src="images/news/Vyshyvanka1.jpg" alt=""></a>
+                                                        src="images/news/Vyshyvanka1.jpg" alt="A group of volunteers wearing matching shirts in front of a giant embroidered photo booth."></a>
 
                                                 <!-- The Modal -->
                                                 <div class="modal modal_multi">
@@ -719,7 +726,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-6">
-                                                <a class="image featured" title=""><img class="myBtn_multi"
+                                                <a class="image featured" ><img class="myBtn_multi"
                                                         src="images/news/Vyshyvanka2.jpg"
                                                         title="We (volunteers) made a Ukrainian code of arms from water bottles. I decided to take a picture right away before the thirsty Ukrainians take it apart one bottle at a time"
                                                         alt=""></a>
@@ -728,7 +735,7 @@
                                                 <div class="modal modal_multi">
 
                                                     <span class="close close_multi">×</span>
-                                                    <img class="modal-content" src="images/news/Vyshyvanka2.jpg" alt="">
+                                                    <img class="modal-content" src="images/news/Vyshyvanka2.jpg" alt="Ukrainian Coat of Arms symbol made from water bottles on a yellow table.">
                                                 </div>
                                             </div>
 
@@ -746,13 +753,13 @@
                                     <!-- Excerpt -->
                                     <article class="box excerpt">
                                         <header>
-                                            <span class="date">May 20</span>
+                                            <span class="date"><time datetime="2018-05-20">May 20</date></span>
                                             <h3>UCU Award Ceremony</h3>
                                         </header>
                                         <div class="row aln-center">
                                             <div class="col-6">
-                                                <a class="image featured" title=""><img class="myBtn_multi"
-                                                        src="images/news/MR_Speech.jpg" alt=""></a>
+                                                <a class="image featured" ><img class="myBtn_multi"
+                                                        src="images/news/MR_Speech.jpg" alt="Roman giving a speech at a podium, decorated with the Ukrainian Coat of Arms wearing an embroidered shirt."></a>
 
                                                 <!-- The Modal -->
                                                 <div class="modal modal_multi">
@@ -765,7 +772,7 @@
                                                 <a class="image featured"><img class="myBtn_multi"
                                                         src="images/news/MR_Award.jpg"
                                                         title="Receiving the award in honour of Michael Rebryk, Honorary Director of the Ukrainian Credit Union ltd, presented by UCU Director Natalia Lishchyna"
-                                                        alt=""></a>
+                                                        alt="Roman and UCU Director Natalia Lishchyna holding an award Certificate"></a>
 
                                                 <!-- The Modal -->
                                                 <div class="modal modal_multi">
@@ -790,15 +797,15 @@
                                     <!-- Excerpt -->
                                     <article class="box excerpt">
                                         <header>
-                                            <span class="date">March 23</span>
+                                            <span class="date"><time datetime="2018-03-23">March 23</date></span>
                                             <h3>MIT Grad weekend</h3>
                                         </header>
                                         <div class="row aln-center">
                                             <div class="col-4">
                                                 <a class="image featured"><img class="myBtn_multi"
-                                                        src="images/news/MIT1.jpg"
+                                                        src="images/news/MIT1.jpg" srcset="images/news/MIT1_1.jpg 0.3x"
                                                         title="A long-awaited picture with MIT... I feel very nostalgic walking down the corridors of the buildings 6, 7, 8, 14, 18 - all the course codes that helped me learn scientific English back in Grade 10"
-                                                        alt=""></a>
+                                                        alt="Roman in front of MIT Rogers Building, the first built for the institute originally."></a>
 
                                                 <!-- The Modal -->
                                                 <div class="modal modal_multi">
@@ -809,7 +816,7 @@
                                             </div>
                                             <div class="col-4">
                                                 <a class="image featured"><img class="myBtn_multi"
-                                                        src="images/news/MIT2.jpg" title="Boston shore line" alt=""></a>
+                                                        src="images/news/MIT2.jpg" title="Boston shore line" alt="Roman looking at the Boston shore line."></a>
 
                                                 <!-- The Modal -->
                                                 <div class="modal modal_multi">
@@ -822,7 +829,7 @@
                                                 <a class="image featured"><img class="myBtn_multi"
                                                         src="images/news/MIT3.jpg"
                                                         title="Meeting my good friend from school, the captain of our biology tournament team 'Matrix', Fedoniuk Olena, who currently works in an MIT lab"
-                                                        alt=""></a>
+                                                        alt="Roman and Olena are both in front of the MIT Rogers building with their hands up in the air looking happy."></a>
 
                                                 <!-- The Modal -->
                                                 <div class="modal modal_multi">
@@ -846,7 +853,7 @@
                                     <!-- Excerpt -->
                                     <article class="box excerpt">
                                         <header>
-                                            <span class="date">March 17</span>
+                                            <span class="date"><time datetime="2018-03-17">March 17</date></span>
                                             <h3>Visiting Caltech</h3>
                                         </header>
                                         <div class="row aln-center">
@@ -860,12 +867,12 @@
                                                 <div class="modal modal_multi">
 
                                                     <span class="close close_multi">×</span>
-                                                    <img class="modal-content" src="images/news/Caltech1.jpg" alt="">
+                                                    <img class="modal-content" src="images/news/Caltech1.jpg" alt="Roman, Ruben and Sarah in the front. Mountains and clouds in the back.">
                                                 </div>
                                             </div>
                                             <div class="col-6">
                                                 <a class="image featured"><img class="myBtn_multi"
-                                                        src="images/news/Caltech2.jpg" alt=""
+                                                        src="images/news/Caltech2.jpg" alt="Roman is doing a pull-up on top of the mountain"
                                                         title="This pull-up bar at the top of the mountain in Southern California is very conveniently placed"></a>
 
                                                 <!-- The Modal -->
@@ -894,7 +901,7 @@
                                     <!-- Excerpt -->
                                     <article class="box excerpt">
                                         <header>
-                                            <span class="date">March 10</span>
+                                            <span class="date"><time datetime="2018-03-10">March 10</date></span>
                                             <h3>UChicago Visit</h3>
                                         </header>
                                         <p>I enjoyed talking to Professors <a
@@ -915,13 +922,13 @@
                                     <!-- Excerpt -->
                                     <article class="box excerpt">
                                         <header>
-                                            <span class="date">March 3</span>
+                                            <span class="date"><time datetime="2018-03-03">March 3</date></span>
                                             <h3><a href="#"></a>Visiting Berkeley</h3>
                                         </header>
                                         <div class="row aln-center">
                                             <div class="col-4">
                                                 <a class="image featured"><img class="myBtn_multi"
-                                                        src="images/news/Berkeley1.jpg"
+                                                        src="images/news/Berkeley1.jpg" srcset="images/news/Berkeley1_1.jpg 0.3x"
                                                         title="University of Toronto graduates at Berkeley University visiting weekend, me, Ruben Mirzoyan (now a Caltech) and Menandro Cruz (now at Cambridge)."
                                                         alt=""></a>
 
@@ -929,12 +936,14 @@
                                                 <div class="modal modal_multi">
 
                                                     <span class="close close_multi">×</span>
-                                                    <img class="modal-content" src="images/news/Berkeley1.jpg" alt="">
+                                                    <img class="modal-content" src="images/news/Berkeley1.jpg" 
+                                                    alt="Roman, Ruben and Andre in Dolores Park, San Francisco.">
                                                 </div>
                                             </div>
                                             <div class="col-4">
                                                 <a class="image featured"><img class="myBtn_multi"
-                                                        src="images/news/Berkeley2.jpg" alt=""
+                                                        src="images/news/Berkeley2.jpg" srcset="images/news/Berkeley2_1.jpg 0.3x"
+                                                        alt="Roman walking towards the camera pointing at the street names Oppenheimer way"
                                                         title="This street sign in San Fransisco, the 'Oppenheimer way' amused me a lot, so I decided to walk down his way."></a>
 
                                                 <!-- The Modal -->
@@ -946,9 +955,9 @@
                                             </div>
                                             <div class="col-4">
                                                 <a class="image featured"><img class="myBtn_multi"
-                                                        src="images/news/Berkeley3.jpg"
+                                                        src="images/news/Berkeley3.jpg" srcset="images/news/Berkeley3_1.jpg 0.3x"
                                                         title="My own picture of Dolores Park in San Francisco, just like thousands of other pictures you can find on the web."
-                                                        alt=""></a>
+                                                        alt="Dolores Part view with a lot of people sitting on the grass."></a>
 
                                                 <!-- The Modal -->
                                                 <div class="modal modal_multi">
@@ -977,7 +986,7 @@
                                     <!-- Excerpt -->
                                     <article class="box excerpt">
                                         <header>
-                                            <span class="date">January 11</span>
+                                            <span class="date"><time datetime="2018-01-11">January 11</date></span>
                                             <h3>Accepted to Caltech</h3>
                                         </header>
                                         <p>Received a warm e-mail from the chair of the chemistry graduate admissions
@@ -1009,7 +1018,7 @@
                                     <!-- Excerpt -->
                                     <article class="box excerpt">
                                         <header>
-                                            <span class="date">July 15, 2019</span>
+                                            <span class="date"><time datetime="2019-07-15">July 15, 2019</date></span>
                                             <h3>Are many modern DFT calculations wrong?</h3>
                                         </header>
                                         <p>Andrea Bootsma and <a
@@ -1029,7 +1038,7 @@
                                     <!-- Excerpt -->
                                     <article class="box excerpt">
                                         <header>
-                                            <span class="date">November 26, 2018</span>
+                                            <span class="date"><time datetime="2018-11-26">November 26, 2018</date></span>
                                             <h3>Fathers can also pass mitochondrial DNA to their offsprings</h3>
                                         </header>
                                         <p>Mitochondrial genome was thought to be inherited exclusively from the mother.
@@ -1043,7 +1052,7 @@
                                     <!-- Excerpt -->
                                     <article class="box excerpt">
                                         <header>
-                                            <span class="date">October 29, 2018</span>
+                                            <span class="date"><time datetime="2018-10-29">October 29, 2018</date></span>
                                             <h3>U<sub>2</sub> molecule loses its bond due to relativity</h3>
                                         </header>
                                         <p><a href="https://www.nature.com/articles/s41557-018-0158-9">Recent
@@ -1052,7 +1061,7 @@
                                             experimentally in <a
                                                 href="https://scholar.google.com/scholar_lookup?title=Mass-spectroscopic%20investigation%20of%20stability%20of%20gaseous%20U2O2%20and%20U2&journal=High%20Temp.&volume=12&pages=1307-1309&publication_year=1974&author=Gorokhov%2CLN&author=Emelyanov%2CAM&author=Khodeev%2CYS">1974</a>,
                                             and <a href="https://www.nature.com/articles/nature03249">was
-                                                calculated</a> to have a quintuple bond using CAS-SCF in 2005. The newer
+                                                calculated</a> to have a quintuple bond using CAS-SCF in <time datetime="2015">2005</date>. The newer
                                             calculation considers relativistic effects more carefully and comes to the
                                             conclusion that the bond in diuranium is, after all, quadruple.</p>
                                     </article>
@@ -1062,7 +1071,7 @@
                                     <!-- Excerpt -->
                                     <article class="box excerpt">
                                         <header>
-                                            <span class="date">August 2, 2017</span>
+                                            <span class="date"><time datetime="2017-08-02">August 2, 2017</date></span>
                                             <h3>Antihydrogen hyperfine spectrum</h3>
                                         </header>
                                         <p><a href="https://www.nature.com/articles/nature23446">First measurement</a>
@@ -1079,12 +1088,12 @@
                                     <!-- Excerpt -->
                                     <article class="box excerpt">
                                         <header>
-                                            <span class="date">September 14, 2015</span>
+                                            <span class="date"><time datetime="2015-09-14">September 14, 2015</date></span>
                                             <h3><a href="https://www.ligo.caltech.edu/news/ligo20160211">Gravitational
                                                     Wave detected</a></h3>
                                         </header>
                                         <a class="image left"><img class="myBtn_multi" src="images/news/gwaves.jpg"
-                                                alt=""></a>
+                                                alt="A schematic of an event causing gravitational waves. Two balls near each other. Apparently they are colliding. The waves are emanating around them."></a>
 
                                         <!-- The Modal href="https://www.google.es/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjf0POCtJjdAhWnxoUKHbltB0oQjhx6BAgBEAM&url=https%3A%2F%2Fnews.science360.gov%2Fobj%2Fstory%2F95baff71-4352-440e-bb51-ffd5bb98c09a%2Fdozens-binaries-milky-ways-globular-clusters-become-detectable&psig=AOvVaw3ww5YWR1OX4UicyH6X6sFw&ust=1535843224976563"-->
                                         <div class="modal modal_multi">
@@ -1112,43 +1121,44 @@
             </div>
         </section>
 
-        <!-- Footer -->
-        <section id="footer">
-            <div class="container">
-                <div class="row aln-center">
+		<!-- Footer -->
+		<section id="footer">
+			<div class="container">
+				<div class="row aln-center">
 
-                    <!--<div class="col-4 col-12-small">
-									<a href="index.html" class="image featured"><img src="images/Logos/RK_full.png" alt="RK" /></a>
+					<!--<div class="col-4 col-12-small">
+									<a href="index.html" class="image featured"><img src="images/Logos/RK_full.png" alt="letter R in blue and K in yellow, my logo" /></a>
 							</div>-->
 
-                    <div class="col-2 col-4-small">
-                        <a href="https://gymnasia21.lutsk.ua/" class="image featured"><img
-                                src="images/Logos/Lutsk_himnasia.jpg" alt="School #21" /></a>
-                    </div>
-                    <!--<div class="col-2 col-4-small">
+					<div class="col-2 col-4-small">
+						<a href="https://gymnasia21.lutsk.ua/" class="image featured"><img
+								src="images/Logos/Lutsk_himnasia.jpg" alt="Logo of Lutsk school #21" /></a>
+					</div>
+					<!--<div class="col-2 col-4-small">
 <a href="https://www.utoronto.ca/" class="image featured"><img src="images/Logos/Utoronto.svg" alt="University of Toronto" /></a>
 							</div>		-->
-                    <div class="col-4 col-8-small">
-                        <a href="https://www.chem.utoronto.ca" class="image featured"><img
-                                src="images/Logos/Chem_UofT.png" alt="University of Toronto" /></a>
-                    </div>
-                    <div class="col-6 col-12-small" style="text-align:center">
-                        <a href="http://www.caltech.edu/" class="image featured"><img
-                                src="images/Logos/Caltech_Logo.svg" alt="Caltech" /></a>
-                    </div>
+					<div class="col-4 col-8-small">
+						<a href="https://www.chem.utoronto.ca" class="image featured"><img
+								src="images/Logos/Chem_UofT.png" alt="Logo of Chemistry department at the University of Toronto" /></a>
+					</div>
+					<div class="col-6 col-12-small" style="text-align:center">
+						<a href="http://www.caltech.edu/" class="image featured"><img
+								src="images/Logos/Caltech_Logo.svg" alt="Caltech logo" /></a>
+					</div>
 
-                    <!--<div class="col-3 col-6-small">
+					<!--<div class="col-3 col-6-small">
                                 <p></p><a href="http://www.cce.caltech.edu"><h1>Division of Chemistry <br>and Chemical Engineering</h1></a>
 							</div>-->
 
 
-                </div>
-            </div>
-            <div class="container">
-                <header>
-                    <h2>Questions or comments? <strong>Get in touch:</strong></h2>
-                </header>
-                <!--<div class="row">
+				</div>
+			</div>
+
+			<div class="container">
+				<header>
+					<h2>Questions or comments? <strong>Get in touch:</strong></h2>
+				</header>
+				<!--<div class="row">
 						
 						<div class="col-6 col-12-medium">
 								<section>
@@ -1172,74 +1182,72 @@
 							</div>
 							
 							<div class="col-6 col-12-medium">-->
-                <section>
-                    <div class="row">
-                        <div class="col-8">
-                            <ul class="icons">
-                                <li class="icon fa-home" style="font-size:22px;">
-                                    132 Noyes building<br>
-                                </li>
-                                <!--<li class="icon fa-phone" style="font-size:22px;">
+				<section>
+					<div class="row">
+						<div class="col-8">
+							<ul class="icons">
+								<li class="icon fa-home" style="font-size:22px;">
+									132 Noyes building<br>
+								</li>
+								<!--<li class="icon fa-phone" style="font-size:22px;">
 												</li>-->
-                                <li class="icon fa-at" style="font-size:22px;">
-                                    <a href="mailto:roman@caltech.edu">roman@caltech.edu</a>
-                                </li>
-                                <li class="icon fa-envelope" style="font-size:22px;">
-                                    1200 E. California Blvd<br>
-                                    Mailcode: MC 127-72<br>
-                                    Pasadena, CA 91125,
-                                    USA
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-2">
-                            <ul class="icons">
-                                <a href="https://scholar.google.com.ua/citations?hl=en&user=YAAMduoAAAAJ"
-                                    target="_blank">
-                                    <li class="icon fa-google-plus-square fa-3x"></li>
-                                </a>
-                                <a href="https://www.linkedin.com/in/roman-korol-a08656a8/" target="_blank">
-                                    <li class="icon fa-linkedin-square fa-3x"></li>
-                                </a>
-                                <a href="https://www.researchgate.net/profile/Roman_Korol" target="_blank">
-                                    <li class="icon fa-address-card fa-3x"></li>
-                                </a>
-                                <!--<li class="image featured"><img src="images/Logos/researchgate-brands.svg"></li></a>
-													<i class="fab fa-researchgate"></i>-->
-                                <a href="https://academictree.org/chemistry/tree.php?pid=749712" target="_blank">
-                                    <li class="icon fa-sitemap fa-3x"></li>
-                                </a>
+								<li class="icon fa-at" style="font-size:22px;">
+									<a href="mailto:roman@caltech.edu">roman@caltech.edu</a>
+								</li>
+								<li class="icon fa-envelope" style="font-size:22px;">
+									1200 E. California Blvd<br>
+									Mailcode: MC 127-72<br>
+									Pasadena, CA 91125,
+									USA
+								</li>
+							</ul>
+						</div>
+						<div class="col-2">
+							<ul class="icons">
+								<a href="https://scholar.google.com.ua/citations?hl=en&user=YAAMduoAAAAJ"
+									target="_blank">
+									<li class="icon fa-google-plus-square fa-3x"></li>
+								</a>
+								<a href="https://www.linkedin.com/in/roman-korol-a08656a8/" target="_blank">
+									<li class="icon fa-linkedin-square fa-3x"></li>
+								</a>
+								<a href="https://www.researchgate.net/profile/Roman_Korol" target="_blank">
+									<li class="icon fa-address-card fa-3x"></li>
+								</a>
+								<a href="https://academictree.org/chemistry/tree.php?pid=749712" target="_blank">
+									<li class="icon fa-sitemap fa-3x"></li>
+								</a>
 
-                            </ul>
-                        </div>
-                        <div class="col-2">
-                            <ul class="icons">
-                                <a href="https://www.facebook.com/korolrom.ukr" target="_blank">
-                                    <li class="icon fa-facebook-square fa-3x"></li>
-                                </a>
-                                <a href="https://twitter.com/RomanKorol7" target="_blank">
-                                    <li class="icon fa-twitter-square fa-3x"></li>
-                                </a>
-                                <a href="https://www.youtube.com/channel/UC-fv1tHbhu8BYR2feLiwtCQ" target="_blank">
-                                    <li class="icon fa-youtube fa-3x"></li>
-                                </a>
-                                <a href="https://www.goodreads.com/user/show/53633079-roman-korol" target="_blank">
-                                    <li class="icon fa-book fa-3x"></li>
-                                </a>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
+							</ul>
+						</div>
+						<div class="col-2">
+							<ul class="icons">
+								<a href="https://www.facebook.com/korolrom.ukr" target="_blank">
+									<li class="icon fa-facebook-square fa-3x"></li>
+								</a>
+								<a href="https://twitter.com/RomanKorol7" target="_blank">
+									<li class="icon fa-twitter-square fa-3x"></li>
+								</a>
+								<a href="https://www.youtube.com/channel/UC-fv1tHbhu8BYR2feLiwtCQ" target="_blank">
+									<li class="icon fa-youtube fa-3x"></li>
+								</a>
+								<a href="https://www.goodreads.com/user/show/53633079-roman-korol" target="_blank">
+									<li class="icon fa-book fa-3x"></li>
+								</a>
+							</ul>
+						</div>
+					</div>
+				</section>
 
-                <!--</div></div>-->
-            </div>
-            <div id="copyright" class="container">
-                <ul class="links">
-                    <li>&copy; RK 2018. All rights reserved.</li>
-                    <li>Original Design by <a href="http://html5up.net">HTML5 UP</a></li>
-                </ul>
-            </div>
-        </section>
+				<!--</div></div>-->
+			</div>
+			<div id="copyright" class="container">
+				<ul class="links">
+					<li>&copy; RK <time datetime="2018">2018</time>. All rights reserved.</li>
+					<li>Original Design by <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</section>
     </div>
 
 
