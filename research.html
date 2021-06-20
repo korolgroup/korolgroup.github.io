@@ -7,6 +7,15 @@
 <html lang="en">
 <!--tells the browser the language of the content is English-->
 
+<script type="text/javascript">
+    function unhide(divID) {
+        var item = document.getElementById(divID);
+        if (item) {
+            item.className = (item.className == 'hidden') ? 'unhidden' : 'hidden';
+        }
+    }
+</script>
+
 <head>
 	<title>Roman Korol</title>
 	<meta charset="utf-8" />
@@ -93,6 +102,38 @@
 								</header>
 							</div>
 							<ol class="divided" reversed>
+								<!--Pub9:Isotope fractionation-->
+								<li>
+
+									<!-- Highlight -->
+									<article class="box highlight">
+
+
+										<header>
+											<h3><a href="javascript:unhide('9');">Experimental and theoretical determinations of hydrogen isotopic equilibrium in the system CH4-H2-H2O from 3 to 200°C</a></h3>
+										</header>
+										<div id="9" class="hidden">A C Turner, <b>R Korol</b>, D L Eldridge, M Bill, T F Miller III and D A Stolper
+											<i>Geochim. et Cosmochim. Acta</i> <b>2021</b>  <a
+												href="https://doi.org/10.1016/j.gca.2021.04.026">10.1016/j.gca.2021.04.026</a>.										<a class="image left"><img class="myBtn_multi" src="images/publications/9.jpg" title=""
+												alt=""></a>
+
+										<!-- The Modal -->
+										<div class="modal modal_multi">
+
+											<span class="close close_multi">×</span>
+											<a class="image left"><img class="modal-content"
+													src="images/publications/9.jpg" alt=""></a>
+										</div>
+										<p>
+											We provide calibrations of the equilibrium H/D and <sup>13</sup>C/<sup>12</sup>C fractionation
+											based on experiments and PIMC calculations. We find that isotopic compositions of some 
+											microbial gases from marine	sedimentary, coalbed, and shale environments are consistent with the H and C equilibria.
+										</p>
+									</div>
+								</article>
+
+
+								</li>
 								<!--Pub8:DF-RPMD-->
 								<li>
 
@@ -101,24 +142,28 @@
 
 
 										<header>
-											<h3><a href="https://arxiv.org/pdf/1911.00931.pdf">Dimension-free
+											<h3><a href="javascript:unhide('8');">Dimension-free
 													path-integral molecular dynamics without preconditioning </a> <a
 													href="https://aip.scitation.org/topic/collections/editors-pick?SeriesKey=jcp"><img
 														src="images/Logos/editors-pick.jpg" height="20" width="20" title="Editor's Pick"
 														alt="Editor's Pick logo"></a></h3>
+										</header>
+										<div id="8" class="hidden">
 											<b>R Korol</b>, J L Rosa-Ra&iacute;ces, N Bou-Rabee and T F Miller III,
 											<i>J. Chem. Phys.</i> <b>2020</b> 152, 104102, <a
 												href="https://aip.scitation.org/doi/10.1063/1.5134810">10.1063/1.5134810</a>.
-										</header>
-										<a class="image left"><img class="myBtn_multi" src="images/publications/8.jpeg" title="IR spectrum of liquid water computed with the new BCOCB scheme at timesteps of 0.2, 1.0, 1.2 and 1.4 fs"
-												alt="IR spectrum of liquid water computed with the new BCOCB scheme at timesteps of 0.2, 1.0, 1.2 and 1.4 fs; the position of the high-frequency (3500 cm-1) peak gets only a little blue-shifted"></a>
+										<a class="image left"><img class="myBtn_multi" src="images/publications/8.jpeg" 
+											title="IR spectrum of liquid water computed with the new BCOCB scheme at timesteps of 0.2, 1.0, 1.2 and 1.4 fs"
+											alt="IR spectrum of liquid water computed with the new BCOCB scheme at timesteps of 0.2, 1.0, 1.2 and 1.4 fs; 
+											the position of the high-frequency (3500 cm-1) peak gets only a little blue-shifted"></a>
 
 										<!-- The Modal -->
 										<div class="modal modal_multi">
 
 											<span class="close close_multi">×</span>
 											<a class="image left"><img class="modal-content"
-													src="images/publications/8.jpeg" alt=""></a>
+													src="images/publications/8.jpeg" alt="IR spectrum of liquid water computed with the new BCOCB scheme at timesteps of 0.2, 1.0, 1.2 and 1.4 fs; 
+													the position of the high-frequency (3500 cm-1) peak gets only a little blue-shifted"></a>
 										</div>
 										<p>
 											We further improve upon the standard algorithm for T-RPMD via a novel
@@ -126,6 +171,7 @@
 											<b>151</b>, 124103 (2019)]. This allows for a substantial increase in
 											timestep size - three-fold for the simulations of liquid water - at no extra
 											cost.</p>
+										</div>
 									</article>
 
 
@@ -139,8 +185,7 @@
 
 
 										<header>
-											<h3><a
-													href="https://pubs.acs.org/doi/pdf/10.1021/acsearthspacechem.9b00244">
+											<h3><a href="javascript:unhide('7');">
 													Comparison of Experimental vs Theoretical Abundances of
 													<sup>13</sup>CH<sub>3</sub>D and
 													<sup>12</sup>CH<sub>2</sub>D<sub>2</sub> for Isotopically
@@ -148,26 +193,32 @@
 													href="https://pubs.acs.org/page/policy/authorchoice_termsofuse.html"><img
 														src="images/Logos/ACS_editors_choice.png" height="20" width="20"
 														alt="ACS Editors' Choice logo"></a></h3>
-											D L Elbridge, <b>R Korol</b>, M K Lloyd, A C Turner, M A Webb, T F Miller
+										</header>
+										<div id="7" class="hidden">
+												D L Elbridge, <b>R Korol</b>, M K Lloyd, A C Turner, M A Webb, T F Miller
 											III and D A Stolper
 											<i>ACS Earth Space Chem. </i> <b>2019</b> 3, 2747-2764, <a
 												href="https://pubs.acs.org/doi/10.1021/acsearthspacechem.9b00244">10.1021/acsearthspacechem.9b00244</a>.
-										</header>
 										<a class="image left"><img class="myBtn_multi" src="images/publications/7.jpeg"
-												alt="One-to-one theory-experiment agreement for the equilibrium clumping of deuterium with deuterium and deuterium with carbon-13 over temperatures between 1 and 500 degree Celsius"></a>
+												alt="One-to-one theory-experiment agreement for the equilibrium clumping of deuterium with deuterium 
+												and deuterium with carbon-13 over temperatures between 1 and 500 degree Celsius"></a>
 
 										<!-- The Modal -->
 										<div class="modal modal_multi">
 
 											<span class="close close_multi">×</span>
-											<a class="image left"><img class="modal-content" src="images/publications/7.jpeg" alt=""></a>
+											<a class="image left"><img class="modal-content" src="images/publications/7.jpeg" 
+												alt="One-to-one theory-experiment agreement for the equilibrium clumping of deuterium with deuterium 
+												and deuterium with carbon-13 over temperatures between 1 and 500 degree Celsius"></a>
 										</div>
 										<p>
 											We study equilibrium clumping of heavy isotopes in methane. Using heavy
 											isotope clumping, one can determine the temperature of methane when it was
 											formed. We have extended the range of temperatures to cover all biologically
 											and geologically relevant temperatures. Experimental clumping-temperature
-											calibration is confirmed by state-of the-art theoretical method - PIMC.</p>
+											calibration is confirmed by state-of the-art theoretical method - PIMC.
+										</p>
+										</div>
 									</article>
 
 
@@ -181,16 +232,17 @@
 
 
 										<header>
-											<h3><a href="https://arxiv.org/pdf/1907.07941">Cayley modification for
+											<h3><a href="javascript:unhide('6');">Cayley modification for
 													strongly stable path-integral and ring-polymer molecular dynamics
 												</a> <a
 													href="https://aip.scitation.org/topic/collections/editors-pick?SeriesKey=jcp"><img
 														src="images/Logos/editors-pick.jpg" height="20" width="20" title="Editor's Pick"
 														alt="Editor's Pick logo"></a></h3>
+										</header>
+										<div id="6" class="hidden">
 											<b>R Korol</b>, N Bou-Rabee and T F Miller III,
 											<i>J. Chem. Phys.</i> <b>2019</b> 151 (12), 124103, <a
 												href="https://aip.scitation.org/doi/10.1063/1.5120282">10.1063/1.5120282</a>.
-										</header>
 										<a class="image left"><img class="myBtn_multi" src="images/publications/6.jpg"
 												alt="Panel A: eigenvalues of exponential propagator for different timesteps, spread uniformly 
 												on the unit circle. Since the eigenvalues can be degenerate, this propagator is not strongly stable.
@@ -202,14 +254,19 @@
 
 											<span class="close close_multi">×</span>
 											<a class="image left"><img class="modal-content"
-													src="images/publications/6.jpg" alt=""></a>
+													src="images/publications/6.jpg" alt="Panel A: eigenvalues of exponential propagator for different timesteps, spread uniformly 
+													on the unit circle. Since the eigenvalues can be degenerate, this propagator is not strongly stable.
+													Panel B: eigenvalues of the Cayley-modified propagator, at different timesteps. It is visually clear, 
+													that the values become denser, never reaching the real axis. This is a visual illustration of strong stability."></a>
 										</div>
 										<p>
 											We show that standard algorithm for evolving PIMD trajectories leads to
 											numerical artifacts at certain (resonance) timesteps. We thus propose the
 											Cayley modification, that provides strong symplectic stability to PIMD, RPMD
 											and CMD and ergodicity for T-RPMD at no additional cost. This allows for the
-											use of larger timesteps in these simulations.</p>
+											use of larger timesteps in these simulations.
+										</p>
+										</div>
 									</article>
 
 
@@ -222,12 +279,13 @@
 
 
 										<header>
-											<h3><a href="https://arxiv.org/pdf/1812.11642.pdf">Machine Learning
+											<h3><a href="javascript:unhide('5');">Machine Learning
 													Prediction of DNA Charge Transport </a></h3>
-											<b>R Korol</b> and D Segal,
+										</header>
+										<div id="5" class="hidden">
+												<b>R Korol</b> and D Segal,
 											<i>J. Phys. Chem. B </i> <b> 2019 </b> 123 (13), 2801-2811, <a
 												href="https://pubs.acs.org/doi/abs/10.1021/acs.jpcb.8b12557">10.1021/acs.jpcb.8b12557</a>.
-										</header>
 										<a class="image left"><img class="myBtn_multi" src="images/publications/5.png"
 												alt="The scheme for obtaining conductance of long DNA molecules from the shorter sequences.
 												Conductance values for all 10952 DNA sequences three to seven base-pair in length are obtained 
@@ -239,13 +297,18 @@
 
 											<span class="close close_multi">×</span>
 											<a class="image left"><img class="modal-content"
-													src="images/publications/5.png" alt=""></a>
+													src="images/publications/5.png" alt="The scheme for obtaining conductance of long DNA molecules from the shorter sequences.
+													Conductance values for all 10952 DNA sequences three to seven base-pair in length are obtained 
+													from the Landauer-Buttiker probe simulations, then used to train a shallow neural network.
+													The conductance for longer sequences can then be predicted in seconds."></a>
 										</div>
 										<p>
 											We present a machine learning model that allows the inexpensive prediction
 											of the electrical conductance of millions of long double-stranded DNA
 											(dsDNA) sequences, reducing computational costs by orders of magnitude. The
-											algorithm is trained on short DNA nano-junctions with n = 3–7 base pairs.</p>
+											algorithm is trained on short DNA nano-junctions with n = 3–7 base pairs.
+										</p>
+										</div>
 									</article>
 
 								</li>
@@ -259,12 +322,13 @@
 
 
 										<header>
-											<h3><a href="https://arxiv.org/pdf/1712.08515.pdf">From exhaustive
+											<h3><a href="javascript:unhide('4');">From exhaustive
 													simulations to key principles in DNA nanoelectronics </a></h3>
+										</header>
+										<div id="4" class="hidden">
 											<b>R Korol</b> and D Segal,
 											<i>J. Phys. Chem. C </i> <b> 2018 </b> 122 (8), 4206-4216, <a
 												href="https://pubs.acs.org/doi/abs/10.1021/acs.jpcc.7b12744">10.1021/acs.jpcc.7b12744</a>.
-										</header>
 										<a class="image left"><img class="myBtn_multi" src="images/publications/4.png"
 												srcset="images/publications/4_1.png 0.3x"
 												alt="Log-log plot of conductance as environmental (thermal) effects are increased ten-fold 
@@ -277,7 +341,10 @@
 
 											<span class="close close_multi">×</span>
 											<a class="image left"><img class="modal-content"
-													src="images/publications/4.png" alt=""></a>
+													src="images/publications/4.png" alt="Log-log plot of conductance as environmental (thermal) effects are increased ten-fold 
+													from the dry and frozen to the wet and mobile environment. The lowest conductance values 
+													are boosted by a factor of 100, signifying hopping conductance. Best conductors are unaffected by the change.
+													The vast majority of sequences fall somewhere in between."></a>
 										</div>
 										<p>
 											Conductance of DNA molecules is not well-understood in the light of opposing
@@ -285,7 +352,9 @@
 											exponentially many different sequences, and many of them conduct current in
 											a drastically different way. Here we study the conductance of DNA molecules
 											computationally and identify several general principles that could guide the
-											experiments.</p>
+											experiments.
+										</p>
+										</div>
 									</article>
 
 								</li>
@@ -296,15 +365,15 @@
 									<!-- Highlight -->
 									<article class="box highlight">
 										<header>
-											<h3><a
-													href="https://www.sciencedirect.com/science/article/pii/S0010465517303454">
+											<h3><a href="javascript:unhide('3');">
 													Probe-ZT: Simulation of transport coefficients of molecular
 													electronic junctions under environmental effects using Büttiker’s
 													probes </a></h3>
-											<b>R Korol</b>, M Kilgour, D Segal,
+										</header>
+										<div id="3" class="hidden">
+												<b>R Korol</b>, M Kilgour, D Segal,
 											<i>Comp. Phys. Comm.</i> <b>2018</b> 224, 396-404, <a
 												href="https://www.sciencedirect.com/science/article/pii/S0010465517303454">10.1016/j.cpc.2017.10.005</a>.
-										</header>
 										<a class="image left"><img class="myBtn_multi" src="images/publications/3.png"
 												alt="Conductance of a uniform bridge between 2 and 10 sites long. 
 												The log-y scale reveals the hopping (linear), tunneling (exponential) 
@@ -315,7 +384,9 @@
 
 											<span class="close close_multi">×</span>
 											<a class="image left"><img class="modal-content"
-													src="images/publications/3.png" alt=""></a>
+													src="images/publications/3.png" alt="Conductance of a uniform bridge between 2 and 10 sites long. 
+													The log-y scale reveals the hopping (linear), tunneling (exponential) 
+													and ballistic (constant) conduction mechanisms at different environmental strengths."></a>
 										</div>
 										<p>Our in-house quantum transport package, ProbeZT, calculates how readily
 											electricity and heat moves across a given system. One can use it to identify
@@ -323,6 +394,8 @@
 											thermoelectrics and many more. In particular, we show the package applied to
 											a linear conducting chain (like a polymer) and to a double-stranded DNA
 											molecule.
+										</p>
+										</div>
 									</article>
 
 								</li>
@@ -332,15 +405,17 @@
 									<!-- Highlight -->
 									<article class="box highlight">
 										<header>
-											<h3><a href="https://arxiv.org/pdf/1609.02474">Thermopower of molecular
+											<h3><a href="javascript:unhide('2');">Thermopower of molecular
 													junctions: Tunneling to hopping crossover in DNA </a></h3>
-											<b>R Korol</b>, M Kilgour, D Segal,
+										</header>
+										<div id="2" class="hidden">
+												<b>R Korol</b>, M Kilgour, D Segal,
 											<i>J. Chem. Phys.</i> <b>2016</b> 145 (22), 224702, <a
 												href="https://aip.scitation.org/doi/abs/10.1063/1.4971167">10.1063/1.4971167</a>.
-										</header>
 										<!-- Trigger the Modal -->
 										<a class="image left"><img class="myBtn_multi" src="images/publications/2.png"
-												alt=""></a>
+											alt="A schematic diagram of Landauer-Buttiker approach to thermally-assisted transport across a uniform bridge, 
+											where the effects of environment are modelled using voltage-temperature probes."></a>
 
 										<!-- The Modal -->
 										<div class="modal modal_multi">
@@ -359,6 +434,7 @@
 											trends is caused by a change of the mechanism, by which a molecule conducts
 											current from quantum mechanical tunneling to classical hopping.
 										</p>
+										</div>
 									</article>
 
 								</li>
@@ -368,15 +444,17 @@
 									<!-- Highlight -->
 									<article class="box highlight">
 										<header>
-											<h3><a href="http://pubs.acs.org/doi/abs/10.1021%2Fjacs.6b11190">
+											<h3><a href="javascript:unhide('1');">
 													Reactions Of Boron-Derived Radicals With Nucleophiles </a></h3>
-											L.E. Longobardi, P. Zatsepin, <b>R. Korol</b>, L. Liu, S. Grimme, D.W.
+										</header>
+										<div id="1" class="hidden">
+												L.E. Longobardi, P. Zatsepin, <b>R. Korol</b>, L. Liu, S. Grimme, D.W.
 											Stephan,
 											<i>J. Am. Chem. Soc.</i> <b>2016</b> 139 (1), pp 426–-435, <a
 												href="http://pubs.acs.org/doi/abs/10.1021%2Fjacs.6b11190">10.1021/jacs.6b11190</a>.
-										</header>
 										<a class="image left"><img class="myBtn_multi" src="images/publications/1.png"
-												alt=""></a>
+											alt="Phenanthrenedione- and pyrenedione-derived borocyclic 
+											radicals react with amines, phosphines, DMAP and NHC and gives various adducts."></a>
 
 										<!-- The Modal -->
 										<div class="modal modal_multi">
@@ -391,6 +469,39 @@
 											their considerable steric hinderance allows us to make several nice
 											zwitterionic compounds with phosphines and other nucleophiles utilizing
 											Frustrated Lewis Pair chemistry.
+										</p>
+										</div>
+									</article>
+
+								</li>
+
+								<!--Pub0:ZnO-->
+								<li>
+
+									<!-- Highlight -->
+									<article class="box highlight">
+										<header>
+											<h3><a href="javascript:unhide('0');">
+												Size Stabilizers in Two-electrode Synthesis of ZnO Nanorods</a></h3>
+										</header>
+										<div id="0" class="hidden">
+											<b>RV Korol</b>, OM Yanchuk, OV Marchuk, VF Orlov, IA Moroz, OA Vyshnevskyi,
+											<i>Phys. & Chem. of Solid State</i> <b>2021</b> 22 (2), pp 380–-387, <a
+												href="https://doi.org/10.15330/pcss.22.2.380-387">10.15330/pcss.22.2.380-387</a>.
+										<a class="image left"><img class="myBtn_multi" src="images/publications/0.jpg"
+												alt="SEM images of the ZnO nanoparticles with and without size stabilizers"></a>
+
+										<!-- The Modal -->
+										<div class="modal modal_multi">
+
+											<span class="close close_multi">×</span>
+											<a class="image left"><img class="modal-content"
+													src="images/publications/0.jpg" alt="SEM images of the ZnO nanoparticles with and without size stabilizers"></a>
+										</div>
+										<p>We modify and optimize a synthesis of ZnO nanoparticles by electrodeposition
+											by adding auxiliary stabilizers to reduce the size and narrow its distribution in the target product.
+										</p>
+										</div>
 									</article>
 
 								</li>
@@ -667,9 +778,9 @@
 
 							<div class="row aln-center">
 								<div class="col-4">
-									<a class="image featured" title="Assoc. Prof. Yanchuck Oleksandr Mykolayovych"><img
+									<a class="image featured" title="Assoc. Prof. Yanchuk Oleksandr Mykolayovych"><img
 											class="myBtn_multi" src="images/research/yanchuk.jpg"
-											alt="Assoc. Prof. Yanchuck Oleksandr Mykolayovych"></a>
+											alt="Assoc. Prof. Yanchuk Oleksandr Mykolayovych"></a>
 
 									<!-- The Modal -->
 									<div class="modal modal_multi">
@@ -693,9 +804,9 @@
 								</div>
 								<div class="col-5">
 									<a class="image featured"
-										title="After the Provincial Award Ceremony. I have just received the 'Student of the year' award; this achievement was possible thanks to these three people. Left to right: Assoc. Prof. Yanchuck Oleksandr Mykolayovych, Dr. Yagenska Halyna Vasylivna (my biology teacher), Mrs. Bobak Nadiya Vasylivna (my chemistry teacher)."><img
+										title="After the Provincial Award Ceremony. I have just received the 'Student of the year' award; this achievement was possible thanks to these three people. Left to right: Assoc. Prof. Yanchuk Oleksandr Mykolayovych, Dr. Yagenska Halyna Vasylivna (my biology teacher), Mrs. Bobak Nadiya Vasylivna (my chemistry teacher)."><img
 											class="myBtn_multi" src="images/research/yanchuk_yagenska_bobak.JPG"
-											alt="I have been awarded 'The student of the year' in Volyn Region and I am standing with the prize next to my mentors: Assoc. Prof. Yanchuck Oleksandr Mykolayovych, Dr. Yagenska Halyna Vasylivna (my biology teacher), Mrs. Bobak Nadiya Vasylivna (my chemistry teacher)"></a>
+											alt="I have been awarded 'The student of the year' in Volyn Region and I am standing with the prize next to my mentors: Assoc. Prof. Yanchuk Oleksandr Mykolayovych, Dr. Yagenska Halyna Vasylivna (my biology teacher), Mrs. Bobak Nadiya Vasylivna (my chemistry teacher)"></a>
 
 									<!-- The Modal -->
 									<div class="modal modal_multi">
@@ -708,7 +819,7 @@
 							</div>
 							<p>In grade 11 (final grade in Ukraine) I worked with
 								<a href="https://scholar.google.com.ua/citations?user=m7yvotUAAAAJ&hl=en">Associate
-									Professor Oleksandr Yanchuck</a> at the
+									Professor Oleksandr Yanchuk</a> at the
 								<a href="https://eenu.edu.ua/en">Eastern-European National university</a> in my
 								hometown, Lutsk.
 								There I was developing electrochemical synthesis of ZnO nanoparticles
