@@ -6,6 +6,14 @@
 -->
 <html lang="en">
 <!--tells the browser the language of the content is English-->
+<script type="text/javascript">
+    function unhide(divID) {
+        var item = document.getElementById(divID);
+        if (item) {
+            item.className = (item.className == 'hidden') ? 'unhidden' : 'hidden';
+        }
+    }
+</script>
 
 <head>
 	<title>Activities</title>
@@ -50,6 +58,7 @@
 						<li><a class="icon fa-paper-plane-o" href="activities.html">
 								<span>Activities</span></a>
 							<ul>
+								<li><a href="activities.html#act0">Help Ukraine</a></li>
 								<li><a href="activities.html#act1">Teaching</a></li>
 								<li><a href="activities.html#act2">Linguistics</a></li>
 								<li><a href="activities.html#act3">Music</a></li>
@@ -78,6 +87,58 @@
 		<!-- Main -->
 		<section id="main">
 			<div class="container">
+				<!--Ukraine-->
+				<article class="box post">
+					<header>
+						<h2 id="act0">How can I Help Ukraine?</h2>
+						<p>On February 24th at 4 AM Kyiv time Russia
+							has shelled all major cities in Ukraine.
+							This brutal and unprovoked attack has already
+							cost thousands of civilian lives and led to 
+							millions of people fleeing war, not to mention
+							thousands of military casualties on both sides.
+							You can learn more about this war 
+							<a href="https://war.ukraine.ua/">on Ukraine's official web-site</a>.
+						</p>
+						<h3>Many people ask me: how can I help? There are many things you can do:</h3>
+						<ol>
+							<li><a href="https://war.ukraine.ua/donate/">Donate to Ukraine</a>, charities that are helping Ukraine from your home country (see the list for your country below) or charities in Ukraine:
+							<ul>
+								<li><a href="https://savelife.in.ua/en/donate/">Revived Soldiers Ukraine</a> - <strong>medical care for wounded soldiers</strong>. Options: 
+									<a href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=EECANTTJNHN7Y&source=url">PayPal & Credit/Debit</a>, <a href="https://kindrace.com/en/fund?fundId=5fb3ea7af054010007b1f34a">Fondy</a>,
+								<a href="https://commerce.coinbase.com/checkout/50403164-4ef9-48f6-9f63-f5c53e6b14b4">CoinBase</a>. </li>
+								<li>
+									<a href="https://savelife.in.ua/en/donate/">Come back alive</a> - <strong>Ukrainian army fund</strong>. Options: <a href="https://pay.fondy.eu/api/checkout?button=59da139c540533216e39fef311708bed">Fondy</a>,
+									bitcoin wallet <em>bc1qkd5az2ml7dk5j5h672yhxmhmxe9tuf97j39fm6</em> or SWIFT
+								</li>
+							</ul>
+							</li>
+						<li>
+							Urge your government to act in support of Ukraine and donate to a charity that supports Ukraine in your country: 
+							<br><strong>US citizens</strong>, click <a href="javascript:unhide('us');"> here</a> to show/hide instructions. 
+							<ul id="us" class="hidden">
+								<li>Donate to <a href="https://novaukraine.org/">Nova Ukraine</a> (PayPal/Credit/Debit, FB, Crypto); <a href="https://razomforukraine.org/">Razom</a></li> (PayPal/Credit/Debit, FB, Check, Bank Transfer, Crypto); <a href="https://unitedhelpukraine.org/?fbclid=IwAR1BGWOE7cW1SMJ944wYsgRHovtWvvAXlxjk4ex1QQeyLcWlW82jDkd8p0o">United Help Ukraine</a> (PayPal/Debit/Credit, Crypto)
+								<li><a href="https://www.whitehouse.gov/contact/">Write to President Biden</a> - here is a <a href="https://docs.google.com/document/d/19KAudgUQsD1O3NGwofBEhc0EadDlYWPs/edit?usp=sharing&ouid=115824158064852864643&rtpof=true&sd=true">template</a></li>
+								<li><a href="https://www.whitehouse.gov/contact/">Write to Vice-President Harris</a> - here is a <a href="https://docs.google.com/document/d/11QQNTmPKEIKOfi5TSXRyxWxNOHVy2d7c/edit?usp=sharing&ouid=115824158064852864643&rtpof=true&sd=true">template</a></li>
+								<li><a href="https://www.senate.gov/states/statesmap.htm">Write to your Senator(s)</a> - here is a <a href="https://docs.google.com/document/d/1n4bsmopZAAX8VX5WbzQkz8qmoyg5qAGO/edit?usp=sharing&ouid=115824158064852864643&rtpof=true&sd=true">template</a>. Edit name at the top, sign at the bottom</li>
+								<li><a href="https://www.house.gov/representatives/find-your-representative">Write to House Representative</a> - here is a <a href="https://docs.google.com/document/d/128ht26bNPRB4krF2L0ACwXx4KuX7_e1q/edit?usp=sharing&ouid=115824158064852864643&rtpof=true&sd=true">template</a>. Edit name at the top, sign at the bottom</li>
+							</ul>
+							<br><strong>Canadian citizens</strong>, click <a href="javascript:unhide('cad');"> here</a> to show/hide instructions.
+							<ul id="cad" class="hidden">
+								<li><a href="https://pm.gc.ca/en/connect/contact">Write to Prime-Minister Trudeau</a> - here is a <a href="https://docs.google.com/document/d/1VPB9gg25dzek21HPt_Gpc-yBfkEv8vHV/edit?usp=sharing&ouid=115824158064852864643&rtpof=true&sd=true">template</a></li>
+								<li><a href="https://www.ourcommons.ca/Members/en">Write to your MP</a> - here is a <a href="https://docs.google.com/document/d/1Tk4ClYpQ47p9fW6wZnCohlLgxKgOrtOG/edit?usp=sharing&ouid=115824158064852864643&rtpof=true&sd=true">template</a>. Insert your name and riding at the top. Sign at the bottom.</li>
+							</ul>
+							<br><strong>All other nationals</strong>, click <a href="javascript:unhide('other');"> here</a> to show/hide instructions.
+							<ul id="other" class="hidden">
+								<li>Write to your head of State, Foreign minister and the representative in Parliament.</li>
+							</ul>
+
+						</li>
+						</ol>
+
+					</header>
+
+				</article>
 				<!-- Teach -->
 				<article class="box post">
 					<header>
