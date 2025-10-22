@@ -95,3 +95,4 @@ html[data-theme="dark"] .button.alt:hover {
     margin-bottom: 1em !important;
   }
 }
+@media (prefers-color-scheme: dark){html:not([data-theme="light"]) #features{margin-bottom:0!important}}html[data-theme="dark"] #features{margin-bottom:0!important}

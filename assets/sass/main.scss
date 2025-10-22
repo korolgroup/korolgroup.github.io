@@ -1828,9 +1828,10 @@ $dark-accent-hover: #6bb6ff;
 		background: $dark-bg-primary !important;
 	}
 
-	// Remove bottom padding from features when followed by sherbrooke banner
+	// Remove bottom padding and margin from features when followed by sherbrooke banner
 	#features {
 		padding-bottom: 0 !important;
+		margin-bottom: 0 !important;
 	}
 }
 
