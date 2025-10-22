@@ -1819,6 +1819,11 @@ $dark-accent-hover: #6bb6ff;
 			color: $dark-text-muted !important;
 		}
 	}
+
+	// Sherbrooke banner background
+	#sherbrooke-banner {
+		background: $dark-bg-primary !important;
+	}
 }
 
 // Apply dark theme based on user preference or explicit setting
