@@ -79,3 +79,19 @@ html[data-theme="dark"] .button.alt:hover {
     margin-bottom: 1.5em;
   }
 }
+/* Mobile footer - revert to simple spacing fix */
+@media screen and (max-width: 736px) {
+  #footer .footer-social-link {
+    margin: 0 0.6em !important;
+  }
+  #footer .footer-social-link i {
+    font-size: 2.5em !important;
+  }
+  #footer .icons li.icon:before {
+    display: inline-block !important;
+    margin-right: 0.5em !important;
+  }
+  #footer .col-12-small {
+    margin-bottom: 1em !important;
+  }
+}
