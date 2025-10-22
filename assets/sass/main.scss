@@ -1585,13 +1585,16 @@ $dark-accent-hover: #6bb6ff;
 
 		&:hover {
 			background: $dark-accent-hover;
+			color: #fff !important;
 		}
 
 		&.alt {
 			background: $dark-bg-tertiary;
+			color: #fff !important;
 
 			&:hover {
 				background: lighten($dark-bg-tertiary, 10%);
+				color: #fff !important;
 			}
 		}
 	}

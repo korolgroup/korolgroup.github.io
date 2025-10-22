@@ -6,3 +6,49 @@
 @media (prefers-color-scheme: dark){html:not([data-theme="light"]) :root{--page-bg:#1a1a1a;--heading-color:#e0e0e0;--accent-color:#4a9eff;--text-muted:#888;--border-color:#444;--box-bg:#333}}html[data-theme="dark"] :root{--page-bg:#1a1a1a;--heading-color:#e0e0e0;--accent-color:#4a9eff;--text-muted:#888;--border-color:#444;--box-bg:#333}
 @media (prefers-color-scheme: dark){html:not([data-theme="light"]) #sherbrooke-banner{background:#1a1a1a!important}}html[data-theme="dark"] #sherbrooke-banner{background:#1a1a1a!important}
 @media (prefers-color-scheme: dark){html:not([data-theme="light"]) #features{padding-bottom:0!important}}html[data-theme="dark"] #features{padding-bottom:0!important}
+/* Mobile footer fixes */
+@media screen and (max-width: 736px) {
+  #footer .footer-social-link {
+    margin: 0 0.3em !important;
+    display: inline-block;
+  }
+  #footer .footer-social-link i {
+    font-size: 2em !important;
+  }
+  #footer .icons li {
+    font-size: 18px !important;
+    padding-top: 1.5em;
+  }
+  #footer h2 {
+    font-size: 1.2em !important;
+  }
+}
+/* Button hover text color fix for dark theme */
+@media (prefers-color-scheme: dark){
+  html:not([data-theme="light"]) input[type="button"]:hover,
+  html:not([data-theme="light"]) input[type="submit"]:hover,
+  html:not([data-theme="light"]) input[type="reset"]:hover,
+  html:not([data-theme="light"]) button:hover,
+  html:not([data-theme="light"]) .button:hover {
+    color: #fff!important;
+  }
+  html:not([data-theme="light"]) .button.alt {
+    color: #fff!important;
+  }
+  html:not([data-theme="light"]) .button.alt:hover {
+    color: #fff!important;
+  }
+}
+html[data-theme="dark"] input[type="button"]:hover,
+html[data-theme="dark"] input[type="submit"]:hover,
+html[data-theme="dark"] input[type="reset"]:hover,
+html[data-theme="dark"] button:hover,
+html[data-theme="dark"] .button:hover {
+  color: #fff!important;
+}
+html[data-theme="dark"] .button.alt {
+  color: #fff!important;
+}
+html[data-theme="dark"] .button.alt:hover {
+  color: #fff!important;
+}
