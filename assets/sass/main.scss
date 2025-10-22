@@ -1915,6 +1915,27 @@ html[data-theme="dark"] {
 	}
 }
 
+/* Hidden/Unhidden classes for publication summaries */
+.hidden {
+	display: none;
+}
+
+.unhidden {
+	display: block;
+}
+
+/* Publication thumbnail image sizing */
+.box.highlight .image.left img {
+	max-width: 250px;
+	width: 250px;
+	height: auto;
+}
+
+/* Clearfix for publication content divs to contain floated images */
+.box.highlight div[id] {
+	overflow: auto;
+}
+
 /* Main page hero image styling for MAIN.png */
 .image.featured img[src*="MAIN.png"] {
 	display: block;
