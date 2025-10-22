@@ -1824,6 +1824,11 @@ $dark-accent-hover: #6bb6ff;
 	#sherbrooke-banner {
 		background: $dark-bg-primary !important;
 	}
+
+	// Remove bottom padding from features when followed by sherbrooke banner
+	#features {
+		padding-bottom: 0 !important;
+	}
 }
 
 // Apply dark theme based on user preference or explicit setting
