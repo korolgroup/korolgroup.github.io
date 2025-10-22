@@ -1,0 +1,62 @@
+{
+  "publications": [
+    {
+      "id": "korol2025",
+      "title": "Electronic relaxation rate calculations and spectral density analysis",
+      "authors": ["R Korol", "X Chen", "I. Franco"],
+      "journal": "J. Phys. Chem. A",
+      "year": 2025,
+      "doi": "10.1021/acs.jpca.5c00943",
+      "image": "images/publications/12.jpg",
+      "abstract": "We show that the computations of relaxation rate is solution are highly sensitive to the choice of representation of the environmental spectral density (SD). The key reason is that electronic relaxation is dominated by the resonant contribution from the high-frequency tails of the SD, which can vary significantly between strategies.",
+      "type": "journal",
+      "status": "published"
+    },
+    {
+      "id": "korol2024",
+      "title": "Quantum dynamics and simulation methods",
+      "authors": ["R Korol", "T.F. Miller III"],
+      "journal": "In preparation",
+      "year": 2024,
+      "image": "images/publications/11.jpg",
+      "abstract": "Advanced quantum dynamics simulation using semiclassical methods.",
+      "type": "journal",
+      "status": "in_preparation"
+    },
+    {
+      "id": "korol2023",
+      "title": "Semiclassical methods for large quantum systems",
+      "authors": ["R Korol", "W.A. Goddard III"],
+      "journal": "Submitted",
+      "year": 2023,
+      "image": "images/publications/10.jpg",
+      "abstract": "Development of efficient semiclassical approaches for studying large quantum systems.",
+      "type": "journal",
+      "status": "submitted"
+    },
+    {
+      "id": "korol2022",
+      "title": "Computational chemistry applications",
+      "authors": ["R Korol", "D. Segal"],
+      "journal": "J. Chem. Phys.",
+      "year": 2022,
+      "image": "images/publications/9.jpg",
+      "abstract": "Applications of computational methods to chemical systems.",
+      "type": "journal",
+      "status": "published",
+      "awards": ["Editor's Pick"]
+    }
+  ],
+  "categories": {
+    "journal": "Peer-reviewed Journal Articles",
+    "conference": "Conference Proceedings",
+    "preprint": "Preprints and Working Papers",
+    "thesis": "Theses and Dissertations"
+  },
+  "statistics": {
+    "total_publications": 4,
+    "h_index": 8,
+    "citations": 150,
+    "last_updated": "2024-10-01"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "news": [
+    {
+      "id": "2024-09-graduate-school",
+      "title": "Graduate School Presentation",
+      "date": "2024-09-15",
+      "category": "academic",
+      "summary": "Presented research findings at the graduate school symposium",
+      "content": "Successfully presented my latest research on quantum dynamics at the annual graduate school symposium. The presentation was well-received and sparked interesting discussions.",
+      "images": ["images/news/school.jpg"],
+      "featured": true,
+      "tags": ["presentation", "research", "quantum dynamics"]
+    },
+    {
+      "id": "2024-08-mountain-retreat",
+      "title": "Research Mountain Retreat",
+      "date": "2024-08-20",
+      "category": "academic",
+      "summary": "Participated in mountain research retreat with Franco Group",
+      "content": "Attended the annual Franco Group research retreat in the mountains. Great opportunity for collaboration and discussing future research directions.",
+      "images": ["images/news/mountains.jpg"],
+      "featured": false,
+      "tags": ["retreat", "collaboration", "franco group"]
+    },
+    {
+      "id": "2024-07-rainbow-lab",
+      "title": "New Laboratory Setup",
+      "date": "2024-07-10",
+      "category": "research",
+      "summary": "Completed setup of new experimental apparatus",
+      "content": "Successfully completed the setup of our new experimental apparatus for quantum dynamics measurements. The equipment is now operational and ready for research.",
+      "images": ["images/news/rainbow.jpg"],
+      "featured": false,
+      "tags": ["laboratory", "equipment", "experimental"]
+    },
+    {
+      "id": "2024-06-gondolas",
+      "title": "International Conference Presentation",
+      "date": "2024-06-05",
+      "category": "academic",
+      "summary": "Presented at international quantum chemistry conference",
+      "content": "Presented our latest findings on semiclassical methods at the International Conference on Quantum Chemistry. The work was very well received by the international community.",
+      "images": ["images/news/gondolas.jpg"],
+      "featured": true,
+      "tags": ["conference", "international", "presentation"]
+    },
+    {
+      "id": "2024-05-yosemite",
+      "title": "Yosemite Research Workshop",
+      "date": "2024-05-15",
+      "category": "academic",
+      "summary": "Attended computational chemistry workshop in Yosemite",
+      "content": "Participated in an intensive computational chemistry workshop in Yosemite National Park. Learned new techniques and networked with researchers from around the world.",
+      "images": ["images/news/Yosemite.jpg", "images/news/Yosemite_down.jpg"],
+      "featured": false,
+      "tags": ["workshop", "computational chemistry", "networking"]
+    }
+  ],
+  "categories": {
+    "academic": "Academic Activities",
+    "research": "Research Updates",
+    "personal": "Personal News",
+    "awards": "Awards and Recognition",
+    "outreach": "Outreach and Community"
+  },
+  "archive_years": [2024, 2023, 2022, 2021, 2020],
+  "featured_count": 3,
+  "last_updated": "2024-09-17"
+}

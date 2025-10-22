@@ -1,0 +1,134 @@
+{
+  "sections": {
+    "ukraine_support": {
+      "id": "act0",
+      "title": "Help Ukraine",
+      "description": "Supporting Ukraine during challenging times",
+      "activities": [
+        {
+          "title": "Stand with Ukraine",
+          "description": "Promoting awareness and support for Ukraine",
+          "image": "images/activities/ukraine-flag.jpg",
+          "link": "https://stand-with-ukraine.pp.ua",
+          "date": "ongoing"
+        }
+      ]
+    },
+    "teaching": {
+      "id": "act1",
+      "title": "Teaching",
+      "description": "Educational activities and mentoring",
+      "activities": [
+        {
+          "title": "Graduate Student Mentoring",
+          "description": "Mentoring graduate students in quantum dynamics research",
+          "image": "images/activities/teach.jpg",
+          "date": "2024",
+          "location": "University of Rochester"
+        },
+        {
+          "title": "Summer School Instructor",
+          "description": "Teaching computational chemistry at summer school",
+          "image": "images/activities/summer_school.jpg",
+          "date": "2024",
+          "location": "International Summer School"
+        }
+      ]
+    },
+    "linguistics": {
+      "id": "act2",
+      "title": "Linguistics",
+      "description": "Language and communication interests",
+      "activities": [
+        {
+          "title": "High Level Verification Committee",
+          "description": "Participating in high-level language verification activities",
+          "image": "images/activities/HLVC.jpg",
+          "date": "2024"
+        },
+        {
+          "title": "Language Mapping Project",
+          "description": "Contributing to linguistic mapping initiatives",
+          "image": "images/activities/map.png",
+          "date": "2023"
+        }
+      ]
+    },
+    "music": {
+      "id": "act3",
+      "title": "Music",
+      "description": "Musical interests and performances",
+      "activities": [
+        {
+          "title": "Concert Attendance",
+          "description": "Attending various musical performances and concerts",
+          "image": "images/activities/Metallica.jpg",
+          "date": "2024"
+        },
+        {
+          "title": "Contrabass Practice",
+          "description": "Learning and practicing contrabass",
+          "image": "images/activities/contrabass.png",
+          "date": "ongoing"
+        }
+      ]
+    },
+    "reading": {
+      "id": "act4",
+      "title": "Reading",
+      "description": "Literary interests and book recommendations",
+      "activities": [
+        {
+          "title": "Academic Reading",
+          "description": "Staying current with scientific literature",
+          "image": "images/activities/read.png",
+          "date": "daily"
+        }
+      ]
+    },
+    "dance": {
+      "id": "act5",
+      "title": "Dance",
+      "description": "Ukrainian folk dance and cultural activities",
+      "activities": [
+        {
+          "title": "Ukrainian Folk Dance",
+          "description": "Amateur Ukrainian folk dancer, preserving cultural traditions",
+          "image": "images/activities/dance.jpg",
+          "date": "ongoing"
+        },
+        {
+          "title": "Cultural Performances",
+          "description": "Participating in cultural events and performances",
+          "image": "images/activities/performance.jpg",
+          "date": "2024"
+        }
+      ]
+    },
+    "ukrainian_culture": {
+      "id": "act6",
+      "title": "Being Ukrainian",
+      "description": "Ukrainian cultural identity and heritage",
+      "activities": [
+        {
+          "title": "Vyshyvanka Day",
+          "description": "Celebrating Ukrainian embroidered shirt tradition",
+          "image": "images/activities/vyshyvanka.jpg",
+          "date": "annual"
+        },
+        {
+          "title": "Cultural Heritage",
+          "description": "Promoting Ukrainian culture and traditions",
+          "image": "images/activities/heritage.jpg",
+          "date": "ongoing"
+        }
+      ]
+    }
+  },
+  "featured_activities": [
+    "ukraine_support",
+    "teaching",
+    "dance"
+  ],
+  "last_updated": "2024-09-17"
+}

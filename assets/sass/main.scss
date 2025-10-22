@@ -1439,3 +1439,568 @@
 			}
 
 	}
+
+/* Dark Theme Support */
+
+// Dark Theme Variables
+$dark-bg-primary: #1a1a1a;
+$dark-bg-secondary: #2a2a2a;
+$dark-bg-tertiary: #333;
+$dark-text-primary: #e0e0e0;
+$dark-text-secondary: #b0b0b0;
+$dark-text-muted: #888;
+$dark-border: #444;
+$dark-accent: #4a9eff;
+$dark-accent-hover: #6bb6ff;
+
+// Dark theme mixin
+@mixin dark-theme {
+	// Base styles
+	body {
+		background: $dark-bg-primary;
+		color: $dark-text-primary;
+	}
+
+	// Typography
+	h1, h2, h3, h4, h5, h6 {
+		color: $dark-text-primary;
+	}
+
+	strong, b {
+		color: $dark-text-primary;
+	}
+
+	// Links - with !important to override inline styles
+	a {
+		color: $dark-accent !important;
+		border-bottom-color: $dark-border;
+
+		&:hover {
+			color: $dark-accent-hover !important;
+			border-bottom-color: transparent;
+		}
+	}
+
+	// Header
+	#header {
+		background: $dark-bg-secondary;
+		color: $dark-text-primary;
+
+		> .container {
+			border-bottom-color: $dark-border;
+			box-shadow: inset 0px -8px 0px 0px $dark-bg-secondary, inset 0px -10px 0px 0px $dark-border;
+		}
+
+		h1 {
+			color: $dark-accent;
+		}
+
+		p {
+			color: $dark-text-secondary;
+		}
+
+		// Ensure research page text descriptions are visible
+		article.box.post p,
+		.col-12 p {
+			color: $dark-text-secondary !important;
+		}
+	}
+
+	// Navigation
+	#nav {
+		> ul {
+			> li {
+				> a {
+					color: $dark-text-secondary;
+
+					&:before {
+						background: $dark-bg-tertiary;
+						color: $dark-text-muted;
+					}
+				}
+
+				&.active > a:before,
+				&:hover > a:before {
+					background: $dark-accent;
+					color: #fff;
+				}
+
+				&.active > a > span,
+				&:hover > a > span {
+					color: $dark-accent;
+				}
+			}
+		}
+	}
+
+	// Content areas
+	#features, #main {
+		background: $dark-bg-primary;
+	}
+
+	// Images
+	.image {
+		border-color: $dark-border !important;
+	}
+
+	// Forms
+	form {
+		label {
+			color: $dark-text-secondary;
+		}
+
+		input[type="text"],
+		input[type="email"],
+		input[type="password"],
+		select,
+		textarea {
+			background: $dark-bg-tertiary;
+			color: $dark-text-primary;
+			box-shadow: inset 2px 2px 0px 0px rgba(0, 0, 0, 0.2);
+
+			&:focus {
+				background: lighten($dark-bg-tertiary, 5%);
+			}
+		}
+	}
+
+	// Buttons
+	input[type="button"],
+	input[type="submit"],
+	input[type="reset"],
+	button,
+	.button {
+		background: $dark-accent;
+		color: #fff !important;
+
+		&:hover {
+			background: $dark-accent-hover;
+		}
+
+		&.alt {
+			background: $dark-bg-tertiary;
+
+			&:hover {
+				background: lighten($dark-bg-tertiary, 10%);
+			}
+		}
+	}
+
+	// Footer
+	#footer {
+		background: $dark-bg-secondary;
+		border-top-color: $dark-border;
+
+		// Force white background for university logos
+		.image.featured img {
+			background: white !important;
+			padding: 8px !important;
+			border-radius: 4px !important;
+		}
+	}
+
+	// Modals
+	.modal {
+		background-color: rgba(0, 0, 0, 0.9);
+
+		.close {
+			color: $dark-text-primary;
+
+			&:hover {
+				color: $dark-accent;
+			}
+		}
+	}
+
+	// Content sections
+	#content, #sidebar {
+		> section,
+		> article {
+			border-top-color: $dark-border;
+			box-shadow: inset 0px 8px 0px 0px $dark-bg-primary, inset 0px 10px 0px 0px $dark-border;
+		}
+	}
+
+	// Dropdowns in dark mode
+	.dropotron {
+		background: $dark-bg-secondary;
+		border-color: $dark-border;
+		box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3);
+
+		span, a {
+			border-top-color: $dark-border;
+		}
+
+		li:hover > span,
+		li:hover > a {
+			color: $dark-accent;
+		}
+
+		&.level-0 {
+			&:after {
+				border-bottom-color: $dark-bg-secondary;
+			}
+
+			&:before {
+				border-bottom-color: $dark-border;
+			}
+		}
+	}
+
+	// Mobile navigation in dark mode
+	#titleBar {
+		.toggle:before {
+			background: rgba(50, 50, 50, 0.9);
+			color: $dark-text-secondary;
+		}
+
+		.toggle:active:before {
+			opacity: 0.7;
+		}
+	}
+
+	#navPanel {
+		background: $dark-bg-secondary;
+		border-right-color: $dark-border;
+		color: $dark-text-secondary;
+
+		.link {
+			color: $dark-text-secondary;
+			border-top-color: $dark-border;
+
+			&.depth-0 {
+				color: $dark-text-primary;
+			}
+
+			&:hover {
+				color: $dark-accent;
+			}
+		}
+	}
+
+	// Banner in dark mode
+	#banner {
+		border-top-color: $dark-border;
+		border-bottom-color: $dark-border;
+		box-shadow: inset 0px -8px 0px 0px $dark-bg-primary,
+					inset 0px 8px 0px 0px $dark-bg-primary;
+
+		// Add overlay for better text contrast
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgba(0, 0, 0, 0.4);
+			z-index: 1;
+		}
+
+		> .container {
+			position: relative;
+			z-index: 2;
+		}
+	}
+
+	// Lists in dark mode
+	ul.divided li {
+		border-top-color: $dark-border;
+	}
+
+	ul.icons > li:before {
+		background: $dark-bg-tertiary;
+		color: $dark-text-muted;
+	}
+
+	// Sections dividers
+	hr {
+		border-top-color: $dark-border;
+	}
+
+	blockquote {
+		border-left-color: $dark-border;
+	}
+
+	// Date boxes
+	.box.excerpt .date {
+		background: $dark-bg-tertiary;
+	}
+
+	// Table enhancements
+	table {
+		tbody tr {
+			border-top-color: $dark-border;
+		}
+
+		thead {
+			background: $dark-bg-tertiary;
+		}
+
+		tfoot {
+			background: $dark-bg-secondary;
+			border-top-color: $dark-border;
+		}
+	}
+
+	// Copyright section
+	#copyright {
+		border-top-color: $dark-border;
+	}
+
+	// Publication/modal specific enhancements
+	.modal-content {
+		border: 2px solid $dark-border;
+	}
+
+	.hidden, .unhidden {
+		// Ensure content visibility in dark mode
+		color: inherit;
+	}
+
+	// Form placeholders in dark mode
+	::-webkit-input-placeholder {
+		color: $dark-text-muted !important;
+	}
+
+	:-moz-placeholder {
+		color: $dark-text-muted !important;
+	}
+
+	::-moz-placeholder {
+		color: $dark-text-muted !important;
+	}
+
+	:-ms-input-placeholder {
+		color: $dark-text-muted !important;
+	}
+
+	// Smooth transitions for theme switching
+	* {
+		transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+	}
+
+	// Improve contrast for small text
+	p, li, span {
+		color: $dark-text-primary;
+	}
+
+	// Academic content specific styling
+	.publication {
+		border-color: $dark-border;
+	}
+
+	.news-item {
+		border-color: $dark-border;
+		background: rgba(255, 255, 255, 0.02);
+	}
+
+	// Ensure good contrast for icons
+	.icon:before {
+		color: $dark-text-secondary;
+	}
+}
+
+// Apply dark theme based on user preference or explicit setting
+@media (prefers-color-scheme: dark) {
+	html:not([data-theme="light"]) {
+		@include dark-theme;
+	}
+}
+
+// Apply dark theme when explicitly set
+html[data-theme="dark"] {
+	@include dark-theme;
+}
+
+/* Modal Styles */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 9999; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+}
+
+.modal-content {
+	margin: auto;
+	display: block;
+	max-width: 90%;
+	max-height: 90%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 8px;
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.modal-content img {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	max-width: 100%;
+	max-height: 80vh;
+	object-fit: contain;
+}
+
+.close {
+	position: absolute;
+	top: 20px;
+	right: 35px;
+	color: #fff;
+	font-size: 40px;
+	font-weight: bold;
+	cursor: pointer;
+	z-index: 10000;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+	color: #ff4444;
+	background: rgba(255, 255, 255, 0.1);
+	transform: scale(1.1);
+}
+
+/* Animation for modal open/close */
+.modal {
+	animation-duration: 0.3s;
+}
+
+.modal.show {
+	animation-name: modalOpen;
+}
+
+.modal.hide {
+	animation-name: modalClose;
+}
+
+@keyframes modalOpen {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+@keyframes modalClose {
+	from { opacity: 1; }
+	to { opacity: 0; }
+}
+
+/* Mobile responsive adjustments */
+@media screen and (max-width: 768px) {
+	.modal-content {
+		max-width: 95%;
+		max-height: 85%;
+	}
+
+	.close {
+		top: 10px;
+		right: 20px;
+		font-size: 30px;
+		width: 40px;
+		height: 40px;
+	}
+}
+
+/* Main page hero image styling for MAIN.png */
+.image.featured img[src*="MAIN.png"] {
+	display: block;
+	margin: 0 auto;
+	border: none !important;
+	box-shadow: none !important;
+	outline: none !important;
+	background: transparent !important;
+	border-radius: 0 !important;
+	max-width: 50%;
+	height: auto;
+}
+
+/* Responsive sizing for MAIN.png - reduced by factor of 2 */
+@media screen and (min-width: 1281px) {
+	.image.featured img[src*="MAIN.png"] {
+		max-width: 35%;
+		height: auto;
+	}
+}
+
+@media screen and (min-width: 981px) and (max-width: 1280px) {
+	.image.featured img[src*="MAIN.png"] {
+		max-width: 40%;
+		height: auto;
+	}
+}
+
+@media screen and (min-width: 737px) and (max-width: 980px) {
+	.image.featured img[src*="MAIN.png"] {
+		max-width: 45%;
+		height: auto;
+	}
+}
+
+/* Container styling for MAIN.png */
+.image.featured:has(img[src*="MAIN.png"]) {
+	border: none !important;
+	box-shadow: none !important;
+	background: transparent !important;
+	text-align: center;
+}
+
+/* Large research mission statement styling */
+.research-mission {
+	font-size: 1.8em !important;
+	line-height: 1.4em !important;
+	font-weight: 400 !important;
+	color: #666 !important;
+	margin: 1.5em 0 0 0 !important;
+	text-align: center !important;
+	max-width: 90% !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	letter-spacing: 1px !important;
+}
+
+/* Responsive sizing for research mission */
+@media screen and (max-width: 1280px) {
+	.research-mission {
+		font-size: 1.6em !important;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	.research-mission {
+		font-size: 1.4em !important;
+		max-width: 95% !important;
+	}
+}
+
+@media screen and (max-width: 736px) {
+	.research-mission {
+		font-size: 1.2em !important;
+		max-width: 100% !important;
+		letter-spacing: 0.5px !important;
+	}
+}
+
+/* Dark theme support for research mission */
+html[data-theme="dark"] .research-mission {
+	color: #b0b0b0 !important;
+}
+
+@media (prefers-color-scheme: dark) {
+	html:not([data-theme="light"]) .research-mission {
+		color: #b0b0b0 !important;
+	}
+}

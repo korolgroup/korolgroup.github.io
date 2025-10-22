@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "html-validate:recommended"
+  ],
+  "rules": {
+    "no-inline-style": "off",
+    "require-sri": "off",
+    "no-trailing-whitespace": "warn",
+    "void-style": "selfclosing",
+    "attr-quotes": "double",
+    "doctype-style": "html5",
+    "element-required-content": "error",
+    "no-unknown-elements": "error",
+    "no-missing-references": "error",
+    "aria-label-misuse": "error",
+    "aria-hidden-body": "error",
+    "wcag/h37": "error",
+    "wcag/h71": "error"
+  },
+  "elements": [
+    "html5"
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "name": "roman-korol-website",
+  "version": "1.0.0",
+  "description": "Personal academic website for Roman Korol, Postdoctoral Fellow at University of Rochester",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npm-run-all --parallel watch:css watch:js watch:content serve",
+    "build": "npm-run-all clean content:generate build:css build:js optimize:images",
+    "build:css": "sass assets/sass/main.scss assets/css/main.css --style=expanded && sass assets/sass/main.scss assets/css/main.min.css --style=compressed",
+    "build:js": "terser assets/js/combined.min.js --compress --mangle -o assets/js/combined.min.js",
+    "watch:css": "sass --watch assets/sass/main.scss:assets/css/main.css --style=expanded",
+    "watch:js": "chokidar 'assets/js/*.js' -c 'npm run build:js'",
+    "watch:content": "chokidar 'data/*.json' -c 'npm run content:generate'",
+    "serve": "live-server --port=3000 --open=/index.html",
+    "clean": "rimraf dist && mkdir dist",
+    "test": "npm-run-all test:html test:css test:js test:accessibility test:content",
+    "test:html": "html-validate *.html",
+    "test:css": "stylelint assets/css/*.css",
+    "test:js": "eslint assets/js/*.js",
+    "test:accessibility": "pa11y http://localhost:3000",
+    "test:content": "node content/scripts/academic-integration.js validate",
+    "optimize:images": "imagemin 'images/**/*.{jpg,png,gif}' --out-dir=dist/images",
+    "deploy": "npm run build && npm run test",
+    "lint": "npm-run-all test:css test:js",
+    "format": "prettier --write '**/*.{html,css,js,json,md}'",
+    "analyze": "bundlesize",
+    "content:generate": "node content/scripts/generate-content.js",
+    "content:edit": "node content/scripts/content-editor.js",
+    "content:academic": "node content/scripts/academic-integration.js",
+    "content:watch": "node content/scripts/generate-content.js watch",
+    "content:backup": "node content/scripts/content-editor.js backup"
+  },
+  "keywords": [
+    "academic",
+    "website",
+    "quantum-dynamics",
+    "chemistry",
+    "research",
+    "university-of-rochester"
+  ],
+  "author": "Roman Korol <roman@example.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.69.0",
+    "terser": "^5.24.0",
+    "live-server": "^1.2.2",
+    "npm-run-all": "^4.1.5",
+    "chokidar-cli": "^3.0.0",
+    "chokidar": "^3.5.3",
+    "rimraf": "^5.0.5",
+    "html-validate": "^8.7.0",
+    "stylelint": "^15.11.0",
+    "stylelint-config-standard": "^34.0.0",
+    "eslint": "^8.54.0",
+    "pa11y": "^7.0.0",
+    "imagemin": "^8.0.1",
+    "imagemin-cli": "^7.0.0",
+    "prettier": "^3.1.0",
+    "bundlesize": "^0.18.1"
+  },
+  "bundlesize": [
+    {
+      "path": "assets/css/*.css",
+      "maxSize": "50kb"
+    },
+    {
+      "path": "assets/js/combined.min.js",
+      "maxSize": "10kb"
+    }
+  ],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

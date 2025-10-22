@@ -1,0 +1,90 @@
+{
+  "name": "Roman Korol",
+  "title": "Postdoctoral Fellow",
+  "institution": {
+    "name": "University of Rochester",
+    "url": "https://www.rochester.edu/",
+    "department": "Franco Group",
+    "departmentUrl": "https://sas.rochester.edu/chm/groups/franco/"
+  },
+  "background": {
+    "origin": {
+      "city": "Lutsk",
+      "country": "Ukraine",
+      "url": "https://en.wikipedia.org/wiki/Lutsk"
+    },
+    "education": [
+      {
+        "degree": "PhD",
+        "institution": "Caltech",
+        "url": "http://www.caltech.edu",
+        "color": "#FF6C0C"
+      },
+      {
+        "degree": "Undergrad in Chemistry",
+        "institution": "University of Toronto",
+        "url": "https://www.utoronto.ca",
+        "departmentUrl": "https://www.chem.utoronto.ca",
+        "color": "#00204E",
+        "country": "Canada"
+      }
+    ]
+  },
+  "interests": [
+    "learning new stuff",
+    "teaching",
+    "listening to audiobooks",
+    "working out",
+    "Ukrainian folk dancing"
+  ],
+  "research": {
+    "focus": "dynamics of \"large\" quantum systems",
+    "description": "I developed and applied semiclassical methods based on Feynman's path-integral approach.",
+    "advisors": [
+      {
+        "name": "Thomas F. Miller III",
+        "title": "Prof.",
+        "url": "https://scholar.google.com/citations?user=G1afscUAAAAJ&hl=en",
+        "institution": "Caltech"
+      },
+      {
+        "name": "William A. Goddard III",
+        "title": "Prof.",
+        "url": "https://ms.caltech.edu/people/wag",
+        "institution": "Caltech"
+      },
+      {
+        "name": "Dvira Segal",
+        "title": "Prof.",
+        "url": "http://www.chem.utoronto.ca/~dsegal/",
+        "institution": "University of Toronto",
+        "color": "#00204E",
+        "focus": "conductance of DNA molecular wires"
+      },
+      {
+        "name": "Jeremy Schofield",
+        "title": "Prof.",
+        "url": "http://www.chem.utoronto.ca/~jmschofi/index.html",
+        "institution": "University of Toronto",
+        "color": "#00204E",
+        "focus": "protein folding"
+      }
+    ]
+  },
+  "social": {
+    "email": "roman@example.com",
+    "linkedin": "https://www.linkedin.com/in/roman-korol-a08656a8/",
+    "researchgate": "https://www.researchgate.net/profile/Roman_Korol",
+    "academictree": "https://academictree.org/chemistry/tree.php?pid=749712",
+    "facebook": "https://www.facebook.com/korolrom.ukr",
+    "twitter": "https://twitter.com/RomanKorol7",
+    "youtube": "https://www.youtube.com/channel/UC-fv1tHbhu8BYR2feLiwtCQ",
+    "goodreads": "https://www.goodreads.com/user/show/53633079-roman-korol"
+  },
+  "documents": {
+    "cv": "pdf/CV_Korol.pdf",
+    "publications": "pdf/Publist.pdf",
+    "research": "pdf/Research.pdf",
+    "courselist": "pdf/Courselist.pdf"
+  }
+}

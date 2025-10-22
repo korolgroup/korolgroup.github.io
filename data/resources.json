@@ -1,0 +1,194 @@
+{
+  "sections": {
+    "science": {
+      "title": "Science",
+      "description": "Essential scientific resources and courses",
+      "resources": [
+        {
+          "title": "Quantum Mechanics Courses",
+          "type": "course",
+          "description": "Comprehensive quantum mechanics courses from leading universities",
+          "links": [
+            {
+              "title": "MIT Quantum Physics",
+              "url": "https://ocw.mit.edu/courses/physics/",
+              "provider": "MIT OpenCourseWare"
+            },
+            {
+              "title": "Stanford Quantum Mechanics",
+              "url": "https://online.stanford.edu/",
+              "provider": "Stanford Online"
+            }
+          ]
+        },
+        {
+          "title": "Computational Chemistry",
+          "type": "tutorial",
+          "description": "Learn computational chemistry methods and software",
+          "links": [
+            {
+              "title": "Gaussian Tutorial",
+              "url": "https://gaussian.com/tutorials/",
+              "provider": "Gaussian Inc."
+            },
+            {
+              "title": "ORCA Manual",
+              "url": "https://orcaforum.kofo.mpg.de/",
+              "provider": "ORCA Forum"
+            }
+          ]
+        }
+      ]
+    },
+    "software": {
+      "title": "Software",
+      "description": "Essential software tools for research and productivity",
+      "resources": [
+        {
+          "title": "Cloud Storage",
+          "type": "tool",
+          "description": "Reliable cloud storage solutions for research data",
+          "links": [
+            {
+              "title": "Dropbox",
+              "url": "https://www.dropbox.com",
+              "provider": "Dropbox Inc."
+            },
+            {
+              "title": "Google Drive",
+              "url": "https://www.google.com/drive",
+              "provider": "Google"
+            },
+            {
+              "title": "OneDrive",
+              "url": "https://onedrive.live.com/",
+              "provider": "Microsoft"
+            }
+          ]
+        },
+        {
+          "title": "LaTeX Tools",
+          "type": "tool",
+          "description": "Professional document preparation system",
+          "links": [
+            {
+              "title": "LaTeX Project",
+              "url": "https://www.latex-project.org",
+              "provider": "LaTeX Team"
+            },
+            {
+              "title": "Overleaf",
+              "url": "https://www.overleaf.com",
+              "provider": "Overleaf"
+            }
+          ]
+        },
+        {
+          "title": "Text Editors",
+          "type": "tool",
+          "description": "Advanced text editors for coding and writing",
+          "links": [
+            {
+              "title": "Visual Studio Code",
+              "url": "https://code.visualstudio.com/",
+              "provider": "Microsoft"
+            },
+            {
+              "title": "Notepad++",
+              "url": "https://notepad-plus-plus.org/",
+              "provider": "Don Ho"
+            }
+          ]
+        }
+      ]
+    },
+    "coding": {
+      "title": "Coding",
+      "description": "Programming resources and tutorials",
+      "resources": [
+        {
+          "title": "Python for Scientists",
+          "type": "course",
+          "description": "Learn Python programming for scientific computing",
+          "links": [
+            {
+              "title": "DataCamp Python",
+              "url": "https://www.datacamp.com",
+              "provider": "DataCamp"
+            },
+            {
+              "title": "Codecademy Python",
+              "url": "https://www.codecademy.com/learn/learn-python-3",
+              "provider": "Codecademy"
+            }
+          ]
+        },
+        {
+          "title": "Version Control",
+          "type": "tutorial",
+          "description": "Learn Git and version control for research code",
+          "links": [
+            {
+              "title": "Git Tutorial",
+              "url": "https://git-scm.com/docs/gittutorial",
+              "provider": "Git Project"
+            },
+            {
+              "title": "GitHub Guides",
+              "url": "https://guides.github.com/",
+              "provider": "GitHub"
+            }
+          ]
+        }
+      ]
+    },
+    "opportunities": {
+      "title": "Opportunities",
+      "description": "Academic and research opportunities",
+      "resources": [
+        {
+          "title": "Fellowship Databases",
+          "type": "database",
+          "description": "Find funding opportunities for research",
+          "links": [
+            {
+              "title": "NSF Funding",
+              "url": "https://www.nsf.gov/funding/",
+              "provider": "National Science Foundation"
+            },
+            {
+              "title": "NIH Grants",
+              "url": "https://grants.nih.gov/",
+              "provider": "National Institutes of Health"
+            }
+          ]
+        }
+      ]
+    },
+    "kids": {
+      "title": "Kids & Teens",
+      "description": "Educational resources for young learners",
+      "resources": [
+        {
+          "title": "Science for Kids",
+          "type": "educational",
+          "description": "Fun science activities and experiments",
+          "links": [
+            {
+              "title": "NASA Kids Club",
+              "url": "https://www.nasa.gov/audience/forkids/",
+              "provider": "NASA"
+            },
+            {
+              "title": "Exploratorium",
+              "url": "https://www.exploratorium.edu/",
+              "provider": "Exploratorium"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "last_updated": "2024-09-17",
+  "total_resources": 25
+}

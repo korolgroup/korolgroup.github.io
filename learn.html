@@ -13,16 +13,85 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
             item.className = (item.className == 'hidden') ? 'unhidden' : 'hidden';
         }
     }
+
+    // Enhanced keyboard navigation
+    function makeKeyboardAccessible() {
+        var clickableElements = document.querySelectorAll('[onclick]');
+        for (var i = 0; i < clickableElements.length; i++) {
+            clickableElements[i].setAttribute('tabindex', '0');
+            clickableElements[i].addEventListener('keypress', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    this.click();
+                }
+            });
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', makeKeyboardAccessible);
 </script>
 
 <head>
-    <title>Resources for students</title>
+    <title>Educational Resources - Korol Group | Science, Software & Learning Materials</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="color-scheme" content="light dark">
+    <meta name="description" content="Curated educational resources by Korol Group including science courses, software tutorials, coding materials, and opportunities for students and researchers." />
+    <meta name="keywords" content="educational resources, science courses, software tutorials, coding, learning materials, Korol Group, students" />
+    <meta name="author" content="Korol Group" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Educational Resources - Korol Group | Science, Software & Learning Materials" />
+    <meta property="og:description" content="Curated educational resources by Korol Group including science courses, software tutorials, coding materials, and opportunities for students and researchers." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://romankorol.com/learn.html" />
+    <meta property="og:image" content="https://romankorol.com/images/main3.png" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Educational Resources - Korol Group | Science, Software & Learning Materials" />
+    <meta name="twitter:description" content="Curated educational resources by Korol Group including science courses, software tutorials, coding materials, and opportunities for students and researchers." />
+    <meta name="twitter:image" content="https://romankorol.com/images/main3.png" />
+    <meta name="theme-color" content="#5e5e5e" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#2a2a2a" media="(prefers-color-scheme: dark)">
+
+    <!-- Immediate theme application to prevent FOUC -->
+    <script>
+        (function() {
+            try {
+                var savedTheme = localStorage.getItem('korolgroup-theme') || 'auto';
+                var systemIsDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                var effectiveTheme = savedTheme === 'auto' ? (systemIsDark ? 'dark' : 'light') : savedTheme;
+
+                if (effectiveTheme === 'dark') {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                } else if (effectiveTheme === 'light') {
+                    document.documentElement.setAttribute('data-theme', 'light');
+                }
+            } catch (e) {
+                // If localStorage fails, check system preference
+                if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                }
+            }
+        })();
+    </script>
+
     <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- Preload critical resources -->
+    <link rel="preload" href="assets/css/main.css" as="style">
+    <link rel="preload" href="assets/js/combined.min.js" as="script">
 </head>
 
 <body class="homepage is-preload">
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link" style="position: absolute; left: -9999px; z-index: 999; padding: 8px; background: #000; color: #fff; text-decoration: none;">Skip to main content</a>
+    <style>
+        .skip-link:focus {
+            left: 6px;
+            top: 7px;
+        }
+    </style>
     <div id="page-wrapper">
 
 		<!-- Header -->
@@ -30,10 +99,8 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 			<div class="container">
 
 				<!-- Logo -->
-				<h1 id="logo">Roman Korol</h1>
-				<p>Postdoctoral Fellow
-					@ <a href="https://www.rochester.edu/">UofR</a>
-					in the <a href="https://sas.rochester.edu/chm/groups/franco/">Franco Group</a></p>
+				<h1 id="logo">Korol Group</h1>
+				<p class="research-mission">Combining quantum chemistry, computational physics and quantum information science to understand and utilize quantum matter</p>
 				<!-- Nav -->
 				<nav id="nav" role="navigation" aria-label="main menu">
 					<ul>
@@ -1111,40 +1178,40 @@ http://justinbois.github.io/bootcamp/2018/schedule.html-->
                         <ol>
                             <!--Clouds-->
                             <li> Use one (or more) of the <strong>cloud storage</strong> services. The most popular are:
-                                <a href="https://www.dropbox.com" target="_blank">Dropbox</a>,
-                                <a href="https://www.google.com/drive" target="_blank">Google Drive</a>
-                                and <a href="https://onedrive.live.com/" target="_blank">Onedrive</a>. All three of
+                                <a href="https://www.dropbox.com" target="_blank" rel="noopener noreferrer">Dropbox</a>,
+                                <a href="https://www.google.com/drive" target="_blank" rel="noopener noreferrer">Google Drive</a>
+                                and <a href="https://onedrive.live.com/" target="_blank" rel="noopener noreferrer">Onedrive</a>. All three of
                                 those will give you some space for free. Dropbox also gives you referral bonus space,
                                 so make sure to sign-up using my <a href="https://db.tt/juPXt1J2"
-                                    target="_blank">referral link</a>! Thanks :)
+                                    target="_blank" rel="noopener noreferrer">referral link</a>! Thanks :)
                                 <p>You might also be eligible for extra space from your university or company or if you
                                     purchase a Samsung or an HTC phone.
                                     The benefits of cloud storage are enormous: faster and easier sharing of data,
                                     access from multiple computers, better back-up, etc.</p>
                             </li>
                             <!--Latex-->
-                            <li><a href="https://www.latex-project.org" target="_blank"><strong>Latex</strong></a> is a
+                            <li><a href="https://www.latex-project.org" target="_blank" rel="noopener noreferrer"><strong>Latex</strong></a> is a
                                 typesetting language for mathematicians, scientists and engineers. You can use it to
                                 write thesis, articles, notes etc. - once you learn it, it's much easier to type math
                                 with Latex. There are two commonly used tutorials for it: a <a
-                                    href="http://www.tug.org/begin.html" target="_blank"><strong>shorter
+                                    href="http://www.tug.org/begin.html" target="_blank" rel="noopener noreferrer"><strong>shorter
                                         one</strong></a> and a <a href="https://tobi.oetiker.ch/lshort/lshort.pdf"
-                                    target="_blank"><strong>more extensive one</strong></a>
+                                    target="_blank" rel="noopener noreferrer"><strong>more extensive one</strong></a>
                                 You can also print and use this <a href="http://www.stdout.org/~winston/latex/"
-                                    target="_blank">cheat sheet</a>.
+                                    target="_blank" rel="noopener noreferrer">cheat sheet</a>.
                             </li>
                             <!--Citation-->
                             <li>
-                                Use a citation manager. Everybody has their own preference, but <a target="_blank"
+                                Use a citation manager. Everybody has their own preference, but <a target="_blank" rel="noopener noreferrer"
                                     href="https://www.mendeley.com/download-desktop/"><strong>Mendeley</strong></a> is a
                                 common choise. It is free and available for desktop and mobile; it allows to save papers
                                 with highlights, notes etc. and automatically connects to your Mendeley profile.
-                                <br><a href="http://www.citethisforme.com" target="_blank"><strong>Cite this for
+                                <br><a href="http://www.citethisforme.com" target="_blank" rel="noopener noreferrer"><strong>Cite this for
                                         me</strong></a> allows you to quickly manage a few citations online. It saves
                                 time when you are working on a small report with up to 10 citations.
-                                <br>Other common citation managers are: <a target="_blank"
+                                <br>Other common citation managers are: <a target="_blank" rel="noopener noreferrer"
                                     href="https://endnote.com/downloads/"><strong>Endnote</strong></a> and <a
-                                    target="_blank" href="https://www.zotero.org/"><strong>Zotero</strong></a>. Caltech
+                                    target="_blank" rel="noopener noreferrer" href="https://www.zotero.org/"><strong>Zotero</strong></a>. Caltech
                                 supports the licence for Zotero, find out if your school is paying for one of them. But
                                 beware, that your privileges will expire once you graduate and you might lose your
                                 account or be forced to pay for it. There are ways to export your citations from one
@@ -1160,13 +1227,13 @@ http://justinbois.github.io/bootcamp/2018/schedule.html-->
                             </li>
                             <!--Notepad++-->
                             <li>
-                                <a href="https://notepad-plus-plus.org/" target="_blank"><strong>Notepad++</strong></a>
+                                <a href="https://notepad-plus-plus.org/" target="_blank" rel="noopener noreferrer"><strong>Notepad++</strong></a>
                                 is my preferred text editor on Windows machines. It's tiny, lightning fast and has what
                                 one needs to code and edit text files.
                             </li>
                             <!--Code-->
                             <li>
-                                I use <a target="_blank" href="https://code.visualstudio.com/"><strong>Visual Studio
+                                I use <a target="_blank" rel="noopener noreferrer" href="https://code.visualstudio.com/"><strong>Visual Studio
                                         Code</strong></a> to edit, compile and run trial code. It has multi-language
                                 support and cool interface with many useful and user-friendly features. It requires some
                                 disk space, but not an autrocious amount and it runs smoothly. Other popular IDE's are:
@@ -1183,7 +1250,7 @@ http://justinbois.github.io/bootcamp/2018/schedule.html-->
                             <!--    <li>QTGrace</li>
                                                         <li> If you don't have an e-mail of a form <strong> first_name.last_name@something</strong> try to set it up.
                     Preferably it is with the extension of your organization (e.g. university, company etc.).
-                    If not, the <a>gmail.com</a> or other common extensions are great too. If the standard form is taken, try something similar, as described <a href="https://mashable.com/2012/06/04/gmail-address-custom/#.bTLb.kTwmqq" target="_blank">here</a>.
+                    If not, the <a>gmail.com</a> or other common extensions are great too. If the standard form is taken, try something similar, as described <a href="https://mashable.com/2012/06/04/gmail-address-custom/#.bTLb.kTwmqq" target="_blank" rel="noopener noreferrer">here</a>.
                     Use this e-mail for important/professional things only. Have a different e-mail account for subscriptions, temporary contacts etc. 
                      </li>-->
                         </ol>
@@ -1198,27 +1265,27 @@ http://justinbois.github.io/bootcamp/2018/schedule.html-->
 
                         <ol>
                             <!--DataCamp-->
-                            <li><a href="https://www.datacamp.com" target="_blank"><strong>DataCamp</strong></a> has a
+                            <li><a href="https://www.datacamp.com" target="_blank" rel="noopener noreferrer"><strong>DataCamp</strong></a> has a
                                 selection of courses on
                                 <em>R</em>, <em>Python</em>, <em>Statistics</em> and <em>Data analysis</em>.
                             </li>
                             <!--Interactive vim tutorial-->
-                            <li><a href="https://www.openvim.com" target="_blank"><strong>Interactive vim
+                            <li><a href="https://www.openvim.com" target="_blank" rel="noopener noreferrer"><strong>Interactive vim
                                         tutorial</strong></a> vim is a
                                 popular text editor in Linux-based systems. Print and use a
                                 <a href="http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html"
-                                    target="_blank">graphical cheat sheet</a>
+                                    target="_blank" rel="noopener noreferrer">graphical cheat sheet</a>
                                 or a <a href="https://www.cheatography.com/ericg/cheat-sheets/vi-editor/"
-                                    target="_blank">more conventional one.
+                                    target="_blank" rel="noopener noreferrer">more conventional one.
                                 </a></li>
                             <!--Cheatsheet wallpaper-->
                             <li>This <a
                                     href="https://kernel.fuhrer.web.id/download-linux-wallpapers-that-are-also-cheat-sheets/"
-                                    target="_blank">
+                                    target="_blank" rel="noopener noreferrer">
                                     <strong>Cheatsheet wallpaper</strong></a> is really nice way to have the
                                 <em>shell</em>, <em><a href="https://www.emacswiki.org/emacs/SiteMap"
-                                        target="_blank">Emacs</a></em> and <em><a href="https://www.vim.org/docs.php"
-                                        target="_blank">vim</a></em> commands at your fingertips.
+                                        target="_blank" rel="noopener noreferrer">Emacs</a></em> and <em><a href="https://www.vim.org/docs.php"
+                                        target="_blank" rel="noopener noreferrer">vim</a></em> commands at your fingertips.
                             </li>
                             <!--Website-->
                             <li> Set up your own <strong>web-site</strong>. Not only will it be fun and useful exercise
@@ -1230,11 +1297,11 @@ http://justinbois.github.io/bootcamp/2018/schedule.html-->
                                 immensely helpful. I used
                                 <a href="https://html5up.net/strongly-typed">this template</a> from them for the
                                 web-site you are browsing now. I also used <a href="http://brackets.io"
-                                    target="_blank"><strong>brackets</strong></a> to edit the html file.
+                                    target="_blank" rel="noopener noreferrer"><strong>brackets</strong></a> to edit the html file.
                                 <p>You do need a domain to host a web-site. Check if your school/organization is hosting
                                     for free. Otherwise, you will need to purchase a domain. On the bright side, you
                                     will have freedom of choice for your domain name! <a
-                                        href="https://firstsiteguide.com/choose-domain/" target="_blank">This
+                                        href="https://firstsiteguide.com/choose-domain/" target="_blank" rel="noopener noreferrer">This
                                         website</a> discusses the issue.</p>
                             </li>
                             <li>Check out a bunch of educational and fun coding games in the <a
@@ -1375,38 +1442,6 @@ http://justinbois.github.io/bootcamp/2018/schedule.html-->
 		<!-- Footer -->
 		<section id="footer">
 			<div class="container">
-				<div class="row aln-center">
-
-					<!--<div class="col-4 col-12-small">
-									<a href="index.html" class="image featured"><img src="images/Logos/RK_full.png" alt="letter R in blue and K in yellow, my logo" /></a>
-							</div>-->
-
-					<div class="col-1 col-4-small">
-						<a href="https://gymnasia21.lutsk.ua/" class="image featured"><img
-								src="images/Logos/Lutsk_himnasia.jpg" alt="Logo of Lutsk school #21" /></a>
-					</div>
-					<!--<div class="col-2 col-4-small">
-<a href="https://www.utoronto.ca/" class="image featured"><img src="images/Logos/Utoronto.svg" alt="University of Toronto" /></a>
-							</div>		-->
-					<div class="col-3 col-8-small">
-						<a href="https://www.chem.utoronto.ca" class="image featured"><img
-								src="images/Logos/Chem_UofT.png" alt="Logo of Chemistry department at the University of Toronto" /></a>
-					</div>
-					<div class="col-4 col-6-small" style="text-align:center">
-						<a href="http://www.caltech.edu/" class="image featured"><img
-								src="images/Logos/Caltech_Logo.svg" alt="Caltech logo" /></a>
-					</div>
-					<div class="col-4 col-6-small" style="text-align:center">
-						<a href="https://www.rochester.edu/" class="image featured"><img
-								src="images/Logos/UR.2col.v1.svg" alt="University of Rochester logo" /></a>
-					</div>
-
-					<!--<div class="col-3 col-6-small">
-                                <p></p><a href="http://www.cce.caltech.edu"><h1>Division of Chemistry <br>and Chemical Engineering</h1></a>
-							</div>-->
-
-
-				</div>
 			</div>
 
 			<div class="container">
@@ -1439,64 +1474,44 @@ http://justinbois.github.io/bootcamp/2018/schedule.html-->
 							<div class="col-6 col-12-medium">-->
 				<section>
 					<div class="row">
-						<div class="col-4">
+						<div class="col-6">
 							<ul class="icons">
 								<li class="icon fa-home" style="font-size:22px;">
-									436 Hutchison Hall<br>
+									Department of Chemistry<br>
+									Université de Sherbrooke<br>
+									Sherbrooke, QC, Canada
 								</li>
-								<!--<li class="icon fa-phone" style="font-size:22px;">
-												</li>-->
+							</ul>
+						</div>
+						<div class="col-6">
+							<ul class="icons">
 								<li class="icon fa-at" style="font-size:22px;">
-									<a href="mailto:roman@caltech.edu">roman@alumni.caltech.edu</a>
+									<a href="mailto:Roman.Korol@USherbrooke.ca">Roman.Korol@USherbrooke.ca</a>
 								</li>
-								<!-- <li class="icon fa-envelope" style="font-size:22px;">
-									1200 E. California Blvd<br>
-									Mailcode: MC 127-72<br>
-									Pasadena, CA 91125,
-									USA
-								</li> -->
 							</ul>
 						</div>
-						<div class="col-2">
-							<ul class="icons">
-								<a href="https://scholar.google.com.ua/citations?hl=en&user=YAAMduoAAAAJ"
-									target="_blank">
-									<li class="icon fa-google-plus-square fa-3x"></li>
-								</a>
-								<a href="https://www.linkedin.com/in/roman-korol-a08656a8/" target="_blank">
-									<li class="icon fa-linkedin-square fa-3x"></li>
-								</a>
-							</ul>
-						</div>
-						<div class="col-2">
-							<ul class="icons">
-									<a href="https://www.researchgate.net/profile/Roman_Korol" target="_blank">
-									<li class="icon fa-address-card fa-3x"></li>
-								</a>
-								<a href="https://academictree.org/chemistry/tree.php?pid=749712" target="_blank">
-									<li class="icon fa-sitemap fa-3x"></li>
-								</a>
-							</ul>
-						</div>
-						<div class="col-2">
-							<ul class="icons">
-								<a href="https://www.facebook.com/korolrom.ukr" target="_blank">
-									<li class="icon fa-facebook-square fa-3x"></li>
-								</a>
-								<a href="https://twitter.com/RomanKorol7" target="_blank">
-									<li class="icon fa-twitter-square fa-3x"></li>
-								</a>
-							</ul>
-						</div>
-						<div class="col-2">
-							<ul class="icons">
-								<a href="https://www.youtube.com/channel/UC-fv1tHbhu8BYR2feLiwtCQ" target="_blank">
-									<li class="icon fa-youtube fa-3x"></li>
-								</a>
-								<a href="https://www.goodreads.com/user/show/53633079-roman-korol" target="_blank">
-									<li class="icon fa-book fa-3x"></li>
-								</a>
-							</ul>
+					</div>
+					<!-- Single row of all 6 social media links -->
+					<div class="row">
+						<div class="col-12" style="text-align: center;">
+							<a href="https://github.com/korolgroup" target="_blank" rel="noopener noreferrer" style="margin: 0 0.5em;">
+								<i class="icon fa-github fa-3x"></i>
+							</a>
+							<a href="https://scholar.google.com.ua/citations?hl=en&user=YAAMduoAAAAJ" target="_blank" rel="noopener noreferrer" style="margin: 0 0.5em;">
+								<i class="icon fa-graduation-cap fa-3x"></i>
+							</a>
+							<a href="https://www.linkedin.com/in/roman-korol-a08656a8/" target="_blank" rel="noopener noreferrer" style="margin: 0 0.5em;">
+								<i class="icon fa-linkedin-square fa-3x"></i>
+							</a>
+							<a href="https://twitter.com/KorolGroup" target="_blank" rel="noopener noreferrer" style="margin: 0 0.5em;">
+								<i class="icon fa-twitter-square fa-3x"></i>
+							</a>
+							<a href="https://orcid.org/0000-0002-9275-5897" target="_blank" rel="noopener noreferrer" style="margin: 0 0.5em;">
+								<i class="icon fa-id-card fa-3x"></i>
+							</a>
+							<a href="mailto:Roman.Korol@USherbrooke.ca" target="_blank" rel="noopener noreferrer" style="margin: 0 0.5em;">
+								<i class="icon fa-envelope fa-3x"></i>
+							</a>
 						</div>
 					</div>
 				</section>
@@ -1505,7 +1520,7 @@ http://justinbois.github.io/bootcamp/2018/schedule.html-->
 			</div>
 			<div id="copyright" class="container">
 				<ul class="links">
-					<li>&copy; RK <time datetime="2018">2018</time>. All rights reserved.</li>
+					<li>&copy; Korol Group <time datetime="2025">2025</time>. All rights reserved.</li>
 					<li>Original Design by <a href="http://html5up.net">HTML5 UP</a></li>
 				</ul>
 			</div>
@@ -1514,14 +1529,13 @@ http://justinbois.github.io/bootcamp/2018/schedule.html-->
 
 
 
-	<!-- Scripts -->
-	<script src="assets/js/modal.js"></script>
+	<!-- Scripts - Optimized -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.dropotron.min.js"></script>
 	<script src="assets/js/browser.min.js"></script>
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+	<script src="assets/js/combined.min.js"></script>
 
 </body>
 

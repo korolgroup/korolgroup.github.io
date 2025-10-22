@@ -1,0 +1,23 @@
+<!-- Publication Template -->
+<div class="publication" data-year="{{year}}" data-status="{{status}}">
+    <div id="{{id}}" class="hidden">
+        {{authorsFormatted}} <i>{{journal}}</i> <b>{{year}}</b>
+        {{#if doi}}<a href="https://doi.org/{{doi}}">{{doi}}</a>{{/if}}
+        {{#if awards}}{{awards}}{{/if}}
+
+        <a class="image left">
+            <img class="myBtn_multi" src="{{image}}"
+                 alt="Publication thumbnail for {{title}}"
+                 title="{{title}}">
+        </a>
+
+        <!-- Modal for larger image -->
+        <div class="modal modal_multi">
+            <span class="close close_multi">×</span>
+            <img class="modal-content" src="{{image}}"
+                 alt="Research figure: {{title}}">
+        </div>
+
+        <p>{{abstract}}</p>
+    </div>
+</div>

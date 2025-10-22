@@ -8,13 +8,66 @@
 <!--tells the browser the language of the content is English-->
 
 <head>
-    <title>Roman Korol</title>
+    <title>News & Updates - Korol Group | Academic Activities & Announcements</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="color-scheme" content="light dark">
+    <meta name="description" content="Latest news, updates, and announcements from Korol Group's academic activities, research developments, and professional activities at Université de Sherbrooke." />
+    <meta name="keywords" content="Korol Group news, academic updates, research announcements, Université de Sherbrooke, quantum dynamics" />
+    <meta name="author" content="Korol Group" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="News & Updates - Korol Group | Academic Activities & Announcements" />
+    <meta property="og:description" content="Latest news, updates, and announcements from Korol Group's academic activities, research developments, and professional activities at Université de Sherbrooke." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://romankorol.com/news.html" />
+    <meta property="og:image" content="https://romankorol.com/images/news/news-banner.jpg" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="News & Updates - Korol Group | Academic Activities & Announcements" />
+    <meta name="twitter:description" content="Latest news, updates, and announcements from Korol Group's academic activities, research developments, and professional activities at Université de Sherbrooke." />
+    <meta name="twitter:image" content="https://romankorol.com/images/news/news-banner.jpg" />
+    <meta name="theme-color" content="#5e5e5e" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#2a2a2a" media="(prefers-color-scheme: dark)">
+
+    <!-- Immediate theme application to prevent FOUC -->
+    <script>
+        (function() {
+            try {
+                var savedTheme = localStorage.getItem('korolgroup-theme') || 'auto';
+                var systemIsDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                var effectiveTheme = savedTheme === 'auto' ? (systemIsDark ? 'dark' : 'light') : savedTheme;
+
+                if (effectiveTheme === 'dark') {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                } else if (effectiveTheme === 'light') {
+                    document.documentElement.setAttribute('data-theme', 'light');
+                }
+            } catch (e) {
+                // If localStorage fails, check system preference
+                if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                }
+            }
+        })();
+    </script>
+
     <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- Preload critical resources -->
+    <link rel="preload" href="assets/css/main.css" as="style">
+    <link rel="preload" href="assets/js/combined.min.js" as="script">
 </head>
 
 <body class="homepage is-preload">
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link" style="position: absolute; left: -9999px; z-index: 999; padding: 8px; background: #000; color: #fff; text-decoration: none;">Skip to main content</a>
+    <style>
+        .skip-link:focus {
+            left: 6px;
+            top: 7px;
+        }
+    </style>
     <div id="page-wrapper">
 
 		<!-- Header -->
@@ -22,10 +75,8 @@
 			<div class="container">
 
 				<!-- Logo -->
-				<h1 id="logo">Roman Korol</h1>
-				<p>Postdoctoral Fellow
-					@ <a href="https://www.rochester.edu/">UofR</a>
-					in the <a href="https://sas.rochester.edu/chm/groups/franco/">Franco Group</a></p>
+				<h1 id="logo">Korol Group</h1>
+				<p class="research-mission">Combining quantum chemistry, computational physics and quantum information science to understand and utilize quantum matter</p>
 				<!-- Nav -->
 				<nav id="nav" role="navigation" aria-label="main menu">
 					<ul>
@@ -91,32 +142,19 @@
                         <section>
                             <ul class="divided">
                                 <header>
-                                    <h2>Personal blog</h2>
+                                    <h2>News</h2>
                                 </header>
 
                                 <header>
-                                    <h2><strong id="2020"><time datetime="2020">2020</time></strong> | <a href="#2019"><time datetime="2019">2019</time></a> | <a
-                                            href="#2018">2018</a></h2>
+                                    <h2><strong id="2026"><time datetime="2026">2026</time></strong></h2>
                                 </header>
-                                <!--PhD candidate-->
-                                <!-- Karen's article-->
-                                <!-- Social investor-->
-                                <!--Waterfall-->
-                                <!-- Berkeley statmech-->
-
-                                <header>
-                                    <h2><a href="#2020"><time datetime="2020">2020</time></a> | <strong id="2019"><time datetime="2019">2019</time></strong> | <a
-                                            href="#2018">2018</a></h2>
-                                </header>
-
-                                <!-- TSRC -->
+                                <!-- Group established -->
 
                                 <li>
-
                                     <article class="box excerpt">
                                         <header>
-                                            <span class="date"> <time datetime="2019-07-29">July 29</date> - <time datetime="2019-08-02">August 2</date></span>
-                                            <h3>Telluride School on Theoretical Chemistry</h3>
+                                            <span class="date"><time datetime="2026-01-05">January 5, 2026</time></span>
+                                            <h3>Group established at Université de Sherbrooke</h3>
                                         </header>
                                         <div class="row aln-center">
                                             <div class="col-6">
@@ -348,7 +386,7 @@
                                                 Every year in the evening of the fourth Saturday of November Ukrainians
                                                 light a candle on their window porch and remember. We commemorate the
                                                 deaths of 3-10 million people (according to different estimates) in a
-                                                purposefully inflicted famine (named <a target="_blank"
+                                                purposefully inflicted famine (named <a target="_blank" rel="noopener noreferrer"
                                                     href="https://en.wikipedia.org/wiki/Holodomor">Holodomor</a>) under
                                                 the rule of Stalin in <time datetime="1932">1932-33</date>. My candle was lit this year, I grieve and
                                                 remember.
@@ -405,7 +443,7 @@
                                                 active Ukrainians in the area and found myself as a performer at the
                                                 Ukrainian-Brazilian festival, organized by <a
                                                     href="https://www.facebook.com/natalie.godzhi">Natalia Godzhik</a>.
-                                                Here is an <a target="_blank"
+                                                Here is an <a target="_blank" rel="noopener noreferrer"
                                                     href="https://youtu.be/DlxWsgKN40M">amateur video</a> of the short
                                                 performance</p>
                                         </div>
@@ -1206,38 +1244,6 @@
 		<!-- Footer -->
 		<section id="footer">
 			<div class="container">
-				<div class="row aln-center">
-
-					<!--<div class="col-4 col-12-small">
-									<a href="index.html" class="image featured"><img src="images/Logos/RK_full.png" alt="letter R in blue and K in yellow, my logo" /></a>
-							</div>-->
-
-					<div class="col-1 col-4-small">
-						<a href="https://gymnasia21.lutsk.ua/" class="image featured"><img
-								src="images/Logos/Lutsk_himnasia.jpg" alt="Logo of Lutsk school #21" /></a>
-					</div>
-					<!--<div class="col-2 col-4-small">
-<a href="https://www.utoronto.ca/" class="image featured"><img src="images/Logos/Utoronto.svg" alt="University of Toronto" /></a>
-							</div>		-->
-					<div class="col-3 col-8-small">
-						<a href="https://www.chem.utoronto.ca" class="image featured"><img
-								src="images/Logos/Chem_UofT.png" alt="Logo of Chemistry department at the University of Toronto" /></a>
-					</div>
-					<div class="col-4 col-6-small" style="text-align:center">
-						<a href="http://www.caltech.edu/" class="image featured"><img
-								src="images/Logos/Caltech_Logo.svg" alt="Caltech logo" /></a>
-					</div>
-					<div class="col-4 col-6-small" style="text-align:center">
-						<a href="https://www.rochester.edu/" class="image featured"><img
-								src="images/Logos/UR.2col.v1.svg" alt="University of Rochester logo" /></a>
-					</div>
-
-					<!--<div class="col-3 col-6-small">
-                                <p></p><a href="http://www.cce.caltech.edu"><h1>Division of Chemistry <br>and Chemical Engineering</h1></a>
-							</div>-->
-
-
-				</div>
 			</div>
 
 			<div class="container">
@@ -1270,64 +1276,44 @@
 							<div class="col-6 col-12-medium">-->
 				<section>
 					<div class="row">
-						<div class="col-4">
+						<div class="col-6">
 							<ul class="icons">
 								<li class="icon fa-home" style="font-size:22px;">
-									436 Hutchison Hall<br>
+									Department of Chemistry<br>
+									Université de Sherbrooke<br>
+									Sherbrooke, QC, Canada
 								</li>
-								<!--<li class="icon fa-phone" style="font-size:22px;">
-												</li>-->
+							</ul>
+						</div>
+						<div class="col-6">
+							<ul class="icons">
 								<li class="icon fa-at" style="font-size:22px;">
-									<a href="mailto:roman@caltech.edu">roman@alumni.caltech.edu</a>
+									<a href="mailto:Roman.Korol@USherbrooke.ca">Roman.Korol@USherbrooke.ca</a>
 								</li>
-								<!-- <li class="icon fa-envelope" style="font-size:22px;">
-									1200 E. California Blvd<br>
-									Mailcode: MC 127-72<br>
-									Pasadena, CA 91125,
-									USA
-								</li> -->
 							</ul>
 						</div>
-						<div class="col-2">
-							<ul class="icons">
-								<a href="https://scholar.google.com.ua/citations?hl=en&user=YAAMduoAAAAJ"
-									target="_blank">
-									<li class="icon fa-google-plus-square fa-3x"></li>
-								</a>
-								<a href="https://www.linkedin.com/in/roman-korol-a08656a8/" target="_blank">
-									<li class="icon fa-linkedin-square fa-3x"></li>
-								</a>
-							</ul>
-						</div>
-						<div class="col-2">
-							<ul class="icons">
-									<a href="https://www.researchgate.net/profile/Roman_Korol" target="_blank">
-									<li class="icon fa-address-card fa-3x"></li>
-								</a>
-								<a href="https://academictree.org/chemistry/tree.php?pid=749712" target="_blank">
-									<li class="icon fa-sitemap fa-3x"></li>
-								</a>
-							</ul>
-						</div>
-						<div class="col-2">
-							<ul class="icons">
-								<a href="https://www.facebook.com/korolrom.ukr" target="_blank">
-									<li class="icon fa-facebook-square fa-3x"></li>
-								</a>
-								<a href="https://twitter.com/RomanKorol7" target="_blank">
-									<li class="icon fa-twitter-square fa-3x"></li>
-								</a>
-							</ul>
-						</div>
-						<div class="col-2">
-							<ul class="icons">
-								<a href="https://www.youtube.com/channel/UC-fv1tHbhu8BYR2feLiwtCQ" target="_blank">
-									<li class="icon fa-youtube fa-3x"></li>
-								</a>
-								<a href="https://www.goodreads.com/user/show/53633079-roman-korol" target="_blank">
-									<li class="icon fa-book fa-3x"></li>
-								</a>
-							</ul>
+					</div>
+					<!-- Single row of all 6 social media links -->
+					<div class="row">
+						<div class="col-12" style="text-align: center;">
+							<a href="https://github.com/korolgroup" target="_blank" rel="noopener noreferrer" style="margin: 0 0.5em;">
+								<i class="icon fa-github fa-3x"></i>
+							</a>
+							<a href="https://scholar.google.com.ua/citations?hl=en&user=YAAMduoAAAAJ" target="_blank" rel="noopener noreferrer" style="margin: 0 0.5em;">
+								<i class="icon fa-graduation-cap fa-3x"></i>
+							</a>
+							<a href="https://www.linkedin.com/in/roman-korol-a08656a8/" target="_blank" rel="noopener noreferrer" style="margin: 0 0.5em;">
+								<i class="icon fa-linkedin-square fa-3x"></i>
+							</a>
+							<a href="https://twitter.com/KorolGroup" target="_blank" rel="noopener noreferrer" style="margin: 0 0.5em;">
+								<i class="icon fa-twitter-square fa-3x"></i>
+							</a>
+							<a href="https://orcid.org/0000-0002-9275-5897" target="_blank" rel="noopener noreferrer" style="margin: 0 0.5em;">
+								<i class="icon fa-id-card fa-3x"></i>
+							</a>
+							<a href="mailto:Roman.Korol@USherbrooke.ca" target="_blank" rel="noopener noreferrer" style="margin: 0 0.5em;">
+								<i class="icon fa-envelope fa-3x"></i>
+							</a>
 						</div>
 					</div>
 				</section>
@@ -1336,7 +1322,7 @@
 			</div>
 			<div id="copyright" class="container">
 				<ul class="links">
-					<li>&copy; RK <time datetime="2018">2018</time>. All rights reserved.</li>
+					<li>&copy; Korol Group <time datetime="2025">2025</time>. All rights reserved.</li>
 					<li>Original Design by <a href="http://html5up.net">HTML5 UP</a></li>
 				</ul>
 			</div>
@@ -1345,14 +1331,13 @@
 
 
 
-	<!-- Scripts -->
-	<script src="assets/js/modal.js"></script>
+	<!-- Scripts - Optimized -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.dropotron.min.js"></script>
 	<script src="assets/js/browser.min.js"></script>
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+	<script src="assets/js/combined.min.js"></script>
 
 </body>
 

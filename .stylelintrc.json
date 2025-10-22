@@ -1,0 +1,49 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "import",
+          "media",
+          "supports"
+        ]
+      }
+    ],
+    "selector-class-pattern": null,
+    "selector-id-pattern": null,
+    "custom-property-pattern": null,
+    "declaration-block-no-redundant-longhand-properties": null,
+    "shorthand-property-no-redundant-values": null,
+    "comment-empty-line-before": null,
+    "rule-empty-line-before": [
+      "always-multi-line",
+      {
+        "except": ["first-nested"],
+        "ignore": ["after-comment"]
+      }
+    ],
+    "color-hex-length": "short",
+    "color-named": "never",
+    "font-family-name-quotes": "always-where-required",
+    "function-url-quotes": "always",
+    "string-quotes": "double",
+    "property-no-vendor-prefix": null,
+    "value-no-vendor-prefix": null,
+    "max-nesting-depth": 4,
+    "selector-max-compound-selectors": 4,
+    "selector-max-specificity": "0,4,0",
+    "declaration-property-value-disallowed-list": {
+      "border": ["none"],
+      "border-top": ["none"],
+      "border-right": ["none"],
+      "border-bottom": ["none"],
+      "border-left": ["none"]
+    }
+  },
+  "ignoreFiles": [
+    "assets/css/font-awesome.min.css",
+    "assets/css/*.min.css"
+  ]
+}
