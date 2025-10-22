@@ -1455,6 +1455,16 @@ $dark-accent-hover: #6bb6ff;
 
 // Dark theme mixin
 @mixin dark-theme {
+	// CSS custom properties for dark theme
+	:root {
+		--page-bg: #{$dark-bg-primary};
+		--heading-color: #{$dark-text-primary};
+		--accent-color: #{$dark-accent};
+		--text-muted: #{$dark-text-muted};
+		--border-color: #{$dark-border};
+		--box-bg: #{$dark-bg-tertiary};
+	}
+
 	// Base styles
 	body {
 		background: $dark-bg-primary;

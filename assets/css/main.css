@@ -3,3 +3,4 @@
 .box.highlight .image.left img{max-width:250px;width:250px;height:auto}
 .box.highlight div[id]{overflow:auto;}
 @media (prefers-color-scheme: dark){html:not([data-theme="light"]) .team-member{background:#333!important;border-color:#444!important}html:not([data-theme="light"]) .team-member div{color:#888!important}}html[data-theme="dark"] .team-member{background:#333!important;border-color:#444!important}html[data-theme="dark"] .team-member div{color:#888!important}
+@media (prefers-color-scheme: dark){html:not([data-theme="light"]) :root{--page-bg:#1a1a1a;--heading-color:#e0e0e0;--accent-color:#4a9eff;--text-muted:#888;--border-color:#444;--box-bg:#333}}html[data-theme="dark"] :root{--page-bg:#1a1a1a;--heading-color:#e0e0e0;--accent-color:#4a9eff;--text-muted:#888;--border-color:#444;--box-bg:#333}
