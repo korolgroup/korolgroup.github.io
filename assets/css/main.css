@@ -52,3 +52,30 @@ html[data-theme="dark"] .button.alt {
 html[data-theme="dark"] .button.alt:hover {
   color: #fff!important;
 }
+/* Mobile footer fixes - improved spacing and layout */
+@media screen and (max-width: 736px) {
+  #footer .footer-social-link {
+    margin: 0.5em 0.5em !important;
+    display: inline-block;
+  }
+  #footer .footer-social-link i {
+    font-size: 2.2em !important;
+  }
+  #footer .icons li {
+    font-size: 16px !important;
+    padding-top: 1em;
+    line-height: 1.6em;
+  }
+  #footer .icons li.icon:before {
+    display: block;
+    margin-bottom: 0.5em;
+  }
+  #footer h2 {
+    font-size: 1.1em !important;
+    line-height: 1.4em !important;
+  }
+  #footer .col-12-small {
+    text-align: center !important;
+    margin-bottom: 1.5em;
+  }
+}
