@@ -2,3 +2,4 @@
 .hidden{display:none}.unhidden{display:block}
 .box.highlight .image.left img{max-width:250px;width:250px;height:auto}
 .box.highlight div[id]{overflow:auto;}
+@media (prefers-color-scheme: dark){html:not([data-theme="light"]) .team-member{background:#333!important;border-color:#444!important}html:not([data-theme="light"]) .team-member div{color:#888!important}}html[data-theme="dark"] .team-member{background:#333!important;border-color:#444!important}html[data-theme="dark"] .team-member div{color:#888!important}

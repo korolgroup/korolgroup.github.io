@@ -1799,6 +1799,16 @@ $dark-accent-hover: #6bb6ff;
 	.icon:before {
 		color: $dark-text-secondary;
 	}
+
+	// Team member placeholder box
+	.team-member {
+		background: $dark-bg-tertiary !important;
+		border-color: $dark-border !important;
+
+		div {
+			color: $dark-text-muted !important;
+		}
+	}
 }
 
 // Apply dark theme based on user preference or explicit setting
