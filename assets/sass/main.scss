@@ -2065,3 +2065,42 @@ html[data-theme="dark"] .research-mission {
 		color: #b0b0b0 !important;
 	}
 }
+/* Mobile footer - comprehensive fix for icon overlap and stretching */
+@media screen and (max-width: 736px) {
+	/* Social media icons - reduce size and add spacing */
+	#footer .footer-social-link {
+		margin: 0.4em 0.3em !important;
+		display: inline-block !important;
+	}
+	#footer .footer-social-link i {
+		font-size: 2em !important;
+	}
+	
+	/* Address and email icons - prevent overlap with text */
+	#footer .icons li.icon {
+		display: flex !important;
+		flex-direction: column !important;
+		align-items: center !important;
+		font-size: 15px !important;
+		line-height: 1.5em !important;
+	}
+	#footer .icons li.icon:before {
+		display: block !important;
+		margin-bottom: 0.5em !important;
+		margin-right: 0 !important;
+		font-size: 1.3em !important;
+	}
+	
+	/* Ensure columns stack properly */
+	#footer .col-12-small {
+		width: 100% !important;
+		text-align: center !important;
+		margin-bottom: 1.5em !important;
+	}
+	
+	/* Header spacing */
+	#footer h2 {
+		font-size: 1.1em !important;
+		line-height: 1.4em !important;
+	}
+}

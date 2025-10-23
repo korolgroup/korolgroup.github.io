@@ -1,8 +1,8 @@
 {
   "permissions": {
-    "defaultMode": "bypassPermissions",
     "allow": [
-      "Bash(python:*)",
+      "Bash(python3:*)",
+      "Bash(source:*)",
       "Bash(pip install:*)",
       "Bash(django-admin startproject:*)",
       "Bash(python manage.py startapp:*)",
@@ -12,13 +12,16 @@
       "Bash(git commit:*)",
       "Bash(python test:*)",
       "Bash(timeout 10 python manage.py runserver:*)",
-      "Bash(findstr:*)",
-      "Bash(tasklist:*)",
-      "Bash(taskkill:*)",
-      "Bash(git checkout:*)",
-      "Bash(mkdir:*)"
+      "Bash(python:*)",
+      "Bash(grep:*)",
+      "Bash(lsof:*)",
+      "Bash(kill:*)",
+      "Bash(git push:*)",
+      "Bash(npx sass:*)",
+      "Bash(npm install:*)"
     ],
     "deny": [],
-    "ask": []
+    "ask": [],
+    "defaultMode": "bypassPermissions"
   }
 }
