@@ -41,22 +41,22 @@
   "author": "Roman Korol <roman@example.com>",
   "license": "MIT",
   "devDependencies": {
-    "sass": "^1.69.0",
-    "terser": "^5.24.0",
-    "live-server": "^1.2.2",
-    "npm-run-all": "^4.1.5",
-    "chokidar-cli": "^3.0.0",
+    "bundlesize": "^0.18.1",
     "chokidar": "^3.5.3",
-    "rimraf": "^5.0.5",
-    "html-validate": "^8.7.0",
-    "stylelint": "^15.11.0",
-    "stylelint-config-standard": "^34.0.0",
+    "chokidar-cli": "^3.0.0",
     "eslint": "^8.54.0",
-    "pa11y": "^7.0.0",
+    "html-validate": "^8.7.0",
     "imagemin": "^8.0.1",
     "imagemin-cli": "^7.0.0",
+    "live-server": "^1.2.2",
+    "npm-run-all": "^4.1.5",
+    "pa11y": "^7.0.0",
     "prettier": "^3.1.0",
-    "bundlesize": "^0.18.1"
+    "rimraf": "^5.0.5",
+    "sass": "^1.93.2",
+    "stylelint": "^15.11.0",
+    "stylelint-config-standard": "^34.0.0",
+    "terser": "^5.24.0"
   },
   "bundlesize": [
     {
