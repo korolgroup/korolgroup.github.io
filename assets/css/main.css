@@ -3045,7 +3045,7 @@ html[data-theme=dark] .research-mission {
 .language-toggle {
   position: fixed;
   top: 20px;
-  right: 80px;
+  left: 20px;
   z-index: 1000;
   display: flex;
   gap: 0.5em;
@@ -3123,7 +3123,7 @@ html[data-theme=dark] .language-toggle span {
 @media screen and (max-width: 736px) {
   .language-toggle {
     top: 10px;
-    right: 60px;
+    left: 10px;
     padding: 6px 12px;
     font-size: 0.85em;
   }
