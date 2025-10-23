@@ -2372,7 +2372,8 @@ button.alt:active,
     border-left-color: #444;
   }
   html:not([data-theme=light]) .box.excerpt .date {
-    background: #333;
+    background: #4a9eff;
+    color: #fff;
   }
   html:not([data-theme=light]) table tbody tr {
     border-top-color: #444;
@@ -2652,7 +2653,8 @@ html[data-theme=dark] blockquote {
   border-left-color: #444;
 }
 html[data-theme=dark] .box.excerpt .date {
-  background: #333;
+  background: #4a9eff;
+  color: #fff;
 }
 html[data-theme=dark] table tbody tr {
   border-top-color: #444;
