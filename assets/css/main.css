@@ -97,3 +97,12 @@ html[data-theme="dark"] .button.alt:hover {
 }
 @media (prefers-color-scheme: dark){html:not([data-theme="light"]) #features{margin-bottom:0!important}}html[data-theme="dark"] #features{margin-bottom:0!important}
 @media (prefers-color-scheme: dark){html:not([data-theme="light"]) .box{background:#333!important;border-color:#444!important}}html[data-theme="dark"] .box{background:#333!important;border-color:#444!important}
+/* Ensure footer columns stack on mobile */
+@media screen and (max-width: 736px) {
+  #footer .col-12-small {
+    width: 100% !important;
+    display: block !important;
+    text-align: center !important;
+    margin-bottom: 1.5em !important;
+  }
+}
