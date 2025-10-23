@@ -1,228 +1,42 @@
 <!DOCTYPE HTML>
-<!--
-	Strongly Typed by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html lang="en">
-<!--tells the browser the language of the content is English-->
-
+<html>
 <head>
-	<title>Korol Group - Department of Chemistry, Sherbrooke University</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<meta name="color-scheme" content="light dark">
-	<meta name="description" content="The Korol Group at Sherbrooke University develops theoretical frameworks for quantum systems, focusing on quantum statistics, chemical reaction rates, and open quantum dynamics." />
-	<meta name="keywords" content="Korol Group, quantum dynamics, semiclassical methods, Sherbrooke University, computational chemistry, quantum statistics, chemical reaction rates, open quantum dynamics" />
-	<meta name="author" content="Korol Group" />
-
-	<!-- Open Graph Meta Tags -->
-	<meta property="og:title" content="Korol Group - Department of Chemistry, Sherbrooke University" />
-	<meta property="og:description" content="The Korol Group at Sherbrooke University develops theoretical frameworks for quantum systems, focusing on quantum statistics, chemical reaction rates, and open quantum dynamics." />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://romankorol.com" />
-	<meta property="og:image" content="https://romankorol.com/images/banner.jpg" />
-
-	<!-- Twitter Card Meta Tags -->
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Korol Group - Department of Chemistry, Sherbrooke University" />
-	<meta name="twitter:description" content="The Korol Group at Sherbrooke University develops theoretical frameworks for quantum systems, focusing on quantum statistics, chemical reaction rates, and open quantum dynamics." />
-	<meta name="twitter:image" content="https://romankorol.com/images/banner.jpg" />
-	<meta name="theme-color" content="#5e5e5e" media="(prefers-color-scheme: light)">
-	<meta name="theme-color" content="#2a2a2a" media="(prefers-color-scheme: dark)">
-	<!-- Immediate theme application to prevent FOUC -->
+	<title>Korol Group - Redirecting...</title>
+	<meta name="robots" content="noindex, nofollow">
 	<script>
+		// Detect browser language and redirect
 		(function() {
-			try {
-				var savedTheme = localStorage.getItem('romankorol-theme') || 'auto';
-				var systemIsDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-				var effectiveTheme = savedTheme === 'auto' ? (systemIsDark ? 'dark' : 'light') : savedTheme;
+			// Check if user has a saved language preference
+			var savedLang = localStorage.getItem('korolgroup-language');
 
-				if (effectiveTheme === 'dark') {
-					document.documentElement.setAttribute('data-theme', 'dark');
-				} else if (effectiveTheme === 'light') {
-					document.documentElement.setAttribute('data-theme', 'light');
+			if (savedLang) {
+				// Use saved preference
+				window.location.href = '/' + savedLang + '/index.html';
+			} else {
+				// Detect browser language
+				var userLang = navigator.language || navigator.userLanguage;
+				var lang = 'en'; // default
+
+				// Check if French
+				if (userLang.toLowerCase().startsWith('fr')) {
+					lang = 'fr';
 				}
-			} catch (e) {
-				// If localStorage fails, check system preference
-				if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-					document.documentElement.setAttribute('data-theme', 'dark');
-				}
+
+				// Save preference
+				localStorage.setItem('korolgroup-language', lang);
+
+				// Redirect
+				window.location.href = '/' + lang + '/index.html';
 			}
 		})();
 	</script>
-
-	<link rel="preload" href="assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<noscript><link rel="stylesheet" href="assets/css/main.css"></noscript>
-	<!-- Preload critical resources -->
-	<link rel="preload" href="assets/js/combined.min.js" as="script">
-	<link rel="preload" href="images/quantum-molecules.jpg" as="image">
 </head>
-
-<body class="homepage is-preload">
-	<!-- Skip to main content link for accessibility -->
-	<a href="#main-content" class="skip-link">Skip to main content</a>
-	<div id="page-wrapper">
-
-		<!-- Header -->
-		<section id="header">
-			<div class="container">
-
-				<!-- Logo -->
-				<h1 id="logo">Korol Group</h1>
-				<p class="research-mission">Combining quantum chemistry, computational physics and quantum information science to understand and utilize quantum matter</p>
-				<!-- Nav -->
-				<nav id="nav" role="navigation" aria-label="main menu">
-					<ul>
-						<li><a class="icon fa-home" href="index.html"><span>Home</span></a></li>
-						<li><a class="icon fa-university" href="research.html"><span>Research</span></a></li>
-						<li><a class="icon fa-users" href="team.html"><span>Team</span></a></li>
-						<li><a class="icon fa-file-text" href="publications.html"><span>Publications</span></a></li>
-						<li><a class="icon fa-retweet" href="news.html"><span>News</span></a></li>
-						<li><a class="icon fa-envelope" href="#contact"><span>Contact</span></a></li>
-						<li><a class="icon fa-briefcase" href="openings.html"><span>Openings</span></a></li>
-					</ul>
-				</nav>
-
-			</div>
-		</section>
-
-		<!-- Features -->
-		<main id="main-content">
-		<section id="features">
-			<div class="container">
-				<div class="row aln-center">
-					<div class="col-12">
-						<section>
-							<p style="text-align: center; font-size: 1.1em; line-height: 1.8; margin-bottom: 3em;">
-								We develop theoretical frameworks for understanding quantum systems at <a href="https://www.usherbrooke.ca/chimie/">Sherbrooke University</a>. Our research bridges fundamental quantum mechanics with practical applications in chemistry and materials science.
-							</p>
-						</section>
-					</div>
-
-					<div class="col-4 col-6-medium col-12-small">
-						<section>
-							<a href="research.html" class="image featured"><img src="images/geochemistry.png"
-								alt="Quantum systems research visualization"
-								srcset="images/main2_1.png 0.3x"/></a>
-							<header>
-								<h3>Research Areas</h3>
-							</header>
-							<p>We study quantum statistics of many-body quantum systems, chemical reaction kinetics, and quantum dynamics in open system settings.</p>
-						</section>
-					</div>
-
-					<div class="col-4 col-6-medium col-12-small">
-						<section>
-							<a href="team.html" class="image featured" style="display: block;"><img src="images/MAIN.png"
-								alt="Team collaboration and computational methods" style="width: 100%; height: auto; max-width: none;" /></a>
-							<header>
-								<h3>Our Team</h3>
-							</header>
-							<p>We are building a research group with diverse academic and personal backgrounds who are
-								passionate about advancing our understanding of quantum systems.</p>
-						</section>
-					</div>
-
-					<div class="col-4 col-6-medium col-12-small">
-						<section>
-							<a href="openings.html" class="image featured"><img src="images/quantum-molecules.jpg"
-								alt="Quantum molecular dynamics research visualization" /></a>
-							<header>
-								<h3>Join Us</h3>
-							</header>
-							<p>We welcome applications from motivated Undergraduate, Masters and PhD students interested in theory and computation.</p>
-						</section>
-					</div>
-					<div class="col-12">
-						<ul class="actions">
-							<li><a href="openings.html" class="button icon fa-briefcase">Research Opportunities</a></li>
-							<li><a href="research.html" class="button icon fa-university">Explore Our Research</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
-		</main>
-
-		<!-- Sherbrooke Image -->
-		<section id="sherbrooke-banner">
-			<div>
-				<img src="images/sign_summer.jpg" alt="Sherbrooke University campus in summer" />
-			</div>
-		</section>
-
-		<!-- Footer -->
-		<section id="footer">
-			<div class="container">
-
-			<div class="container">
-				<header id="contact">
-					<h2>Questions or comments? <strong>Get in touch:</strong></h2>
-				</header>
-				<section>
-					<div class="row">
-						<div class="col-6 col-12-small">
-							<ul class="icons">
-								<li class="icon fa-home">
-									Department of Chemistry<br>
-									Sherbrooke University<br>
-									Sherbrooke, QC, Canada
-								</li>
-							</ul>
-						</div>
-						<div class="col-6 col-12-small">
-							<ul class="icons">
-								<li class="icon fa-at">
-									<a href="mailto:Roman.Korol@USherbrooke.ca">Roman.Korol@USherbrooke.ca</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<!-- Single row of all 6 social media links -->
-					<div class="row">
-						<div class="col-12">
-							<a href="https://github.com/korolgroup" target="_blank" rel="noopener noreferrer" class="footer-social-link">
-								<i class="icon fa-github fa-3x"></i>
-							</a>
-							<a href="https://scholar.google.com.ua/citations?hl=en&user=YAAMduoAAAAJ" target="_blank" rel="noopener noreferrer" class="footer-social-link">
-								<i class="icon fa-graduation-cap fa-3x"></i>
-							</a>
-							<a href="https://www.linkedin.com/in/roman-korol-a08656a8/" target="_blank" rel="noopener noreferrer" class="footer-social-link">
-								<i class="icon fa-linkedin-square fa-3x"></i>
-							</a>
-							<a href="https://twitter.com/KorolGroup" target="_blank" rel="noopener noreferrer" class="footer-social-link">
-								<i class="icon fa-twitter-square fa-3x"></i>
-							</a>
-							<a href="https://orcid.org/0000-0002-9275-5897" target="_blank" rel="noopener noreferrer" class="footer-social-link">
-								<i class="icon fa-id-card fa-3x"></i>
-							</a>
-							<a href="mailto:Roman.Korol@USherbrooke.ca" target="_blank" rel="noopener noreferrer" class="footer-social-link">
-								<i class="icon fa-envelope fa-3x"></i>
-							</a>
-						</div>
-					</div>
-				</section>
-			</div>
-			<div id="copyright" class="container">
-				<ul class="links">
-					<li>&copy; Korol Group <time datetime="2025">2025</time>. All rights reserved.</li>
-					<li>Original Design by <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</div>
-		</section>
-	</div>
-
-
-
-	<!-- Scripts - Optimized -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.dropotron.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/combined.min.js"></script>
-
+<body>
+	<p>Redirecting... / Redirection en cours...</p>
+	<p>
+		<a href="/en/index.html">English</a> |
+		<a href="/fr/index.html">Français</a>
+	</p>
 </body>
-
 </html>
