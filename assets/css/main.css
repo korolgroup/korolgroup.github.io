@@ -3125,8 +3125,9 @@ html[data-theme=dark] .language-toggle span {
 @media screen and (max-width: 736px) {
   .language-toggle {
     top: 10px;
-    left: auto;
-    right: 10px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
     padding: 6px 12px;
     font-size: 0.85em;
   }
