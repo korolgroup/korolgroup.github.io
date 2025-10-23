@@ -2991,7 +2991,7 @@ html[data-theme=dark] .research-mission {
 
 /* Theme toggle button */
 .theme-toggle {
-  position: fixed;
+  position: absolute;
   top: 20px;
   right: 20px;
   z-index: 1000;
@@ -3045,7 +3045,7 @@ html[data-theme=dark] .research-mission {
 
 /* Language switcher */
 .language-toggle {
-  position: fixed;
+  position: absolute;
   top: 20px;
   left: 20px;
   z-index: 1000;
