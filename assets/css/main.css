@@ -722,6 +722,7 @@ br.clear {
   }
   .row.gtr-25.gtr-uniform > * {
     padding-top: 10px;
+    left: auto;
   }
   .row.gtr-50 {
     margin-top: -20px;
@@ -2822,6 +2823,7 @@ html[data-theme=dark] .box {
   }
   .close {
     top: 10px;
+    left: auto;
     right: 20px;
     font-size: 30px;
     width: 40px;
@@ -3123,7 +3125,8 @@ html[data-theme=dark] .language-toggle span {
 @media screen and (max-width: 736px) {
   .language-toggle {
     top: 10px;
-    left: 10px;
+    left: auto;
+    right: 10px;
     padding: 6px 12px;
     font-size: 0.85em;
   }

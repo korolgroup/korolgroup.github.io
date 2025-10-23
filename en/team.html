@@ -30,6 +30,10 @@
 	<meta name="twitter:image" content="https://romankorol.com/images/team-banner.jpg" />
 	<meta name="theme-color" content="#5e5e5e" media="(prefers-color-scheme: light)">
 	<meta name="theme-color" content="#2a2a2a" media="(prefers-color-scheme: dark)">
+n	<!-- Language alternates for SEO -->
+	<link rel="alternate" hreflang="en" href="https://romankorol.com/en/team.html" />
+	<link rel="alternate" hreflang="fr" href="https://romankorol.com/fr/equipe.html" />
+	<link rel="alternate" hreflang="x-default" href="https://romankorol.com/en/team.html" />
 	<!-- Immediate theme application to prevent FOUC -->
 	<script>
 		(function() {
@@ -50,6 +54,8 @@
 				}
 			}
 		})();
+t	// Save language preference
+		localStorage.setItem('korolgroup-language', 'en');
 	</script>
 
 	<link rel="preload" href="../assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
