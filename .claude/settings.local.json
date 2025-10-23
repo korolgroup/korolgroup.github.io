@@ -18,7 +18,8 @@
       "Bash(kill:*)",
       "Bash(git push:*)",
       "Bash(npx sass:*)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Bash(cat:*)"
     ],
     "deny": [],
     "ask": [],

@@ -146,3 +146,18 @@ html[data-theme="dark"] .button.alt:hover {
     line-height: 1.4em !important;
   }
 }
+
+/* Publication images - prevent overlap on mobile */
+@media screen and (max-width: 736px) {
+  .box.highlight .image.left {
+    float: none !important;
+    display: block !important;
+    max-width: 100% !important;
+    margin: 0 auto 1.5em auto !important;
+  }
+  .box.highlight .image.left img {
+    max-width: 300px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+}

@@ -1302,6 +1302,20 @@
 				}
 			}
 
+			/* Publication images - prevent overlap on mobile */
+			.box.highlight .image.left {
+				float: none !important;
+				display: block !important;
+				max-width: 100% !important;
+				margin: 0 auto 1.5em auto !important;
+
+				img {
+					max-width: 300px !important;
+					width: 100% !important;
+					margin: 0 auto !important;
+				}
+			}
+
 		/* Button */
 
 			input[type="button"],
