@@ -1833,6 +1833,12 @@ $dark-accent-hover: #6bb6ff;
 		padding-bottom: 0 !important;
 		margin-bottom: 0 !important;
 	}
+
+	// Fix box backgrounds in dark theme
+	.box {
+		background: $dark-bg-tertiary !important;
+		border-color: $dark-border !important;
+	}
 }
 
 // Apply dark theme based on user preference or explicit setting
