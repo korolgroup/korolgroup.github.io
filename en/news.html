@@ -30,7 +30,7 @@
     <meta name="twitter:image" content="https://romankorol.com/images/news/news-banner.jpg" />
     <meta name="theme-color" content="#5e5e5e" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#2a2a2a" media="(prefers-color-scheme: dark)">
-n	<!-- Language alternates for SEO -->
+	<!-- Language alternates for SEO -->
 	<link rel="alternate" hreflang="en" href="https://romankorol.com/en/news.html" />
 	<link rel="alternate" hreflang="fr" href="https://romankorol.com/fr/nouvelles.html" />
 	<link rel="alternate" hreflang="x-default" href="https://romankorol.com/en/news.html" />
@@ -69,6 +69,11 @@ t	// Save language preference
     <!-- Skip to main content link for accessibility -->
     <a href="#main-content" class="skip-link" style="position: absolute; left: -9999px; z-index: 999; padding: 8px; background: #000; color: #fff; text-decoration: none;">Skip to main content</a>
     <style>
+        .skip-link:focus {
+            left: 6px;
+            top: 7px;
+        }
+    </style>
 
 	<!-- Language switcher -->
 	<div class="language-toggle">
@@ -76,11 +81,6 @@ t	// Save language preference
 		<span>|</span>
 		<a href="../fr/nouvelles.html" lang="fr" hreflang="fr">FR</a>
 	</div>
-        .skip-link:focus {
-            left: 6px;
-            top: 7px;
-        }
-    </style>
     <div id="page-wrapper">
 
 		<!-- Header -->
@@ -96,7 +96,7 @@ t	// Save language preference
 						<li><a class="icon fa-home" href="index.html"><span>Home</span></a></li>
 						<li><a class="icon fa-university" href="research.html"><span>Research</span></a></li>
 						<li><a class="icon fa-users" href="team.html"><span>Team</span></a></li>
-						<li><a class="icon fa-file-text" href="publications.html"><span>Publications</span></a></li>
+						<li><a class="icon fa-file-text" href="research.html#publications"><span>Publications</span></a></li>
 						<li><a class="icon fa-retweet" href="news.html"><span>News</span></a></li>
 						<li><a class="icon fa-envelope" href="#contact"><span>Contact</span></a></li>
 						<li><a class="icon fa-briefcase" href="openings.html"><span>Openings</span></a></li>    

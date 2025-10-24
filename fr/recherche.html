@@ -4,32 +4,36 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html lang="en">
-<!--tells the browser the language of the content is English-->
+<html lang="fr">
+<!--indique au navigateur que le contenu est en français-->
 
 <head>
-	<title>Research - Korol Group | Quantum Dynamics & Semiclassical Methods</title>
+	<title>Recherche - Groupe Korol | Dynamique quantique et méthodes semiclassiques</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="color-scheme" content="light dark">
-	<meta name="description" content="Explore Korol Group's research in quantum dynamics, semiclassical methods, and computational chemistry. Publications, projects, and academic work at Sherbrooke University." />
-	<meta name="keywords" content="quantum dynamics, semiclassical methods, computational chemistry, research publications, Korol Group, Sherbrooke University" />
-	<meta name="author" content="Korol Group" />
+	<meta name="description" content="Explorez la recherche du Groupe Korol en dynamique quantique, méthodes semiclassiques et chimie computationnelle. Publications, projets et travaux académiques à l'Université de Sherbrooke." />
+	<meta name="keywords" content="dynamique quantique, méthodes semiclassiques, chimie computationnelle, publications de recherche, Groupe Korol, Université de Sherbrooke" />
+	<meta name="author" content="Groupe Korol" />
 
 	<!-- Open Graph Meta Tags -->
-	<meta property="og:title" content="Research - Korol Group | Quantum Dynamics & Semiclassical Methods" />
-	<meta property="og:description" content="Explore Korol Group's research in quantum dynamics, semiclassical methods, and computational chemistry. Publications, projects, and academic work at Sherbrooke University." />
+	<meta property="og:title" content="Recherche - Groupe Korol | Dynamique quantique et méthodes semiclassiques" />
+	<meta property="og:description" content="Explorez la recherche du Groupe Korol en dynamique quantique, méthodes semiclassiques et chimie computationnelle. Publications, projets et travaux académiques à l'Université de Sherbrooke." />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://romankorol.com/research.html" />
+	<meta property="og:url" content="https://romankorol.com/fr/recherche.html" />
 	<meta property="og:image" content="https://romankorol.com/images/research/research-banner.jpg" />
 
 	<!-- Twitter Card Meta Tags -->
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Research - Korol Group | Quantum Dynamics & Semiclassical Methods" />
-	<meta name="twitter:description" content="Explore Korol Group's research in quantum dynamics, semiclassical methods, and computational chemistry. Publications, projects, and academic work at Sherbrooke University." />
+	<meta name="twitter:title" content="Recherche - Groupe Korol | Dynamique quantique et méthodes semiclassiques" />
+	<meta name="twitter:description" content="Explorez la recherche du Groupe Korol en dynamique quantique, méthodes semiclassiques et chimie computationnelle. Publications, projets et travaux académiques à l'Université de Sherbrooke." />
 	<meta name="twitter:image" content="https://romankorol.com/images/research/research-banner.jpg" />
 	<meta name="theme-color" content="#5e5e5e" media="(prefers-color-scheme: light)">
 	<meta name="theme-color" content="#2a2a2a" media="(prefers-color-scheme: dark)">
+	<!-- Language alternates for SEO -->
+	<link rel="alternate" hreflang="en" href="https://romankorol.com/en/research.html" />
+	<link rel="alternate" hreflang="fr" href="https://romankorol.com/fr/recherche.html" />
+	<link rel="alternate" hreflang="x-default" href="https://romankorol.com/en/research.html" />
 	<!-- Immediate theme application to prevent FOUC -->
 	<script>
 		(function() {
@@ -61,6 +65,29 @@
 	        }
 	    }
 
+	    // Expand/Collapse all publications
+	    var allExpanded = false;
+	    function toggleAllPublications() {
+	        var publications = document.querySelectorAll('.divided .hidden, .divided .unhidden');
+	        var button = document.getElementById('toggleAllBtn');
+
+	        if (allExpanded) {
+	            // Collapse all
+	            for (var i = 0; i < publications.length; i++) {
+	                publications[i].className = 'hidden';
+	            }
+	            button.textContent = 'Tout développer';
+	            allExpanded = false;
+	        } else {
+	            // Expand all
+	            for (var i = 0; i < publications.length; i++) {
+	                publications[i].className = 'unhidden';
+	            }
+	            button.textContent = 'Tout réduire';
+	            allExpanded = true;
+	        }
+	    }
+
 	    // Enhanced keyboard navigation
 	    function makeKeyboardAccessible() {
 	        var clickableElements = document.querySelectorAll('[onclick]');
@@ -87,13 +114,15 @@
 
 <body class="homepage is-preload">
 	<!-- Skip to main content link for accessibility -->
-	<a href="#main-content" class="skip-link" style="position: absolute; left: -9999px; z-index: 999; padding: 8px; background: #000; color: #fff; text-decoration: none;">Skip to main content</a>
-	<style>
-		.skip-link:focus {
-			left: 6px;
-			top: 7px;
-		}
-	</style>
+	<a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+	<!-- Language switcher -->
+	<div class="language-toggle">
+		<a href="../en/research.html#publications" lang="en" hreflang="en">EN</a>
+		<span>|</span>
+		<a href="../fr/recherche.html#publications" lang="fr" hreflang="fr" class="active">FR</a>
+	</div>
+
 	<div id="page-wrapper">
 
 		<!-- Header -->
@@ -101,18 +130,18 @@
 			<div class="container">
 
 				<!-- Logo -->
-				<h1 id="logo">Korol Group</h1>
-				<p class="research-mission">Combining quantum chemistry, computational physics and quantum information science to understand and utilize quantum matter</p>
+				<h1 id="logo">Groupe Korol</h1>
+				<p class="research-mission">Alliant chimie quantique, physique computationnelle et science de l'information quantique pour comprendre et utiliser la matière quantique</p>
 				<!-- Nav -->
-				<nav id="nav" role="navigation" aria-label="main menu">
+				<nav id="nav" role="navigation" aria-label="menu principal">
 					<ul>
-						<li><a class="icon fa-home" href="index.html"><span>Home</span></a></li>
-						<li><a class="icon fa-university" href="research.html"><span>Research</span></a></li>
-						<li><a class="icon fa-users" href="team.html"><span>Team</span></a></li>
-						<li><a class="icon fa-file-text" href="publications.html"><span>Publications</span></a></li>
-						<li><a class="icon fa-retweet" href="news.html"><span>News</span></a></li>
+						<li><a class="icon fa-home" href="index.html"><span>Accueil</span></a></li>
+						<li><a class="icon fa-university" href="recherche.html"><span>Recherche</span></a></li>
+						<li><a class="icon fa-users" href="equipe.html"><span>Équipe</span></a></li>
+						<li><a class="icon fa-file-text" href="recherche.html#publications"><span>Publications</span></a></li>
+						<li><a class="icon fa-retweet" href="nouvelles.html"><span>Nouvelles</span></a></li>
 						<li><a class="icon fa-envelope" href="#contact"><span>Contact</span></a></li>
-						<li><a class="icon fa-briefcase" href="openings.html"><span>Openings</span></a></li>
+						<li><a class="icon fa-briefcase" href="postes.html"><span>Postes</span></a></li>
 					</ul>
 				</nav>
 
@@ -129,40 +158,42 @@
 
 						<!-- Research Focus Areas -->
 						<section style="margin-bottom: 4em;">
-							<h3 style="color: var(--heading-color, #5e5e5e); border-bottom: 2px solid var(--accent-color, #5e5e5e); padding-bottom: 0.5em;">Research Focus Areas</h3>
+							<h3 style="color: var(--heading-color, #f5f5f5); border-bottom: 2px solid var(--accent-color, #5e5e5e); padding-bottom: 0.5em;">Domaines de recherche</h3>
 							<div class="row" style="margin-top: 2em;">
 								<div class="col-4 col-12-small">
 									<div class="box" style="text-align: center; padding: 1.5em;">
-										<img src="../images/main3.png" alt="Quantum Dynamics" style="width: 100%; height: auto; margin-bottom: 1em;" />
-										<h4>Quantum Dynamics</h4>
-										<p>Path integral methods, ring polymer molecular dynamics, semiclassical approaches</p>
+										<img src="../images/main3.png" alt="Dynamique quantique" style="width: 100%; height: auto; margin-bottom: 1em;" />
+										<h4>Dynamique quantique</h4>
+										<p>Méthodes d'intégrale de chemin, dynamique moléculaire des polymères en anneau, approches semiclassiques</p>
 									</div>
 								</div>
 								<div class="col-4 col-12-small">
 									<div class="box" style="text-align: center; padding: 1.5em;">
-										<img src="../images/geochemistry.png" alt="Chemical Kinetics" style="width: 100%; height: auto; margin-bottom: 1em;" />
-										<h4>Chemical Kinetics</h4>
-										<p>Reaction rate theory, isotope effects, environmental effects on chemical reactions</p>
+										<img src="../images/geochemistry.png" alt="Cinétique chimique" style="width: 100%; height: auto; margin-bottom: 1em;" />
+										<h4>Cinétique chimique</h4>
+										<p>Théorie des taux de réaction, effets isotopiques, effets environnementaux sur les réactions chimiques</p>
 									</div>
 								</div>
 								<div class="col-4 col-12-small">
 									<div class="box" style="text-align: center; padding: 1.5em;">
-										<img src="../images/main2.png" alt="Open Quantum Systems" style="width: 100%; height: auto; margin-bottom: 1em;" />
-										<h4>Open Quantum Systems</h4>
-										<p>Quantum transport, electron-phonon interactions, spectral density modeling</p>
+										<img src="../images/main2.png" alt="Systèmes quantiques ouverts" style="width: 100%; height: auto; margin-bottom: 1em;" />
+										<h4>Systèmes quantiques ouverts</h4>
+										<p>Transport quantique, interactions électron-phonon, modélisation de densité spectrale</p>
 									</div>
 								</div>
 							</div>
 						</section>
 
 						<!-- Highlights -->
-						<section>
+						<section id="publications">
 
 							<div class="row aln-center">
 								<header>
 									<h3 class="actions">
-										<a href="pdf\Publist.pdf" target="_blank" rel="noopener noreferrer" class="button icon fa-file-pdf-o">List
-											of Publications</a></h3>
+										<a href="../pdf/Publist.pdf" target="_blank" rel="noopener noreferrer" class="button icon fa-file-pdf-o">Liste
+											des publications</a>
+										<a href="javascript:toggleAllPublications();" id="toggleAllBtn" class="button alt icon fa-bars">Tout développer</a>
+									</h3>
 								</header>
 							</div>
 							<ol class="divided" reversed>
@@ -174,20 +205,20 @@
 											<h3><a href="javascript:unhide('12');">High-frequency tails in spectral densities</a></h3>
 										</header>
 										<div id="12" class="hidden">
-										<a class="image left"><img class="myBtn_multi" src="../images/publications/12.jpg" title="High-frequency tails in spectral densities" alt="Figure showing spectral density high-frequency tails"></a>
+										<a class="image left"><img class="myBtn_multi" src="../images/publications/12.jpg" title="Queues haute fréquence dans les densités spectrales" alt="Figure montrant les queues haute fréquence de la densité spectrale"></a>
 
 										<!-- The Modal -->
 										<div class="modal modal_multi">
 											<span class="close close_multi">×</span>
-											<img class="modal-content" src="../images/publications/12.jpg" alt="Figure showing spectral density high-frequency tails">
+											<img class="modal-content" src="../images/publications/12.jpg" alt="Figure montrant les queues haute fréquence de la densité spectrale">
 										</div>
 											<b>R Korol</b>, X Chen, and I. Franco
 											<i>J. Phys. Chem. A</i> <b>2025</b>  <a
 												href="https://doi.org/10.1021/acs.jpca.5c00943">10.1021/acs.jpca.5c00943</a>.
 										<p>
-											We show that the computations of relaxation rate in solution are highly sensitive to the choice of representation of the environmental spectral density (SD).
-											The key reason is that electronic relaxation is dominated by the resonant contribution from the high-frequency tails of the SD, which can vary significantly between strategies.
-											We provide a simple transformation that recovers the correct relaxation rates in quantum simulations constrained by algorithmic or physical limitations on the shape of the SD.
+											Nous montrons que les calculs du taux de relaxation en solution sont très sensibles au choix de représentation de la densité spectrale environnementale (DS).
+											La raison principale est que la relaxation électronique est dominée par la contribution résonante des queues haute fréquence de la DS, qui peuvent varier considérablement entre les stratégies.
+											Nous fournissons une transformation simple qui récupère les taux de relaxation corrects dans les simulations quantiques contraintes par des limitations algorithmiques ou physiques sur la forme de la DS.
 										</p>
 										</div>
 								</article>
@@ -201,19 +232,19 @@
 											<h3><a href="javascript:unhide('11');">Stable isotope equilibria in the dihydrogen-water-methane-ethane-propane system. Part 2: Experimental determination of hydrogen isotopic equilibrium for ethane-H<sub>2</sub> from 30 to 200°C and propane-H<sub>2</sub> from 75 to 200°C</a></h3>
 										</header>
 										<div id="11" class="hidden">
-										<a class="image left"><img class="myBtn_multi" src="../images/publications/11.jpg" title="Hydrogen isotopic equilibrium experiments" alt="Figure showing experimental determination of hydrogen isotopic equilibrium"></a>
+										<a class="image left"><img class="myBtn_multi" src="../images/publications/11.jpg" title="Expériences d'équilibre isotopique de l'hydrogène" alt="Figure montrant la détermination expérimentale de l'équilibre isotopique de l'hydrogène"></a>
 
 										<!-- The Modal -->
 										<div class="modal modal_multi">
 											<span class="close close_multi">×</span>
-											<img class="modal-content" src="../images/publications/11.jpg" alt="Figure showing experimental determination of hydrogen isotopic equilibrium">
+											<img class="modal-content" src="../images/publications/11.jpg" alt="Figure montrant la détermination expérimentale de l'équilibre isotopique de l'hydrogène">
 										</div>
 											A C Turner, <b>R Korol</b>, M Bill, and D A Stolper
 											<i>Geochim. et Cosmochim. Acta</i> <b>2025</b>  <a
 												href="https://doi.org/10.1016/j.gca.2025.02.033">10.1016/j.gca.2025.02.033</a>.
 										<p>
-											We compare experimental hydrogen isotopic equilibrium with high-level theoretical calculations and provide a preferred polynomial fit.
-											Comparison of these fractionation factors with a compilation of ∼500 compiled environmental gas samples supports the proposal that many (∼50%) of these natural gas samples exhibit hydrogen isotopic compositions consistent with having formed in or attained methane-ethane-propane hydrogen isotopic equilibrium over geologically relevant temperatures for formation and storage (50–300°C).
+											Nous comparons l'équilibre isotopique expérimental de l'hydrogène avec des calculs théoriques de haut niveau et fournissons un ajustement polynomial préféré.
+											La comparaison de ces facteurs de fractionnement avec une compilation d'environ 500 échantillons de gaz environnementaux soutient la proposition selon laquelle de nombreux (environ 50%) de ces échantillons de gaz naturel présentent des compositions isotopiques de l'hydrogène cohérentes avec une formation ou l'atteinte d'un équilibre isotopique de l'hydrogène méthane-éthane-propane à des températures géologiquement pertinentes pour la formation et le stockage (50–300°C).
 										</p>
 										</div>
 								</article>
@@ -230,17 +261,17 @@
 											<b>R Korol</b>, A C Turner, A Nandi, J M Bowman, W A Goddard III and D A Stolper
 											<i>Geochim. et Cosmochim. Acta</i> <b>2025</b>  <a
 												href="https://doi.org/10.1016/j.gca.2025.02.028">10.1016/j.gca.2025.02.028</a>.
-										<a class="image left"><img class="myBtn_multi" src="../images/publications/10.jpg" title="Path-integral calculations for isotope equilibria" alt="Figure showing CCSD(T) quality potential calculations"></a>
+										<a class="image left"><img class="myBtn_multi" src="../images/publications/10.jpg" title="Calculs d'intégrale de chemin pour les équilibres isotopiques" alt="Figure montrant les calculs de potentiel de qualité CCSD(T)"></a>
 
 										<!-- The Modal -->
 										<div class="modal modal_multi">
 											<span class="close close_multi">×</span>
-											<img class="modal-content" src="../images/publications/10.jpg" alt="Figure showing CCSD(T) quality potential calculations">
+											<img class="modal-content" src="../images/publications/10.jpg" alt="Figure montrant les calculs de potentiel de qualité CCSD(T)">
 										</div>
 										<p>
-											We analyze the relative importance of various approximations that are commonly employed when isotopic equilibria are evaluated.
-											We find that clumped isotope effects can be calculated using computational methods. In contrast, fractionation and site preferences benefit from the use of the higher level CCSD(T) potentials,
-											accounting for anharmonic effects, and corrections to Born–Oppenheimer approximation.
+											Nous analysons l'importance relative de diverses approximations couramment employées lors de l'évaluation des équilibres isotopiques.
+											Nous constatons que les effets isotopiques groupés peuvent être calculés à l'aide de méthodes computationnelles. En revanche, le fractionnement et les préférences de site bénéficient de l'utilisation de potentiels CCSD(T) de niveau supérieur,
+											en tenant compte des effets anharmoniques et des corrections à l'approximation de Born-Oppenheimer.
 										</p>
 										</div>
 								</article>
@@ -257,18 +288,18 @@
 											A C Turner, <b>R Korol</b>, D L Eldridge, M Bill, T F Miller III and D A Stolper
 											<i>Geochim. et Cosmochim. Acta</i> <b>2021</b>  <a
 												href="https://doi.org/10.1016/j.gca.2021.04.026">10.1016/j.gca.2021.04.026</a>.
-										<a class="image left"><img class="myBtn_multi" src="../images/publications/9.jpg" title="Hydrogen isotopic equilibrium in methane-water system"
-											alt="Figure showing experimental and theoretical hydrogen isotopic equilibrium"></a>
+										<a class="image left"><img class="myBtn_multi" src="../images/publications/9.jpg" title="Équilibre isotopique de l'hydrogène dans le système méthane-eau"
+											alt="Figure montrant l'équilibre isotopique expérimental et théorique de l'hydrogène"></a>
 
 										<!-- The Modal -->
 										<div class="modal modal_multi">
 											<span class="close close_multi">×</span>
-											<img class="modal-content" src="../images/publications/9.jpg" alt="Figure showing experimental and theoretical hydrogen isotopic equilibrium">
+											<img class="modal-content" src="../images/publications/9.jpg" alt="Figure montrant l'équilibre isotopique expérimental et théorique de l'hydrogène">
 										</div>
 										<p>
-											We provide calibrations of the equilibrium H/D and <sup>13</sup>C/<sup>12</sup>C fractionation
-											based on experiments and PIMC calculations. We find that isotopic compositions of some
-											microbial gases from marine sedimentary, coalbed, and shale environments are consistent with the H and C equilibria.
+											Nous fournissons des calibrations du fractionnement d'équilibre H/D et <sup>13</sup>C/<sup>12</sup>C
+											basées sur des expériences et des calculs PIMC. Nous constatons que les compositions isotopiques de certains
+											gaz microbiens provenant d'environnements sédimentaires marins, de veines de charbon et de schiste sont cohérentes avec les équilibres H et C.
 										</p>
 										</div>
 								</article>
@@ -278,30 +309,29 @@
 									<!-- Highlight -->
 									<article class="box highlight">
 										<header>
-											<h3><a href="javascript:unhide('8');">Dimension-free path-integral molecular dynamics without preconditioning </a> <a
+											<h3><a href="javascript:unhide('8');">Dimension-free path-integral molecular dynamics without preconditioning</a> <a
 													href="https://aip.scitation.org/topic/collections/editors-pick?SeriesKey=jcp"><img
-														src="../images/Logos/editors-pick.jpg" height="20" width="20" title="Editor's Pick"
-														alt="Editor's Pick logo"></a></h3>
+														src="../images/Logos/editors-pick.jpg" height="20" width="20" title="Choix de l'éditeur"
+														alt="Logo Choix de l'éditeur"></a></h3>
 										</header>
 										<div id="8" class="hidden">
 										<a class="image left"><img class="myBtn_multi" src="../images/publications/8.jpeg"
-											title="IR spectrum of liquid water computed with the new BCOCB scheme at timesteps of 0.2, 1.0, 1.2 and 1.4 fs"
-											alt="IR spectrum of liquid water computed with the new BCOCB scheme at timesteps of 0.2, 1.0, 1.2 and 1.4 fs"></a>
+											title="Spectre IR de l'eau liquide calculé avec le nouveau schéma BCOCB à des pas de temps de 0,2, 1,0, 1,2 et 1,4 fs"
+											alt="Spectre IR de l'eau liquide calculé avec le nouveau schéma BCOCB à des pas de temps de 0,2, 1,0, 1,2 et 1,4 fs"></a>
 
 										<!-- The Modal -->
 										<div class="modal modal_multi">
 											<span class="close close_multi">×</span>
-											<img class="modal-content" src="../images/publications/8.jpeg" alt="IR spectrum of liquid water computed with the new BCOCB scheme at timesteps of 0.2, 1.0, 1.2 and 1.4 fs">
+											<img class="modal-content" src="../images/publications/8.jpeg" alt="Spectre IR de l'eau liquide calculé avec le nouveau schéma BCOCB à des pas de temps de 0,2, 1,0, 1,2 et 1,4 fs">
 										</div>
 											<b>R Korol</b>, J L Rosa-Ra&iacute;ces, N Bou-Rabee and T F Miller III,
 											<i>J. Chem. Phys.</i> <b>2020</b> 152, 104102, <a
 												href="https://aip.scitation.org/doi/10.1063/1.5134810">10.1063/1.5134810</a>.
 										<p>
-											We further improve upon the standard algorithm for T-RPMD via a novel
-											implementation of the Cayley modification [R. Korol et al., J. Chem. Phys.
-											<b>151</b>, 124103 (2019)]. This allows for a substantial increase in
-											timestep size - three-fold for the simulations of liquid water - at no extra
-											cost.
+											Nous améliorons davantage l'algorithme standard pour T-RPMD via une
+											implémentation nouvelle de la modification de Cayley [R. Korol et al., J. Chem. Phys.
+											<b>151</b>, 124103 (2019)]. Cela permet une augmentation substantielle de la
+											taille du pas de temps - trois fois pour les simulations d'eau liquide - sans coût supplémentaire.
 										</p>
 										</div>
 									</article>
@@ -312,35 +342,31 @@
 									<!-- Highlight -->
 									<article class="box highlight">
 										<header>
-											<h3><a href="javascript:unhide('7');">
-												Comparison of Experimental vs Theoretical Abundances of
-												<sup>13</sup>CH<sub>3</sub>D and
-												<sup>12</sup>CH<sub>2</sub>D<sub>2</sub> for Isotopically
-												Equilibrated Systems from 1 to 500 &#176;C </a> <a
+											<h3><a href="javascript:unhide('7');">Comparison of Experimental vs Theoretical Abundances of <sup>13</sup>CH<sub>3</sub>D and <sup>12</sup>CH<sub>2</sub>D<sub>2</sub> for Isotopically Equilibrated Systems from 1 to 500 °C</a> <a
 													href="https://pubs.acs.org/page/policy/authorchoice_termsofuse.html"><img
 														src="../images/Logos/ACS_editors_choice.png" height="20" width="20"
-														alt="ACS Editors' Choice logo"></a></h3>
+														alt="Logo Choix de l'éditeur ACS"></a></h3>
 										</header>
 										<div id="7" class="hidden">
 										<a class="image left"><img class="myBtn_multi" src="../images/publications/7.jpeg"
-											title="Isotope clumping in methane"
-											alt="One-to-one theory-experiment agreement for the equilibrium clumping of deuterium with deuterium and deuterium with carbon-13 over temperatures between 1 and 500 degree Celsius"></a>
+											title="Regroupement d'isotopes dans le méthane"
+											alt="Accord un pour un théorie-expérience pour le regroupement à l'équilibre du deutérium avec le deutérium et du deutérium avec le carbone-13 à des températures entre 1 et 500 degrés Celsius"></a>
 
 										<!-- The Modal -->
 										<div class="modal modal_multi">
 											<span class="close close_multi">×</span>
 											<img class="modal-content" src="../images/publications/7.jpeg"
-												alt="One-to-one theory-experiment agreement for the equilibrium clumping of deuterium with deuterium and deuterium with carbon-13 over temperatures between 1 and 500 degree Celsius">
+												alt="Accord un pour un théorie-expérience pour le regroupement à l'équilibre du deutérium avec le deutérium et du deutérium avec le carbone-13 à des températures entre 1 et 500 degrés Celsius">
 										</div>
 											D L Elbridge, <b>R Korol</b>, M K Lloyd, A C Turner, M A Webb, T F Miller III and D A Stolper
 											<i>ACS Earth Space Chem. </i> <b>2019</b> 3, 2747-2764, <a
 												href="https://pubs.acs.org/doi/10.1021/acsearthspacechem.9b00244">10.1021/acsearthspacechem.9b00244</a>.
 										<p>
-											We study equilibrium clumping of heavy isotopes in methane. Using heavy
-											isotope clumping, one can determine the temperature of methane when it was
-											formed. We have extended the range of temperatures to cover all biologically
-											and geologically relevant temperatures. Experimental clumping-temperature
-											calibration is confirmed by state-of-the-art theoretical method - PIMC.
+											Nous étudions le regroupement à l'équilibre des isotopes lourds dans le méthane. En utilisant le
+											regroupement d'isotopes lourds, on peut déterminer la température du méthane au moment de sa
+											formation. Nous avons étendu la gamme de températures pour couvrir toutes les températures
+											biologiquement et géologiquement pertinentes. La calibration expérimentale regroupement-température
+											est confirmée par la méthode théorique de pointe - PIMC.
 										</p>
 										</div>
 									</article>
@@ -354,12 +380,10 @@
 
 
 										<header>
-											<h3><a href="javascript:unhide('6');">Cayley modification for
-													strongly stable path-integral and ring-polymer molecular dynamics
-												</a> <a
+											<h3><a href="javascript:unhide('6');">Cayley modification for strongly stable path-integral and ring-polymer molecular dynamics</a> <a
 													href="https://aip.scitation.org/topic/collections/editors-pick?SeriesKey=jcp"><img
-														src="../images/Logos/editors-pick.jpg" height="20" width="20" title="Editor's Pick"
-														alt="Editor's Pick logo"></a></h3>
+														src="../images/Logos/editors-pick.jpg" height="20" width="20" title="Choix de l'éditeur"
+														alt="Logo Choix de l'éditeur"></a></h3>
 										</header>
 										<div id="6" class="hidden">
 											<b>R Korol</b>, N Bou-Rabee and T F Miller III,
@@ -382,11 +406,11 @@
 													that the values become denser, never reaching the real axis. This is a visual illustration of strong stability."></a>
 										</div>
 										<p>
-											We show that standard algorithm for evolving PIMD trajectories leads to
-											numerical artifacts at certain (resonance) timesteps. We thus propose the
-											Cayley modification, that provides strong symplectic stability to PIMD, RPMD
-											and CMD and ergodicity for T-RPMD at no additional cost. This allows for the
-											use of larger timesteps in these simulations.
+											Nous montrons que l'algorithme standard pour faire évoluer les trajectoires PIMD conduit à des
+											artefacts numériques à certains pas de temps (de résonance). Nous proposons donc la
+											modification de Cayley, qui fournit une forte stabilité symplectique à PIMD, RPMD
+											et CMD et l'ergodicité pour T-RPMD sans coût supplémentaire. Cela permet l'utilisation
+											de pas de temps plus grands dans ces simulations.
 										</p>
 										</div>
 									</article>
@@ -401,8 +425,7 @@
 
 
 										<header>
-											<h3><a href="javascript:unhide('5');">Machine Learning
-													Prediction of DNA Charge Transport </a></h3>
+											<h3><a href="javascript:unhide('5');">Machine Learning Prediction of DNA Charge Transport</a></h3>
 										</header>
 										<div id="5" class="hidden">
 												<b>R Korol</b> and D Segal,
@@ -426,10 +449,10 @@
 													The conductance for longer sequences can then be predicted in seconds."></a>
 										</div>
 										<p>
-											We present a machine learning model that allows the inexpensive prediction
-											of the electrical conductance of millions of long double-stranded DNA
-											(dsDNA) sequences, reducing computational costs by orders of magnitude. The
-											algorithm is trained on short DNA nano-junctions with n = 3–7 base pairs.
+											Nous présentons un modèle d'apprentissage automatique qui permet la prédiction peu coûteuse
+											de la conductance électrique de millions de longues séquences d'ADN double brin
+											(ADNdb), réduisant les coûts computationnels de plusieurs ordres de grandeur. L'algorithme
+											est entraîné sur de courtes nano-jonctions d'ADN avec n = 3-7 paires de bases.
 										</p>
 										</div>
 									</article>
@@ -445,8 +468,7 @@
 
 
 										<header>
-											<h3><a href="javascript:unhide('4');">From exhaustive
-													simulations to key principles in DNA nanoelectronics </a></h3>
+											<h3><a href="javascript:unhide('4');">From exhaustive simulations to key principles in DNA nanoelectronics</a></h3>
 										</header>
 										<div id="4" class="hidden">
 											<b>R Korol</b> and D Segal,
@@ -470,12 +492,12 @@
 													The vast majority of sequences fall somewhere in between."></a>
 										</div>
 										<p>
-											Conductance of DNA molecules is not well-understood in the light of opposing
-											experimental results. The situation is also complicated, because there are
-											exponentially many different sequences, and many of them conduct current in
-											a drastically different way. Here we study the conductance of DNA molecules
-											computationally and identify several general principles that could guide the
-											experiments.
+											La conductance des molécules d'ADN n'est pas bien comprise à la lumière des résultats
+											expérimentaux contradictoires. La situation est également compliquée, car il existe
+											exponentiellement beaucoup de séquences différentes, et beaucoup d'entre elles conduisent
+											le courant de manière radicalement différente. Ici, nous étudions la conductance des molécules
+											d'ADN de manière computationnelle et identifions plusieurs principes généraux qui pourraient
+											guider les expériences.
 										</p>
 										</div>
 									</article>
@@ -488,10 +510,7 @@
 									<!-- Highlight -->
 									<article class="box highlight">
 										<header>
-											<h3><a href="javascript:unhide('3');">
-													Probe-ZT: Simulation of transport coefficients of molecular
-													electronic junctions under environmental effects using Büttiker’s
-													probes </a></h3>
+											<h3><a href="javascript:unhide('3');">Probe-ZT: Simulation of transport coefficients of molecular electronic junctions under environmental effects using Büttiker's probes</a></h3>
 										</header>
 										<div id="3" class="hidden">
 												<b>R Korol</b>, M Kilgour, D Segal,
@@ -511,12 +530,11 @@
 													The log-y scale reveals the hopping (linear), tunneling (exponential) 
 													and ballistic (constant) conduction mechanisms at different environmental strengths."></a>
 										</div>
-										<p>Our in-house quantum transport package, ProbeZT, calculates how readily
-											electricity and heat moves across a given system. One can use it to identify
-											molecules that are: good conductors, perfect insulators, excellent
-											thermoelectrics and many more. In particular, we show the package applied to
-											a linear conducting chain (like a polymer) and to a double-stranded DNA
-											molecule.
+										<p>Notre logiciel de transport quantique interne, ProbeZT, calcule avec quelle facilité
+											l'électricité et la chaleur se déplacent à travers un système donné. On peut l'utiliser pour identifier
+											des molécules qui sont : de bons conducteurs, des isolants parfaits, d'excellents
+											thermoélectriques et bien plus encore. En particulier, nous montrons le logiciel appliqué à
+											une chaîne conductrice linéaire (comme un polymère) et à une molécule d'ADN double brin.
 										</p>
 										</div>
 									</article>
@@ -528,8 +546,7 @@
 									<!-- Highlight -->
 									<article class="box highlight">
 										<header>
-											<h3><a href="javascript:unhide('2');">Thermopower of molecular
-													junctions: Tunneling to hopping crossover in DNA </a></h3>
+											<h3><a href="javascript:unhide('2');">Thermopower of molecular junctions: Tunneling to hopping crossover in DNA</a></h3>
 										</header>
 										<div id="2" class="hidden">
 												<b>R Korol</b>, M Kilgour, D Segal,
@@ -550,12 +567,12 @@
 													where the effects of environment are modelled using voltage-temperature probes."></a>
 										</div>
 										<p>
-											We examine the DNA molecules, that show a change in behavior in conductance
-											and thermopower beyond a certain length, studied experimentally in
+											Nous examinons les molécules d'ADN, qui montrent un changement de comportement dans la conductance
+											et le pouvoir thermoélectrique au-delà d'une certaine longueur, étudiées expérimentalement dans
 											<a href="https://www.nature.com/articles/ncomms11294">Li et al. [Nat.
-												Commun. 7, 11294 (2016)]</a>. We show that the change in thermoelectric
-											trends is caused by a change of the mechanism, by which a molecule conducts
-											current from quantum mechanical tunneling to classical hopping.
+												Commun. 7, 11294 (2016)]</a>. Nous montrons que le changement dans les tendances thermoélectriques
+											est causé par un changement du mécanisme par lequel une molécule conduit
+											le courant, passant de l'effet tunnel quantique au saut classique.
 										</p>
 										</div>
 									</article>
@@ -567,8 +584,7 @@
 									<!-- Highlight -->
 									<article class="box highlight">
 										<header>
-											<h3><a href="javascript:unhide('1');">
-													Reactions Of Boron-Derived Radicals With Nucleophiles </a></h3>
+											<h3><a href="javascript:unhide('1');">Reactions Of Boron-Derived Radicals With Nucleophiles</a></h3>
 										</header>
 										<div id="1" class="hidden">
 												L.E. Longobardi, P. Zatsepin, <b>R. Korol</b>, L. Liu, S. Grimme, D.W.
@@ -587,11 +603,11 @@
 													src="../images/publications/1.png" alt="Phenanthrenedione- and pyrenedione-derived borocyclic 
 													radicals react with amines, phosphines, DMAP and NHC and gives various adducts."></a>
 										</div>
-										<p>We utilize a series of borocyclic radicals, that are both bulky and with
-											their SOMO density delocalized. Their electrophilic reactivity together with
-											their considerable steric hinderance allows us to make several nice
-											zwitterionic compounds with phosphines and other nucleophiles utilizing
-											Frustrated Lewis Pair chemistry.
+										<p>Nous utilisons une série de radicaux borocycliques, qui sont à la fois volumineux et avec
+											leur densité SOMO délocalisée. Leur réactivité électrophile combinée avec
+											leur encombrement stérique considérable nous permet de fabriquer plusieurs beaux
+											composés zwitterioniques avec des phosphines et d'autres nucléophiles en utilisant
+											la chimie des paires de Lewis frustrées.
 										</p>
 										</div>
 									</article>
@@ -621,8 +637,8 @@
 											<img class="modal-content"
 													src="../images/publications/0.jpg" alt="SEM images of the ZnO nanoparticles with and without size stabilizers"></a>
 										</div>
-										<p>We modify and optimize a synthesis of ZnO nanoparticles by electrodeposition
-											by adding auxiliary stabilizers to reduce the size and narrow its distribution in the target product.
+										<p>Nous modifions et optimisons une synthèse de nanoparticules de ZnO par électrodéposition
+											en ajoutant des stabilisateurs auxiliaires pour réduire la taille et rétrécir sa distribution dans le produit cible.
 										</p>
 										</div>
 									</article>
@@ -647,7 +663,7 @@
 
 			<div class="container">
 				<header id="contact">
-					<h2>Questions or comments? <strong>Get in touch:</strong></h2>
+					<h2>Des questions ou des commentaires? <strong>Contactez-nous:</strong></h2>
 				</header>
 				<!--<div class="row">
 						
@@ -721,8 +737,8 @@
 			</div>
 			<div id="copyright" class="container">
 				<ul class="links">
-					<li>&copy; Korol Group <time datetime="2025">2025</time>. All rights reserved.</li>
-					<li>Original Design by <a href="http://html5up.net">HTML5 UP</a></li>
+					<li>&copy; Groupe Korol <time datetime="2025">2025</time>. Tous droits réservés.</li>
+					<li>Design original par <a href="http://html5up.net">HTML5 UP</a></li>
 				</ul>
 			</div>
 		</section>
@@ -738,6 +754,10 @@
 	<script src="../assets/js/util.js"></script>
 	<script src="../assets/js/modal.js"></script>
 	<script src="../assets/js/combined.min.js"></script>
+	<script>
+		// Save language preference
+		localStorage.setItem('korolgroup-language', 'fr');
+	</script>
 
 </body>
 

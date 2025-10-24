@@ -2162,19 +2162,19 @@ button.alt:active,
 /* Dark Theme Support */
 @media (prefers-color-scheme: dark) {
   html:not([data-theme=light]) :root {
-    --page-bg: #1a1a1a;
-    --heading-color: #e0e0e0;
+    --page-bg: #2a2a2a;
+    --heading-color: #f5f5f5;
     --accent-color: #4a9eff;
     --text-muted: #888;
     --border-color: #444;
-    --box-bg: #333;
+    --box-bg: #2a2a2a;
   }
   html:not([data-theme=light]) body {
-    background: #1a1a1a;
+    background: #2a2a2a;
     color: #e0e0e0;
   }
   html:not([data-theme=light]) h1, html:not([data-theme=light]) h2, html:not([data-theme=light]) h3, html:not([data-theme=light]) h4, html:not([data-theme=light]) h5, html:not([data-theme=light]) h6 {
-    color: #e0e0e0;
+    color: #f5f5f5;
   }
   html:not([data-theme=light]) strong, html:not([data-theme=light]) b {
     color: #e0e0e0;
@@ -2220,7 +2220,7 @@ button.alt:active,
     color: #4a9eff;
   }
   html:not([data-theme=light]) #features, html:not([data-theme=light]) #main {
-    background: #1a1a1a;
+    background: #2a2a2a;
   }
   html:not([data-theme=light]) .image {
     border-color: #444 !important;
@@ -2298,7 +2298,7 @@ button.alt:active,
   html:not([data-theme=light]) #content > article, html:not([data-theme=light]) #sidebar > section,
   html:not([data-theme=light]) #sidebar > article {
     border-top-color: #444;
-    box-shadow: inset 0px 8px 0px 0px #1a1a1a, inset 0px 10px 0px 0px #444;
+    box-shadow: inset 0px 8px 0px 0px #2a2a2a, inset 0px 10px 0px 0px #444;
   }
   html:not([data-theme=light]) .dropotron {
     background: #2a2a2a;
@@ -2343,7 +2343,7 @@ button.alt:active,
   html:not([data-theme=light]) #banner {
     border-top-color: #444;
     border-bottom-color: #444;
-    box-shadow: inset 0px -8px 0px 0px #1a1a1a, inset 0px 8px 0px 0px #1a1a1a;
+    box-shadow: inset 0px -8px 0px 0px #2a2a2a, inset 0px 8px 0px 0px #2a2a2a;
   }
   html:not([data-theme=light]) #banner::before {
     content: "";
@@ -2424,38 +2424,38 @@ button.alt:active,
     color: #b0b0b0;
   }
   html:not([data-theme=light]) .team-member {
-    background: #333 !important;
+    background: #2a2a2a !important;
     border-color: #444 !important;
   }
   html:not([data-theme=light]) .team-member div {
     color: #888 !important;
   }
   html:not([data-theme=light]) #sherbrooke-banner {
-    background: #1a1a1a !important;
+    background: #2a2a2a !important;
   }
   html:not([data-theme=light]) #features {
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
   }
   html:not([data-theme=light]) .box {
-    background: #333 !important;
+    background: #2a2a2a !important;
     border-color: #444 !important;
   }
 }
 html[data-theme=dark] :root {
-  --page-bg: #1a1a1a;
-  --heading-color: #e0e0e0;
+  --page-bg: #2a2a2a;
+  --heading-color: #f5f5f5;
   --accent-color: #4a9eff;
   --text-muted: #888;
   --border-color: #444;
   --box-bg: #333;
 }
 html[data-theme=dark] body {
-  background: #1a1a1a;
+  background: #2a2a2a;
   color: #e0e0e0;
 }
 html[data-theme=dark] h1, html[data-theme=dark] h2, html[data-theme=dark] h3, html[data-theme=dark] h4, html[data-theme=dark] h5, html[data-theme=dark] h6 {
-  color: #e0e0e0;
+  color: #f5f5f5;
 }
 html[data-theme=dark] strong, html[data-theme=dark] b {
   color: #e0e0e0;
@@ -2501,7 +2501,7 @@ html[data-theme=dark] #nav > ul > li.active > a > span, html[data-theme=dark] #n
   color: #4a9eff;
 }
 html[data-theme=dark] #features, html[data-theme=dark] #main {
-  background: #1a1a1a;
+  background: #2a2a2a;
 }
 html[data-theme=dark] .image {
   border-color: #444 !important;
@@ -2579,7 +2579,7 @@ html[data-theme=dark] #content > section,
 html[data-theme=dark] #content > article, html[data-theme=dark] #sidebar > section,
 html[data-theme=dark] #sidebar > article {
   border-top-color: #444;
-  box-shadow: inset 0px 8px 0px 0px #1a1a1a, inset 0px 10px 0px 0px #444;
+  box-shadow: inset 0px 8px 0px 0px #2a2a2a, inset 0px 10px 0px 0px #444;
 }
 html[data-theme=dark] .dropotron {
   background: #2a2a2a;
@@ -2624,7 +2624,7 @@ html[data-theme=dark] #navPanel .link:hover {
 html[data-theme=dark] #banner {
   border-top-color: #444;
   border-bottom-color: #444;
-  box-shadow: inset 0px -8px 0px 0px #1a1a1a, inset 0px 8px 0px 0px #1a1a1a;
+  box-shadow: inset 0px -8px 0px 0px #2a2a2a, inset 0px 8px 0px 0px #2a2a2a;
 }
 html[data-theme=dark] #banner::before {
   content: "";
@@ -2705,21 +2705,21 @@ html[data-theme=dark] .icon:before {
   color: #b0b0b0;
 }
 html[data-theme=dark] .team-member {
-  background: #333 !important;
+  background: #2a2a2a !important;
   border-color: #444 !important;
 }
 html[data-theme=dark] .team-member div {
   color: #888 !important;
 }
 html[data-theme=dark] #sherbrooke-banner {
-  background: #1a1a1a !important;
+  background: #2a2a2a !important;
 }
 html[data-theme=dark] #features {
   padding-bottom: 0 !important;
   margin-bottom: 0 !important;
 }
 html[data-theme=dark] .box {
-  background: #333 !important;
+  background: #2a2a2a !important;
   border-color: #444 !important;
 }
 

@@ -27,9 +27,9 @@
      */
     function getSavedTheme() {
         try {
-            return localStorage.getItem(STORAGE_KEY) || THEMES.AUTO;
+            return localStorage.getItem(STORAGE_KEY) || THEMES.LIGHT;
         } catch (e) {
-            return THEMES.AUTO;
+            return THEMES.LIGHT;
         }
     }
 
@@ -90,17 +90,11 @@
         const currentTheme = getSavedTheme();
         let nextTheme;
 
-        switch (currentTheme) {
-            case THEMES.LIGHT:
-                nextTheme = THEMES.DARK;
-                break;
-            case THEMES.DARK:
-                nextTheme = THEMES.AUTO;
-                break;
-            case THEMES.AUTO:
-            default:
-                nextTheme = THEMES.LIGHT;
-                break;
+        // Toggle between light and dark only
+        if (currentTheme === THEMES.DARK) {
+            nextTheme = THEMES.LIGHT;
+        } else {
+            nextTheme = THEMES.DARK;
         }
 
         saveTheme(nextTheme);
@@ -169,23 +163,15 @@
         const button = document.querySelector('.theme-toggle');
         if (!button) return;
 
-        const effectiveTheme = getEffectiveTheme(theme);
         let icon, title;
 
-        switch (theme) {
-            case THEMES.LIGHT:
-                icon = '☀️';
-                title = 'Light theme active. Click for dark theme.';
-                break;
-            case THEMES.DARK:
-                icon = '🌙';
-                title = 'Dark theme active. Click for auto theme.';
-                break;
-            case THEMES.AUTO:
-            default:
-                icon = effectiveTheme === THEMES.DARK ? '🌓' : '🌞';
-                title = 'Auto theme active (follows system). Click for light theme.';
-                break;
+        // Toggle between light and dark only
+        if (theme === THEMES.DARK) {
+            icon = '🌙';
+            title = 'Dark theme active. Click for light theme.';
+        } else {
+            icon = '☀️';
+            title = 'Light theme active. Click for dark theme.';
         }
 
         button.textContent = icon;

@@ -8,28 +8,32 @@
 <!--indique au navigateur que le contenu est en français-->
 
 <head>
-	<title>Korol Group - Department of Chemistry, Sherbrooke University</title>
+	<title>Groupe Korol - Département de chimie, Université de Sherbrooke</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="color-scheme" content="light dark">
-	<meta name="description" content="The Korol Group at Sherbrooke University develops theoretical frameworks for quantum systems, focusing on quantum statistics, chemical reaction rates, and open quantum dynamics." />
-	<meta name="keywords" content="Korol Group, quantum dynamics, semiclassical methods, Sherbrooke University, computational chemistry, quantum statistics, chemical reaction rates, open quantum dynamics" />
-	<meta name="author" content="Korol Group" />
+	<meta name="description" content="Le Groupe Korol à l'Université de Sherbrooke développe des cadres théoriques pour les systèmes quantiques, en se concentrant sur les statistiques quantiques, les taux de réaction chimique et la dynamique quantique ouverte." />
+	<meta name="keywords" content="Groupe Korol, dynamique quantique, méthodes semiclassiques, Université de Sherbrooke, chimie computationnelle, statistiques quantiques, taux de réaction chimique, dynamique quantique ouverte" />
+	<meta name="author" content="Groupe Korol" />
 
 	<!-- Open Graph Meta Tags -->
-	<meta property="og:title" content="Korol Group - Department of Chemistry, Sherbrooke University" />
-	<meta property="og:description" content="The Korol Group at Sherbrooke University develops theoretical frameworks for quantum systems, focusing on quantum statistics, chemical reaction rates, and open quantum dynamics." />
+	<meta property="og:title" content="Groupe Korol - Département de chimie, Université de Sherbrooke" />
+	<meta property="og:description" content="Le Groupe Korol à l'Université de Sherbrooke développe des cadres théoriques pour les systèmes quantiques, en se concentrant sur les statistiques quantiques, les taux de réaction chimique et la dynamique quantique ouverte." />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://romankorol.com" />
+	<meta property="og:url" content="https://romankorol.com/fr/" />
 	<meta property="og:image" content="https://romankorol.com/images/banner.jpg" />
 
 	<!-- Twitter Card Meta Tags -->
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Korol Group - Department of Chemistry, Sherbrooke University" />
-	<meta name="twitter:description" content="The Korol Group at Sherbrooke University develops theoretical frameworks for quantum systems, focusing on quantum statistics, chemical reaction rates, and open quantum dynamics." />
+	<meta name="twitter:title" content="Groupe Korol - Département de chimie, Université de Sherbrooke" />
+	<meta name="twitter:description" content="Le Groupe Korol à l'Université de Sherbrooke développe des cadres théoriques pour les systèmes quantiques, en se concentrant sur les statistiques quantiques, les taux de réaction chimique et la dynamique quantique ouverte." />
 	<meta name="twitter:image" content="https://romankorol.com/images/banner.jpg" />
 	<meta name="theme-color" content="#5e5e5e" media="(prefers-color-scheme: light)">
 	<meta name="theme-color" content="#2a2a2a" media="(prefers-color-scheme: dark)">
+	<!-- Language alternates for SEO -->
+	<link rel="alternate" hreflang="en" href="https://romankorol.com/en/index.html" />
+	<link rel="alternate" hreflang="fr" href="https://romankorol.com/fr/index.html" />
+	<link rel="alternate" hreflang="x-default" href="https://romankorol.com/en/index.html" />
 	<!-- Immediate theme application to prevent FOUC -->
 	<script>
 		(function() {
@@ -61,7 +65,15 @@
 
 <body class="homepage is-preload">
 	<!-- Skip to main content link for accessibility -->
-	<a href="#main-content" class="skip-link">Skip to main content</a>
+	<a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+	<!-- Language switcher -->
+	<div class="language-toggle">
+		<a href="../en/index.html" lang="en" hreflang="en">EN</a>
+		<span>|</span>
+		<a href="../fr/index.html" lang="fr" hreflang="fr" class="active">FR</a>
+	</div>
+
 	<div id="page-wrapper">
 
 		<!-- Header -->
@@ -69,18 +81,18 @@
 			<div class="container">
 
 				<!-- Logo -->
-				<h1 id="logo">Korol Group</h1>
-				<p class="research-mission">Combining quantum chemistry, computational physics and quantum information science to understand and utilize quantum matter</p>
+				<h1 id="logo">Groupe Korol</h1>
+				<p class="research-mission">Alliant chimie quantique, physique computationnelle et science de l'information quantique pour comprendre et utiliser la matière quantique</p>
 				<!-- Nav -->
-				<nav id="nav" role="navigation" aria-label="main menu">
+				<nav id="nav" role="navigation" aria-label="menu principal">
 					<ul>
-						<li><a class="icon fa-home" href="index.html"><span>Home</span></a></li>
-						<li><a class="icon fa-university" href="research.html"><span>Research</span></a></li>
-						<li><a class="icon fa-users" href="team.html"><span>Team</span></a></li>
-						<li><a class="icon fa-file-text" href="publications.html"><span>Publications</span></a></li>
-						<li><a class="icon fa-retweet" href="news.html"><span>News</span></a></li>
+						<li><a class="icon fa-home" href="index.html"><span>Accueil</span></a></li>
+						<li><a class="icon fa-university" href="recherche.html"><span>Recherche</span></a></li>
+						<li><a class="icon fa-users" href="equipe.html"><span>Équipe</span></a></li>
+						<li><a class="icon fa-file-text" href="recherche.html#publications"><span>Publications</span></a></li>
+						<li><a class="icon fa-retweet" href="nouvelles.html"><span>Nouvelles</span></a></li>
 						<li><a class="icon fa-envelope" href="#contact"><span>Contact</span></a></li>
-						<li><a class="icon fa-briefcase" href="openings.html"><span>Openings</span></a></li>
+						<li><a class="icon fa-briefcase" href="postes.html"><span>Postes</span></a></li>
 					</ul>
 				</nav>
 
@@ -95,49 +107,48 @@
 					<div class="col-12">
 						<section>
 							<p style="text-align: center; font-size: 1.1em; line-height: 1.8; margin-bottom: 3em;">
-								We develop theoretical frameworks for understanding quantum systems at <a href="https://www.usherbrooke.ca/chimie/">Sherbrooke University</a>. Our research bridges fundamental quantum mechanics with practical applications in chemistry and materials science.
+								Nous développons des cadres théoriques pour comprendre les systèmes quantiques à l'<a href="https://www.usherbrooke.ca/chimie/">Université de Sherbrooke</a>. Notre recherche relie la mécanique quantique fondamentale aux applications pratiques en chimie et en science des matériaux.
 							</p>
 						</section>
 					</div>
 
 					<div class="col-4 col-6-medium col-12-small">
 						<section>
-							<a href="research.html" class="image featured"><img src="../images/geochemistry.png"
-								alt="Quantum systems research visualization"
+							<a href="recherche.html" class="image featured"><img src="../images/geochemistry.png"
+								alt="Visualisation de la recherche sur les systèmes quantiques"
 								srcset="images/main2_1.png 0.3x"/></a>
 							<header>
-								<h3>Research Areas</h3>
+								<h3>Domaines de recherche</h3>
 							</header>
-							<p>We study quantum statistics of many-body quantum systems, chemical reaction kinetics, and quantum dynamics in open system settings.</p>
+							<p>Nous étudions les statistiques quantiques des systèmes quantiques à plusieurs corps, la cinétique des réactions chimiques et la dynamique quantique dans des contextes de systèmes ouverts.</p>
 						</section>
 					</div>
 
 					<div class="col-4 col-6-medium col-12-small">
 						<section>
-							<a href="team.html" class="image featured" style="display: block;"><img src="../images/MAIN.png"
-								alt="Team collaboration and computational methods" style="width: 100%; height: auto; max-width: none;" /></a>
+							<a href="equipe.html" class="image featured" style="display: block;"><img src="../images/MAIN.png"
+								alt="Collaboration d'équipe et méthodes computationnelles" style="width: 100%; height: auto; max-width: none;" /></a>
 							<header>
-								<h3>Our Team</h3>
+								<h3>Notre équipe</h3>
 							</header>
-							<p>We are building a research group with diverse academic and personal backgrounds who are
-								passionate about advancing our understanding of quantum systems.</p>
+							<p>Nous construisons un groupe de recherche avec des parcours académiques et personnels diversifiés, passionnés par l'avancement de notre compréhension des systèmes quantiques.</p>
 						</section>
 					</div>
 
 					<div class="col-4 col-6-medium col-12-small">
 						<section>
-							<a href="openings.html" class="image featured"><img src="../images/quantum-molecules.jpg"
-								alt="Quantum molecular dynamics research visualization" /></a>
+							<a href="postes.html" class="image featured"><img src="../images/quantum-molecules.jpg"
+								alt="Visualisation de la recherche en dynamique moléculaire quantique" /></a>
 							<header>
-								<h3>Join Us</h3>
+								<h3>Rejoignez-nous</h3>
 							</header>
-							<p>We welcome applications from motivated Undergraduate, Masters and PhD students interested in theory and computation.</p>
+							<p>Nous accueillons les candidatures d'étudiants motivés de premier cycle, de maîtrise et de doctorat intéressés par la théorie et le calcul.</p>
 						</section>
 					</div>
 					<div class="col-12">
 						<ul class="actions">
-							<li><a href="openings.html" class="button icon fa-briefcase">Research Opportunities</a></li>
-							<li><a href="research.html" class="button icon fa-university">Explore Our Research</a></li>
+							<li><a href="postes.html" class="button icon fa-briefcase">Opportunités de recherche</a></li>
+							<li><a href="recherche.html" class="button icon fa-university">Explorer notre recherche</a></li>
 						</ul>
 					</div>
 				</div>
@@ -148,7 +159,7 @@
 		<!-- Sherbrooke Image -->
 		<section id="sherbrooke-banner">
 			<div>
-				<img src="../images/sign_summer.jpg" alt="Sherbrooke University campus in summer" />
+				<img src="../images/sign_summer.jpg" alt="Campus de l'Université de Sherbrooke en été" />
 			</div>
 		</section>
 
@@ -158,15 +169,15 @@
 
 			<div class="container">
 				<header id="contact">
-					<h2>Questions or comments? <strong>Get in touch:</strong></h2>
+					<h2>Des questions ou des commentaires? <strong>Contactez-nous:</strong></h2>
 				</header>
 				<section>
 					<div class="row">
 						<div class="col-6 col-12-small">
 							<ul class="icons">
 								<li class="icon fa-home">
-									Department of Chemistry<br>
-									Sherbrooke University<br>
+									Département de chimie<br>
+									Université de Sherbrooke<br>
 									Sherbrooke, QC, Canada
 								</li>
 							</ul>
@@ -206,8 +217,8 @@
 			</div>
 			<div id="copyright" class="container">
 				<ul class="links">
-					<li>&copy; Korol Group <time datetime="2025">2025</time>. All rights reserved.</li>
-					<li>Original Design by <a href="http://html5up.net">HTML5 UP</a></li>
+					<li>&copy; Groupe Korol <time datetime="2025">2025</time>. Tous droits réservés.</li>
+					<li>Design original par <a href="http://html5up.net">HTML5 UP</a></li>
 				</ul>
 			</div>
 		</section>
@@ -222,6 +233,10 @@
 	<script src="../assets/js/breakpoints.min.js"></script>
 	<script src="../assets/js/util.js"></script>
 	<script src="../assets/js/combined.min.js"></script>
+	<script>
+		// Save language preference
+		localStorage.setItem('korolgroup-language', 'fr');
+	</script>
 
 </body>
 

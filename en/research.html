@@ -30,7 +30,7 @@
 	<meta name="twitter:image" content="https://romankorol.com/images/research/research-banner.jpg" />
 	<meta name="theme-color" content="#5e5e5e" media="(prefers-color-scheme: light)">
 	<meta name="theme-color" content="#2a2a2a" media="(prefers-color-scheme: dark)">
-n	<!-- Language alternates for SEO -->
+	<!-- Language alternates for SEO -->
 	<link rel="alternate" hreflang="en" href="https://romankorol.com/en/research.html" />
 	<link rel="alternate" hreflang="fr" href="https://romankorol.com/fr/recherche.html" />
 	<link rel="alternate" hreflang="x-default" href="https://romankorol.com/en/research.html" />
@@ -67,6 +67,29 @@ t	// Save language preference
 	        }
 	    }
 
+	    // Expand/Collapse all publications
+	    var allExpanded = false;
+	    function toggleAllPublications() {
+	        var publications = document.querySelectorAll('.divided .hidden, .divided .unhidden');
+	        var button = document.getElementById('toggleAllBtn');
+
+	        if (allExpanded) {
+	            // Collapse all
+	            for (var i = 0; i < publications.length; i++) {
+	                publications[i].className = 'hidden';
+	            }
+	            button.textContent = 'Expand All';
+	            allExpanded = false;
+	        } else {
+	            // Expand all
+	            for (var i = 0; i < publications.length; i++) {
+	                publications[i].className = 'unhidden';
+	            }
+	            button.textContent = 'Collapse All';
+	            allExpanded = true;
+	        }
+	    }
+
 	    // Enhanced keyboard navigation
 	    function makeKeyboardAccessible() {
 	        var clickableElements = document.querySelectorAll('[onclick]');
@@ -97,9 +120,9 @@ t	// Save language preference
 
 	<!-- Language switcher -->
 	<div class="language-toggle">
-		<a href="../en/research.html" lang="en" hreflang="en" class="active">EN</a>
+		<a href="../en/research.html#publications" lang="en" hreflang="en" class="active">EN</a>
 		<span>|</span>
-		<a href="../fr/recherche.html" lang="fr" hreflang="fr">FR</a>
+		<a href="../fr/recherche.html#publications" lang="fr" hreflang="fr">FR</a>
 	</div>
 
 	<div id="page-wrapper">
@@ -117,7 +140,7 @@ t	// Save language preference
 						<li><a class="icon fa-home" href="index.html"><span>Home</span></a></li>
 						<li><a class="icon fa-university" href="research.html"><span>Research</span></a></li>
 						<li><a class="icon fa-users" href="team.html"><span>Team</span></a></li>
-						<li><a class="icon fa-file-text" href="publications.html"><span>Publications</span></a></li>
+						<li><a class="icon fa-file-text" href="research.html#publications"><span>Publications</span></a></li>
 						<li><a class="icon fa-retweet" href="news.html"><span>News</span></a></li>
 						<li><a class="icon fa-envelope" href="#contact"><span>Contact</span></a></li>
 						<li><a class="icon fa-briefcase" href="openings.html"><span>Openings</span></a></li>
@@ -137,7 +160,7 @@ t	// Save language preference
 
 						<!-- Research Focus Areas -->
 						<section style="margin-bottom: 4em;">
-							<h3 style="color: var(--heading-color, #5e5e5e); border-bottom: 2px solid var(--accent-color, #5e5e5e); padding-bottom: 0.5em;">Research Focus Areas</h3>
+							<h3 style="color: var(--heading-color, #f5f5f5); border-bottom: 2px solid var(--accent-color, #5e5e5e); padding-bottom: 0.5em;">Research Focus Areas</h3>
 							<div class="row" style="margin-top: 2em;">
 								<div class="col-4 col-12-small">
 									<div class="box" style="text-align: center; padding: 1.5em;">
@@ -164,13 +187,15 @@ t	// Save language preference
 						</section>
 
 						<!-- Highlights -->
-						<section>
+						<section id="publications">
 
 							<div class="row aln-center">
 								<header>
 									<h3 class="actions">
-										<a href="pdf\Publist.pdf" target="_blank" rel="noopener noreferrer" class="button icon fa-file-pdf-o">List
-											of Publications</a></h3>
+										<a href="../pdf/Publist.pdf" target="_blank" rel="noopener noreferrer" class="button icon fa-file-pdf-o">List
+											of Publications</a>
+										<a href="javascript:toggleAllPublications();" id="toggleAllBtn" class="button alt icon fa-bars">Expand All</a>
+									</h3>
 								</header>
 							</div>
 							<ol class="divided" reversed>
