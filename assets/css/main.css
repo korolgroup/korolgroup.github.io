@@ -3148,3 +3148,35 @@ html[data-theme=dark] .language-toggle span {
     text-align: center;
   }
 }
+
+/* Section title styling for proper dark/light theme support */
+.section-title {
+  color: #333;
+  border-bottom: 2px solid #ed786a;
+  padding-bottom: 0.5em;
+}
+
+.section-heading {
+  color: #333;
+}
+
+/* Dark theme section titles */
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme=light]) .section-title {
+    color: #f5f5f5;
+    border-bottom-color: #4a9eff;
+  }
+
+  html:not([data-theme=light]) .section-heading {
+    color: #f5f5f5;
+  }
+}
+
+html[data-theme=dark] .section-title {
+  color: #f5f5f5;
+  border-bottom-color: #4a9eff;
+}
+
+html[data-theme=dark] .section-heading {
+  color: #f5f5f5;
+}
