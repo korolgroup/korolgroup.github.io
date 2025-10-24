@@ -3307,9 +3307,40 @@ html[data-theme=dark] .team-photo-placeholder {
 }
 
 /* Research focus area images - consistent sizing */
-.box img {
+.box > a > img:not(.modal-content):not(.myBtn_multi),
+.box a.image img:not(.modal-content):not(.myBtn_multi) {
   max-height: 200px;
   width: 100%;
   object-fit: cover;
   border-radius: 4px;
+}
+
+/* Preserve inline badge/icon images - size them to match text height */
+.box h3 img[height="20"],
+.box header img[height="20"],
+.box h3 a img,
+.box header h3 a img {
+  width: 20px !important;
+  height: 20px !important;
+  max-height: 20px !important;
+  display: inline !important;
+  vertical-align: middle !important;
+  margin-left: 0.5em !important;
+}
+
+/* Preserve thumbnail images at their natural aspect ratio */
+.box .myBtn_multi {
+  width: auto !important;
+  max-height: none !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
+
+/* Modal content images should fit within viewport */
+.modal-content {
+  width: auto !important;
+  max-width: 90vw !important;
+  max-height: 90vh !important;
+  height: auto !important;
+  object-fit: contain !important;
 }

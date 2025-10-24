@@ -1,11 +1,50 @@
 <!-- Language switcher -->
+{% assign page_name = page.url | split: "/" | last %}
+{% assign alt_lang_url = "" %}
+
+{% if page.lang == 'en' %}
+	{% case page_name %}
+		{% when "activities.html" %}
+			{% assign alt_lang_url = "/fr/activites.html" %}
+		{% when "learn.html" %}
+			{% assign alt_lang_url = "/fr/apprendre.html" %}
+		{% when "news.html" %}
+			{% assign alt_lang_url = "/fr/nouvelles.html" %}
+		{% when "openings.html" %}
+			{% assign alt_lang_url = "/fr/postes.html" %}
+		{% when "research.html" %}
+			{% assign alt_lang_url = "/fr/recherche.html" %}
+		{% when "team.html" %}
+			{% assign alt_lang_url = "/fr/equipe.html" %}
+		{% else %}
+			{% assign alt_lang_url = page.url | replace: '/en/', '/fr/' %}
+	{% endcase %}
+{% else %}
+	{% case page_name %}
+		{% when "activites.html" %}
+			{% assign alt_lang_url = "/en/activities.html" %}
+		{% when "apprendre.html" %}
+			{% assign alt_lang_url = "/en/learn.html" %}
+		{% when "nouvelles.html" %}
+			{% assign alt_lang_url = "/en/news.html" %}
+		{% when "postes.html" %}
+			{% assign alt_lang_url = "/en/openings.html" %}
+		{% when "recherche.html" %}
+			{% assign alt_lang_url = "/en/research.html" %}
+		{% when "equipe.html" %}
+			{% assign alt_lang_url = "/en/team.html" %}
+		{% else %}
+			{% assign alt_lang_url = page.url | replace: '/fr/', '/en/' %}
+	{% endcase %}
+{% endif %}
+
 <div class="language-toggle">
 	{% if page.lang == 'en' %}
 		<a href="{{ page.url }}" lang="en" hreflang="en" class="active">EN</a>
 		<span>|</span>
-		<a href="{{ page.url | replace: '/en/', '/fr/' }}" lang="fr" hreflang="fr">FR</a>
+		<a href="{{ alt_lang_url }}" lang="fr" hreflang="fr">FR</a>
 	{% else %}
-		<a href="{{ page.url | replace: '/fr/', '/en/' }}" lang="en" hreflang="en">EN</a>
+		<a href="{{ alt_lang_url }}" lang="en" hreflang="en">EN</a>
 		<span>|</span>
 		<a href="{{ page.url }}" lang="fr" hreflang="fr" class="active">FR</a>
 	{% endif %}

@@ -1,156 +1,62 @@
-<!DOCTYPE HTML>
-<!--
-	Strongly Typed by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html lang="fr">
-<!--indique au navigateur que le contenu est en français-->
+---
+layout: default
+title: "Recherche - Groupe Korol | Dynamique quantique et méthodes semiclassiques"
+description: "Explorez la recherche du Groupe Korol en dynamique quantique, méthodes semiclassiques et chimie computationnelle. Publications, projets et travaux académiques à l'Université de Sherbrooke."
+keywords: "dynamique quantique, méthodes semiclassiques, chimie computationnelle, publications de recherche, Groupe Korol, Université de Sherbrooke"
+lang: fr
+permalink: /fr/recherche.html
+custom_scripts: |
+  <!-- Publication unhide functionality -->
+  	<script type="text/javascript">
+  	    function unhide(divID) {
+  	        var item = document.getElementById(divID);
+  	        if (item) {
+  	            item.className = (item.className == 'hidden') ? 'unhidden' : 'hidden';
+  	        }
+  	    }
+  
+  	    // Expand/Collapse all publications
+  	    var allExpanded = false;
+  	    function toggleAllPublications() {
+  	        var publications = document.querySelectorAll('.divided .hidden, .divided .unhidden');
+  	        var button = document.getElementById('toggleAllBtn');
+  
+  	        if (allExpanded) {
+  	            // Collapse all
+  	            for (var i = 0; i < publications.length; i++) {
+  	                publications[i].className = 'hidden';
+  	            }
+  	            button.textContent = 'Tout développer';
+  	            allExpanded = false;
+  	        } else {
+  	            // Expand all
+  	            for (var i = 0; i < publications.length; i++) {
+  	                publications[i].className = 'unhidden';
+  	            }
+  	            button.textContent = 'Tout réduire';
+  	            allExpanded = true;
+  	        }
+  	    }
+  
+  	    // Enhanced keyboard navigation
+  	    function makeKeyboardAccessible() {
+  	        var clickableElements = document.querySelectorAll('[onclick]');
+  	        for (var i = 0; i < clickableElements.length; i++) {
+  	            clickableElements[i].setAttribute('tabindex', '0');
+  	            clickableElements[i].addEventListener('keypress', function(e) {
+  	                if (e.key === 'Enter' || e.key === ' ') {
+  	                    e.preventDefault();
+  	                    this.click();
+  	                }
+  	            });
+  	        }
+  	    }
+  
+  	    document.addEventListener('DOMContentLoaded', makeKeyboardAccessible);
+  	</script>
+---
 
-<head>
-	<title>Recherche - Groupe Korol | Dynamique quantique et méthodes semiclassiques</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<meta name="color-scheme" content="light dark">
-	<meta name="description" content="Explorez la recherche du Groupe Korol en dynamique quantique, méthodes semiclassiques et chimie computationnelle. Publications, projets et travaux académiques à l'Université de Sherbrooke." />
-	<meta name="keywords" content="dynamique quantique, méthodes semiclassiques, chimie computationnelle, publications de recherche, Groupe Korol, Université de Sherbrooke" />
-	<meta name="author" content="Groupe Korol" />
-
-	<!-- Open Graph Meta Tags -->
-	<meta property="og:title" content="Recherche - Groupe Korol | Dynamique quantique et méthodes semiclassiques" />
-	<meta property="og:description" content="Explorez la recherche du Groupe Korol en dynamique quantique, méthodes semiclassiques et chimie computationnelle. Publications, projets et travaux académiques à l'Université de Sherbrooke." />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://romankorol.com/fr/recherche.html" />
-	<meta property="og:image" content="https://romankorol.com/images/research/research-banner.jpg" />
-
-	<!-- Twitter Card Meta Tags -->
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Recherche - Groupe Korol | Dynamique quantique et méthodes semiclassiques" />
-	<meta name="twitter:description" content="Explorez la recherche du Groupe Korol en dynamique quantique, méthodes semiclassiques et chimie computationnelle. Publications, projets et travaux académiques à l'Université de Sherbrooke." />
-	<meta name="twitter:image" content="https://romankorol.com/images/research/research-banner.jpg" />
-	<meta name="theme-color" content="#5e5e5e" media="(prefers-color-scheme: light)">
-	<meta name="theme-color" content="#2a2a2a" media="(prefers-color-scheme: dark)">
-	<!-- Language alternates for SEO -->
-	<link rel="alternate" hreflang="en" href="https://romankorol.com/en/research.html" />
-	<link rel="alternate" hreflang="fr" href="https://romankorol.com/fr/recherche.html" />
-	<link rel="alternate" hreflang="x-default" href="https://romankorol.com/en/research.html" />
-	<!-- Immediate theme application to prevent FOUC -->
-	<script>
-		(function() {
-			try {
-				var savedTheme = localStorage.getItem('romankorol-theme') || 'auto';
-				var systemIsDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-				var effectiveTheme = savedTheme === 'auto' ? (systemIsDark ? 'dark' : 'light') : savedTheme;
-
-				if (effectiveTheme === 'dark') {
-					document.documentElement.setAttribute('data-theme', 'dark');
-				} else if (effectiveTheme === 'light') {
-					document.documentElement.setAttribute('data-theme', 'light');
-				}
-			} catch (e) {
-				// If localStorage fails, check system preference
-				if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-					document.documentElement.setAttribute('data-theme', 'dark');
-				}
-			}
-		})();
-	</script>
-
-	<!-- Publication unhide functionality -->
-	<script type="text/javascript">
-	    function unhide(divID) {
-	        var item = document.getElementById(divID);
-	        if (item) {
-	            item.className = (item.className == 'hidden') ? 'unhidden' : 'hidden';
-	        }
-	    }
-
-	    // Expand/Collapse all publications
-	    var allExpanded = false;
-	    function toggleAllPublications() {
-	        var publications = document.querySelectorAll('.divided .hidden, .divided .unhidden');
-	        var button = document.getElementById('toggleAllBtn');
-
-	        if (allExpanded) {
-	            // Collapse all
-	            for (var i = 0; i < publications.length; i++) {
-	                publications[i].className = 'hidden';
-	            }
-	            button.textContent = 'Tout développer';
-	            allExpanded = false;
-	        } else {
-	            // Expand all
-	            for (var i = 0; i < publications.length; i++) {
-	                publications[i].className = 'unhidden';
-	            }
-	            button.textContent = 'Tout réduire';
-	            allExpanded = true;
-	        }
-	    }
-
-	    // Enhanced keyboard navigation
-	    function makeKeyboardAccessible() {
-	        var clickableElements = document.querySelectorAll('[onclick]');
-	        for (var i = 0; i < clickableElements.length; i++) {
-	            clickableElements[i].setAttribute('tabindex', '0');
-	            clickableElements[i].addEventListener('keypress', function(e) {
-	                if (e.key === 'Enter' || e.key === ' ') {
-	                    e.preventDefault();
-	                    this.click();
-	                }
-	            });
-	        }
-	    }
-
-	    document.addEventListener('DOMContentLoaded', makeKeyboardAccessible);
-	</script>
-
-	<link rel="preload" href="../assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<noscript><link rel="stylesheet" href="../assets/css/main.css"></noscript>
-	<!-- Preload critical resources -->
-	<link rel="preload" href="../assets/js/combined.min.js" as="script">
-	<link rel="preload" href="images/quantum-molecules.jpg" as="image">
-</head>
-
-<body class="homepage is-preload">
-	<!-- Skip to main content link for accessibility -->
-	<a href="#main-content" class="skip-link">Aller au contenu principal</a>
-
-	<!-- Language switcher -->
-	<div class="language-toggle">
-		<a href="../en/research.html#publications" lang="en" hreflang="en">EN</a>
-		<span>|</span>
-		<a href="../fr/recherche.html#publications" lang="fr" hreflang="fr" class="active">FR</a>
-	</div>
-
-	<div id="page-wrapper">
-
-		<!-- Header -->
-		<section id="header">
-			<div class="container">
-
-				<!-- Logo -->
-				<h1 id="logo">Groupe Korol</h1>
-				<p class="research-mission">Alliant chimie quantique, physique computationnelle et science de l'information quantique pour comprendre et utiliser la matière quantique</p>
-				<!-- Nav -->
-				<nav id="nav" role="navigation" aria-label="menu principal">
-					<ul>
-						<li><a class="icon fa-home" href="index.html"><span>Accueil</span></a></li>
-						<li><a class="icon fa-university" href="recherche.html"><span>Recherche</span></a></li>
-						<li><a class="icon fa-users" href="equipe.html"><span>Équipe</span></a></li>
-						<li><a class="icon fa-file-text" href="recherche.html#publications"><span>Publications</span></a></li>
-						<li><a class="icon fa-retweet" href="nouvelles.html"><span>Nouvelles</span></a></li>
-						<li><a class="icon fa-envelope" href="#contact"><span>Contact</span></a></li>
-						<li><a class="icon fa-briefcase" href="postes.html"><span>Postes</span></a></li>
-					</ul>
-				</nav>
-
-			</div>
-		</section>
-
-		<!-- Main -->
-		<section id="main">
-			<div class="container">
+<div class="container">
 				<div class="row">
 
 					<!-- Publications - Full Width -->
@@ -162,21 +68,21 @@
 							<div class="row" style="margin-top: 2em;">
 								<div class="col-4 col-12-small">
 									<div class="box" style="text-align: center; padding: 1.5em;">
-										<img src="../images/main3.png" alt="Dynamique quantique" style="width: 100%; height: auto; margin-bottom: 1em;" />
+										<img src="/images/main3.png" alt="Dynamique quantique" style="width: 100%; height: auto; margin-bottom: 1em;" />
 										<h4>Dynamique quantique</h4>
 										<p>Méthodes d'intégrale de chemin, dynamique moléculaire des polymères en anneau, approches semiclassiques</p>
 									</div>
 								</div>
 								<div class="col-4 col-12-small">
 									<div class="box" style="text-align: center; padding: 1.5em;">
-										<img src="../images/geochemistry.png" alt="Cinétique chimique" style="width: 100%; height: auto; margin-bottom: 1em;" />
+										<img src="/images/geochemistry.png" alt="Cinétique chimique" style="width: 100%; height: auto; margin-bottom: 1em;" />
 										<h4>Cinétique chimique</h4>
 										<p>Théorie des taux de réaction, effets isotopiques, effets environnementaux sur les réactions chimiques</p>
 									</div>
 								</div>
 								<div class="col-4 col-12-small">
 									<div class="box" style="text-align: center; padding: 1.5em;">
-										<img src="../images/main2.png" alt="Systèmes quantiques ouverts" style="width: 100%; height: auto; margin-bottom: 1em;" />
+										<img src="/images/main2.png" alt="Systèmes quantiques ouverts" style="width: 100%; height: auto; margin-bottom: 1em;" />
 										<h4>Systèmes quantiques ouverts</h4>
 										<p>Transport quantique, interactions électron-phonon, modélisation de densité spectrale</p>
 									</div>
@@ -205,12 +111,12 @@
 											<h3><a href="javascript:unhide('12');">High-frequency tails in spectral densities</a></h3>
 										</header>
 										<div id="12" class="hidden">
-										<a class="image left"><img class="myBtn_multi" src="../images/publications/12.jpg" title="Queues haute fréquence dans les densités spectrales" alt="Figure montrant les queues haute fréquence de la densité spectrale"></a>
+										<a class="image left"><img class="myBtn_multi" src="/images/publications/12.jpg" title="Queues haute fréquence dans les densités spectrales" alt="Figure montrant les queues haute fréquence de la densité spectrale"></a>
 
 										<!-- The Modal -->
 										<div class="modal modal_multi">
 											<span class="close close_multi">×</span>
-											<img class="modal-content" src="../images/publications/12.jpg" alt="Figure montrant les queues haute fréquence de la densité spectrale">
+											<img class="modal-content" src="/images/publications/12.jpg" alt="Figure montrant les queues haute fréquence de la densité spectrale">
 										</div>
 											<b>R Korol</b>, X Chen, and I. Franco
 											<i>J. Phys. Chem. A</i> <b>2025</b>  <a
@@ -232,12 +138,12 @@
 											<h3><a href="javascript:unhide('11');">Stable isotope equilibria in the dihydrogen-water-methane-ethane-propane system. Part 2: Experimental determination of hydrogen isotopic equilibrium for ethane-H<sub>2</sub> from 30 to 200°C and propane-H<sub>2</sub> from 75 to 200°C</a></h3>
 										</header>
 										<div id="11" class="hidden">
-										<a class="image left"><img class="myBtn_multi" src="../images/publications/11.jpg" title="Expériences d'équilibre isotopique de l'hydrogène" alt="Figure montrant la détermination expérimentale de l'équilibre isotopique de l'hydrogène"></a>
+										<a class="image left"><img class="myBtn_multi" src="/images/publications/11.jpg" title="Expériences d'équilibre isotopique de l'hydrogène" alt="Figure montrant la détermination expérimentale de l'équilibre isotopique de l'hydrogène"></a>
 
 										<!-- The Modal -->
 										<div class="modal modal_multi">
 											<span class="close close_multi">×</span>
-											<img class="modal-content" src="../images/publications/11.jpg" alt="Figure montrant la détermination expérimentale de l'équilibre isotopique de l'hydrogène">
+											<img class="modal-content" src="/images/publications/11.jpg" alt="Figure montrant la détermination expérimentale de l'équilibre isotopique de l'hydrogène">
 										</div>
 											A C Turner, <b>R Korol</b>, M Bill, and D A Stolper
 											<i>Geochim. et Cosmochim. Acta</i> <b>2025</b>  <a
@@ -261,12 +167,12 @@
 											<b>R Korol</b>, A C Turner, A Nandi, J M Bowman, W A Goddard III and D A Stolper
 											<i>Geochim. et Cosmochim. Acta</i> <b>2025</b>  <a
 												href="https://doi.org/10.1016/j.gca.2025.02.028">10.1016/j.gca.2025.02.028</a>.
-										<a class="image left"><img class="myBtn_multi" src="../images/publications/10.jpg" title="Calculs d'intégrale de chemin pour les équilibres isotopiques" alt="Figure montrant les calculs de potentiel de qualité CCSD(T)"></a>
+										<a class="image left"><img class="myBtn_multi" src="/images/publications/10.jpg" title="Calculs d'intégrale de chemin pour les équilibres isotopiques" alt="Figure montrant les calculs de potentiel de qualité CCSD(T)"></a>
 
 										<!-- The Modal -->
 										<div class="modal modal_multi">
 											<span class="close close_multi">×</span>
-											<img class="modal-content" src="../images/publications/10.jpg" alt="Figure montrant les calculs de potentiel de qualité CCSD(T)">
+											<img class="modal-content" src="/images/publications/10.jpg" alt="Figure montrant les calculs de potentiel de qualité CCSD(T)">
 										</div>
 										<p>
 											Nous analysons l'importance relative de diverses approximations couramment employées lors de l'évaluation des équilibres isotopiques.
@@ -288,13 +194,13 @@
 											A C Turner, <b>R Korol</b>, D L Eldridge, M Bill, T F Miller III and D A Stolper
 											<i>Geochim. et Cosmochim. Acta</i> <b>2021</b>  <a
 												href="https://doi.org/10.1016/j.gca.2021.04.026">10.1016/j.gca.2021.04.026</a>.
-										<a class="image left"><img class="myBtn_multi" src="../images/publications/9.jpg" title="Équilibre isotopique de l'hydrogène dans le système méthane-eau"
+										<a class="image left"><img class="myBtn_multi" src="/images/publications/9.jpg" title="Équilibre isotopique de l'hydrogène dans le système méthane-eau"
 											alt="Figure montrant l'équilibre isotopique expérimental et théorique de l'hydrogène"></a>
 
 										<!-- The Modal -->
 										<div class="modal modal_multi">
 											<span class="close close_multi">×</span>
-											<img class="modal-content" src="../images/publications/9.jpg" alt="Figure montrant l'équilibre isotopique expérimental et théorique de l'hydrogène">
+											<img class="modal-content" src="/images/publications/9.jpg" alt="Figure montrant l'équilibre isotopique expérimental et théorique de l'hydrogène">
 										</div>
 										<p>
 											Nous fournissons des calibrations du fractionnement d'équilibre H/D et <sup>13</sup>C/<sup>12</sup>C
@@ -311,18 +217,18 @@
 										<header>
 											<h3><a href="javascript:unhide('8');">Dimension-free path-integral molecular dynamics without preconditioning</a> <a
 													href="https://aip.scitation.org/topic/collections/editors-pick?SeriesKey=jcp"><img
-														src="../images/Logos/editors-pick.jpg" height="20" width="20" title="Choix de l'éditeur"
+														src="/images/Logos/editors-pick.jpg" height="20" width="20" title="Choix de l'éditeur"
 														alt="Logo Choix de l'éditeur"></a></h3>
 										</header>
 										<div id="8" class="hidden">
-										<a class="image left"><img class="myBtn_multi" src="../images/publications/8.jpeg"
+										<a class="image left"><img class="myBtn_multi" src="/images/publications/8.jpeg"
 											title="Spectre IR de l'eau liquide calculé avec le nouveau schéma BCOCB à des pas de temps de 0,2, 1,0, 1,2 et 1,4 fs"
 											alt="Spectre IR de l'eau liquide calculé avec le nouveau schéma BCOCB à des pas de temps de 0,2, 1,0, 1,2 et 1,4 fs"></a>
 
 										<!-- The Modal -->
 										<div class="modal modal_multi">
 											<span class="close close_multi">×</span>
-											<img class="modal-content" src="../images/publications/8.jpeg" alt="Spectre IR de l'eau liquide calculé avec le nouveau schéma BCOCB à des pas de temps de 0,2, 1,0, 1,2 et 1,4 fs">
+											<img class="modal-content" src="/images/publications/8.jpeg" alt="Spectre IR de l'eau liquide calculé avec le nouveau schéma BCOCB à des pas de temps de 0,2, 1,0, 1,2 et 1,4 fs">
 										</div>
 											<b>R Korol</b>, J L Rosa-Ra&iacute;ces, N Bou-Rabee and T F Miller III,
 											<i>J. Chem. Phys.</i> <b>2020</b> 152, 104102, <a
@@ -344,18 +250,18 @@
 										<header>
 											<h3><a href="javascript:unhide('7');">Comparison of Experimental vs Theoretical Abundances of <sup>13</sup>CH<sub>3</sub>D and <sup>12</sup>CH<sub>2</sub>D<sub>2</sub> for Isotopically Equilibrated Systems from 1 to 500 °C</a> <a
 													href="https://pubs.acs.org/page/policy/authorchoice_termsofuse.html"><img
-														src="../images/Logos/ACS_editors_choice.png" height="20" width="20"
+														src="/images/Logos/ACS_editors_choice.png" height="20" width="20"
 														alt="Logo Choix de l'éditeur ACS"></a></h3>
 										</header>
 										<div id="7" class="hidden">
-										<a class="image left"><img class="myBtn_multi" src="../images/publications/7.jpeg"
+										<a class="image left"><img class="myBtn_multi" src="/images/publications/7.jpeg"
 											title="Regroupement d'isotopes dans le méthane"
 											alt="Accord un pour un théorie-expérience pour le regroupement à l'équilibre du deutérium avec le deutérium et du deutérium avec le carbone-13 à des températures entre 1 et 500 degrés Celsius"></a>
 
 										<!-- The Modal -->
 										<div class="modal modal_multi">
 											<span class="close close_multi">×</span>
-											<img class="modal-content" src="../images/publications/7.jpeg"
+											<img class="modal-content" src="/images/publications/7.jpeg"
 												alt="Accord un pour un théorie-expérience pour le regroupement à l'équilibre du deutérium avec le deutérium et du deutérium avec le carbone-13 à des températures entre 1 et 500 degrés Celsius">
 										</div>
 											D L Elbridge, <b>R Korol</b>, M K Lloyd, A C Turner, M A Webb, T F Miller III and D A Stolper
@@ -382,14 +288,14 @@
 										<header>
 											<h3><a href="javascript:unhide('6');">Cayley modification for strongly stable path-integral and ring-polymer molecular dynamics</a> <a
 													href="https://aip.scitation.org/topic/collections/editors-pick?SeriesKey=jcp"><img
-														src="../images/Logos/editors-pick.jpg" height="20" width="20" title="Choix de l'éditeur"
+														src="/images/Logos/editors-pick.jpg" height="20" width="20" title="Choix de l'éditeur"
 														alt="Logo Choix de l'éditeur"></a></h3>
 										</header>
 										<div id="6" class="hidden">
 											<b>R Korol</b>, N Bou-Rabee and T F Miller III,
 											<i>J. Chem. Phys.</i> <b>2019</b> 151 (12), 124103, <a
 												href="https://aip.scitation.org/doi/10.1063/1.5120282">10.1063/1.5120282</a>.
-										<a class="image left"><img class="myBtn_multi" src="../images/publications/6.jpg"
+										<a class="image left"><img class="myBtn_multi" src="/images/publications/6.jpg"
 												alt="Panel A: eigenvalues of exponential propagator for different timesteps, spread uniformly 
 												on the unit circle. Since the eigenvalues can be degenerate, this propagator is not strongly stable.
 												Panel B: eigenvalues of the Cayley-modified propagator, at different timesteps. It is visually clear, 
@@ -400,7 +306,7 @@
 
 											<span class="close close_multi">×</span>
 											<img class="modal-content"
-													src="../images/publications/6.jpg" alt="Panel A: eigenvalues of exponential propagator for different timesteps, spread uniformly 
+													src="/images/publications/6.jpg" alt="Panel A: eigenvalues of exponential propagator for different timesteps, spread uniformly 
 													on the unit circle. Since the eigenvalues can be degenerate, this propagator is not strongly stable.
 													Panel B: eigenvalues of the Cayley-modified propagator, at different timesteps. It is visually clear, 
 													that the values become denser, never reaching the real axis. This is a visual illustration of strong stability."></a>
@@ -432,7 +338,7 @@
 											<i>J. Phys. Chem. B </i> <b> 2019 </b> 123 (13), 2801-2811, <a
 												href="https://pubs.acs.org/doi/abs/10.1021/acs.jpcb.8b12557">10.1021/acs.jpcb.8b12557</a>.
 										<!-- Trigger the Modal -->
-										<a class="image left"><img class="myBtn_multi" src="../images/publications/5.png"
+										<a class="image left"><img class="myBtn_multi" src="/images/publications/5.png"
 												alt="The scheme for obtaining conductance of long DNA molecules from the shorter sequences.
 												Conductance values for all 10952 DNA sequences three to seven base-pair in length are obtained
 												from the Landauer-Buttiker probe simulations, then used to train a shallow neural network.
@@ -443,7 +349,7 @@
 
 											<span class="close close_multi">×</span>
 											<img class="modal-content"
-													src="../images/publications/5.png" alt="The scheme for obtaining conductance of long DNA molecules from the shorter sequences.
+													src="/images/publications/5.png" alt="The scheme for obtaining conductance of long DNA molecules from the shorter sequences.
 													Conductance values for all 10952 DNA sequences three to seven base-pair in length are obtained
 													from the Landauer-Buttiker probe simulations, then used to train a shallow neural network.
 													The conductance for longer sequences can then be predicted in seconds."></a>
@@ -474,8 +380,8 @@
 											<b>R Korol</b> and D Segal,
 											<i>J. Phys. Chem. C </i> <b> 2018 </b> 122 (8), 4206-4216, <a
 												href="https://pubs.acs.org/doi/abs/10.1021/acs.jpcc.7b12744">10.1021/acs.jpcc.7b12744</a>.
-										<a class="image left"><img class="myBtn_multi" src="../images/publications/4.png"
-												srcset="images/publications/4_1.png 0.3x"
+										<a class="image left"><img class="myBtn_multi" src="/images/publications/4.png"
+												srcset="/images/publications/4_1.png 0.3x"
 												alt="Log-log plot of conductance as environmental (thermal) effects are increased ten-fold 
 												from the dry and frozen to the wet and mobile environment. The lowest conductance values 
 												are boosted by a factor of 100, signifying hopping conductance. Best conductors are unaffected by the change.
@@ -486,7 +392,7 @@
 
 											<span class="close close_multi">×</span>
 											<img class="modal-content"
-													src="../images/publications/4.png" alt="Log-log plot of conductance as environmental (thermal) effects are increased ten-fold 
+													src="/images/publications/4.png" alt="Log-log plot of conductance as environmental (thermal) effects are increased ten-fold 
 													from the dry and frozen to the wet and mobile environment. The lowest conductance values 
 													are boosted by a factor of 100, signifying hopping conductance. Best conductors are unaffected by the change.
 													The vast majority of sequences fall somewhere in between."></a>
@@ -516,7 +422,7 @@
 												<b>R Korol</b>, M Kilgour, D Segal,
 											<i>Comp. Phys. Comm.</i> <b>2018</b> 224, 396-404, <a
 												href="https://www.sciencedirect.com/science/article/pii/S0010465517303454">10.1016/j.cpc.2017.10.005</a>.
-										<a class="image left"><img class="myBtn_multi" src="../images/publications/3.png"
+										<a class="image left"><img class="myBtn_multi" src="/images/publications/3.png"
 												alt="Conductance of a uniform bridge between 2 and 10 sites long. 
 												The log-y scale reveals the hopping (linear), tunneling (exponential) 
 												and ballistic (constant) conduction mechanisms at different environmental strengths."></a>
@@ -526,7 +432,7 @@
 
 											<span class="close close_multi">×</span>
 											<img class="modal-content"
-													src="../images/publications/3.png" alt="Conductance of a uniform bridge between 2 and 10 sites long. 
+													src="/images/publications/3.png" alt="Conductance of a uniform bridge between 2 and 10 sites long. 
 													The log-y scale reveals the hopping (linear), tunneling (exponential) 
 													and ballistic (constant) conduction mechanisms at different environmental strengths."></a>
 										</div>
@@ -553,7 +459,7 @@
 											<i>J. Chem. Phys.</i> <b>2016</b> 145 (22), 224702, <a
 												href="https://aip.scitation.org/doi/abs/10.1063/1.4971167">10.1063/1.4971167</a>.
 										<!-- Trigger the Modal -->
-										<a class="image left"><img class="myBtn_multi" src="../images/publications/2.png"
+										<a class="image left"><img class="myBtn_multi" src="/images/publications/2.png"
 											alt="A schematic diagram of Landauer-Buttiker approach to thermally-assisted transport across a uniform bridge, 
 											where the effects of environment are modelled using voltage-temperature probes."></a>
 
@@ -562,7 +468,7 @@
 
 											<span class="close close_multi">×</span>
 											<img class="modal-content"
-													src="../images/publications/2.png" 
+													src="/images/publications/2.png" 
 													alt="A schematic diagram of Landauer-Buttiker approach to thermally-assisted transport across a uniform bridge, 
 													where the effects of environment are modelled using voltage-temperature probes."></a>
 										</div>
@@ -591,7 +497,7 @@
 											Stephan,
 											<i>J. Am. Chem. Soc.</i> <b>2016</b> 139 (1), pp 426–-435, <a
 												href="http://pubs.acs.org/doi/abs/10.1021%2Fjacs.6b11190">10.1021/jacs.6b11190</a>.
-										<a class="image left"><img class="myBtn_multi" src="../images/publications/1.png"
+										<a class="image left"><img class="myBtn_multi" src="/images/publications/1.png"
 											alt="Phenanthrenedione- and pyrenedione-derived borocyclic 
 											radicals react with amines, phosphines, DMAP and NHC and gives various adducts."></a>
 
@@ -600,7 +506,7 @@
 
 											<span class="close close_multi">×</span>
 											<img class="modal-content"
-													src="../images/publications/1.png" alt="Phenanthrenedione- and pyrenedione-derived borocyclic 
+													src="/images/publications/1.png" alt="Phenanthrenedione- and pyrenedione-derived borocyclic 
 													radicals react with amines, phosphines, DMAP and NHC and gives various adducts."></a>
 										</div>
 										<p>Nous utilisons une série de radicaux borocycliques, qui sont à la fois volumineux et avec
@@ -627,7 +533,7 @@
 											<b>RV Korol</b>, OM Yanchuk, OV Marchuk, VF Orlov, IA Moroz, OA Vyshnevskyi,
 											<i>Phys. & Chem. of Solid State</i> <b>2021</b> 22 (2), pp 380–-387, <a
 												href="https://doi.org/10.15330/pcss.22.2.380-387">10.15330/pcss.22.2.380-387</a>.
-										<a class="image left"><img class="myBtn_multi" src="../images/publications/0.jpg"
+										<a class="image left"><img class="myBtn_multi" src="/images/publications/0.jpg"
 												alt="SEM images of the ZnO nanoparticles with and without size stabilizers"></a>
 
 										<!-- The Modal -->
@@ -635,7 +541,7 @@
 
 											<span class="close close_multi">×</span>
 											<img class="modal-content"
-													src="../images/publications/0.jpg" alt="SEM images of the ZnO nanoparticles with and without size stabilizers"></a>
+													src="/images/publications/0.jpg" alt="SEM images of the ZnO nanoparticles with and without size stabilizers"></a>
 										</div>
 										<p>Nous modifions et optimisons une synthèse de nanoparticules de ZnO par électrodéposition
 											en ajoutant des stabilisateurs auxiliaires pour réduire la taille et rétrécir sa distribution dans le produit cible.
@@ -653,112 +559,6 @@
 		<!-- Sherbrooke Image -->
 		<!-- <section id="sherbrooke-banner" style="padding: 0; margin: 0; display: flex; justify-content: center; background: #fff;">
 			<div style="width: 90%; max-width: 1400px; height: 300px; overflow: hidden;">
-				<img src="../images/Sherbrooke_snow.jpg" alt="Sherbrooke University in winter" style="width: 100%; height: 100%; object-fit: cover; object-position: center 35%;" />
+				<img src="/images/Sherbrooke_snow.jpg" alt="Sherbrooke University in winter" style="width: 100%; height: 100%; object-fit: cover; object-position: center 35%;" />
 			</div>
 		</section> -->
-
-		<!-- Footer -->
-		<section id="footer">
-			<div class="container">
-
-			<div class="container">
-				<header id="contact">
-					<h2>Des questions ou des commentaires? <strong>Contactez-nous:</strong></h2>
-				</header>
-				<!--<div class="row">
-						
-						<div class="col-6 col-12-medium">
-								<section>
-									<form method="post" action="formresult.php">
-										<div class="row gtr-50">
-											<div class="col-6 col-12-small">
-												<input name="name" placeholder="Name" type="text" />
-											</div>
-											<div class="col-6 col-12-small">
-												<input name="email" placeholder="Email" type="text" />
-											</div>
-											<div class="col-12">
-												<textarea name="message" placeholder="Message"></textarea>
-											</div>
-											<div class="col-12">
-												<input type="submit" name="submit" value="Submit"><!--<a  href="#" class="form-button-submit button icon fa-envelope">Send Message</a>
-											</div>
-										</div>
-									</form>
-								</section>
-							</div>
-							
-							<div class="col-6 col-12-medium">-->
-				<section>
-					<div class="row">
-						<div class="col-6 col-12-small">
-							<ul class="icons">
-								<li class="icon fa-home" >
-									Department of Chemistry<br>
-									Sherbrooke University<br>
-									Sherbrooke, QC, Canada
-								</li>
-							</ul>
-						</div>
-						<div class="col-6 col-12-small">
-							<ul class="icons">
-								<li class="icon fa-at" >
-									<a href="mailto:Roman.Korol@USherbrooke.ca">Roman.Korol@USherbrooke.ca</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<!-- Single row of all 6 social media links -->
-					<div class="row">
-						<div class="col-12" style="text-align: center;">
-							<a href="https://github.com/korolgroup" target="_blank" rel="noopener noreferrer" class="footer-social-link">
-								<i class="icon fa-github fa-3x"></i>
-							</a>
-							<a href="https://scholar.google.com.ua/citations?hl=en&user=YAAMduoAAAAJ" target="_blank" rel="noopener noreferrer" class="footer-social-link">
-								<i class="icon fa-graduation-cap fa-3x"></i>
-							</a>
-							<a href="https://www.linkedin.com/in/roman-korol-a08656a8/" target="_blank" rel="noopener noreferrer" class="footer-social-link">
-								<i class="icon fa-linkedin-square fa-3x"></i>
-							</a>
-							<a href="https://twitter.com/KorolGroup" target="_blank" rel="noopener noreferrer" class="footer-social-link">
-								<i class="icon fa-twitter-square fa-3x"></i>
-							</a>
-							<a href="https://orcid.org/0000-0002-9275-5897" target="_blank" rel="noopener noreferrer" class="footer-social-link">
-								<i class="icon fa-id-card fa-3x"></i>
-							</a>
-							<a href="mailto:Roman.Korol@USherbrooke.ca" target="_blank" rel="noopener noreferrer" class="footer-social-link">
-								<i class="icon fa-envelope fa-3x"></i>
-							</a>
-						</div>
-					</div>
-				</section>
-
-				<!--</div></div>-->
-			</div>
-			<div id="copyright" class="container">
-				<ul class="links">
-					<li>&copy; Groupe Korol <time datetime="2025">2025</time>. Tous droits réservés.</li>
-					<li>Design original par <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</div>
-		</section>
-	</div>
-
-
-
-	<!-- Scripts - Optimized -->
-	<script src="../assets/js/jquery.min.js"></script>
-	<script src="../assets/js/jquery.dropotron.min.js"></script>
-	<script src="../assets/js/browser.min.js"></script>
-	<script src="../assets/js/breakpoints.min.js"></script>
-	<script src="../assets/js/util.js"></script>
-	<script src="../assets/js/modal.js"></script>
-	<script src="../assets/js/combined.min.js"></script>
-	<script>
-		// Save language preference
-		localStorage.setItem('korolgroup-language', 'fr');
-	</script>
-
-</body>
-
-</html>

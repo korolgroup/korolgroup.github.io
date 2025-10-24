@@ -1,114 +1,13 @@
-<!DOCTYPE HTML>
-<!--
-	Strongly Typed by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html lang="en">
-<!--tells the browser the language of the content is English-->
+---
+layout: default
+title: "Team - Korol Group | Sherbrooke University"
+description: "Meet the Korol Group team at Sherbrooke University - current members and former members working on quantum dynamics and theoretical chemistry."
+keywords: "Korol Group, team, research group, Sherbrooke University, quantum dynamics, theoretical chemistry"
+lang: en
+permalink: /en/team.html
+---
 
-<head>
-	<title>Team - Korol Group | Sherbrooke University</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<meta name="color-scheme" content="light dark">
-	<meta name="description" content="Meet the Korol Group team at Sherbrooke University - current members and former members working on quantum dynamics and theoretical chemistry." />
-	<meta name="keywords" content="Korol Group, team, research group, Sherbrooke University, quantum dynamics, theoretical chemistry" />
-	<meta name="author" content="Korol Group" />
-
-	<!-- Open Graph Meta Tags -->
-	<meta property="og:title" content="Team - Korol Group | Sherbrooke University" />
-	<meta property="og:description" content="Meet the Korol Group team at Sherbrooke University - current members and former members working on quantum dynamics and theoretical chemistry." />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://romankorol.com/team.html" />
-	<meta property="og:image" content="https://romankorol.com/images/team-banner.jpg" />
-
-	<!-- Twitter Card Meta Tags -->
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Team - Korol Group | Sherbrooke University" />
-	<meta name="twitter:description" content="Meet the Korol Group team at Sherbrooke University - current members and former members working on quantum dynamics and theoretical chemistry." />
-	<meta name="twitter:image" content="https://romankorol.com/images/team-banner.jpg" />
-	<meta name="theme-color" content="#5e5e5e" media="(prefers-color-scheme: light)">
-	<meta name="theme-color" content="#2a2a2a" media="(prefers-color-scheme: dark)">
-	<!-- Language alternates for SEO -->
-	<link rel="alternate" hreflang="en" href="https://romankorol.com/en/team.html" />
-	<link rel="alternate" hreflang="fr" href="https://romankorol.com/fr/equipe.html" />
-	<link rel="alternate" hreflang="x-default" href="https://romankorol.com/en/team.html" />
-	<!-- Immediate theme application to prevent FOUC -->
-	<script>
-		(function() {
-			try {
-				var savedTheme = localStorage.getItem('romankorol-theme') || 'auto';
-				var systemIsDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-				var effectiveTheme = savedTheme === 'auto' ? (systemIsDark ? 'dark' : 'light') : savedTheme;
-
-				if (effectiveTheme === 'dark') {
-					document.documentElement.setAttribute('data-theme', 'dark');
-				} else if (effectiveTheme === 'light') {
-					document.documentElement.setAttribute('data-theme', 'light');
-				}
-			} catch (e) {
-				// If localStorage fails, check system preference
-				if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-					document.documentElement.setAttribute('data-theme', 'dark');
-				}
-			}
-		})();
-	// Save language preference
-		localStorage.setItem('korolgroup-language', 'en');
-	</script>
-
-	<link rel="preload" href="../assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<noscript><link rel="stylesheet" href="../assets/css/main.css"></noscript>
-	<!-- Preload critical resources -->
-	<link rel="preload" href="../assets/js/combined.min.js" as="script">
-	<link rel="preload" href="images/quantum-molecules.jpg" as="image">
-</head>
-
-<body class="homepage is-preload">
-	<!-- Skip to main content link for accessibility -->
-	<a href="#main-content" class="skip-link" style="position: absolute; left: -9999px; z-index: 999; padding: 8px; background: #000; color: #fff; text-decoration: none;">Skip to main content</a>
-	<style>
-		.skip-link:focus {
-			left: 6px;
-			top: 7px;
-		}
-	</style>
-
-	<!-- Language switcher -->
-	<div class="language-toggle">
-		<a href="../en/team.html" lang="en" hreflang="en" class="active">EN</a>
-		<span>|</span>
-		<a href="../fr/equipe.html" lang="fr" hreflang="fr">FR</a>
-	</div>
-	<div id="page-wrapper">
-
-		<!-- Header -->
-		<section id="header">
-			<div class="container">
-
-				<!-- Logo -->
-				<h1 id="logo">Korol Group</h1>
-				<p class="research-mission">Combining quantum chemistry, computational physics and quantum information science to understand and utilize quantum matter</p>
-				<!-- Nav -->
-				<nav id="nav" role="navigation" aria-label="main menu">
-					<ul>
-						<li><a class="icon fa-home" href="index.html"><span>Home</span></a></li>
-						<li><a class="icon fa-university" href="research.html"><span>Research</span></a></li>
-						<li><a class="icon fa-users" href="team.html"><span>Team</span></a></li>
-						<li><a class="icon fa-file-text" href="research.html#publications"><span>Publications</span></a></li>
-						<li><a class="icon fa-retweet" href="news.html"><span>News</span></a></li>
-						<li><a class="icon fa-envelope" href="#contact"><span>Contact</span></a></li>
-						<li><a class="icon fa-briefcase" href="openings.html"><span>Openings</span></a></li>
-					</ul>
-				</nav>
-
-			</div>
-		</section>
-
-		<!-- Main -->
-		<main id="main-content">
-		<section id="main">
+<section id="main">
 			<div class="container">
 				<header style="text-align: center; margin-bottom: 3em;">
 					<h2>Our Team</h2>
@@ -122,7 +21,7 @@
 						<!-- PI -->
 						<div class="team-member">
 							<div class="role-icon pi">👨‍🔬</div>
-							<img src="../images/quantum-molecules.jpg" alt="Roman Korol" class="team-photo">
+							<img src="/images/quantum-molecules.jpg" alt="Roman Korol" class="team-photo">
 							<h4>Roman Korol</h4>
 							<p><strong>Principal Investigator</strong> <a href="../pdf/CV_Korol.pdf" target="_blank" rel="noopener noreferrer" class="icon fa-file-pdf-o" title="Download CV" style="font-size: 0.9em; margin-left: 0.3em;"></a></p>
 							<p>Roman joined UdeS in January, 2026 after a PhD at Caltech and a postdoc at URochester.
@@ -161,7 +60,7 @@
 						<!-- Polaris -->
 						<div class="team-member">
 							<div class="role-icon" style="color: #FFD700;">🐾</div>
-							<img src="../images/Polaris.JPG" alt="Polaris" class="team-photo">
+							<img src="/images/Polaris.JPG" alt="Polaris" class="team-photo">
 							<h4>Polaris</h4>
 							<p><strong>Group Mascot</strong></p>
 							<p style="max-width: 400px; margin: 0 auto;">Chief Morale Officer & Emotional Support Specialist</p>
@@ -202,85 +101,3 @@
 
 			</div>
 		</section>
-		</main>
-
-		<!-- Sherbrooke Image -->
-		<!-- <section id="sherbrooke-banner" style="padding: 0; margin: 0; display: flex; justify-content: center; background: #fff;">
-			<div style="width: 90%; max-width: 1400px; height: 300px; overflow: hidden;">
-				<img src="../images/Sherbrooke_snow.jpg" alt="Sherbrooke University in winter" style="width: 100%; height: 100%; object-fit: cover; object-position: center 35%;" />
-			</div>
-		</section> -->
-
-		<!-- Footer -->
-		<section id="footer">
-			<div class="container">
-			</div>
-
-			<div class="container">
-				<header id="contact">
-					<h2>Questions or comments? <strong>Get in touch:</strong></h2>
-				</header>
-				<section>
-					<div class="row">
-						<div class="col-6 col-12-small">
-							<ul class="icons">
-								<li class="icon fa-home" >
-									Department of Chemistry<br>
-									Sherbrooke University<br>
-									Sherbrooke, QC, Canada
-								</li>
-							</ul>
-						</div>
-						<div class="col-6 col-12-small">
-							<ul class="icons">
-								<li class="icon fa-at" >
-									<a href="mailto:Roman.Korol@USherbrooke.ca">Roman.Korol@USherbrooke.ca</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<!-- Single row of all 6 social media links -->
-					<div class="row">
-						<div class="col-12" style="text-align: center;">
-							<a href="https://github.com/korolgroup" target="_blank" rel="noopener noreferrer" class="footer-social-link">
-								<i class="icon fa-github fa-3x"></i>
-							</a>
-							<a href="https://scholar.google.com.ua/citations?hl=en&user=YAAMduoAAAAJ" target="_blank" rel="noopener noreferrer" class="footer-social-link">
-								<i class="icon fa-graduation-cap fa-3x"></i>
-							</a>
-							<a href="https://www.linkedin.com/in/roman-korol-a08656a8/" target="_blank" rel="noopener noreferrer" class="footer-social-link">
-								<i class="icon fa-linkedin-square fa-3x"></i>
-							</a>
-							<a href="https://twitter.com/KorolGroup" target="_blank" rel="noopener noreferrer" class="footer-social-link">
-								<i class="icon fa-twitter-square fa-3x"></i>
-							</a>
-							<a href="https://orcid.org/0000-0002-9275-5897" target="_blank" rel="noopener noreferrer" class="footer-social-link">
-								<i class="icon fa-id-card fa-3x"></i>
-							</a>
-							<a href="mailto:Roman.Korol@USherbrooke.ca" target="_blank" rel="noopener noreferrer" class="footer-social-link">
-								<i class="icon fa-envelope fa-3x"></i>
-							</a>
-						</div>
-					</div>
-				</section>
-			</div>
-			<div id="copyright" class="container">
-				<ul class="links">
-					<li>&copy; Korol Group <time datetime="2025">2025</time>. All rights reserved.</li>
-					<li>Original Design by <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</div>
-		</section>
-	</div>
-
-	<!-- Scripts - Optimized -->
-	<script src="../assets/js/jquery.min.js"></script>
-	<script src="../assets/js/jquery.dropotron.min.js"></script>
-	<script src="../assets/js/browser.min.js"></script>
-	<script src="../assets/js/breakpoints.min.js"></script>
-	<script src="../assets/js/util.js"></script>
-	<script src="../assets/js/combined.min.js"></script>
-
-</body>
-
-</html>

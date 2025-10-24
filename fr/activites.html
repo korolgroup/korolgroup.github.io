@@ -1,126 +1,13 @@
-<!DOCTYPE HTML>
-<!--
-	Strongly Typed by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html lang="en">
-<!--tells the browser the language of the content is English-->
-<script type="text/javascript">
-    function unhide(divID) {
-        var item = document.getElementById(divID);
-        if (item) {
-            item.className = (item.className == 'hidden') ? 'unhidden' : 'hidden';
-        }
-    }
+---
+layout: default
+title: "Activities & Outreach - Korol Group | Professional & Community Engagement"
+description: "Korol Group's professional activities, community outreach, teaching, and engagement in academic and scientific communities at Sherbrooke University."
+keywords: "Korol Group activities, academic outreach, teaching, community engagement, Sherbrooke University, scientific activities"
+lang: fr
+permalink: /fr/activites.html
+---
 
-    // Enhanced keyboard navigation
-    function makeKeyboardAccessible() {
-        var clickableElements = document.querySelectorAll('[onclick]');
-        for (var i = 0; i < clickableElements.length; i++) {
-            clickableElements[i].setAttribute('tabindex', '0');
-            clickableElements[i].addEventListener('keypress', function(e) {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    this.click();
-                }
-            });
-        }
-    }
-
-    document.addEventListener('DOMContentLoaded', makeKeyboardAccessible);
-</script>
-
-<head>
-	<title>Activities & Outreach - Korol Group | Professional & Community Engagement</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<meta name="color-scheme" content="light dark">
-	<meta name="description" content="Korol Group's professional activities, community outreach, teaching, and engagement in academic and scientific communities at Sherbrooke University." />
-	<meta name="keywords" content="Korol Group activities, academic outreach, teaching, community engagement, Sherbrooke University, scientific activities" />
-	<meta name="author" content="Korol Group" />
-
-	<!-- Open Graph Meta Tags -->
-	<meta property="og:title" content="Activities & Outreach - Korol Group | Professional & Community Engagement" />
-	<meta property="og:description" content="Korol Group's professional activities, community outreach, teaching, and engagement in academic and scientific communities at Sherbrooke University." />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://romankorol.com/activities.html" />
-	<meta property="og:image" content="https://romankorol.com/images/activities/activities-banner.jpg" />
-
-	<!-- Twitter Card Meta Tags -->
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Activities & Outreach - Korol Group | Professional & Community Engagement" />
-	<meta name="twitter:description" content="Korol Group's professional activities, community outreach, teaching, and engagement in academic and scientific communities at Sherbrooke University." />
-	<meta name="twitter:image" content="https://romankorol.com/images/activities/activities-banner.jpg" />
-	<meta name="theme-color" content="#5e5e5e" media="(prefers-color-scheme: light)">
-	<meta name="theme-color" content="#2a2a2a" media="(prefers-color-scheme: dark)">
-
-	<!-- Immediate theme application to prevent FOUC -->
-	<script>
-		(function() {
-			try {
-				var savedTheme = localStorage.getItem('korolgroup-theme') || 'auto';
-				var systemIsDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-				var effectiveTheme = savedTheme === 'auto' ? (systemIsDark ? 'dark' : 'light') : savedTheme;
-
-				if (effectiveTheme === 'dark') {
-					document.documentElement.setAttribute('data-theme', 'dark');
-				} else if (effectiveTheme === 'light') {
-					document.documentElement.setAttribute('data-theme', 'light');
-				}
-			} catch (e) {
-				// If localStorage fails, check system preference
-				if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-					document.documentElement.setAttribute('data-theme', 'dark');
-				}
-			}
-		})();
-	</script>
-
-	<link rel="stylesheet" href="../assets/css/main.css">
-	<!-- Preload critical resources -->
-	<link rel="preload" href="../assets/css/main.css" as="style">
-	<link rel="preload" href="../assets/js/combined.min.js" as="script">
-</head>
-
-<body class="no-sidebar is-preload">
-	<!-- Skip to main content link for accessibility -->
-	<a href="#main-content" class="skip-link" style="position: absolute; left: -9999px; z-index: 999; padding: 8px; background: #000; color: #fff; text-decoration: none;">Skip to main content</a>
-	<style>
-		.skip-link:focus {
-			left: 6px;
-			top: 7px;
-		}
-	</style>
-	<div id="page-wrapper">
-
-		<!-- Header -->
-		<section id="header">
-			<div class="container">
-
-				<!-- Logo -->
-				<h1 id="logo">Korol Group</h1>
-				<p class="research-mission">Combining quantum chemistry, computational physics and quantum information science to understand and utilize quantum matter</p>
-				<!-- Nav -->
-				<nav id="nav" role="navigation" aria-label="main menu">
-					<ul>
-						<li><a class="icon fa-home" href="index.html"><span>Home</span></a></li>
-						<li><a class="icon fa-university" href="research.html"><span>Research</span></a></li>
-						<li><a class="icon fa-users" href="team.html"><span>Team</span></a></li>
-						<li><a class="icon fa-file-text" href="recherche.html#publications"><span>Publications</span></a></li>
-						<li><a class="icon fa-retweet" href="news.html"><span>News</span></a></li>
-						<li><a class="icon fa-envelope" href="#contact"><span>Contact</span></a></li>
-						<li><a class="icon fa-briefcase" href="openings.html"><span>Openings</span></a></li>
-					</ul>
-				</nav>
-
-			</div>
-		</section>
-
-
-		<!-- Main -->
-		<section id="main">
-			<div class="container">
+<div class="container">
 				<!--Ukraine-->
 				<article class="box post">
 					<header>
@@ -180,7 +67,7 @@
 					</header>
 					<div class="row">
 						<div class="col-5 col-9-medium">
-							<a class="image featured"><img class="myBtn_multi" src="../images/activities/teach.jpg"
+							<a class="image featured"><img class="myBtn_multi" src="/images/activities/teach.jpg"
 									title="Lecturing with the very best Dr. Halyna Yagenska to a class ESL teachers from different public schools in Volyn region."
 									alt="Roman and Dr. Halyna Yagenska lecturing to a class ESL teachers from different public schools in Volyn region."></a>
 
@@ -188,18 +75,18 @@
 							<div class="modal modal_multi">
 
 								<span class="close close_multi">×</span>
-								<img class="modal-content" src="../images/activities/teach.jpg" alt="">
+								<img class="modal-content" src="/images/activities/teach.jpg" alt="">
 							</div>
 						</div>
 
 						<div class="col-2 col-3-medium">
-							<a class="image featured" href="https://novaukraine.org/"><img src="../images/Logos/Nova_Ukr_logo.png" title="Nova Ukraine logo" alt="Nova Ukraine logo"></a>
-							<a class="image featured" href="https://teachforall.org/network-partners#27416"><img src="../images/Logos/TfU_logo.jpg" title="Teach for Ukraine logo" alt="Teach for Ukraine logo"></a>
-							<a class="image featured" href="https://causetutoring.org/"><img src="../images/Logos/cause_tutoring_logo_new.png" title="Cause tutoring logo" alt="Cause tutoring logo"></a>
+							<a class="image featured" href="https://novaukraine.org/"><img src="/images/Logos/Nova_Ukr_logo.png" title="Nova Ukraine logo" alt="Nova Ukraine logo"></a>
+							<a class="image featured" href="https://teachforall.org/network-partners#27416"><img src="/images/Logos/TfU_logo.jpg" title="Teach for Ukraine logo" alt="Teach for Ukraine logo"></a>
+							<a class="image featured" href="https://causetutoring.org/"><img src="/images/Logos/cause_tutoring_logo_new.png" title="Cause tutoring logo" alt="Cause tutoring logo"></a>
 						</div>
 
 						<div class="col-5 col-9-medium">
-							<a class="image featured"><img class="myBtn_multi" src="../images/activities/summer_school.jpg"
+							<a class="image featured"><img class="myBtn_multi" src="/images/activities/summer_school.jpg"
                   title="Lecture with a demonstration about acids, bases and pH for high school students at the Chemical Biology summer school in my alma mater. 
                   Coloring the cabbage extract with backing soda and vinegar to demonstrate the principle of pH indicators."
 									alt="Roman is demonstrating the concert of pH indicators using the cabbage extract to a group of middle school students in Lutsk"></a>
@@ -208,7 +95,7 @@
 							<div class="modal modal_multi">
 
 								<span class="close close_multi">×</span>
-								<img class="modal-content" src="../images/activities/summer_school.jpg" alt="">
+								<img class="modal-content" src="/images/activities/summer_school.jpg" alt="">
 							</div>
 						</div>
 
@@ -242,19 +129,19 @@
 					</header>
 					<div class="row">
 						<div class="col-6 col-12-medium">
-							<a class="image featured" title=""><img class="myBtn_multi" src="../images/activities/HLVC.jpg"
+							<a class="image featured" title=""><img class="myBtn_multi" src="/images/activities/HLVC.jpg"
 									alt="The logo of Heritage Language Variation and Change project: CN Tower as the y-axis, red gaussian is plotted, containing the shadows of a man, a woman and a kid each producing a sound pattern."></a>
 
 							<!-- The Modal -->
 							<div class="modal modal_multi">
 
 								<span class="close close_multi">×</span>
-                <img class="modal-content" src="../images/activities/HLVC.jpg" alt="">
+                <img class="modal-content" src="/images/activities/HLVC.jpg" alt="">
 							</div>
 						</div>
 
 						<div class="col-6 col-12-medium">
-							<a class="image featured"><img class="myBtn_multi" src="../images/activities/map.png"
+							<a class="image featured"><img class="myBtn_multi" src="/images/activities/map.png"
 									title="The map of Greater Toronto area with the pins, standing for the first, second and third generation Ukrainian speakers. As of September, 2018 there are a few dozen speakers on the map."
 									alt="The map of Greater Toronto area with the pins, standing for the first, second and third generation Ukrainian speakers. As of September, 2018 there are a few dozen speakers on the map. Most pins are on the west side in Bloor West Village, Etobicoke and Jane and Finch area."></a>
 
@@ -262,7 +149,7 @@
 							<div class="modal modal_multi">
 
 								<span class="close close_multi">×</span>
-								<img class="modal-content" src="../images/activities/map.png" alt="">
+								<img class="modal-content" src="/images/activities/map.png" alt="">
 							</div>
 						</div>
 						<p>I worked as a research assistant in <a
@@ -282,22 +169,22 @@
 					</header>
 					<div class="row">
 						<div class="col-6 col-12-medium">
-							<a class="image featured"><img class="myBtn_multi" src="../images/activities/Metallica.jpg"
-                srcset="images/activities/Metallica_1 0.3x" title="At the Metallica show in Toronto, July, 2017"
+							<a class="image featured"><img class="myBtn_multi" src="/images/activities/Metallica.jpg"
+                srcset="/images/activities/Metallica_1 0.3x" title="At the Metallica show in Toronto, July, 2017"
                 alt="Metallica show in Toronto, July, 2017"/></a>
 
 							<!-- The Modal -->
 							<div class="modal modal_multi">
 
 								<span class="close close_multi">×</span>
-                <img class="modal-content" src="../images/activities/Metallica.jpg" alt="">
+                <img class="modal-content" src="/images/activities/Metallica.jpg" alt="">
 							</div>
 						</div>
 
 						<div class="col-6 col-12-medium">
 							<a class="image featured"><img class="myBtn_multi"
-                  src="../images/activities/contrabass.png"
-                  srcset="images/activities/contrabass_1.png 0.3x"
+                  src="/images/activities/contrabass.png"
+                  srcset="/images/activities/contrabass_1.png 0.3x"
 									title="School music performance in Grade 10. Roman is playing the double base."
 									alt="School music performance in Grade 10. Roman is playing the double base."></a>
 
@@ -305,7 +192,7 @@
 							<div class="modal modal_multi">
 
 								<span class="close close_multi">×</span>
-								<img class="modal-content" src="../images/activities/contrabass.png" alt="">
+								<img class="modal-content" src="/images/activities/contrabass.png" alt="">
 							</div>
 						</div>
 						<p>I listen to all kinds of rock music, and I always have a pair of wireless headphones on me.
@@ -328,7 +215,7 @@
 					</header>
 					<div class="row">
 						<div class="col-4 col-12-medium">
-							<a class="image featured"><img class="myBtn_multi" src="../images/activities/read.png"
+							<a class="image featured"><img class="myBtn_multi" src="/images/activities/read.png"
                   title="I use Overdrive, this is a picture of the new app, Libby. These allow access to thousands of audio- and e-books if you have a library card of one of the partner libraries."
 									alt="Libby app icon: a person with red hair reading a green book."></a>
 
@@ -336,7 +223,7 @@
 							<div class="modal modal_multi">
 
 								<span class="close close_multi">×</span>
-								<img class="modal-content" src="../images/activities/read.png" alt="">
+								<img class="modal-content" src="/images/activities/read.png" alt="">
 							</div>
 						</div>
 
@@ -363,26 +250,26 @@
 					</header>
 					<div class="row">
 						<div class="col-6 col-12-medium">
-              <a class="image featured" title=""><img class="myBtn_multi" src="../images/activities/Desna.jpg" 
+              <a class="image featured" title=""><img class="myBtn_multi" src="/images/activities/Desna.jpg" 
                 alt="Desna Ukrainian dance company wearing traditional Ukrainian clothes: red boots, embroidered shirts, flower crowns for girls and wide pants for guys."></a>
 
 							<!-- The Modal -->
 							<div class="modal modal_multi">
 
 								<span class="close close_multi">×</span>
-                <img class="modal-content" src="../images/activities/Desna.jpg" title="Desna Ukrainian dance company"
+                <img class="modal-content" src="/images/activities/Desna.jpg" title="Desna Ukrainian dance company"
                 alt="">
 							</div>
 						</div>
 						<div class="col-6 col-12-medium">
 							<a class="image featured"><img class="myBtn_multi" title="Vesnianka Ukrainian Dance Ensemble"
-									src="../images/activities/Vesnianka.jpg" alt="Vesnianka Ukrainian Dance Ensemble wearing traditional Ukrainian clothes: red boots, embroidered shirts, flower crowns for girls and wide pants for guys."></a>
+									src="/images/activities/Vesnianka.jpg" alt="Vesnianka Ukrainian Dance Ensemble wearing traditional Ukrainian clothes: red boots, embroidered shirts, flower crowns for girls and wide pants for guys."></a>
 
 							<!-- The Modal -->
 							<div class="modal modal_multi">
 
 								<span class="close close_multi">×</span>
-                <img class="modal-content" src="../images/activities/Vesnianka.jpg" 
+                <img class="modal-content" src="/images/activities/Vesnianka.jpg" 
                 alt="">
 							</div>
 						</div>
@@ -405,7 +292,7 @@
 					</header>
 					<div class="row">
 						<div class="col-6 col-12-medium">
-							<a class="image featured"><img class="myBtn_multi" src="../images/activities/volunteering.jpg"
+							<a class="image featured"><img class="myBtn_multi" src="/images/activities/volunteering.jpg"
 									title="At the celebration of Ukrainian traditional embroidered shirt, Vyshyvanka with two fellow volunteers Oksana and Olena"
 									alt="Roman and two volunteers Oksana and Olena, all wearing the traditional Ukrainian embroidered shirts"></a>
 
@@ -413,12 +300,12 @@
 							<div class="modal modal_multi">
 
 								<span class="close close_multi">×</span>
-                <img class="modal-content" src="../images/activities/volunteering.jpg" 
+                <img class="modal-content" src="/images/activities/volunteering.jpg" 
                 alt="">
 							</div>
 						</div>
 						<div class="col-6 col-12-medium">
-							<a class="image featured"><img class="myBtn_multi" src="../images/activities/vyshyvanka.jpg"
+							<a class="image featured"><img class="myBtn_multi" src="/images/activities/vyshyvanka.jpg"
 									title="At the Vyshyvanka day-2017. Even the rain didn't stop us from parading down Bloor street"
 									alt="Parade down the Bloor West Village with Ukrainian flags, IKEA (blue-and-yellow) umbrellas and music"></a>
 
@@ -426,7 +313,7 @@
 							<div class="modal modal_multi">
 
 								<span class="close close_multi">×</span>
-								<img class="modal-content" src="../images/activities/vyshyvanka.jpg" alt="">
+								<img class="modal-content" src="/images/activities/vyshyvanka.jpg" alt="">
 							</div>
 						</div>
 
@@ -441,106 +328,3 @@
 					</div>
 				</article>
 			</div>
-		</section>
-
-		<!-- Footer -->
-		<section id="footer">
-			<div class="container">
-			</div>
-
-			<div class="container">
-				<header>
-					<h2>Questions or comments? <strong>Get in touch:</strong></h2>
-				</header>
-				<!--<div class="row">
-						
-						<div class="col-6 col-12-medium">
-								<section>
-									<form method="post" action="formresult.php">
-										<div class="row gtr-50">
-											<div class="col-6 col-12-small">
-												<input name="name" placeholder="Name" type="text" />
-											</div>
-											<div class="col-6 col-12-small">
-												<input name="email" placeholder="Email" type="text" />
-											</div>
-											<div class="col-12">
-												<textarea name="message" placeholder="Message"></textarea>
-											</div>
-											<div class="col-12">
-												<input type="submit" name="submit" value="Submit"><!--<a  href="#" class="form-button-submit button icon fa-envelope">Send Message</a>
-											</div>
-										</div>
-									</form>
-								</section>
-							</div>
-							
-							<div class="col-6 col-12-medium">-->
-				<section>
-					<div class="row">
-						<div class="col-6 col-12-small">
-							<ul class="icons">
-								<li class="icon fa-home" >
-									Department of Chemistry<br>
-									Sherbrooke University<br>
-									Sherbrooke, QC, Canada
-								</li>
-							</ul>
-						</div>
-						<div class="col-6 col-12-small">
-							<ul class="icons">
-								<li class="icon fa-at" >
-									<a href="mailto:Roman.Korol@USherbrooke.ca">Roman.Korol@USherbrooke.ca</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<!-- Single row of all 6 social media links -->
-					<div class="row">
-						<div class="col-12" style="text-align: center;">
-							<a href="https://github.com/korolgroup" target="_blank" rel="noopener noreferrer" class="footer-social-link">
-								<i class="icon fa-github fa-3x"></i>
-							</a>
-							<a href="https://scholar.google.com.ua/citations?hl=en&user=YAAMduoAAAAJ" target="_blank" rel="noopener noreferrer" class="footer-social-link">
-								<i class="icon fa-graduation-cap fa-3x"></i>
-							</a>
-							<a href="https://www.linkedin.com/in/roman-korol-a08656a8/" target="_blank" rel="noopener noreferrer" class="footer-social-link">
-								<i class="icon fa-linkedin-square fa-3x"></i>
-							</a>
-							<a href="https://twitter.com/KorolGroup" target="_blank" rel="noopener noreferrer" class="footer-social-link">
-								<i class="icon fa-twitter-square fa-3x"></i>
-							</a>
-							<a href="https://orcid.org/0000-0002-9275-5897" target="_blank" rel="noopener noreferrer" class="footer-social-link">
-								<i class="icon fa-id-card fa-3x"></i>
-							</a>
-							<a href="mailto:Roman.Korol@USherbrooke.ca" target="_blank" rel="noopener noreferrer" class="footer-social-link">
-								<i class="icon fa-envelope fa-3x"></i>
-							</a>
-						</div>
-					</div>
-				</section>
-
-				<!--</div></div>-->
-			</div>
-			<div id="copyright" class="container">
-				<ul class="links">
-					<li>&copy; Korol Group <time datetime="2025">2025</time>. All rights reserved.</li>
-					<li>Original Design by <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</div>
-		</section>
-	</div>
-
-
-
-	<!-- Scripts - Optimized -->
-	<script src="../assets/js/jquery.min.js"></script>
-	<script src="../assets/js/jquery.dropotron.min.js"></script>
-	<script src="../assets/js/browser.min.js"></script>
-	<script src="../assets/js/breakpoints.min.js"></script>
-	<script src="../assets/js/util.js"></script>
-	<script src="../assets/js/combined.min.js"></script>
-
-</body>
-
-</html>

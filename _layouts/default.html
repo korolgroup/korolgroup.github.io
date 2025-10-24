@@ -73,6 +73,11 @@
 	{% if page.preload_image %}
 	<link rel="preload" href="{{ page.preload_image }}" as="image">
 	{% endif %}
+
+	<!-- Page-specific custom scripts -->
+	{% if page.custom_scripts %}
+	{{ page.custom_scripts }}
+	{% endif %}
 </head>
 
 <body class="homepage is-preload">
