@@ -1,0 +1,48 @@
+<!-- Language switcher -->
+<div class="language-toggle">
+	{% if page.lang == 'en' %}
+		<a href="{{ page.url }}" lang="en" hreflang="en" class="active">EN</a>
+		<span>|</span>
+		<a href="{{ page.url | replace: '/en/', '/fr/' }}" lang="fr" hreflang="fr">FR</a>
+	{% else %}
+		<a href="{{ page.url | replace: '/fr/', '/en/' }}" lang="en" hreflang="en">EN</a>
+		<span>|</span>
+		<a href="{{ page.url }}" lang="fr" hreflang="fr" class="active">FR</a>
+	{% endif %}
+</div>
+
+<div id="page-wrapper">
+
+	<!-- Header -->
+	<section id="header">
+		<div class="container">
+
+			<!-- Logo -->
+			<h1 id="logo">Korol Group</h1>
+			<p class="research-mission">{% if page.lang == 'fr' %}Combiner la chimie quantique, la physique computationnelle et la science de l'information quantique pour comprendre et utiliser la matière quantique{% else %}Combining quantum chemistry, computational physics and quantum information science to understand and utilize quantum matter{% endif %}</p>
+
+			<!-- Nav -->
+			<nav id="nav" role="navigation" aria-label="{% if page.lang == 'fr' %}menu principal{% else %}main menu{% endif %}">
+				<ul>
+					{% if page.lang == 'fr' %}
+						<li><a class="icon fa-home" href="/fr/index.html"><span>Accueil</span></a></li>
+						<li><a class="icon fa-university" href="/fr/recherche.html"><span>Recherche</span></a></li>
+						<li><a class="icon fa-users" href="/fr/equipe.html"><span>Équipe</span></a></li>
+						<li><a class="icon fa-file-text" href="/fr/recherche.html#publications"><span>Publications</span></a></li>
+						<li><a class="icon fa-retweet" href="/fr/nouvelles.html"><span>Nouvelles</span></a></li>
+						<li><a class="icon fa-envelope" href="#contact"><span>Contact</span></a></li>
+						<li><a class="icon fa-briefcase" href="/fr/postes.html"><span>Postes</span></a></li>
+					{% else %}
+						<li><a class="icon fa-home" href="/en/index.html"><span>Home</span></a></li>
+						<li><a class="icon fa-university" href="/en/research.html"><span>Research</span></a></li>
+						<li><a class="icon fa-users" href="/en/team.html"><span>Team</span></a></li>
+						<li><a class="icon fa-file-text" href="/en/research.html#publications"><span>Publications</span></a></li>
+						<li><a class="icon fa-retweet" href="/en/news.html"><span>News</span></a></li>
+						<li><a class="icon fa-envelope" href="#contact"><span>Contact</span></a></li>
+						<li><a class="icon fa-briefcase" href="/en/openings.html"><span>Openings</span></a></li>
+					{% endif %}
+				</ul>
+			</nav>
+
+		</div>
+	</section>

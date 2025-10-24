@@ -1,0 +1,49 @@
+# Jekyll configuration for Korol Group website
+title: Korol Group
+description: "The Korol Group at Sherbrooke University develops theoretical frameworks for quantum systems, focusing on quantum statistics, chemical reaction rates, and open quantum dynamics."
+url: "https://korolgroup.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Exclude files from processing
+exclude:
+  - node_modules/
+  - make_pdf/
+  - content/
+  - .claude/
+  - README.md
+  - package.json
+  - package-lock.json
+
+# Include these directories in the build
+include:
+  - _pages
+
+# Collections for organizing content
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: "en"
+    values:
+      lang: "en"
+  - scope:
+      path: "fr"
+    values:
+      lang: "fr"
+
+# Languages
+languages: ["en", "fr"]
+default_lang: "en"
