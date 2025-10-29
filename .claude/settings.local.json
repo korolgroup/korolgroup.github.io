@@ -7,7 +7,11 @@
       "Bash(timeout 15 bash:*)",
       "Bash(findstr:*)",
       "Bash(del \"_plugins\\latex_generator.rb\")",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nIntegrate PDF generation and fix publication float clearing\n\n- Add comprehensive build system with scripts/build_all.py\n- Create BUILD_PROCESS.md with detailed build documentation\n- Update CLAUDE.md with build process information\n- Convert website to data-driven architecture with YAML data files\n- Add Jekyll layouts for publications, news, and team pages\n- Fix CSS float clearing for publication images on research page\n- Move PDFs from pdf/ and make_pdf/ to make/pdf/ for organization\n- Add scripts for adding publications and news items\n- Generate LaTeX publication list from YAML data\n- Reorganize images into proper subdirectories\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push:*)",
+      "Bash(del IMPLEMENTATION_SUMMARY.md QUICK_REFERENCE.md README_BUILD_SYSTEM.md VIEWING_WEBSITE.md JEKYLL_CONVERSION.md)",
+      "Bash(git log:*)"
     ],
     "deny": [],
     "ask": [],

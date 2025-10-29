@@ -1,72 +1,120 @@
-# Makefile for Roman Korol's Website
+# Makefile for Korol Group Website
 # Provides convenient commands for development and deployment
 
-.PHONY: help install dev build test clean deploy lint format
+.PHONY: help build dev serve pdf latex jekyll clean validate test setup install
 
-# Default target
+# Default target - show available commands
 help:
-	@echo "Available commands:"
-	@echo "  install    - Install all dependencies"
-	@echo "  dev        - Start development server with live reload"
-	@echo "  build      - Build production-ready assets"
-	@echo "  test       - Run all tests (HTML, CSS, JS, accessibility)"
-	@echo "  lint       - Run linting on CSS and JavaScript"
-	@echo "  format     - Format all code with Prettier"
-	@echo "  clean      - Clean build artifacts"
-	@echo "  deploy     - Build and deploy to production"
-	@echo "  pdf        - Generate PDF documents from LaTeX sources"
+	@echo "Korol Group Website - Build Commands"
+	@echo "====================================="
+	@echo ""
+	@echo "Development:"
+	@echo "  make dev       - Start Jekyll development server"
+	@echo "  make serve     - Same as 'make dev'"
+	@echo ""
+	@echo "Building:"
+	@echo "  make build     - Full build (validate + LaTeX + Jekyll)"
+	@echo "  make jekyll    - Build Jekyll site only"
+	@echo "  make latex     - Generate LaTeX from YAML data"
+	@echo "  make pdf       - Compile LaTeX PDFs (requires pdflatex)"
+	@echo ""
+	@echo "Maintenance:"
+	@echo "  make validate  - Validate YAML data files"
+	@echo "  make clean     - Clean Jekyll build artifacts"
+	@echo "  make test      - Run full build and validate"
+	@echo ""
+	@echo "For detailed documentation, see:"
+	@echo "  - CLAUDE.md - Complete development guide"
+	@echo "  - BUILD_PROCESS.md - Build process details"
 
-# Install dependencies
-install:
-	npm install
-
-# Development server
-dev:
-	npm run dev
-
-# Production build
+# Full build - validate data, generate LaTeX, compile PDFs, build Jekyll site
 build:
-	npm run build
+	@echo "Running full build..."
+	python scripts/build_all.py
 
-# Run all tests
-test:
-	npm run test
+# Build without PDF compilation (faster for development)
+build-fast:
+	@echo "Running fast build (skipping PDFs)..."
+	python scripts/build_all.py --skip-pdf
 
-# Linting
-lint:
-	npm run lint
+# Start Jekyll development server
+dev:
+	@echo "Starting Jekyll development server..."
+	@echo "Visit http://127.0.0.1:4000 in your browser"
+	@echo "Press Ctrl+C to stop"
+	bundle exec jekyll serve
 
-# Code formatting
-format:
-	npm run format
+# Alias for dev
+serve: dev
 
-# Clean build artifacts
-clean:
-	npm run clean
+# Build Jekyll site only (no LaTeX/PDF generation)
+jekyll:
+	@echo "Building Jekyll site..."
+	bundle exec jekyll build
 
-# Deploy to production
-deploy:
-	npm run deploy
+# Generate LaTeX files from YAML data (does not compile PDFs)
+latex:
+	@echo "Generating LaTeX files from YAML data..."
+	python scripts/generate_latex.py
 
-# Generate PDFs from LaTeX (if available)
-pdf:
+# Compile PDFs from LaTeX sources (requires pdflatex)
+pdf: latex
+	@echo "Compiling PDFs from LaTeX..."
 	@if command -v pdflatex >/dev/null 2>&1; then \
-		cd make_pdf && \
-		pdflatex CV_Korol.tex && \
-		pdflatex Publist.tex && \
-		pdflatex Research.tex && \
-		cp *.pdf ../pdf/; \
-		echo "PDFs generated successfully"; \
+		cd make/pdf && \
+		pdflatex -interaction=nonstopmode CV_Korol.tex && \
+		pdflatex -interaction=nonstopmode Publist.tex && \
+		echo "" && \
+		echo "PDFs compiled successfully!" && \
+		echo "  - CV_Korol.pdf" && \
+		echo "  - Publist.pdf"; \
 	else \
-		echo "pdflatex not found. Please install LaTeX to generate PDFs."; \
+		echo "ERROR: pdflatex not found."; \
+		echo "Install LaTeX to compile PDFs:"; \
+		echo "  - Windows: MiKTeX (https://miktex.org/)"; \
+		echo "  - Mac: MacTeX (https://www.tug.org/mactex/)"; \
+		echo "  - Linux: sudo apt-get install texlive-full"; \
+		exit 1; \
 	fi
 
-# Quick development setup
-setup: install
-	@echo "Development environment set up successfully!"
-	@echo "Run 'make dev' to start the development server."
+# Validate YAML data files
+validate:
+	@echo "Validating YAML data files..."
+	python scripts/build_all.py --skip-pdf --skip-jekyll
 
-# Production deployment
-production: clean build test
-	@echo "Production build completed and tested successfully!"
-	@echo "Ready for deployment."
+# Clean Jekyll build artifacts
+clean:
+	@echo "Cleaning build artifacts..."
+	bundle exec jekyll clean
+	@echo "Build artifacts cleaned."
+
+# Run tests - full build with validation
+test:
+	@echo "Running full test build..."
+	python scripts/build_all.py
+	@echo ""
+	@echo "All tests passed!"
+
+# Quick setup for first-time users
+setup:
+	@echo "Setting up development environment..."
+	@echo ""
+	@echo "Installing Ruby dependencies (Jekyll)..."
+	bundle install
+	@echo ""
+	@echo "Installing Python dependencies..."
+	pip install pyyaml
+	@echo ""
+	@echo "Setup complete!"
+	@echo ""
+	@echo "Next steps:"
+	@echo "  1. Run 'make dev' to start development server"
+	@echo "  2. Run 'make build' to do a full build"
+	@echo "  3. See 'make help' for all available commands"
+
+# Install dependencies only
+install:
+	@echo "Installing dependencies..."
+	bundle install
+	pip install pyyaml
+	@echo "Dependencies installed."
