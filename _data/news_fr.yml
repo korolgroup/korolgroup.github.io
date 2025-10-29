@@ -1,0 +1,21 @@
+# Nouvelles en Français pour le Groupe Korol
+# Format: Liste YAML, articles les plus récents en premier
+# Chaque entrée sera affichée sur la page de nouvelles
+
+- date: "2026-01-05"
+  year: 2026
+  title: "Groupe établi à l'Université de Sherbrooke"
+  images:
+    - file: "Sherbrooke_snow.jpg"
+      path: "/images/news"
+      alt: "Campus de l'Université de Sherbrooke couvert de neige"
+      title: "Université de Sherbrooke en hiver"
+      featured: true
+  content: |
+    Le Groupe Korol débute officiellement ses opérations à l'Université de Sherbrooke,
+    Département de chimie. Nous sommes ravis de commencer ce nouveau chapitre et
+    nous avons hâte de bâtir un programme de recherche dynamique en dynamique quantique
+    et en chimie théorique.
+
+# Ajoutez plus d'articles ici
+# Vous pouvez utiliser le script add_news.py pour ajouter de nouvelles entrées de manière interactive

@@ -23,6 +23,11 @@ exclude:
   - .git/
   - .gitignore
   - "*.bat"
+  - scripts/
+
+# Include PDF directory for serving
+include:
+  - make/pdf
 
 # Default front matter
 defaults:

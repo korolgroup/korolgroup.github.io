@@ -1,0 +1,104 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<div class="container">
+    <div class="row">
+        <!-- Content -->
+        <div id="content" class="col-12">
+            <!-- News Items -->
+            <section>
+                <ul class="divided">
+                    <header>
+                        <h2>{% if page.lang == 'fr' %}Nouvelles{% else %}News{% endif %}</h2>
+                    </header>
+
+                    {% if page.lang == 'fr' %}
+                        {% assign news_items = site.data.news_fr %}
+                    {% else %}
+                        {% assign news_items = site.data.news_en %}
+                    {% endif %}
+
+                    {% assign current_year = 0 %}
+                    {% for item in news_items %}
+                        {% if item.year != current_year %}
+                            {% assign current_year = item.year %}
+                            <header>
+                                <h2><strong id="{{ item.year }}"><time datetime="{{ item.year }}">{{ item.year }}</time></strong></h2>
+                            </header>
+                        {% endif %}
+
+                        <li>
+                            <article class="box excerpt">
+                                <header>
+                                    <span class="date"><time datetime="{{ item.date }}">
+                                        {% assign d = item.date | date: "%-d" %}
+                                        {% if page.lang == 'fr' %}
+                                            {{ d }}
+                                            {% assign m = item.date | date: "%-m" %}
+                                            {% case m %}
+                                                {% when '1' %}janvier
+                                                {% when '2' %}février
+                                                {% when '3' %}mars
+                                                {% when '4' %}avril
+                                                {% when '5' %}mai
+                                                {% when '6' %}juin
+                                                {% when '7' %}juillet
+                                                {% when '8' %}août
+                                                {% when '9' %}septembre
+                                                {% when '10' %}octobre
+                                                {% when '11' %}novembre
+                                                {% when '12' %}décembre
+                                            {% endcase %}
+                                            {{ item.date | date: "%Y" }}
+                                        {% else %}
+                                            {{ item.date | date: "%B %-d, %Y" }}
+                                        {% endif %}
+                                    </time></span>
+                                    <h3>{{ item.title }}</h3>
+                                </header>
+
+                                {% if item.images %}
+                                    {% assign image_count = item.images | size %}
+                                    <div class="row aln-center">
+                                        {% for image in item.images %}
+                                            {% if image.featured or image_count == 1 %}
+                                                {% assign col_class = "col-12" %}
+                                            {% elsif image_count == 2 %}
+                                                {% assign col_class = "col-6" %}
+                                            {% elsif image_count == 3 %}
+                                                {% assign col_class = "col-4" %}
+                                            {% else %}
+                                                {% assign col_class = "col-6" %}
+                                            {% endif %}
+
+                                            <div class="{{ col_class }}">
+                                                <a class="image featured">
+                                                    <img {% if image.title %}title="{{ image.title }}"{% endif %}
+                                                         class="myBtn_multi"
+                                                         src="{{ image.path }}{{ image.file }}"
+                                                         alt="{{ image.alt }}">
+                                                </a>
+
+                                                <div class="modal modal_multi">
+                                                    <span class="close close_multi">×</span>
+                                                    <img class="modal-content"
+                                                         src="{{ image.path }}{{ image.file }}"
+                                                         alt="{{ image.alt }}">
+                                                </div>
+                                            </div>
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+
+                                {{ item.content | markdownify }}
+                            </article>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </section>
+        </div>
+    </div>
+</div>

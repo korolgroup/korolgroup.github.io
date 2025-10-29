@@ -1,0 +1,74 @@
+# Team Members for Korol Group
+# Format: Two lists - current and former members
+
+current:
+  - name: "Roman Korol"
+    role: "pi"
+    role_display:
+      en: "Principal Investigator"
+      fr: "Directeur de recherche"
+    photo: "/images/team/Roman.jpg"
+    cv: "/make/pdf/CV_Korol.pdf"
+    bio:
+      en: "Roman joined UdeS in January, 2026 after a PhD at Caltech and a postdoc at URochester."
+      fr: "Roman a rejoint l'UdeS en janvier 2026 après un doctorat à Caltech et un postdoc à URochester."
+    interests:
+      en: "Roman is broadly interested in quantum effects in molecular systems, quantum dynamics, and quantum computing applications in chemistry."
+      fr: "Roman s'intéresse largement aux effets quantiques dans les systèmes moléculaires, à la dynamique quantique et aux applications de l'informatique quantique en chimie."
+
+  # Recruiting placeholders
+  - name: null
+    role: "phd"
+    role_display:
+      en: "PhD Position Available"
+      fr: "Poste de doctorat disponible"
+    recruiting: true
+    topic:
+      en: "Quantum Dynamics Theory"
+      fr: "Théorie de la dynamique quantique"
+
+  - name: null
+    role: "masters"
+    role_display:
+      en: "Masters Position Available"
+      fr: "Poste de maîtrise disponible"
+    recruiting: true
+    topic:
+      en: "Computational Chemistry"
+      fr: "Chimie computationnelle"
+
+  - name: null
+    role: "undergrad"
+    role_display:
+      en: "Undergrad Position Available"
+      fr: "Poste de premier cycle disponible"
+    recruiting: true
+    topic:
+      en: "Research Internship"
+      fr: "Stage de recherche"
+
+  - name: "Polaris"
+    role: "mascot"
+    role_display:
+      en: "Group Mascot"
+      fr: "Mascotte du groupe"
+    photo: "/images/team/Polaris.JPG"
+    bio:
+      en: "Chief Morale Officer & Emotional Support Specialist"
+      fr: "Responsable en chef du moral et spécialiste du soutien émotionnel"
+    interests:
+      en: "Polaris has a PhD in squirrel hunting from Caltech and a postdoc in deer management from URochester."
+      fr: "Polaris a un doctorat en chasse à l'écureuil de Caltech et un postdoc en gestion des cerfs de URochester."
+
+former: []
+  # Will be populated as members move on
+  # Example format:
+  # - name: "John Doe"
+  #   role: "phd"
+  #   years: "2026-2030"
+  #   thesis:
+  #     en: "Quantum Dynamics of Molecular Systems"
+  #     fr: "Dynamique quantique des systèmes moléculaires"
+  #   current:
+  #     en: "Postdoc at MIT"
+  #     fr: "Postdoc au MIT"

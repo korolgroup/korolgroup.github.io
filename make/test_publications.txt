@@ -1,0 +1,42 @@
+# Publications for Korol Group Website
+# Format: DOI|ALT_TEXT|SUMMARY
+# Last line = ID 0, second-to-last = ID 1, etc.
+
+# Paper 12
+10.1021/acs.jpca.5c00943|Figure showing spectral density high-frequency tails|We show that the computations of relaxation rate in solution are highly sensitive to the choice of representation of the environmental spectral density (SD). The key reason is that electronic relaxation is dominated by the resonant contribution from the high-frequency tails of the SD, which can vary significantly between strategies. We provide a simple transformation that recovers the correct relaxation rates in quantum simulations constrained by algorithmic or physical limitations on the shape of the SD.
+
+# Paper 11
+10.1016/j.gca.2025.02.033|Figure showing experimental determination of hydrogen isotopic equilibrium|We compare experimental hydrogen isotopic equilibrium with high-level theoretical calculations and provide a preferred polynomial fit. Comparison of these fractionation factors with a compilation of ~500 compiled environmental gas samples supports the proposal that many (~50%) of these natural gas samples exhibit hydrogen isotopic compositions consistent with having formed in or attained methane-ethane-propane hydrogen isotopic equilibrium over geologically relevant temperatures for formation and storage (50-300°C).
+
+# Paper 10
+10.1016/j.gca.2025.02.028|Figure showing CCSD(T) quality potential calculations|We analyze the relative importance of various approximations that are commonly employed when isotopic equilibria are evaluated. We find that clumped isotope effects can be calculated using computational methods. In contrast, fractionation and site preferences benefit from the use of the higher level CCSD(T) potentials, accounting for anharmonic effects, and corrections to Born-Oppenheimer approximation.
+
+# Paper 9
+10.1016/j.gca.2021.04.026|Figure showing experimental and theoretical hydrogen isotopic equilibrium|We provide calibrations of the equilibrium H/D and ¹³C/¹²C fractionation based on experiments and PIMC calculations. We find that isotopic compositions of some microbial gases from marine sedimentary, coalbed, and shale environments are consistent with the H and C equilibria.
+
+# Paper 8
+10.1063/1.5134810|IR spectrum of liquid water computed with the new BCOCB scheme at timesteps of 0.2, 1.0, 1.2 and 1.4 fs|We further improve upon the standard algorithm for T-RPMD via a novel implementation of the Cayley modification [R Korol et al., J. Chem. Phys. 151, 124103 (2019)]. This allows for a substantial increase in timestep size - three-fold for the simulations of liquid water - at no extra cost.
+
+# Paper 7
+10.1021/acsearthspacechem.9b00244|One-to-one theory-experiment agreement for the equilibrium clumping of deuterium with deuterium and deuterium with carbon-13 over temperatures between 1 and 500 degree Celsius|We study equilibrium clumping of heavy isotopes in methane. Using heavy isotope clumping, one can determine the temperature of methane when it was formed. We have extended the range of temperatures to cover all biologically and geologically relevant temperatures. Experimental clumping-temperature calibration is confirmed by state-of-the-art theoretical method - PIMC.
+
+# Paper 6
+10.1063/1.5120282|Plot of energy drift for the Cayley modified scheme vs standard scheme at various timesteps|We present a novel implementation of the Cayley modification that ensures exact trajectories with respect to a modified Hamiltonian when the free ring-polymer limit is employed. This leads to strongly stable dynamics that enables considerably larger timesteps relative to existing approaches with other thermostatting methods or bare velocity Verlet integrators.
+
+# Paper 5
+10.1021/acs.jpcb.8b12557|Learning curve showing decrease in prediction error with training set size|We present a machine learning model of quantum properties for molecular liquids and solutions that is transferrable across chemically dissimilar species. A unified potential can do as well as, or better than, system-specific potentials at a computational cost that is negligible compared to PIMD itself.
+
+# Paper 4
+10.1021/acs.jpcc.7b12744|Log-log plot of conductance as environmental (thermal) effects are increased ten-fold from the dry and frozen to the wet and mobile environment. The lowest conductance values are boosted by a factor of 100, signifying hopping conductance. Best conductors are unaffected by the change. The vast majority of sequences fall somewhere in between.|Conductance of DNA molecules is not well-understood in the light of opposing experimental results. The situation is also complicated, because there are exponentially many different sequences, and many of them conduct current in a drastically different way. Here we study the conductance of DNA molecules computationally and identify several general principles that could guide the experiments.
+
+# Paper 3
+10.1016/j.cpc.2017.10.005|Conductance of a uniform bridge between 2 and 10 sites long. The log-y scale reveals the hopping (linear), tunneling (exponential) and ballistic (constant) conduction mechanisms at different environmental strengths.|Our in-house quantum transport package, ProbeZT, calculates how readily electricity and heat moves across a given system. One can use it to identify molecules that are: good conductors, perfect insulators, excellent thermoelectrics and many more. In particular, we show the package applied to a linear conducting chain (like a polymer) and to a double-stranded DNA molecule.
+
+# Paper 2
+10.1063/1.4971167|A schematic diagram of Landauer-Buttiker approach to thermally-assisted transport across a uniform bridge, where the effects of environment are modelled using voltage-temperature probes.|We examine the DNA molecules, that show a change in behavior in conductance and thermopower beyond a certain length, studied experimentally in Li et al. [Nat. Commun. 7, 11294 (2016)]. We show that the change in thermoelectric trends is caused by a change of the mechanism, by which a molecule conducts current from quantum mechanical tunneling to classical hopping.
+
+# Paper 1
+10.1021/jacs.6b11190|Phenanthrenedione- and pyrenedione-derived borocyclic radicals react with amines, phosphines, DMAP and NHC and gives various adducts.|We utilize a series of borocyclic radicals, that are both bulky and with their SOMO density delocalized. Their electrophilic reactivity together with their considerable steric hinderance allows us to make several nice zwitterionic compounds with phosphines and other nucleophiles utilizing Frustrated Lewis Pair chemistry.
+
+# Paper 0
+10.15330/pcss.22.2.380-387|SEM images of the ZnO nanoparticles with and without size stabilizers|We modify and optimize a synthesis of ZnO nanoparticles by electrodeposition by adding auxiliary stabilizers to reduce the size and narrow its distribution in the target product.

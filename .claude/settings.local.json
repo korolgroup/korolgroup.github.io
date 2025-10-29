@@ -1,7 +1,13 @@
 {
   "permissions": {
     "allow": [
-      "Bash(done)"
+      "Bash(dir:*)",
+      "Bash(timeout 10 bash:*)",
+      "Bash(pdflatex:*)",
+      "Bash(timeout 15 bash:*)",
+      "Bash(findstr:*)",
+      "Bash(del \"_plugins\\latex_generator.rb\")",
+      "Bash(git add:*)"
     ],
     "deny": [],
     "ask": [],
