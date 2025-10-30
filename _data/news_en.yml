@@ -11,11 +11,6 @@
       alt: "Sherbrooke University campus covered in snow"
       title: "Sherbrooke University in winter"
       featured: true
-  content: |
-    The Korol Group officially begins operations at the Université de Sherbrooke,
-    Department of Chemistry. We are excited to start this new chapter and look
-    forward to building a vibrant research program in quantum dynamics and
-    theoretical chemistry.
 
 # Add more news items here
 # You can use the add_news.py script to add new entries interactively

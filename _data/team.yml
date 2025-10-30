@@ -22,6 +22,7 @@ current:
     role_display:
       en: "PhD Position Available"
       fr: "Poste de doctorat disponible"
+    photo: "/images/team/user-graduate.svg"
     recruiting: true
     topic:
       en: "Quantum Dynamics Theory"
@@ -32,6 +33,7 @@ current:
     role_display:
       en: "Masters Position Available"
       fr: "Poste de maîtrise disponible"
+    photo: "/images/team/user-graduate.svg"
     recruiting: true
     topic:
       en: "Computational Chemistry"
@@ -42,6 +44,7 @@ current:
     role_display:
       en: "Undergrad Position Available"
       fr: "Poste de premier cycle disponible"
+    photo: "/images/team/user-graduate.svg"
     recruiting: true
     topic:
       en: "Research Internship"
