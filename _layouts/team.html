@@ -29,7 +29,9 @@ layout: default
                         </div>
 
                         <!-- Photo or placeholder -->
-                        {% if member.recruiting %}
+                        {% if member.photo %}
+                            <img src="{{ member.photo }}" alt="{% if member.name %}{{ member.name }}{% else %}{{ member.role_display[page.lang] }}{% endif %}" class="team-photo">
+                        {% elsif member.recruiting %}
                             <div class="team-photo-placeholder {{ member.role }}-placeholder">
                                 {% case member.role %}
                                     {% when 'phd' %}PhD Student
@@ -38,8 +40,6 @@ layout: default
                                     {% when 'postdoc' %}PostDoc
                                 {% endcase %}
                             </div>
-                        {% elsif member.photo %}
-                            <img src="{{ member.photo }}" alt="{{ member.name }}" class="team-photo">
                         {% endif %}
 
                         <!-- Name -->
