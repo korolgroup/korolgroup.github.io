@@ -6,7 +6,7 @@ current:
     role: "pi"
     role_display:
       en: "Principal Investigator"
-      fr: "Directeur de recherche"
+      fr: "Chercheur principal"
     photo: "/images/team/Roman.jpg"
     cv:
       en: "/pdf/CV_Korol.pdf"

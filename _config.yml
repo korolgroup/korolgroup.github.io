@@ -24,6 +24,15 @@ exclude:
   - .gitignore
   - "*.bat"
   - scripts/
+  - pdf/*.tex
+  - pdf/*.log
+  - pdf/*.docx
+  - pdf/*.cls
+  - pdf/*.synctex.gz
+  - pdf/*.aux
+  - pdf/*.out
+  - pdf/*.fdb_latexmk
+  - pdf/*.fls
 
 # Include PDF directory for serving
 include:
