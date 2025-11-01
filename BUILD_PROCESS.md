@@ -16,7 +16,7 @@ python scripts/build_all.py
 
 This is the recommended command that handles everything:
 1. Validates all YAML data files
-2. Generates `make/pdf/pubs.tex` from `_data/publications.yml`
+2. Generates `pdf/pubs.tex` from `_data/publications.yml`
 3. Compiles PDFs (CV and publication list)
 4. Builds Jekyll website to `_site/`
 
@@ -25,10 +25,10 @@ This is the recommended command that handles everything:
 ```bash
 # First time: Generate PDFs
 python scripts/generate_latex.py
-cd make/pdf
+cd pdf
 pdflatex -interaction=nonstopmode Publist.tex
 pdflatex -interaction=nonstopmode CV_Korol.tex
-cd ../..
+cd ..
 
 # Start development server
 bundle exec jekyll serve
@@ -64,10 +64,10 @@ python scripts/validate_data.py
 python scripts/generate_latex.py
 
 # Compile PDFs only
-cd make/pdf
+cd pdf
 pdflatex -interaction=nonstopmode Publist.tex
 pdflatex -interaction=nonstopmode CV_Korol.tex
-cd ../..
+cd ..
 
 # Build Jekyll website only
 bundle exec jekyll build
@@ -94,7 +94,7 @@ python scripts/build_all.py
 
 # Option 2: Just PDFs
 python scripts/generate_latex.py
-cd make/pdf && pdflatex -interaction=nonstopmode Publist.tex && pdflatex -interaction=nonstopmode CV_Korol.tex && cd ../..
+cd pdf && pdflatex -interaction=nonstopmode Publist.tex && pdflatex -interaction=nonstopmode CV_Korol.tex && cd ..
 ```
 
 ## Requirements
@@ -154,7 +154,7 @@ bundle exec jekyll serve
 # 1. Stop Jekyll server (Ctrl+C)
 # 2. Regenerate PDFs
 python scripts/generate_latex.py
-cd make/pdf && pdflatex -interaction=nonstopmode Publist.tex && pdflatex -interaction=nonstopmode CV_Korol.tex && cd ../..
+cd pdf && pdflatex -interaction=nonstopmode Publist.tex && pdflatex -interaction=nonstopmode CV_Korol.tex && cd ..
 # 3. Restart Jekyll server
 bundle exec jekyll serve
 # 4. Hard refresh browser
@@ -167,7 +167,7 @@ bundle exec jekyll serve
 python scripts/build_all.py
 
 # 2. Commit all changes
-git add _data/ images/ make/pdf/*.pdf
+git add _data/ images/ pdf/*.pdf
 git commit -m "Update content and regenerate PDFs"
 
 # 3. Push to GitHub
@@ -197,7 +197,7 @@ website/
 │   ├── add_news.py               # ← Helper to add news
 │   └── validate_data.py          # ← YAML validator
 │
-├── make/pdf/
+├── pdf/
 │   ├── pubs.tex                  # ← Auto-generated from YAML
 │   ├── Publist.tex               # ← Template (includes pubs.tex)
 │   ├── CV_Korol.tex              # ← Template (includes pubs.tex)
@@ -219,7 +219,7 @@ website/
 
 **Solution**:
 1. Regenerate PDFs: `python scripts/generate_latex.py` then compile
-2. Commit the new PDFs: `git add make/pdf/*.pdf`
+2. Commit the new PDFs: `git add pdf/*.pdf`
 3. Hard refresh browser (Ctrl+F5)
 
 ### Jekyll Plugin Not Running
@@ -266,7 +266,7 @@ website/
 | Full build | `python scripts/build_all.py` | Yes |
 | Add publication | `python scripts/add_publication.py` | No (run build_all after) |
 | Generate LaTeX | `python scripts/generate_latex.py` | No (need pdflatex) |
-| Compile PDFs | `cd make/pdf && pdflatex ...` | Yes |
+| Compile PDFs | `cd pdf && pdflatex ...` | Yes |
 | Build website | `bundle exec jekyll build` | No |
 | Dev server | `bundle exec jekyll serve` | No |
 

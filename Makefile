@@ -61,7 +61,7 @@ latex:
 pdf: latex
 	@echo "Compiling PDFs from LaTeX..."
 	@if command -v pdflatex >/dev/null 2>&1; then \
-		cd make/pdf && \
+		cd pdf && \
 		pdflatex -interaction=nonstopmode CV_Korol.tex && \
 		pdflatex -interaction=nonstopmode Publist.tex && \
 		echo "" && \

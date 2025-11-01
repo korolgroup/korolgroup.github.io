@@ -134,7 +134,7 @@ def generate_pubs_tex(publications, output_file):
 def main():
     repo_root = Path(__file__).parent.parent
     data_file = repo_root / '_data' / 'publications.yml'
-    output_file = repo_root / 'make' / 'pdf' / 'pubs.tex'
+    output_file = repo_root / 'pdf' / 'pubs.tex'
 
     # Load publications
     if not data_file.exists():
@@ -155,7 +155,7 @@ def main():
     generate_pubs_tex(publications, output_file)
 
     print("\n✓ LaTeX publication list generated successfully")
-    print(f"  You can now compile make/pdf/CV_Korol.tex and make/pdf/Publist.tex")
+    print(f"  You can now compile pdf/CV_Korol.tex and pdf/Publist.tex")
 
 
 if __name__ == '__main__':

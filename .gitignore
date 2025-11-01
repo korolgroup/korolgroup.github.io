@@ -31,24 +31,15 @@ Thumbs.db
 .cache/
 
 # LaTeX build files
-make_pdf/*.aux
-make_pdf/*.log
-make_pdf/*.synctex.gz
-make_pdf/*.fdb_latexmk
-make_pdf/*.fls
-make_pdf/*.out
-make_pdf/*.toc
-make_pdf/*.bbl
-make_pdf/*.blg
-make/pdf/*.aux
-make/pdf/*.log
-make/pdf/*.synctex.gz
-make/pdf/*.fdb_latexmk
-make/pdf/*.fls
-make/pdf/*.out
-make/pdf/*.toc
-make/pdf/*.bbl
-make/pdf/*.blg
+pdf/*.aux
+pdf/*.log
+pdf/*.synctex.gz
+pdf/*.fdb_latexmk
+pdf/*.fls
+pdf/*.out
+pdf/*.toc
+pdf/*.bbl
+pdf/*.blg
 
 # Performance and testing
 lighthouse-results/

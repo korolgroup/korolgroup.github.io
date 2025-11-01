@@ -52,9 +52,15 @@ layout: default
                         <!-- Role -->
                         <p><strong>{{ member.role_display[page.lang] }}</strong>
                         {% if member.cv %}
-                            <a href="{{ member.cv }}" target="_blank" rel="noopener noreferrer"
-                               class="icon fa-file-pdf-o" title="{% if page.lang == 'fr' %}Télécharger le CV{% else %}Download CV{% endif %}"
-                               style="font-size: 0.9em; margin-left: 0.3em;"></a>
+                            {% if member.cv[page.lang] %}
+                                <a href="{{ member.cv[page.lang] }}" target="_blank" rel="noopener noreferrer"
+                                   class="icon fa-file-pdf-o" title="{% if page.lang == 'fr' %}Télécharger le CV{% else %}Download CV{% endif %}"
+                                   style="font-size: 0.9em; margin-left: 0.3em;"></a>
+                            {% else %}
+                                <a href="{{ member.cv }}" target="_blank" rel="noopener noreferrer"
+                                   class="icon fa-file-pdf-o" title="{% if page.lang == 'fr' %}Télécharger le CV{% else %}Download CV{% endif %}"
+                                   style="font-size: 0.9em; margin-left: 0.3em;"></a>
+                            {% endif %}
                         {% endif %}
                         </p>
 
@@ -78,7 +84,7 @@ layout: default
         <section style="margin-top: 3em; text-align: center;">
             <h4>{% if page.lang == 'fr' %}Légende des rôles{% else %}Role Legend{% endif %}</h4>
             <div style="display: flex; justify-content: center; gap: 2em; flex-wrap: wrap;">
-                <span class="role-icon pi">👨‍🔬 {% if page.lang == 'fr' %}Chercheur principal (PI){% else %}PI{% endif %}</span>
+                <span class="role-icon pi">👨‍🔬 {% if page.lang == 'fr' %}CP{% else %}PI{% endif %}</span>
                 <span class="role-icon postdoc">🧪 PostDoc</span>
                 <span class="role-icon phd">🎓 {% if page.lang == 'fr' %}Doctorat{% else %}PhD{% endif %}</span>
                 <span class="role-icon masters">📚 {% if page.lang == 'fr' %}Maîtrise{% else %}Masters{% endif %}</span>

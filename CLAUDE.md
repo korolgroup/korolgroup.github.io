@@ -126,7 +126,7 @@ python scripts/build_all.py
 
 This script:
 1. Validates all YAML data files
-2. Generates `make/pdf/pubs.tex` from `_data/publications.yml`
+2. Generates `pdf/pubs.tex` from `_data/publications.yml`
 3. Compiles LaTeX PDFs (CV and publication list) - if pdflatex available
 4. Builds Jekyll website to `_site/`
 
@@ -147,10 +147,10 @@ python scripts/validate_data.py
 python scripts/generate_latex.py
 
 # Compile PDFs only
-cd make/pdf
+cd pdf
 pdflatex -interaction=nonstopmode Publist.tex
 pdflatex -interaction=nonstopmode CV_Korol.tex
-cd ../..
+cd ..
 
 # Build Jekyll only (does NOT regenerate PDFs)
 bundle exec jekyll build
@@ -251,7 +251,7 @@ former:
    - News: `images/news/descriptive-name.jpg`
    - Team: `images/team/person-name.jpg`
    - General: `images/` (banner, campus, logos, etc.)
-5. **LaTeX auto-generation** - `make/pdf/pubs.tex` is generated from YAML; don't edit it manually
+5. **LaTeX auto-generation** - `pdf/pubs.tex` is generated from YAML; don't edit it manually
 
 ## Deployment
 

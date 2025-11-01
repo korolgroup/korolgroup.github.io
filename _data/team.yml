@@ -8,7 +8,9 @@ current:
       en: "Principal Investigator"
       fr: "Directeur de recherche"
     photo: "/images/team/Roman.jpg"
-    cv: "/make/pdf/CV_Korol.pdf"
+    cv:
+      en: "/pdf/CV_Korol.pdf"
+      fr: "/pdf/CV_Korol_fr.pdf"
     bio:
       en: "Roman joined UdeS in January, 2026 after a PhD at Caltech and a postdoc at URochester."
       fr: "Roman a rejoint l'UdeS en janvier 2026 après un doctorat à Caltech et un postdoc à URochester."
