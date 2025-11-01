@@ -27,7 +27,7 @@
     fr: Figure montrant les signatures optiques des états de Floquet dans les cristaux habillés par laser
   summary:
     en: We outline a simple way to detect elusive light-induced states in optically driven materials by analyzing how they absorb light. These so-called Floquet states, which form when materials interact with strong laser fields, are key to controlling material properties on demand—but until now, they've been extremely difficult to observe. We show that Floquet states leave clear, detectable signatures in the optical absorption spectrum, including new absorption peaks in regions where the material is normally transparent.
-    fr: Nous décrivons une méthode simple pour détecter les états insaisissables induits par la lumière dans les matériaux optiquement excités en analysant comment ils absorbent la lumière. Ces états dits de Floquet, qui se forment lorsque les matériaux interagissent avec des champs laser intenses, sont essentiels pour contrôler les propriétés des matériaux à la demande—mais jusqu'à présent, ils ont été extrêmement difficiles à observer. Nous montrons que les états de Floquet laissent des signatures claires et détectables dans le spectre d'absorption optique, y compris de nouveaux pics d'absorption dans des régions où le matériau est normalement transparent.
+    fr: Nous décrivons une méthode simple pour détecter les états insaisissables induits par la lumière dans les matériaux optiquement excités en analysant comment ils absorbent la lumière. Ces états dits de Floquet, qui se forment lorsque les matériaux interagissent avec des champs laser intenses, sont essentiels pour contrôler les propriétés des matériaux à volonté—mais jusqu'à présent, ils ont été extrêmement difficiles à observer. Nous montrons que les états de Floquet laissent des signatures claires et détectables dans le spectre d'absorption optique, y compris de nouveaux pics d'absorption dans des régions où le matériau est normalement transparent.
 - id: 12
   doi: 10.1021/acs.jpca.5c00943
   title: High-Frequency Tails in Spectral Densities
@@ -53,7 +53,7 @@
     fr: Figure montrant les queues haute fréquence de la densité spectrale
   summary:
     en: We show that the computations of relaxation rate in solution are highly sensitive to the choice of representation of the environmental spectral density (SD). The key reason is that electronic relaxation is dominated by the resonant contribution from the high-frequency tails of the SD, which can vary significantly between strategies. We provide a simple transformation that recovers the correct relaxation rates in quantum simulations constrained by algorithmic or physical limitations on the shape of the SD.
-    fr: Nous montrons que les calculs du taux de relaxation en solution sont très sensibles au choix de représentation de la densité spectrale environnementale (DS). La raison principale est que la relaxation électronique est dominée par la contribution résonante des queues haute fréquence de la DS, qui peuvent varier considérablement entre les stratégies. Nous fournissons une transformation simple qui récupère les taux de relaxation corrects dans les simulations quantiques contraintes par des limitations algorithmiques ou physiques sur la forme de la DS.
+    fr: Nous montrons que les calculs du taux de relaxation en solution sont très sensibles au choix de représentation de la densité spectrale de l'environnement (DS). La raison principale est que la relaxation électronique est dominée par la contribution résonante des queues de haute fréquence de la DS, qui peuvent varier considérablement entre les stratégies. Nous fournissons une transformation simple qui permet de retrouver les taux de relaxation corrects dans les simulations quantiques contraintes par des limitations algorithmiques ou physiques sur la forme de la DS.
 - id: 11
   doi: 10.1016/j.gca.2025.02.033
   title: 'Stable isotope equilibria in the dihydrogen-water-methane-ethane-propane system. Part 2: Experimental determination of hydrogen isotopic equilibrium for ethane-H2 from 30 to 200 °C and propane-H2 from 75 to 200 °C'
@@ -79,7 +79,7 @@
     fr: Figure montrant la détermination expérimentale de l'équilibre isotopique de l'hydrogène
   summary:
     en: We compare experimental hydrogen isotopic equilibrium with high-level theoretical calculations and provide a preferred polynomial fit. Comparison of these fractionation factors with a compilation of ~500 compiled environmental gas samples supports the proposal that many (~50%) of these natural gas samples exhibit hydrogen isotopic compositions consistent with having formed in or attained methane-ethane-propane hydrogen isotopic equilibrium over geologically relevant temperatures for formation and storage (50-300°C).
-    fr: Nous comparons l'équilibre isotopique expérimental de l'hydrogène avec des calculs théoriques de haut niveau et fournissons un ajustement polynomial préféré. La comparaison de ces facteurs de fractionnement avec une compilation d'environ 500 échantillons de gaz environnementaux soutient la proposition selon laquelle de nombreux (environ 50%) de ces échantillons de gaz naturel présentent des compositions isotopiques de l'hydrogène cohérentes avec une formation ou l'atteinte d'un équilibre isotopique de l'hydrogène méthane-éthane-propane à des températures géologiquement pertinentes pour la formation et le stockage (50–300°C).
+    fr: Nous comparons l'équilibre isotopique expérimental de l'hydrogène avec des calculs théoriques de haute précision et fournissons un ajustement polynomial préféré. La comparaison de ces facteurs de fractionnement avec une compilation d'environ 500 échantillons de gaz environnementaux soutient la proposition selon laquelle de nombreux (environ 50%) de ces échantillons de gaz naturel présentent des compositions isotopiques de l'hydrogène cohérentes avec une formation ou l'atteinte d'un équilibre isotopique de l'hydrogène entre le méthane, l'éthane et le propane à des températures géologiquement pertinentes pour la formation et le stockage (50–300°C).
 - id: 10
   doi: 10.1016/j.gca.2025.02.028
   title: 'Stable isotope equilibria in the dihydrogen-water-methane-ethane-propane system. Part 1: Path-integral calculations with CCSD(T) quality potentials'
@@ -109,7 +109,7 @@
     fr: Figure montrant les calculs de potentiel de qualité CCSD(T)
   summary:
     en: We analyze the relative importance of various approximations that are commonly employed when isotopic equilibria are evaluated. We find that clumped isotope effects can be calculated using computational methods. In contrast, fractionation and site preferences benefit from the use of the higher level CCSD(T) potentials, accounting for anharmonic effects, and corrections to Born-Oppenheimer approximation.
-    fr: Nous analysons l'importance relative de diverses approximations couramment employées lors de l'évaluation des équilibres isotopiques. Nous constatons que les effets isotopiques groupés peuvent être calculés à l'aide de méthodes computationnelles. En revanche, le fractionnement et les préférences de site bénéficient de l'utilisation de potentiels CCSD(T) de niveau supérieur, en tenant compte des effets anharmoniques et des corrections à l'approximation de Born-Oppenheimer.
+    fr: Nous analysons l'importance relative de diverses approximations couramment employées lors de l'évaluation des équilibres isotopiques. Nous constatons que les effets isotopiques agrégés peuvent être calculés à l'aide de méthodes computationnelles. En revanche, le fractionnement et les préférences de site bénéficient de l'utilisation de potentiels CCSD(T) de niveau supérieur, en tenant compte des effets anharmoniques et des corrections à l'approximation de Born-Oppenheimer.
 - id: 9
   doi: 10.1016/j.gca.2021.04.026
   title: Experimental and theoretical determinations of hydrogen isotopic equilibrium in the system CH4-H2-H2O from 3 to 200 °C
@@ -141,7 +141,7 @@
     fr: Figure montrant l'équilibre isotopique expérimental et théorique de l'hydrogène
   summary:
     en: We provide calibrations of the equilibrium H/D and ¹³C/¹²C fractionation based on experiments and PIMC calculations. We find that isotopic compositions of some microbial gases from marine sedimentary, coalbed, and shale environments are consistent with the H and C equilibria.
-    fr: Nous fournissons des calibrations du fractionnement d'équilibre H/D et ¹³C/¹²C basées sur des expériences et des calculs PIMC. Nous constatons que les compositions isotopiques de certains gaz microbiens provenant d'environnements sédimentaires marins, de veines de charbon et de schiste sont cohérentes avec les équilibres H et C.
+    fr: Nous fournissons des étalonnages du fractionnement d'équilibre H/D et ¹³C/¹²C basés sur des expériences et des calculs PIMC. Nous constatons que les compositions isotopiques de certains gaz microbiens provenant d'environnements sédimentaires marins, de veines de charbon et de schiste sont cohérentes avec les équilibres H et C.
 - id: 8
   doi: 10.1063/1.5134810
   title: Dimension-free path-integral molecular dynamics without preconditioning
@@ -203,7 +203,7 @@
     fr: Accord théorie-expérience un pour un pour l'agrégation à l'équilibre du deutérium avec le deutérium et du deutérium avec le carbone-13 sur des températures entre 1 et 500 degrés Celsius
   summary:
     en: We study equilibrium clumping of heavy isotopes in methane. Using heavy isotope clumping, one can determine the temperature of methane when it was formed. We have extended the range of temperatures to cover all biologically and geologically relevant temperatures. Experimental clumping-temperature calibration is confirmed by state-of-the-art theoretical method - PIMC.
-    fr: Nous étudions le regroupement à l'équilibre des isotopes lourds dans le méthane. En utilisant le regroupement d'isotopes lourds, on peut déterminer la température du méthane au moment de sa formation. Nous avons étendu la gamme de températures pour couvrir toutes les températures biologiquement et géologiquement pertinentes. La calibration expérimentale regroupement-température est confirmée par la méthode théorique de pointe - PIMC.
+    fr: Nous étudions l'agrégation à l'équilibre des isotopes lourds dans le méthane. En utilisant l'agrégation d'isotopes lourds, on peut déterminer la température du méthane au moment de sa formation. Nous avons étendu la gamme de températures pour couvrir toutes les températures biologiquement et géologiquement pertinentes. L'étalonnage expérimental température-agrégation est confirmé par la méthode théorique de pointe - PIMC.
 - id: 6
   doi: 10.1063/1.5120282
   title: Cayley modification for strongly stable path-integral and ring-polymer molecular dynamics
@@ -252,7 +252,7 @@
     fr: Courbe d'apprentissage montrant la diminution de l'erreur de prédiction avec la taille de l'ensemble d'entraînement
   summary:
     en: We present a machine learning model that enables low-cost prediction of the electrical conductance of millions of long double-stranded DNA (dsDNA) sequences, reducing computational costs by several orders of magnitude. The algorithm is trained on short DNA nanojunctions with n = 3-7 base pairs.
-    fr: Nous présentons un modèle d'apprentissage automatique qui permet la prédiction peu coûteuse de la conductance électrique de millions de longues séquences d'ADN double brin (ADNdb), réduisant les coûts computationnels de plusieurs ordres de grandeur. L'algorithme est entraîné sur de courtes nano-jonctions d'ADN avec n = 3-7 paires de bases.
+    fr: Nous présentons un modèle d'apprentissage automatique qui permet la prédiction peu coûteuse de la conductance électrique de millions de longues séquences d'ADN double brin (ADNdb), réduisant les coûts de calcul de plusieurs ordres de grandeur. L'algorithme est entraîné sur de courtes nano-jonctions d'ADN avec n = 3-7 paires de bases.
 - id: 4
   doi: 10.1021/acs.jpcc.7b12744
   title: From Exhaustive Simulations to Key Principles in DNA Nanoelectronics
@@ -275,7 +275,7 @@
     fr: Tracé log-log de la conductance lorsque les effets environnementaux (thermiques) sont augmentés d'un facteur dix de l'environnement sec et gelé à l'environnement humide et mobile. Les valeurs de conductance les plus faibles sont augmentées d'un facteur 100, signifiant une conductance par saut. Les meilleurs conducteurs ne sont pas affectés par le changement. La grande majorité des séquences se situe quelque part entre les deux.
   summary:
     en: Conductance of DNA molecules is not well-understood in the light of opposing experimental results. The situation is also complicated, because there are exponentially many different sequences, and many of them conduct current in a drastically different way. Here we study the conductance of DNA molecules computationally and identify several general principles that could guide the experiments.
-    fr: La conductance des molécules d'ADN n'est pas bien comprise à la lumière des résultats expérimentaux contradictoires. La situation est également compliquée, car il existe exponentiellement beaucoup de séquences différentes, et beaucoup d'entre elles conduisent le courant de manière radicalement différente. Ici, nous étudions la conductance des molécules d'ADN de manière computationnelle et identifions plusieurs principes généraux qui pourraient guider les expériences.
+    fr: La conductance des molécules d'ADN n'est pas bien comprise à la lumière des résultats expérimentaux contradictoires. La situation est également compliquée, car il existe un nombre exponentiel de séquences différentes, et beaucoup d'entre elles conduisent le courant de manière radicalement différente. Ici, nous étudions la conductance des molécules d'ADN par simulation et identifions plusieurs principes généraux qui pourraient guider les expériences.
 - id: 3
   doi: 10.1016/j.cpc.2017.10.005
   title: 'ProbeZT: Simulation of transport coefficients of molecular electronic junctions under environmental effects using Büttiker''s probes'
@@ -299,7 +299,7 @@
     fr: Conductance d'un pont uniforme entre 2 et 10 sites de longueur. L'échelle log-y révèle les mécanismes de conduction par saut (linéaire), tunneling (exponentiel) et balistique (constant) à différentes forces environnementales.
   summary:
     en: 'Our in-house quantum transport package, ProbeZT, calculates how readily electricity and heat moves across a given system. One can use it to identify molecules that are: good conductors, perfect insulators, excellent thermoelectrics and many more. In particular, we show the package applied to a linear conducting chain (like a polymer) and to a double-stranded DNA molecule.'
-    fr: 'Notre logiciel de transport quantique interne, ProbeZT, calcule avec quelle facilité l''électricité et la chaleur se déplacent à travers un système donné. On peut l''utiliser pour identifier des molécules qui sont : de bons conducteurs, des isolants parfaits, d''excellents thermoélectriques et bien plus encore. En particulier, nous montrons le logiciel appliqué à une chaîne conductrice linéaire (comme un polymère) et à une molécule d''ADN double brin.'
+    fr: 'Notre logiciel maison de transport quantique, ProbeZT, calcule avec quelle facilité l''électricité et la chaleur se déplacent à travers un système donné. On peut l''utiliser pour identifier des molécules qui sont : de bons conducteurs, des isolants parfaits, d''excellents thermoélectriques et bien plus encore. En particulier, nous présentons une application du logiciel à une chaîne conductrice linéaire (comme un polymère) et à une molécule d''ADN double brin.'
 - id: 2
   doi: 10.1063/1.4971167
   title: 'Thermopower of molecular junctions: Tunneling to hopping crossover in DNA'
@@ -386,4 +386,4 @@
     fr: Images MEB des nanoparticules de ZnO avec et sans stabilisateurs de taille
   summary:
     en: We modify and optimize a synthesis of ZnO nanoparticles by electrodeposition by adding auxiliary stabilizers to reduce the size and narrow its distribution in the target product.
-    fr: Nous modifions et optimisons une synthèse de nanoparticules de ZnO par électrodéposition en ajoutant des stabilisateurs auxiliaires pour réduire la taille et rétrécir sa distribution dans le produit cible.
+    fr: Nous modifions et optimisons une synthèse de nanoparticules de ZnO par électrodéposition en ajoutant des stabilisateurs auxiliaires pour réduire la taille et rétrécir la distribution des tailles dans le produit cible.
