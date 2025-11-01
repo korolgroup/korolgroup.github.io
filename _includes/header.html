@@ -5,36 +5,40 @@
 {% if page.lang == 'en' %}
 	{% case page_name %}
 		{% when "activities.html" %}
-			{% assign alt_lang_url = "/fr/activites.html" %}
+			{% assign alt_lang_url = "/activites" %}
 		{% when "learn.html" %}
-			{% assign alt_lang_url = "/fr/apprendre.html" %}
+			{% assign alt_lang_url = "/apprendre" %}
 		{% when "news.html" %}
-			{% assign alt_lang_url = "/fr/nouvelles.html" %}
+			{% assign alt_lang_url = "/nouvelles" %}
 		{% when "openings.html" %}
-			{% assign alt_lang_url = "/fr/postes.html" %}
+			{% assign alt_lang_url = "/postes" %}
 		{% when "research.html" %}
-			{% assign alt_lang_url = "/fr/recherche.html" %}
+			{% assign alt_lang_url = "/recherche" %}
 		{% when "team.html" %}
-			{% assign alt_lang_url = "/fr/equipe.html" %}
+			{% assign alt_lang_url = "/equipe" %}
+		{% when "index.html" %}
+			{% assign alt_lang_url = "/fr" %}
 		{% else %}
-			{% assign alt_lang_url = page.url | replace: '/en/', '/fr/' %}
+			{% assign alt_lang_url = "/" %}
 	{% endcase %}
 {% else %}
 	{% case page_name %}
 		{% when "activites.html" %}
-			{% assign alt_lang_url = "/en/activities.html" %}
+			{% assign alt_lang_url = "/activities" %}
 		{% when "apprendre.html" %}
-			{% assign alt_lang_url = "/en/learn.html" %}
+			{% assign alt_lang_url = "/learn" %}
 		{% when "nouvelles.html" %}
-			{% assign alt_lang_url = "/en/news.html" %}
+			{% assign alt_lang_url = "/news" %}
 		{% when "postes.html" %}
-			{% assign alt_lang_url = "/en/openings.html" %}
+			{% assign alt_lang_url = "/openings" %}
 		{% when "recherche.html" %}
-			{% assign alt_lang_url = "/en/research.html" %}
+			{% assign alt_lang_url = "/research" %}
 		{% when "equipe.html" %}
-			{% assign alt_lang_url = "/en/team.html" %}
+			{% assign alt_lang_url = "/team" %}
+		{% when "fr.html" %}
+			{% assign alt_lang_url = "/" %}
 		{% else %}
-			{% assign alt_lang_url = page.url | replace: '/fr/', '/en/' %}
+			{% assign alt_lang_url = "/" %}
 	{% endcase %}
 {% endif %}
 
@@ -64,21 +68,21 @@
 			<nav id="nav" role="navigation" aria-label="{% if page.lang == 'fr' %}menu principal{% else %}main menu{% endif %}">
 				<ul>
 					{% if page.lang == 'fr' %}
-						<li><a class="icon fa-home" href="/fr/index.html"><span>Accueil</span></a></li>
-						<li><a class="icon fa-university" href="/fr/recherche.html"><span>Recherche</span></a></li>
-						<li><a class="icon fa-users" href="/fr/equipe.html"><span>Équipe</span></a></li>
-						<li><a class="icon fa-file-text" href="/fr/recherche.html#publications"><span>Publications</span></a></li>
-						<li><a class="icon fa-retweet" href="/fr/nouvelles.html"><span>Nouvelles</span></a></li>
+						<li><a class="icon fa-home" href="/fr"><span>Accueil</span></a></li>
+						<li><a class="icon fa-university" href="/recherche"><span>Recherche</span></a></li>
+						<li><a class="icon fa-users" href="/equipe"><span>Équipe</span></a></li>
+						<li><a class="icon fa-file-text" href="/recherche#publications"><span>Publications</span></a></li>
+						<li><a class="icon fa-retweet" href="/nouvelles"><span>Nouvelles</span></a></li>
 						<li><a class="icon fa-envelope" href="#contact"><span>Contact</span></a></li>
-						<li><a class="icon fa-briefcase" href="/fr/postes.html"><span>Postes</span></a></li>
+						<li><a class="icon fa-briefcase" href="/postes"><span>Postes</span></a></li>
 					{% else %}
-						<li><a class="icon fa-home" href="/en/index.html"><span>Home</span></a></li>
-						<li><a class="icon fa-university" href="/en/research.html"><span>Research</span></a></li>
-						<li><a class="icon fa-users" href="/en/team.html"><span>Team</span></a></li>
-						<li><a class="icon fa-file-text" href="/en/research.html#publications"><span>Publications</span></a></li>
-						<li><a class="icon fa-retweet" href="/en/news.html"><span>News</span></a></li>
+						<li><a class="icon fa-home" href="/"><span>Home</span></a></li>
+						<li><a class="icon fa-university" href="/research"><span>Research</span></a></li>
+						<li><a class="icon fa-users" href="/team"><span>Team</span></a></li>
+						<li><a class="icon fa-file-text" href="/research#publications"><span>Publications</span></a></li>
+						<li><a class="icon fa-retweet" href="/news"><span>News</span></a></li>
 						<li><a class="icon fa-envelope" href="#contact"><span>Contact</span></a></li>
-						<li><a class="icon fa-briefcase" href="/en/openings.html"><span>Openings</span></a></li>
+						<li><a class="icon fa-briefcase" href="/openings"><span>Openings</span></a></li>
 					{% endif %}
 				</ul>
 			</nav>

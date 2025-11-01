@@ -1,42 +1,68 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-	<meta charset="utf-8" />
-	<title>Korol Group - Redirecting...</title>
-	<meta name="robots" content="noindex, nofollow">
-	<script>
-		// Detect browser language and redirect
-		(function() {
-			// Check if user has a saved language preference
-			var savedLang = localStorage.getItem('korolgroup-language');
+---
+layout: default
+title: "Korol Group - Department of Chemistry, Sherbrooke University"
+description: "The Korol Group at Sherbrooke University develops theoretical frameworks for quantum systems, focusing on quantum statistics, chemical reaction rates, and open quantum dynamics."
+keywords: "Korol Group, quantum dynamics, semiclassical methods, Sherbrooke University, computational chemistry, quantum statistics, chemical reaction rates, open quantum dynamics"
+lang: en
+---
 
-			if (savedLang) {
-				// Use saved preference
-				window.location.href = '/' + savedLang + '/index.html';
-			} else {
-				// Detect browser language
-				var userLang = navigator.language || navigator.userLanguage;
-				var lang = 'en'; // default
+<section id="features">
+			<div class="container">
+				<div class="row aln-center">
+					<div class="col-12">
+						<section>
+							<p style="text-align: center; font-size: 1.1em; line-height: 1.8; margin-bottom: 3em;">
+								We develop theoretical frameworks for understanding quantum systems at <a href="https://www.usherbrooke.ca/chimie/">Sherbrooke University</a>. Our research bridges fundamental quantum mechanics with practical applications in chemistry and materials science.
+							</p>
+						</section>
+					</div>
 
-				// Check if French
-				if (userLang.toLowerCase().startsWith('fr')) {
-					lang = 'fr';
-				}
+					<div class="col-4 col-6-medium col-12-small">
+						<section>
+							<a href="/en/research.html" class="image featured"><img src="/images/geochemistry.png"
+								alt="Quantum systems research visualization"
+								srcset="/images/main2_1.png 0.3x"/></a>
+							<header>
+								<h3>Research Areas</h3>
+							</header>
+							<p>We study quantum statistics of many-body quantum systems, chemical reaction kinetics, and quantum dynamics in open system settings.</p>
+						</section>
+					</div>
 
-				// Save preference
-				localStorage.setItem('korolgroup-language', lang);
+					<div class="col-4 col-6-medium col-12-small">
+						<section>
+							<a href="/en/team.html" class="image featured" style="display: block;"><img src="/images/MAIN.png"
+								alt="Team collaboration and computational methods" style="width: 100%; height: auto; max-width: none;" /></a>
+							<header>
+								<h3>Our Team</h3>
+							</header>
+							<p>We are building a research group with diverse academic and personal backgrounds who are
+								passionate about advancing our understanding of quantum systems.</p>
+						</section>
+					</div>
 
-				// Redirect
-				window.location.href = '/' + lang + '/index.html';
-			}
-		})();
-	</script>
-</head>
-<body>
-	<p>Redirecting... / Redirection en cours...</p>
-	<p>
-		<a href="/en/index.html">English</a> |
-		<a href="/fr/index.html">Français</a>
-	</p>
-</body>
-</html>
+					<div class="col-4 col-6-medium col-12-small">
+						<section>
+							<a href="/en/openings.html" class="image featured"><img src="/images/main3.png"
+								alt="Quantum molecular dynamics research visualization" /></a>
+							<header>
+								<h3>Join Us</h3>
+							</header>
+							<p>We welcome applications from motivated Undergraduate, Masters and PhD students interested in theory and computation.</p>
+						</section>
+					</div>
+					<div class="col-12">
+						<ul class="actions">
+							<li><a href="/en/openings.html" class="button icon fa-briefcase">Research Opportunities</a></li>
+							<li><a href="/en/research.html" class="button icon fa-university">Explore Our Research</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="sherbrooke-banner" style="padding: 0; margin: 0; display: flex; justify-content: center; background: #fff;">
+			<div style="width: 90%; max-width: 1400px; height: 450px; overflow: hidden;">
+				<img src="/images/sign_summer.jpg" alt="Sherbrooke University campus in summer" style="width: 100%; height: 100%; object-fit: cover; object-position: center center;">
+			</div>
+		</section>
