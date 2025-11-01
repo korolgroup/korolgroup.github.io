@@ -1,45 +1,42 @@
 <!-- Language switcher -->
-{% assign page_name = page.url | split: "/" | last %}
 {% assign alt_lang_url = "" %}
 
 {% if page.lang == 'en' %}
-	{% case page_name %}
-		{% when "activities.html" %}
-			{% assign alt_lang_url = "/activites" %}
-		{% when "learn.html" %}
-			{% assign alt_lang_url = "/apprendre" %}
-		{% when "news.html" %}
-			{% assign alt_lang_url = "/nouvelles" %}
-		{% when "openings.html" %}
-			{% assign alt_lang_url = "/postes" %}
-		{% when "research.html" %}
-			{% assign alt_lang_url = "/recherche" %}
-		{% when "team.html" %}
-			{% assign alt_lang_url = "/equipe" %}
-		{% when "index.html" %}
-			{% assign alt_lang_url = "/fr" %}
-		{% else %}
-			{% assign alt_lang_url = "/" %}
-	{% endcase %}
+	{% if page.url == "/" or page.url == "/index.html" %}
+		{% assign alt_lang_url = "/fr/" %}
+	{% elsif page.url contains "/research" %}
+		{% assign alt_lang_url = "/recherche/" %}
+	{% elsif page.url contains "/team" %}
+		{% assign alt_lang_url = "/equipe/" %}
+	{% elsif page.url contains "/news" %}
+		{% assign alt_lang_url = "/nouvelles/" %}
+	{% elsif page.url contains "/openings" %}
+		{% assign alt_lang_url = "/postes/" %}
+	{% elsif page.url contains "/publications" %}
+		{% assign alt_lang_url = "/publications-fr/" %}
+	{% elsif page.url contains "/activities" %}
+		{% assign alt_lang_url = "/activites/" %}
+	{% else %}
+		{% assign alt_lang_url = "/fr/" %}
+	{% endif %}
 {% else %}
-	{% case page_name %}
-		{% when "activites.html" %}
-			{% assign alt_lang_url = "/activities" %}
-		{% when "apprendre.html" %}
-			{% assign alt_lang_url = "/learn" %}
-		{% when "nouvelles.html" %}
-			{% assign alt_lang_url = "/news" %}
-		{% when "postes.html" %}
-			{% assign alt_lang_url = "/openings" %}
-		{% when "recherche.html" %}
-			{% assign alt_lang_url = "/research" %}
-		{% when "equipe.html" %}
-			{% assign alt_lang_url = "/team" %}
-		{% when "fr.html" %}
-			{% assign alt_lang_url = "/" %}
-		{% else %}
-			{% assign alt_lang_url = "/" %}
-	{% endcase %}
+	{% if page.url contains "/fr" %}
+		{% assign alt_lang_url = "/" %}
+	{% elsif page.url contains "/recherche" %}
+		{% assign alt_lang_url = "/research/" %}
+	{% elsif page.url contains "/equipe" %}
+		{% assign alt_lang_url = "/team/" %}
+	{% elsif page.url contains "/nouvelles" %}
+		{% assign alt_lang_url = "/news/" %}
+	{% elsif page.url contains "/postes" %}
+		{% assign alt_lang_url = "/openings/" %}
+	{% elsif page.url contains "/publications" %}
+		{% assign alt_lang_url = "/publications/" %}
+	{% elsif page.url contains "/activites" %}
+		{% assign alt_lang_url = "/activities/" %}
+	{% else %}
+		{% assign alt_lang_url = "/" %}
+	{% endif %}
 {% endif %}
 
 <div class="language-toggle">
