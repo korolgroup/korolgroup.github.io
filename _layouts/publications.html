@@ -49,7 +49,7 @@ layout: default
                 <div class="row aln-center">
                     <header>
                         <h3 class="actions">
-                            <a href="/pdf/Publist.pdf" target="_blank" rel="noopener noreferrer" class="button icon fa-file-pdf-o">
+                            <a href="/pdf/Publist.pdf" target="_blank" rel="noopener noreferrer" class="button icon fa-file-pdf">
                                 {% if page.lang == 'fr' %}Liste des publications{% else %}List of Publications{% endif %}
                             </a>
                             <a href="javascript:toggleAllPublications();" id="toggleAllBtn" class="button alt icon fa-bars">
@@ -68,7 +68,7 @@ layout: default
                                 <h3><a href="javascript:unhide('{{ pub.id }}');">
                                     {{ pub.title }}</a>
                                     {% if pub.editors_pick %}
-                                        <a href="https://aip.scitation.org/topic/collections/editors-pick?SeriesKey=jcp"><img src="/images/Logos/editors-pick.jpg" height="20" width="20" title="Editor's Pick" alt="Editor's Pick logo"></a>
+                                        <a href="https://aip.scitation.org/topic/collections/editors-pick?SeriesKey=jcp"><img src="/images/Logos/editorspick-icon.svg" height="20" width="20" title="Editor's Pick" alt="Editor's Pick logo"></a>
                                     {% endif %}
                                     {% if pub.editors_choice %}
                                         <a href="https://pubs.acs.org/page/policy/authorchoice_termsofuse.html"><img src="/images/Logos/ACS_editors_choice.png" height="20" width="20" alt="ACS Editors' Choice logo"></a>

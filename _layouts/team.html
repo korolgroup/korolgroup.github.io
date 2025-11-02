@@ -54,11 +54,11 @@ layout: default
                         {% if member.cv %}
                             {% if member.cv[page.lang] %}
                                 <a href="{{ member.cv[page.lang] }}" target="_blank" rel="noopener noreferrer"
-                                   class="icon fa-file-pdf-o" title="{% if page.lang == 'fr' %}Télécharger le CV{% else %}Download CV{% endif %}"
+                                   class="icon fa-file-pdf" title="{% if page.lang == 'fr' %}Télécharger le CV{% else %}Download CV{% endif %}"
                                    style="font-size: 0.9em; margin-left: 0.3em;"></a>
                             {% else %}
                                 <a href="{{ member.cv }}" target="_blank" rel="noopener noreferrer"
-                                   class="icon fa-file-pdf-o" title="{% if page.lang == 'fr' %}Télécharger le CV{% else %}Download CV{% endif %}"
+                                   class="icon fa-file-pdf" title="{% if page.lang == 'fr' %}Télécharger le CV{% else %}Download CV{% endif %}"
                                    style="font-size: 0.9em; margin-left: 0.3em;"></a>
                             {% endif %}
                         {% endif %}

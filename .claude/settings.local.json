@@ -11,7 +11,9 @@
       "Bash(if not exist pdf mkdir pdf)",
       "Bash(xcopy:*)",
       "Bash(robocopy:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(find:*)",
+      "Bash(if exist _site rmdir /s /q _site)"
     ],
     "deny": [],
     "ask": [],
