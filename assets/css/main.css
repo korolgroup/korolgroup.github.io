@@ -3439,3 +3439,55 @@ html[data-theme=dark] .team-photo-placeholder {
 .box .hidden > a[href*="doi"] {
   margin-left: 0.75em;
 }
+
+/* Mobile Responsiveness Fixes */
+
+/* 1. Banner image responsive on mobile */
+@media screen and (max-width: 736px) {
+  #sherbrooke-banner div {
+    height: 250px !important;
+    width: 100% !important;
+  }
+}
+
+/* 2. Prevent page numbers from being detected as phone numbers */
+a[href^="tel:"] {
+  pointer-events: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Disable automatic phone number detection styling */
+.box .hidden {
+  -webkit-text-size-adjust: none;
+}
+
+/* 3. Make publication figures responsive on mobile */
+@media screen and (max-width: 736px) {
+  .box .image.left,
+  .box .image.right {
+    float: none !important;
+    margin: 0 0 2em 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .box .image.left img,
+  .box .image.right img {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+/* 4. Fix year overlap on news page mobile */
+@media screen and (max-width: 736px) {
+  .divided header h2 {
+    margin-bottom: 1.5em !important;
+    padding-bottom: 0.5em !important;
+  }
+
+  .divided header h2 strong {
+    display: block;
+    padding: 0.5em 0;
+  }
+}
