@@ -97,7 +97,7 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 body, input, textarea, select {
   font-family: "Source Sans Pro";
   font-weight: 300;
-  color: #444;
+  color: #2a2a2a;
   line-height: 1.65em;
   font-size: 15pt;
 }
@@ -3490,4 +3490,72 @@ a[href^="tel:"] {
     display: block;
     padding: 0.5em 0;
   }
+}
+
+/* Light Theme Text Contrast Improvements */
+/* Improve readability by using darker text colors in light theme */
+
+html[data-theme=light] body,
+html[data-theme=light] p,
+html[data-theme=light] li,
+html[data-theme=light] span,
+html:not([data-theme=dark]) body,
+html:not([data-theme=dark]) p,
+html:not([data-theme=dark]) li,
+html:not([data-theme=dark]) span {
+  color: #2a2a2a !important;
+}
+
+/* Muted text should still be darker than original */
+html[data-theme=light] .text-muted,
+html:not([data-theme=dark]) .text-muted {
+  color: #555 !important;
+}
+
+/* Header paragraph text */
+html[data-theme=light] #header p,
+html:not([data-theme=dark]) #header p {
+  color: #444 !important;
+}
+
+/* Box content text */
+html[data-theme=light] .box p,
+html[data-theme=light] .box li,
+html:not([data-theme=dark]) .box p,
+html:not([data-theme=dark]) .box li {
+  color: #2a2a2a !important;
+}
+
+/* Publication citation text */
+html[data-theme=light] .box .hidden,
+html:not([data-theme=dark]) .box .hidden {
+  color: #2a2a2a !important;
+}
+
+/* News item text */
+html[data-theme=light] .box.excerpt p,
+html:not([data-theme=dark]) .box.excerpt p {
+  color: #2a2a2a !important;
+}
+
+/* Navigation text */
+html[data-theme=light] #nav > ul > li > a,
+html:not([data-theme=dark]) #nav > ul > li > a {
+  color: #555 !important;
+}
+
+/* Team member bio text */
+html[data-theme=light] .team-member p,
+html[data-theme=light] .team-member div,
+html:not([data-theme=dark]) .team-member p,
+html:not([data-theme=dark]) .team-member div {
+  color: #2a2a2a !important;
+}
+
+/* Footer text */
+html[data-theme=light] #footer p,
+html[data-theme=light] #footer li,
+html:not([data-theme=dark]) #footer p,
+html:not([data-theme=dark]) #footer li {
+  color: #2a2a2a !important;
 }
