@@ -3561,3 +3561,13 @@ html:not([data-theme=dark]) #footer p,
 html:not([data-theme=dark]) #footer li {
   color: #2a2a2a !important;
 }
+
+
+/* CRITICAL FIX: Force navigation text to normal case - highest specificity override */
+nav#nav > ul > li > a,
+nav#nav > ul > li > a > span,
+#nav > ul > li > a,
+#nav > ul > li > a > span {
+  text-transform: none !important;
+  font-variant: normal !important;
+}
