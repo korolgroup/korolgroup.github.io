@@ -3505,7 +3505,7 @@ html:not([data-theme=dark]) body,
 html:not([data-theme=dark]) p,
 html:not([data-theme=dark]) li,
 html:not([data-theme=dark]) span {
-  color: #2a2a2a !important;
+  color: #1a1a1a !important;
 }
 
 /* Muted text should still be darker than original */
