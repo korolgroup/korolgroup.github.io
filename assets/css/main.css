@@ -1579,8 +1579,8 @@ button.alt:active,
   -o-transition: color 0.25s ease-in-out;
   -ms-transition: color 0.25s ease-in-out;
   transition: color 0.25s ease-in-out;
-  font-size: 0.85em;
-  letter-spacing: 3px;
+  font-size: 1em;
+  letter-spacing: 0.5px;
 }
 #nav > ul > li > ul {
   display: none;
@@ -1970,10 +1970,10 @@ button.alt:active,
     background: #444;
     border-right: solid 2px #3c3c3c;
     font-weight: 400;
-    text-transform: uppercase;
+    text-transform: none;
     color: #888;
-    letter-spacing: 2px;
-    font-size: 0.85em;
+    letter-spacing: 0.5px;
+    font-size: 1em;
   }
   #navPanel .link {
     display: block;
