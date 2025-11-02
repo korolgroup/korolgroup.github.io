@@ -164,6 +164,7 @@
   pages: '104102'
   image: 8.jpg
   editors_pick: true
+  editors_pick_url: https://pubs.aip.org/jcp/collection/1130/JCP-Editors-Choice-2020
   alt_text:
     en: IR spectrum of liquid water computed with the new BCOCB scheme at timesteps of 0.2, 1.0, 1.2 and 1.4 fs
     fr: Spectre IR de l'eau liquide calculé avec le nouveau schéma BCOCB aux pas de temps de 0.2, 1.0, 1.2 et 1.4 fs
@@ -224,6 +225,7 @@
   pages: '124103'
   image: 6.jpg
   editors_pick: true
+  editors_pick_url: https://pubs.aip.org/jcp/collection/1129/JCP-Editors-Choice-2019
   alt_text:
     en: Plot of energy drift for the Cayley modified scheme vs standard scheme at various timesteps
     fr: Tracé de la dérive d'énergie pour le schéma modifié de Cayley vs schéma standard à différents pas de temps
