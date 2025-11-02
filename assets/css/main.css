@@ -1551,7 +1551,7 @@ button.alt:active,
 #nav > ul > li > a {
   border: 0;
   text-decoration: none;
-  text-transform: none;
+  text-transform: none !important;
   font-weight: 400;
   color: #777;
   outline: 0;
@@ -1582,6 +1582,7 @@ button.alt:active,
   transition: color 0.25s ease-in-out;
   font-size: 1em;
   letter-spacing: 0.5px;
+  text-transform: none !important;
 }
 #nav > ul > li > ul {
   display: none;
