@@ -1552,7 +1552,8 @@ button.alt:active,
   border: 0;
   text-decoration: none;
   text-transform: none !important;
-  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
   color: #777;
   outline: 0;
   display: block;
@@ -1580,8 +1581,10 @@ button.alt:active,
   -o-transition: color 0.25s ease-in-out;
   -ms-transition: color 0.25s ease-in-out;
   transition: color 0.25s ease-in-out;
-  font-size: 1em;
-  letter-spacing: 0.5px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.1em;
+  font-weight: 500;
+  letter-spacing: 0.3px;
   text-transform: none !important;
 }
 #nav > ul > li > ul {
@@ -1971,11 +1974,12 @@ button.alt:active,
     z-index: 10002;
     background: #444;
     border-right: solid 2px #3c3c3c;
-    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
     text-transform: none;
     color: #888;
-    letter-spacing: 0.5px;
-    font-size: 1em;
+    letter-spacing: 0.3px;
+    font-size: 1.05em;
   }
   #navPanel .link {
     display: block;
