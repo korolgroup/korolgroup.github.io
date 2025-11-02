@@ -34,12 +34,38 @@
 	<!-- Language alternates for SEO -->
 	{% if page.lang == 'en' %}
 		<link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.url }}" />
-		<link rel="alternate" hreflang="fr" href="{{ site.url }}{{ page.url | replace: '/en/', '/fr/' }}" />
+		{% if page.url == '/' or page.url == '/index.html' %}
+			<link rel="alternate" hreflang="fr" href="{{ site.url }}/fr/" />
+		{% elsif page.url contains '/research' %}
+			<link rel="alternate" hreflang="fr" href="{{ site.url }}/recherche/" />
+		{% elsif page.url contains '/team' %}
+			<link rel="alternate" hreflang="fr" href="{{ site.url }}/equipe/" />
+		{% elsif page.url contains '/news' %}
+			<link rel="alternate" hreflang="fr" href="{{ site.url }}/nouvelles/" />
+		{% elsif page.url contains '/openings' %}
+			<link rel="alternate" hreflang="fr" href="{{ site.url }}/postes/" />
+		{% elsif page.url contains '/publications' %}
+			<link rel="alternate" hreflang="fr" href="{{ site.url }}/publications-fr/" %}
+		{% endif %}
 		<link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ page.url }}" />
 	{% else %}
-		<link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.url | replace: '/fr/', '/en/' }}" />
+		{% if page.url contains '/fr' %}
+			<link rel="alternate" hreflang="en" href="{{ site.url }}/" />
+		{% elsif page.url contains '/recherche' %}
+			<link rel="alternate" hreflang="en" href="{{ site.url }}/research/" />
+		{% elsif page.url contains '/equipe' %}
+			<link rel="alternate" hreflang="en" href="{{ site.url }}/team/" />
+		{% elsif page.url contains '/nouvelles' %}
+			<link rel="alternate" hreflang="en" href="{{ site.url }}/news/" />
+		{% elsif page.url contains '/postes' %}
+			<link rel="alternate" hreflang="en" href="{{ site.url }}/openings/" />
+		{% elsif page.url contains '/publications-fr' %}
+			<link rel="alternate" hreflang="en" href="{{ site.url }}/publications/" %}
+		{% elsif page.url contains '/activites' %}
+			<link rel="alternate" hreflang="en" href="{{ site.url }}/research/" %}
+		{% endif %}
 		<link rel="alternate" hreflang="fr" href="{{ site.url }}{{ page.url }}" />
-		<link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ page.url | replace: '/fr/', '/en/' }}" />
+		<link rel="alternate" hreflang="x-default" href="{{ site.url }}/" />
 	{% endif %}
 
 	<!-- Redirect /index.html to / for clean URLs -->
