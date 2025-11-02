@@ -42,6 +42,17 @@
 		<link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ page.url | replace: '/fr/', '/en/' }}" />
 	{% endif %}
 
+	<!-- Redirect /index.html to / for clean URLs -->
+	<script>
+		(function() {
+			// Remove index.html from URL if present
+			if (window.location.pathname.endsWith('/index.html')) {
+				var cleanUrl = window.location.pathname.replace(/\/index\.html$/, '/');
+				window.history.replaceState(null, '', cleanUrl + window.location.search + window.location.hash);
+			}
+		})();
+	</script>
+
 	<!-- Immediate theme application to prevent FOUC -->
 	<script>
 		(function() {
