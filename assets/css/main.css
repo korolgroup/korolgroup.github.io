@@ -1551,6 +1551,7 @@ button.alt:active,
 #nav > ul > li > a {
   border: 0;
   text-decoration: none;
+  text-transform: none;
   font-weight: 400;
   color: #777;
   outline: 0;
