@@ -10,7 +10,8 @@
       "Bash(xcopy /s /e /y makepdf pdf )",
       "Bash(if not exist pdf mkdir pdf)",
       "Bash(xcopy:*)",
-      "Bash(robocopy:*)"
+      "Bash(robocopy:*)",
+      "Bash(curl:*)"
     ],
     "deny": [],
     "ask": [],
