@@ -99,7 +99,7 @@ body, input, textarea, select {
   font-weight: 300;
   color: #2a2a2a;
   line-height: 1.65em;
-  font-size: 16pt;
+  font-size: 18pt;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1812,14 +1812,14 @@ button.alt:active,
 @media screen and (max-width: 1680px) {
   /* Basic */
   body, input, textarea, select {
-    font-size: 13pt;
+    font-size: 15pt;
   }
 }
 /* Large */
 @media screen and (max-width: 1280px) {
   /* Basic */
   body, input, textarea, select {
-    font-size: 12pt;
+    font-size: 14pt;
   }
   h2 br, h3 br, h4 br, h5 br, h6 br {
     display: none;
@@ -2048,7 +2048,7 @@ button.alt:active,
 @media screen and (max-width: 736px) {
   /* Basic */
   body, input, textarea, select {
-    font-size: 11pt;
+    font-size: 13pt;
   }
   h2, h3, h4, h5, h6 {
     font-size: 1.2em;
