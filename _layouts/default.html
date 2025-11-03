@@ -116,6 +116,16 @@
 	{% if page.custom_scripts %}
 	{{ page.custom_scripts }}
 	{% endif %}
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-6D4Z7QNP4Q"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-6D4Z7QNP4Q');
+	</script>
 </head>
 
 <body class="homepage is-preload">
