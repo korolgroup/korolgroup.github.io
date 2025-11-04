@@ -2087,10 +2087,16 @@ button.alt:active,
   input[type=reset],
   button,
   .button {
-    letter-spacing: 2px;
+    letter-spacing: 0.5px;
     display: block;
     padding: 1em 0 1em 0;
     width: 100%;
+    font-size: 0.9em;
+  }
+  /* Icon buttons need even less spacing */
+  .button.icon {
+    letter-spacing: 0.3px;
+    font-size: 0.85em;
   }
   /* Actions */
   ul.actions li {
