@@ -2098,6 +2098,11 @@ button.alt:active,
     letter-spacing: 0.3px;
     font-size: 0.85em;
   }
+  /* Fix icon spacing on mobile buttons */
+  .button.icon:before {
+    padding-right: 0.4em;
+    padding-left: 0.5em;
+  }
   /* Actions */
   ul.actions li {
     display: block;
