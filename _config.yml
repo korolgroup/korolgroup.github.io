@@ -1,7 +1,7 @@
 # Jekyll configuration for Korol Group website
 title: Korol Group
 description: "The Korol Group at Sherbrooke University develops theoretical frameworks for quantum systems, focusing on quantum statistics, chemical reaction rates, and open quantum dynamics."
-url: "https://korolgroup.github.io"
+url: "https://qckorol.ca"
 baseurl: ""
 
 # Build settings
