@@ -2,6 +2,12 @@
 # Format: YAML list, newest items first
 # Each entry will be displayed on the news page
 
+- date: "2025-11-03"
+  year: 2025
+  title: "MITACS GRA Funding Success"
+  content: |
+    Congratulations to Dmytro Skorubskyi for securing the MITACS GRA funding for a 24-week exchange. We are excited to welcome you to Korol group in early 2026!
+
 - date: "2026-01-05"
   year: 2026
   title: "Group established at Sherbrooke University"
