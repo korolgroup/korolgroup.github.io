@@ -56,7 +56,7 @@
     fr: Nous montrons que les calculs du taux de relaxation en solution sont très sensibles au choix de représentation de la densité spectrale de l'environnement (DS). La raison principale est que la relaxation électronique est dominée par la contribution résonante des queues de haute fréquence de la DS, qui peuvent varier considérablement entre les stratégies. Nous fournissons une transformation simple qui permet de retrouver les taux de relaxation corrects dans les simulations quantiques contraintes par des limitations algorithmiques ou physiques sur la forme de la DS.
 - id: 11
   doi: 10.1016/j.gca.2025.02.033
-  title: 'Stable isotope equilibria in the dihydrogen-water-methane-ethane-propane system. Part 2: Experimental determination of hydrogen isotopic equilibrium for ethane-H2 from 30 to 200 °C and propane-H2 from 75 to 200 °C'
+  title: 'Stable isotope equilibria in the dihydrogen-water-methane-ethane-propane system. Part 2: Experimental determination of hydrogen isotopic equilibrium for ethane-H<sub>2</sub> from 30 to 200 °C and propane-H<sub>2</sub> from 75 to 200 °C'
   authors:
   - family: Turner
     given: A C
@@ -112,7 +112,7 @@
     fr: Nous analysons l'importance relative de diverses approximations couramment employées lors de l'évaluation des équilibres isotopiques. Nous constatons que les effets isotopiques agrégés peuvent être calculés à l'aide de méthodes computationnelles. En revanche, le fractionnement et les préférences de site bénéficient de l'utilisation de potentiels CCSD(T) de niveau supérieur, en tenant compte des effets anharmoniques et des corrections à l'approximation de Born-Oppenheimer.
 - id: 9
   doi: 10.1016/j.gca.2021.04.026
-  title: Experimental and theoretical determinations of hydrogen isotopic equilibrium in the system CH4-H2-H2O from 3 to 200 °C
+  title: Experimental and theoretical determinations of hydrogen isotopic equilibrium in the system CH<sub>4</sub>-H<sub>2</sub>-H<sub>2</sub>O from 3 to 200 °C
   authors:
   - family: Turner
     given: A C
