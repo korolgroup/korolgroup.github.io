@@ -63,13 +63,23 @@ def format_authors_latex(authors):
     return ' '.join(formatted)
 
 
+def html_to_latex(text):
+    """Convert HTML formatting to LaTeX."""
+    import re
+    # Convert <sub> tags to LaTeX subscripts
+    text = re.sub(r'<sub>(.*?)</sub>', r'$_{\1}$', text)
+    # Convert <sup> tags to LaTeX superscripts
+    text = re.sub(r'<sup>(.*?)</sup>', r'$^{\1}$', text)
+    return text
+
+
 def format_publication_latex(pub, pub_number):
     """Format a single publication for LaTeX."""
     # Authors
     authors = format_authors_latex(pub.get('authors', []))
 
-    # Title
-    title = pub.get('title', 'Untitled')
+    # Title - convert HTML to LaTeX
+    title = html_to_latex(pub.get('title', 'Untitled'))
 
     # Journal
     journal_abbrev = pub['journal']['abbrev']
