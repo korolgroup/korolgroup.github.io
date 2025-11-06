@@ -64,12 +64,26 @@ def format_authors_latex(authors):
 
 
 def html_to_latex(text):
-    """Convert HTML formatting to LaTeX."""
+    """Convert HTML formatting and Unicode subscripts/superscripts to LaTeX."""
     import re
+
     # Convert <sub> tags to LaTeX subscripts
     text = re.sub(r'<sub>(.*?)</sub>', r'$_{\1}$', text)
     # Convert <sup> tags to LaTeX superscripts
     text = re.sub(r'<sup>(.*?)</sup>', r'$^{\1}$', text)
+
+    # Convert Unicode subscript numbers to LaTeX
+    unicode_subscripts = {'₀': '0', '₁': '1', '₂': '2', '₃': '3', '₄': '4',
+                         '₅': '5', '₆': '6', '₇': '7', '₈': '8', '₉': '9'}
+    for unicode_char, num in unicode_subscripts.items():
+        text = text.replace(unicode_char, f'$_{{{num}}}$')
+
+    # Convert Unicode superscript numbers to LaTeX
+    unicode_superscripts = {'⁰': '0', '¹': '1', '²': '2', '³': '3', '⁴': '4',
+                           '⁵': '5', '⁶': '6', '⁷': '7', '⁸': '8', '⁹': '9'}
+    for unicode_char, num in unicode_superscripts.items():
+        text = text.replace(unicode_char, f'$^{{{num}}}$')
+
     return text
 
 
