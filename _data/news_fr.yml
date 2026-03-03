@@ -2,6 +2,12 @@
 # Format: Liste YAML, articles les plus récents en premier
 # Chaque entrée sera affichée sur la page de nouvelles
 
+- date: "2026-03-02"
+  year: 2026
+  title: "Dmytro Skorubskyi se joint à l'équipe"
+  content: |
+    Dmytro Skorubskyi se joint à l'équipe pour une visite de recherche de 6 mois. Dmytro étudiera les équilibres isotopiques dans l'eau liquide en utilisant des méthodes de structure électronique de pointe couplées à des techniques d'intégrales de chemin.
+
 - date: "2026-01-05"
   year: 2026
   title: "Jade Formel se joint à l'équipe"

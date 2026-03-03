@@ -2,6 +2,12 @@
 # Format: YAML list, newest items first
 # Each entry will be displayed on the news page
 
+- date: "2026-03-02"
+  year: 2026
+  title: "Dmytro Skorubskyi joins the team"
+  content: |
+    Dmytro Skorubskyi joins the team for a 6-month research visit. Dmytro will study isotopic equilibria in liquid water using state-of-the-art electronic structure methods coupled with Path-integral techniques.
+
 - date: "2026-01-05"
   year: 2026
   title: "Jade Formel joins the team"
