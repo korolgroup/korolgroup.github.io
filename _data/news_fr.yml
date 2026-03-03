@@ -19,7 +19,7 @@
   title: "Création du Groupe Korol à l'Université de Sherbrooke"
   images:
     - file: "Sherbrooke_snow.jpg"
-      path: "/images/news"
+      path: "/images/news/"
       alt: "Campus de l'Université de Sherbrooke couvert de neige"
       title: "Université de Sherbrooke en hiver"
       featured: true
