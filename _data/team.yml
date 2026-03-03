@@ -27,9 +27,6 @@ current:
     bio:
       en: "Jade is a dual-degree student in chemical engineering and materials chemistry, focusing on innovative applications in materials physics and chemistry."
       fr: "Étudiante en double diplôme d'ingénieur chimiste et en maîtrise de chimie des matériaux, je m'intéresse particulièrement aux applications innovantes issues de la physique et de la chimie des matériaux."
-    interests:
-      en: "Development of advanced materials for pharmaceutical and aerospace applications, where performance and technological innovation are central."
-      fr: "Curieuse et motivée par l'impact concret de la recherche sur la société, je me passionne pour le développement de matériaux avancés destinés aux secteurs pharmaceutique et aéronautique, où performance et innovation technologique sont au cœur des enjeux."
 
   # Recruiting placeholders
   - name: null
