@@ -28,6 +28,16 @@ current:
       en: "Jade is a dual-degree student in chemical engineering and materials chemistry, focusing on innovative applications in materials physics and chemistry."
       fr: "Étudiante en double diplôme d'ingénieur chimiste et en maîtrise de chimie des matériaux, je m'intéresse particulièrement aux applications innovantes issues de la physique et de la chimie des matériaux."
 
+  - name: "Dmytro Skorubskyi"
+    role: "masters"
+    role_display:
+      en: "Master's Student"
+      fr: "Étudiant à la maîtrise"
+    photo: "/images/team/Dmytro.jpg"
+    bio:
+      en: "Dmytro is an MSc student in condensed matter physics."
+      fr: "Dmytro est étudiant à la maîtrise en physique de la matière condensée."
+
   # Recruiting placeholders
   - name: null
     role: "phd"
