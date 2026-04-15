@@ -121,6 +121,13 @@ def main():
         except:
             pass
 
+    # Validate collaborators.yml
+    all_valid &= validate_file(
+        data_dir / 'collaborators.yml',
+        'collaborators.yml',
+        required_fields=['name', 'affiliation', 'url']
+    )
+
     # Summary
     print("\n" + "="*60)
     if all_valid:

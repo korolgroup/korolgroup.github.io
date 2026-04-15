@@ -44,6 +44,24 @@ layout: default
                 </div>
             </section>
 
+            <!-- Collaborators Section -->
+            <section style="margin-bottom: 4em;">
+                <h3 style="color: var(--heading-color, #3c3b3b); border-bottom: 2px solid var(--accent-color, #5e5e5e); padding-bottom: 0.5em;">
+                    {% if page.lang == 'fr' %}Collaborateurs{% else %}Collaborators{% endif %}
+                </h3>
+                <div class="row" style="margin-top: 2em;">
+                    {% for collab in site.data.collaborators %}
+                    <div class="col-6 col-12-small" style="margin-bottom: 2em;">
+                        <div class="box" style="padding: 1.5em;">
+                            <h4><a href="{{ collab.url }}" target="_blank" rel="noopener noreferrer">{{ collab.name }}</a></h4>
+                            <p><em>{{ collab.affiliation[page.lang] }}</em></p>
+                            <p>{{ collab.research_areas[page.lang] }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+
             <!-- Publications List -->
             <section id="publications">
                 <div class="row aln-center">
