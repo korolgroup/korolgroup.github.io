@@ -51,11 +51,14 @@ layout: default
                 </h3>
                 <div class="row" style="margin-top: 2em;">
                     {% for collab in site.data.collaborators %}
-                    <div class="col-6 col-12-small" style="margin-bottom: 2em;">
-                        <div class="box" style="padding: 1.5em;">
+                    <div class="col-4 col-12-small" style="margin-bottom: 2em;">
+                        <div class="box" style="text-align: center; padding: 1.5em;">
+                            {% if collab.photo %}
+                            <img src="{{ collab.photo }}" alt="{{ collab.name }}" style="width: 100%; max-width: 200px; height: auto; margin-bottom: 1em; border-radius: 8px;" />
+                            {% endif %}
                             <h4><a href="{{ collab.url }}" target="_blank" rel="noopener noreferrer">{{ collab.name }}</a></h4>
-                            <p><em>{{ collab.affiliation[page.lang] }}</em></p>
-                            <p>{{ collab.research_areas[page.lang] }}</p>
+                            <p style="font-size: 0.9em;"><em>{{ collab.affiliation[page.lang] }}</em></p>
+                            <p style="font-size: 0.85em;">{{ collab.research_areas[page.lang] }}</p>
                         </div>
                     </div>
                     {% endfor %}
