@@ -2,6 +2,18 @@
 # Format: YAML list, newest items first
 # Each entry will be displayed on the news page
 
+- date: "2026-05-04"
+  year: 2026
+  title: "Léopaul Charrier and Félix Archambault join the team"
+  content: |
+    We are excited to welcome Léopaul Charrier and Félix Archambault to the team for the summer term. Léopaul is a course-based MSc student and Félix is an undergraduate student at the Université de Sherbrooke joining as an intern.
+
+- date: "2026-04-09"
+  year: 2026
+  title: "Félix Archambault awarded NSERC USRA"
+  content: |
+    Congratulations to Félix Archambault for securing the NSERC Undergraduate Student Research Award (USRA) for his summer 2026 internship!
+
 - date: "2026-03-02"
   year: 2026
   title: "Dmytro Skorubskyi joins the team"

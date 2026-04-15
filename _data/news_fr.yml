@@ -2,6 +2,18 @@
 # Format: Liste YAML, articles les plus récents en premier
 # Chaque entrée sera affichée sur la page de nouvelles
 
+- date: "2026-05-04"
+  year: 2026
+  title: "Léopaul Charrier et Félix Archambault se joignent à l'équipe"
+  content: |
+    Nous sommes ravis d'accueillir Léopaul Charrier et Félix Archambault dans l'équipe pour la session d'été. Léopaul est étudiant en maîtrise de cours et Félix est étudiant de premier cycle à l'Université de Sherbrooke qui se joint à nous en tant que stagiaire.
+
+- date: "2026-04-09"
+  year: 2026
+  title: "Félix Archambault obtient une bourse CRSNG"
+  content: |
+    Félicitations à Félix Archambault pour avoir obtenu la Bourse CRSNG - 1er cycle - pour son stage d'été 2026 !
+
 - date: "2026-03-02"
   year: 2026
   title: "Dmytro Skorubskyi se joint à l'équipe"
