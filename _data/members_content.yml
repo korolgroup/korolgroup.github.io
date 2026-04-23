@@ -1,0 +1,88 @@
+# Members-only content
+# This content is only visible to authenticated users on the members pages
+
+resources:
+  en:
+    - title: "Lab Protocols"
+      description: "Standard operating procedures and safety guidelines"
+      items:
+        - name: "Safety Protocols"
+          url: "#"
+          description: "Lab safety guidelines and emergency procedures"
+        - name: "Equipment Usage"
+          url: "#"
+          description: "How to use computational resources and software"
+        - name: "Data Management"
+          url: "#"
+          description: "Best practices for organizing research data"
+
+    - title: "Internal Documents"
+      description: "Administrative and planning documents"
+      items:
+        - name: "Meeting Schedule"
+          url: "#"
+          description: "Group meeting calendar and agendas"
+        - name: "Project Planning"
+          url: "#"
+          description: "Current projects and timelines"
+
+    - title: "Computational Resources"
+      description: "Access information for computing clusters and software"
+      items:
+        - name: "Cluster Access"
+          url: "#"
+          description: "Login credentials and usage guidelines"
+        - name: "Software Licenses"
+          url: "#"
+          description: "Available software and license information"
+
+  fr:
+    - title: "Protocoles de laboratoire"
+      description: "Procédures opérationnelles standard et directives de sécurité"
+      items:
+        - name: "Protocoles de sécurité"
+          url: "#"
+          description: "Directives de sécurité et procédures d'urgence"
+        - name: "Utilisation de l'équipement"
+          url: "#"
+          description: "Comment utiliser les ressources computationnelles et les logiciels"
+        - name: "Gestion des données"
+          url: "#"
+          description: "Meilleures pratiques pour organiser les données de recherche"
+
+    - title: "Documents internes"
+      description: "Documents administratifs et de planification"
+      items:
+        - name: "Calendrier des réunions"
+          url: "#"
+          description: "Calendrier des réunions de groupe et ordres du jour"
+        - name: "Planification de projet"
+          url: "#"
+          description: "Projets en cours et échéanciers"
+
+    - title: "Ressources computationnelles"
+      description: "Informations d'accès pour les grappes de calcul et les logiciels"
+      items:
+        - name: "Accès aux grappes"
+          url: "#"
+          description: "Informations de connexion et directives d'utilisation"
+        - name: "Licences de logiciels"
+          url: "#"
+          description: "Logiciels disponibles et informations sur les licences"
+
+announcements:
+  - date: "2026-04-15"
+    en:
+      title: "Group Meeting Reminder"
+      content: "Weekly group meeting on Friday at 2 PM in D3-2035"
+    fr:
+      title: "Rappel de la réunion de groupe"
+      content: "Réunion de groupe hebdomadaire le vendredi à 14h au D3-2035"
+
+  - date: "2026-04-01"
+    en:
+      title: "New Cluster Available"
+      content: "We now have access to the new Narval cluster. See computational resources for details."
+    fr:
+      title: "Nouvelle grappe disponible"
+      content: "Nous avons maintenant accès à la nouvelle grappe Narval. Voir les ressources computationnelles pour plus de détails."

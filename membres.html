@@ -1,0 +1,88 @@
+---
+layout: members
+title: "Espace membres - Groupe Korol"
+description: "Zone protégée par mot de passe pour les membres du Groupe Korol"
+lang: fr
+password_hash: "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918"
+---
+
+<section id="members-welcome">
+	<div class="container">
+		<header>
+			<h2>Bienvenue dans l'espace membres</h2>
+		</header>
+		<p>Cette page contient des ressources, des documents et des informations pour les membres actuels du groupe.</p>
+	</div>
+</section>
+
+<section id="announcements">
+	<div class="container">
+		<header>
+			<h3><i class="fa fa-bullhorn"></i> Annonces récentes</h3>
+		</header>
+		<div class="row">
+			{% for announcement in site.data.members_content.announcements limit:3 %}
+			<div class="col-12" style="margin-bottom: 20px;">
+				<div style="padding: 15px; background: var(--box-background); border-left: 4px solid #2a7ae2; border-radius: 4px;">
+					<strong>{{ announcement.date | date: "%d %B %Y" }}</strong> - {{ announcement.fr.title }}
+					<p style="margin: 5px 0 0 0;">{{ announcement.fr.content }}</p>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+<section id="resources">
+	<div class="container">
+		<header>
+			<h3><i class="fa fa-folder-open"></i> Ressources et documents</h3>
+		</header>
+		<div class="row">
+			{% for resource in site.data.members_content.resources.fr %}
+			<div class="col-12 col-6-medium" style="margin-bottom: 30px;">
+				<div style="padding: 20px; background: var(--box-background); border-radius: 8px; height: 100%;">
+					<h4 style="margin-top: 0; color: #2a7ae2;">{{ resource.title }}</h4>
+					<p style="color: #666; font-size: 0.9em;">{{ resource.description }}</p>
+					<ul style="list-style: none; padding: 0;">
+						{% for item in resource.items %}
+						<li style="margin: 10px 0;">
+							<a href="{{ item.url }}" style="text-decoration: none;">
+								<i class="fa fa-file-text" style="color: #2a7ae2; margin-right: 8px;"></i>
+								<strong>{{ item.name }}</strong>
+							</a>
+							<p style="margin: 5px 0 0 25px; font-size: 0.85em; color: #888;">{{ item.description }}</p>
+						</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+<section id="quick-links">
+	<div class="container">
+		<header>
+			<h3><i class="fa fa-link"></i> Liens rapides</h3>
+		</header>
+		<div class="row">
+			<div class="col-12">
+				<ul class="actions" style="justify-content: center;">
+					<li><a href="https://alliancecan.ca" class="button" target="_blank">Alliance Canada</a></li>
+					<li><a href="https://github.com/korolgroup" class="button" target="_blank">Organisation GitHub</a></li>
+					<li><a href="mailto:roman.korol@usherbrooke.ca" class="button icon fa-envelope">Contacter le PI</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="password-info" style="background: #f9f9f9; padding: 30px 0; margin-top: 40px;">
+	<div class="container">
+		<p style="text-align: center; color: #666; font-size: 0.9em;">
+			<i class="fa fa-lock"></i> Si vous avez oublié le mot de passe, veuillez contacter l'administrateur du groupe.
+		</p>
+	</div>
+</section>

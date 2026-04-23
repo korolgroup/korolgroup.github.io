@@ -16,6 +16,8 @@
 		{% assign alt_lang_url = "/publications-fr/" %}
 	{% elsif page.url contains "/activities" %}
 		{% assign alt_lang_url = "/activites/" %}
+	{% elsif page.url contains "/members" %}
+		{% assign alt_lang_url = "/membres/" %}
 	{% else %}
 		{% assign alt_lang_url = "/fr/" %}
 	{% endif %}
@@ -34,6 +36,8 @@
 		{% assign alt_lang_url = "/publications/" %}
 	{% elsif page.url contains "/activites" %}
 		{% assign alt_lang_url = "/activities/" %}
+	{% elsif page.url contains "/membres" %}
+		{% assign alt_lang_url = "/members/" %}
 	{% else %}
 		{% assign alt_lang_url = "/" %}
 	{% endif %}
@@ -70,6 +74,7 @@
 						<li><a class="icon fa-solid fa-users" href="/equipe"><span>Équipe</span></a></li>
 						<li><a class="icon fa-solid fa-file-lines" href="/recherche#publications"><span>Publications</span></a></li>
 						<li><a class="icon fa-solid fa-retweet" href="/nouvelles"><span>Nouvelles</span></a></li>
+						<li><a class="icon fa-solid fa-lock" href="/membres"><span>Membres</span></a></li>
 						<li><a class="icon fa-solid fa-envelope" href="#contact"><span>Contact</span></a></li>
 						<li><a class="icon fa-solid fa-briefcase" href="/postes"><span>Postes</span></a></li>
 					{% else %}
@@ -78,6 +83,7 @@
 						<li><a class="icon fa-solid fa-users" href="/team"><span>Team</span></a></li>
 						<li><a class="icon fa-solid fa-file-lines" href="/research#publications"><span>Publications</span></a></li>
 						<li><a class="icon fa-solid fa-retweet" href="/news"><span>News</span></a></li>
+						<li><a class="icon fa-solid fa-lock" href="/members"><span>Members</span></a></li>
 						<li><a class="icon fa-solid fa-envelope" href="#contact"><span>Contact</span></a></li>
 						<li><a class="icon fa-solid fa-briefcase" href="/openings"><span>Openings</span></a></li>
 					{% endif %}

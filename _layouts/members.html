@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html lang="{{ page.lang | default: 'en' }}">
+
+<head>
+	<title>{{ page.title | default: site.title }}</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="robots" content="noindex, nofollow">
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+	<style>
+		.password-container {
+			max-width: 500px;
+			margin: 100px auto;
+			padding: 40px;
+			background: var(--box-background);
+			border-radius: 8px;
+			box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+			text-align: center;
+		}
+
+		.password-container h2 {
+			margin-bottom: 20px;
+			color: var(--heading);
+		}
+
+		.password-container input {
+			width: 100%;
+			padding: 12px;
+			margin: 15px 0;
+			border: 1px solid #ddd;
+			border-radius: 4px;
+			font-size: 16px;
+		}
+
+		.password-container button {
+			width: 100%;
+			padding: 12px;
+			background: #2a7ae2;
+			color: white;
+			border: none;
+			border-radius: 4px;
+			font-size: 16px;
+			cursor: pointer;
+			transition: background 0.3s;
+		}
+
+		.password-container button:hover {
+			background: #1f5fb8;
+		}
+
+		.error-message {
+			color: #d32f2f;
+			margin-top: 10px;
+			display: none;
+		}
+
+		#protected-content {
+			display: none;
+		}
+
+		#password-form {
+			display: block;
+		}
+
+		.members-content {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 40px 20px;
+		}
+	</style>
+</head>
+
+<body class="homepage is-preload">
+	<a href="#main-content" class="skip-link">{% if page.lang == 'fr' %}Aller au contenu principal{% else %}Skip to main content{% endif %}</a>
+
+	{% include header.html %}
+
+	<main id="main-content">
+		<!-- Password Form -->
+		<div id="password-form">
+			<div class="password-container">
+				<h2>{% if page.lang == 'fr' %}Zone réservée aux membres{% else %}Members Only Area{% endif %}</h2>
+				<p>{% if page.lang == 'fr' %}Veuillez entrer le mot de passe pour accéder à cette page.{% else %}Please enter the password to access this page.{% endif %}</p>
+				<input type="password" id="password-input" placeholder="{% if page.lang == 'fr' %}Mot de passe{% else %}Password{% endif %}" />
+				<button onclick="checkPassword()">{% if page.lang == 'fr' %}Soumettre{% else %}Submit{% endif %}</button>
+				<p class="error-message" id="error-message">{% if page.lang == 'fr' %}Mot de passe incorrect. Veuillez réessayer.{% else %}Incorrect password. Please try again.{% endif %}</p>
+			</div>
+		</div>
+
+		<!-- Protected Content -->
+		<div id="protected-content">
+			<div class="members-content">
+				{{ content }}
+			</div>
+		</div>
+	</main>
+
+	{% include footer.html %}
+
+	<script src="/assets/js/combined.min.js"></script>
+
+	<script>
+		// Simple password protection using SHA-256 hash
+		// CHANGE THIS HASH: Generate a new hash for your password at https://emn178.github.io/online-tools/sha256.html
+		// Current hash is for password: "korolgroup2026" (CHANGE THIS!)
+		const PASSWORD_HASH = "{{ page.password_hash }}";
+
+		// Check if user has already authenticated in this session
+		const isAuthenticated = sessionStorage.getItem('members_authenticated') === 'true';
+
+		if (isAuthenticated) {
+			showContent();
+		}
+
+		// Allow Enter key to submit password
+		document.getElementById('password-input').addEventListener('keypress', function(e) {
+			if (e.key === 'Enter') {
+				checkPassword();
+			}
+		});
+
+		async function checkPassword() {
+			const input = document.getElementById('password-input').value;
+			const hash = await sha256(input);
+
+			if (hash === PASSWORD_HASH) {
+				sessionStorage.setItem('members_authenticated', 'true');
+				showContent();
+			} else {
+				document.getElementById('error-message').style.display = 'block';
+				document.getElementById('password-input').value = '';
+				document.getElementById('password-input').focus();
+			}
+		}
+
+		function showContent() {
+			document.getElementById('password-form').style.display = 'none';
+			document.getElementById('protected-content').style.display = 'block';
+		}
+
+		// SHA-256 hash function
+		async function sha256(message) {
+			const msgBuffer = new TextEncoder().encode(message);
+			const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+			const hashArray = Array.from(new Uint8Array(hashBuffer));
+			const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+			return hashHex;
+		}
+	</script>
+</body>
+</html>
