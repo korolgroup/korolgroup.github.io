@@ -6,6 +6,32 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="robots" content="noindex, nofollow">
+
+	<!-- Immediate theme application to prevent FOUC -->
+	<script>
+		(function() {
+			try {
+				var savedTheme = localStorage.getItem('romankorol-theme') || 'auto';
+				var systemIsDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+				var effectiveTheme = savedTheme === 'auto' ? (systemIsDark ? 'dark' : 'light') : savedTheme;
+
+				if (effectiveTheme === 'dark') {
+					document.documentElement.setAttribute('data-theme', 'dark');
+				} else if (effectiveTheme === 'light') {
+					document.documentElement.setAttribute('data-theme', 'light');
+				}
+			} catch (e) {
+				// If localStorage fails, check system preference
+				if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+					document.documentElement.setAttribute('data-theme', 'dark');
+				}
+			}
+		})();
+
+		// Save language preference
+		localStorage.setItem('korolgroup-language', '{{ page.lang | default: "en" }}');
+	</script>
+
 	<link rel="stylesheet" href="/assets/css/main.css">
 
 	<style>
