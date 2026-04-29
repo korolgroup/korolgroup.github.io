@@ -3,74 +3,72 @@
 
 resources:
   en:
-    - title: "Lab Protocols"
-      description: "Standard operating procedures and safety guidelines"
+    - title: "Getting Started"
+      description: "Essential information for new group members"
       items:
-        - name: "Safety Protocols"
-          url: "#"
-          description: "Lab safety guidelines and emergency procedures"
-        - name: "Equipment Usage"
-          url: "#"
-          description: "How to use computational resources and software"
-        - name: "Data Management"
-          url: "#"
-          description: "Best practices for organizing research data"
+        - name: "Getting Started Guide"
+          url: "https://drive.google.com/open?id=1F7CurUYK4OR_-jaAlov0DThjVCi5gE-ICsZSj7eFJmg"
+          description: "Onboarding checklist and initial setup instructions"
 
-    - title: "Internal Documents"
-      description: "Administrative and planning documents"
+    - title: "Lab Protocols & Policies"
+      description: "Group policies and standard operating procedures"
       items:
-        - name: "Meeting Schedule"
-          url: "#"
-          description: "Group meeting calendar and agendas"
-        - name: "Project Planning"
-          url: "#"
-          description: "Current projects and timelines"
+        - name: "Group Policies"
+          url: "https://drive.google.com/open?id=1rpaT2Z4u5RQ-jiJkpbq6KZX_Ufrif8t8HwFYCtiMEgA"
+          description: "Lab expectations, safety guidelines, and group policies"
 
     - title: "Computational Resources"
-      description: "Access information for computing clusters and software"
+      description: "Tools, software, and computing resources"
       items:
-        - name: "Cluster Access"
-          url: "#"
-          description: "Login credentials and usage guidelines"
-        - name: "Software Licenses"
-          url: "#"
-          description: "Available software and license information"
+        - name: "Tools of the Trade"
+          url: "https://drive.google.com/open?id=100Sojqhm0aZ7Y18p7dmlqy1OhiacIu18KMLGGre-USk"
+          description: "Essential computational tools and software for research"
+
+    - title: "Meeting Information"
+      description: "Group meeting schedules and topics"
+      items:
+        - name: "Meeting Topics (Thèmes de réunions)"
+          url: "https://drive.google.com/open?id=1j7Bbn4k-LEzRE2EUQgJV90dpkF6LjVAqanahM1FULyY"
+          description: "Group meeting schedule, topics, and presentation calendar"
 
   fr:
-    - title: "Protocoles de laboratoire"
-      description: "Procédures opérationnelles standard et directives de sécurité"
+    - title: "Contrôle de Démarrage"
+      description: "Informations essentielles pour les nouveaux membres du groupe"
       items:
-        - name: "Protocoles de sécurité"
-          url: "#"
-          description: "Directives de sécurité et procédures d'urgence"
-        - name: "Utilisation de l'équipement"
-          url: "#"
-          description: "Comment utiliser les ressources computationnelles et les logiciels"
-        - name: "Gestion des données"
-          url: "#"
-          description: "Meilleures pratiques pour organiser les données de recherche"
+        - name: "Guide de démarrage"
+          url: "https://drive.google.com/open?id=1F7CurUYK4OR_-jaAlov0DThjVCi5gE-ICsZSj7eFJmg"
+          description: "Liste de vérification d'intégration et instructions de configuration initiale"
 
-    - title: "Documents internes"
-      description: "Documents administratifs et de planification"
+    - title: "Protocoles et politiques du laboratoire"
+      description: "Politiques du groupe et procédures opérationnelles standard"
       items:
-        - name: "Calendrier des réunions"
-          url: "#"
-          description: "Calendrier des réunions de groupe et ordres du jour"
-        - name: "Planification de projet"
-          url: "#"
-          description: "Projets en cours et échéanciers"
+        - name: "Politiques du groupe"
+          url: "https://drive.google.com/open?id=1rpaT2Z4u5RQ-jiJkpbq6KZX_Ufrif8t8HwFYCtiMEgA"
+          description: "Attentes du laboratoire, directives de sécurité et politiques du groupe"
 
     - title: "Ressources computationnelles"
-      description: "Informations d'accès pour les grappes de calcul et les logiciels"
+      description: "Outils, logiciels et ressources informatiques"
       items:
-        - name: "Accès aux grappes"
-          url: "#"
-          description: "Informations de connexion et directives d'utilisation"
-        - name: "Licences de logiciels"
-          url: "#"
-          description: "Logiciels disponibles et informations sur les licences"
+        - name: "Outils de travail"
+          url: "https://drive.google.com/open?id=100Sojqhm0aZ7Y18p7dmlqy1OhiacIu18KMLGGre-USk"
+          description: "Outils et logiciels computationnels essentiels pour la recherche"
+
+    - title: "Informations sur les réunions"
+      description: "Calendriers et sujets des réunions de groupe"
+      items:
+        - name: "Thèmes de réunions"
+          url: "https://drive.google.com/open?id=1j7Bbn4k-LEzRE2EUQgJV90dpkF6LjVAqanahM1FULyY"
+          description: "Calendrier des réunions de groupe, sujets et calendrier des présentations"
 
 announcements:
+  - date: "2026-04-29"
+    en:
+      title: "Members Area Now Active"
+      content: "The password-protected members area is now live with access to all essential documents and resources."
+    fr:
+      title: "Espace membres maintenant actif"
+      content: "L'espace membres protégé par mot de passe est maintenant en ligne avec accès à tous les documents et ressources essentiels."
+
   - date: "2026-04-15"
     en:
       title: "Group Meeting Reminder"
@@ -78,11 +76,3 @@ announcements:
     fr:
       title: "Rappel de la réunion de groupe"
       content: "Réunion de groupe hebdomadaire le vendredi à 14h au D3-2035"
-
-  - date: "2026-04-01"
-    en:
-      title: "New Cluster Available"
-      content: "We now have access to the new Narval cluster. See computational resources for details."
-    fr:
-      title: "Nouvelle grappe disponible"
-      content: "Nous avons maintenant accès à la nouvelle grappe Narval. Voir les ressources computationnelles pour plus de détails."
