@@ -106,8 +106,8 @@
 		<!-- Password Form -->
 		<div id="password-form">
 			<div class="password-container">
-				<h2>{% if page.lang == 'fr' %}Zone réservée aux membres{% else %}Members Only Area{% endif %}</h2>
-				<p>{% if page.lang == 'fr' %}Veuillez entrer le mot de passe pour accéder à cette page.{% else %}Please enter the password to access this page.{% endif %}</p>
+				<h2>{% if page.lang == 'fr' %}Intranet du groupe{% else %}Group Intranet{% endif %}</h2>
+				<p>{% if page.lang == 'fr' %}Veuillez entrer le mot de passe pour accéder à l'intranet.{% else %}Please enter the password to access the intranet.{% endif %}</p>
 				<input type="password" id="password-input" placeholder="{% if page.lang == 'fr' %}Mot de passe{% else %}Password{% endif %}" />
 				<button onclick="checkPassword()">{% if page.lang == 'fr' %}Soumettre{% else %}Submit{% endif %}</button>
 				<p class="error-message" id="error-message">{% if page.lang == 'fr' %}Mot de passe incorrect. Veuillez réessayer.{% else %}Incorrect password. Please try again.{% endif %}</p>

@@ -1,11 +1,11 @@
-# Members Area Documentation
+# Group Intranet Documentation
 
 ## Overview
 
-The members area provides password-protected pages for internal group resources, documents, and announcements. The pages are available in both English and French:
+The group intranet provides password-protected pages for internal group resources, documents, and announcements. The pages are available in both English and French:
 
-- **English**: https://yoursite.com/members
-- **French**: https://yoursite.com/membres
+- **English**: https://yoursite.com/members (displays as "Intranet")
+- **French**: https://yoursite.com/membres (displays as "Intranet")
 
 ## Current Password
 
@@ -29,8 +29,8 @@ Edit both files and replace the `password_hash` value in the front matter:
 ```yaml
 ---
 layout: members
-title: "Members Area - Korol Group"
-description: "Password-protected area for Korol Group members"
+title: "Intranet - Korol Group"
+description: "Password-protected intranet for Korol Group members"
 lang: en
 password_hash: "YOUR_NEW_HASH_HERE"
 ---
@@ -40,8 +40,8 @@ password_hash: "YOUR_NEW_HASH_HERE"
 ```yaml
 ---
 layout: members
-title: "Espace membres - Groupe Korol"
-description: "Zone protégée par mot de passe pour les membres du Groupe Korol"
+title: "Intranet - Groupe Korol"
+description: "Intranet protégé par mot de passe pour les membres du Groupe Korol"
 lang: fr
 password_hash: "YOUR_NEW_HASH_HERE"
 ---
