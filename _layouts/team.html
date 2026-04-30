@@ -25,13 +25,10 @@ layout: default
             <div class="team-grid">
                 {% for member in site.data.team.current %}
                     <!-- Only show recruiting placeholders if we have fewer than 2 actual members (just PI) -->
-                    {% if member.recruiting %}
-                        {% if actual_member_count < 2 %}
-                    <div class="team-member">
-                        {% endif %}
+                    {% if member.recruiting and actual_member_count >= 2 %}
+                        <!-- Skip this recruiting placeholder -->
                     {% else %}
                     <div class="team-member">
-                    {% endif %}
                         <!-- Role icon -->
                         <div class="role-icon {{ member.role }}{% if member.role == 'mascot' %}" style="color: #FFD700;{% endif %}">
                             {% case member.role %}
@@ -91,11 +88,6 @@ layout: default
                                 <p>{{ member.interests[page.lang] }}</p>
                             {% endif %}
                         {% endif %}
-                    {% if member.recruiting %}
-                        {% if actual_member_count < 2 %}
-                    </div>
-                        {% endif %}
-                    {% else %}
                     </div>
                     {% endif %}
                 {% endfor %}
