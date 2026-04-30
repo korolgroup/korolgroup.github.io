@@ -55,27 +55,25 @@ layout: default
                             </div>
                         {% endif %}
 
-                        <!-- Name -->
-                        <h4>{% if member.recruiting %}
+                        <!-- Name with CV link -->
+                        <h4>
+                        {% if member.recruiting %}
                             {% if page.lang == 'fr' %}Rejoignez notre équipe{% else %}Join Our Team{% endif %}
                         {% else %}
                             {{ member.name }}
-                        {% endif %}</h4>
-
-                        <!-- Role -->
-                        <p><strong>{{ member.role_display[page.lang] }}</strong>
-                        {% if member.cv %}
-                            {% if member.cv[page.lang] %}
-                                <a href="{{ member.cv[page.lang] }}" target="_blank" rel="noopener noreferrer"
-                                   class="icon fa-file-pdf" title="{% if page.lang == 'fr' %}Télécharger le CV{% else %}Download CV{% endif %}"
-                                   style="font-size: 0.9em; margin-left: 0.3em;"></a>
-                            {% else %}
-                                <a href="{{ member.cv }}" target="_blank" rel="noopener noreferrer"
-                                   class="icon fa-file-pdf" title="{% if page.lang == 'fr' %}Télécharger le CV{% else %}Download CV{% endif %}"
-                                   style="font-size: 0.9em; margin-left: 0.3em;"></a>
+                            {% if member.cv %}
+                                {% if member.cv[page.lang] %}
+                                    <a href="{{ member.cv[page.lang] }}" target="_blank" rel="noopener noreferrer"
+                                       class="icon fa-file-pdf" title="{% if page.lang == 'fr' %}Télécharger le CV{% else %}Download CV{% endif %}"
+                                       style="font-size: 0.8em; margin-left: 0.4em;"></a>
+                                {% else %}
+                                    <a href="{{ member.cv }}" target="_blank" rel="noopener noreferrer"
+                                       class="icon fa-file-pdf" title="{% if page.lang == 'fr' %}Télécharger le CV{% else %}Download CV{% endif %}"
+                                       style="font-size: 0.8em; margin-left: 0.4em;"></a>
+                                {% endif %}
                             {% endif %}
                         {% endif %}
-                        </p>
+                        </h4>
 
                         <!-- Bio / Topic -->
                         {% if member.recruiting %}
