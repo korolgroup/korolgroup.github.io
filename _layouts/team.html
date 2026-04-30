@@ -13,9 +13,25 @@ layout: default
         <!-- Current Members -->
         <section>
             <h3 class="section-title">{% if page.lang == 'fr' %}Membres actuels{% else %}Current Members{% endif %}</h3>
+
+            <!-- Count actual members (excluding mascot and recruiting placeholders) -->
+            {% assign actual_member_count = 0 %}
+            {% for member in site.data.team.current %}
+                {% unless member.recruiting or member.role == 'mascot' %}
+                    {% assign actual_member_count = actual_member_count | plus: 1 %}
+                {% endunless %}
+            {% endfor %}
+
             <div class="team-grid">
                 {% for member in site.data.team.current %}
+                    <!-- Only show recruiting placeholders if we have fewer than 3 actual members -->
+                    {% if member.recruiting %}
+                        {% if actual_member_count < 3 %}
                     <div class="team-member">
+                        {% endif %}
+                    {% else %}
+                    <div class="team-member">
+                    {% endif %}
                         <!-- Role icon -->
                         <div class="role-icon {{ member.role }}{% if member.role == 'mascot' %}" style="color: #FFD700;{% endif %}">
                             {% case member.role %}
@@ -75,7 +91,13 @@ layout: default
                                 <p>{{ member.interests[page.lang] }}</p>
                             {% endif %}
                         {% endif %}
+                    {% if member.recruiting %}
+                        {% if actual_member_count < 3 %}
                     </div>
+                        {% endif %}
+                    {% else %}
+                    </div>
+                    {% endif %}
                 {% endfor %}
             </div>
         </section>
