@@ -24,9 +24,9 @@ layout: default
 
             <div class="team-grid">
                 {% for member in site.data.team.current %}
-                    <!-- Only show recruiting placeholders if we have fewer than 3 actual members -->
+                    <!-- Only show recruiting placeholders if we have fewer than 2 actual members (just PI) -->
                     {% if member.recruiting %}
-                        {% if actual_member_count < 3 %}
+                        {% if actual_member_count < 2 %}
                     <div class="team-member">
                         {% endif %}
                     {% else %}
@@ -92,7 +92,7 @@ layout: default
                             {% endif %}
                         {% endif %}
                     {% if member.recruiting %}
-                        {% if actual_member_count < 3 %}
+                        {% if actual_member_count < 2 %}
                     </div>
                         {% endif %}
                     {% else %}
