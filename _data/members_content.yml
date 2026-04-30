@@ -63,16 +63,8 @@ resources:
 announcements:
   - date: "2026-04-29"
     en:
-      title: "Members Area Now Active"
-      content: "The password-protected members area is now live with access to all essential documents and resources."
+      title: "Intranet Now Active"
+      content: "The password-protected intranet is now live with access to all essential documents and resources."
     fr:
-      title: "Espace membres maintenant actif"
-      content: "L'espace membres protégé par mot de passe est maintenant en ligne avec accès à tous les documents et ressources essentiels."
-
-  - date: "2026-04-15"
-    en:
-      title: "Group Meeting Reminder"
-      content: "Weekly group meeting on Friday at 2 PM in D3-2035"
-    fr:
-      title: "Rappel de la réunion de groupe"
-      content: "Réunion de groupe hebdomadaire le vendredi à 14h au D3-2035"
+      title: "Intranet maintenant actif"
+      content: "L'intranet protégé par mot de passe est maintenant en ligne avec accès à tous les documents et ressources essentiels."
