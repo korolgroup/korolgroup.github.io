@@ -64,7 +64,7 @@ announcements:
   - date: "2026-04-29"
     en:
       title: "Important: Access Requirements"
-      content: "⚠️ Before accessing any documents below, you must complete the [onboarding form](https://docs.google.com/forms/d/e/1FAIpQLSewIR-8UpFs3Hi0CGci8isR_cN4jkyZIxr2rKIVKlV5ibboIg/viewform?usp=dialog). Documents will only be accessible after your form has been processed."
+      content: "⚠️ Before accessing any documents below, you must complete the <a href='https://docs.google.com/forms/d/e/1FAIpQLSewIR-8UpFs3Hi0CGci8isR_cN4jkyZIxr2rKIVKlV5ibboIg/viewform?usp=dialog' target='_blank' style='color: #2a7ae2; text-decoration: underline;'>onboarding form</a>. Documents will only be accessible after your form has been processed."
     fr:
       title: "Important : Conditions d'accès"
-      content: "⚠️ Avant d'accéder aux documents ci-dessous, vous devez remplir le [formulaire d'intégration](https://docs.google.com/forms/d/e/1FAIpQLSdhLhv8QIxJRoDAH9G0CxZ2VIQ60sG8lriRUDfceNQTr5t2yw/viewform?usp=dialog). Les documents ne seront accessibles qu'après le traitement de votre formulaire."
+      content: "⚠️ Avant d'accéder aux documents ci-dessous, vous devez remplir le <a href='https://docs.google.com/forms/d/e/1FAIpQLSdhLhv8QIxJRoDAH9G0CxZ2VIQ60sG8lriRUDfceNQTr5t2yw/viewform?usp=dialog' target='_blank' style='color: #2a7ae2; text-decoration: underline;'>formulaire d'intégration</a>. Les documents ne seront accessibles qu'après le traitement de votre formulaire."
