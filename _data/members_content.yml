@@ -63,8 +63,8 @@ resources:
 announcements:
   - date: "2026-04-29"
     en:
-      title: "Intranet Now Active"
-      content: "The password-protected intranet is now live with access to all essential documents and resources."
+      title: "Important: Access Requirements"
+      content: "⚠️ Before accessing any documents below, you must complete the [onboarding form](https://docs.google.com/forms/d/e/1FAIpQLSewIR-8UpFs3Hi0CGci8isR_cN4jkyZIxr2rKIVKlV5ibboIg/viewform?usp=dialog). Documents will only be accessible after your form has been processed."
     fr:
-      title: "Intranet maintenant actif"
-      content: "L'intranet protégé par mot de passe est maintenant en ligne avec accès à tous les documents et ressources essentiels."
+      title: "Important : Conditions d'accès"
+      content: "⚠️ Avant d'accéder aux documents ci-dessous, vous devez remplir le [formulaire d'intégration](https://docs.google.com/forms/d/e/1FAIpQLSdhLhv8QIxJRoDAH9G0CxZ2VIQ60sG8lriRUDfceNQTr5t2yw/viewform?usp=dialog). Les documents ne seront accessibles qu'après le traitement de votre formulaire."
