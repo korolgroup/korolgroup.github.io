@@ -48,6 +48,16 @@ current:
       en: "Olivier is a final-year undergraduate student in Quantum Information Science. He is particularly interested in quantum algorithms and computational chemistry."
       fr: "Olivier est un étudiant de dernière année au baccalauréat en sciences de l'information quantique. Il s'intéresse particulièrement aux algorithmes quantiques et à la chimie computationnelle."
 
+  - name: "Félix Bédard"
+    role: "undergrad"
+    role_display:
+      en: "Undergraduate Student"
+      fr: "Étudiant de premier cycle"
+    photo: "/images/team/Felix.jpg"
+    bio:
+      en: "Félix is a final-year undergraduate student in Chemistry. He is interested in quantum chemistry, physical chemistry and materials sciences."
+      fr: "Félix est un étudiant de dernière année au baccalauréat en chimie. Il s'intéresse à la chimie quantique, à la chimie physique et aux sciences des matériaux."
+
   # Recruiting placeholders
   - name: null
     role: "phd"
