@@ -48,17 +48,17 @@
      * Apply theme to document
      */
     function applyTheme(theme) {
-        const body = document.body;
+        const html = document.documentElement;
 
         // Remove existing theme attributes
-        body.removeAttribute('data-theme');
+        html.removeAttribute('data-theme');
 
         if (theme === THEMES.AUTO) {
             // Let CSS media query handle auto theme
             // Don't set data-theme attribute
         } else {
             // Explicitly set theme
-            body.setAttribute('data-theme', theme);
+            html.setAttribute('data-theme', theme);
         }
 
         // Update toggle button if it exists
