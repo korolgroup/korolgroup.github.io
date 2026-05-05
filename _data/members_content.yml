@@ -36,21 +36,21 @@ resources:
       description: "Informations essentielles pour les nouveaux membres du groupe"
       items:
         - name: "Guide de démarrage"
-          url: "https://drive.google.com/open?id=1F7CurUYK4OR_-jaAlov0DThjVCi5gE-ICsZSj7eFJmg"
+          url: "https://docs.google.com/document/d/1TYP_gSO2WUO1rQIyPbldruNbboRygWOogZkfu9a1zUw/edit?usp=sharing"
           description: "Liste de vérification d'intégration et instructions de configuration initiale"
 
     - title: "Protocoles et politiques du laboratoire"
       description: "Politiques du groupe et procédures opérationnelles standard"
       items:
         - name: "Politiques du groupe"
-          url: "https://drive.google.com/open?id=1rpaT2Z4u5RQ-jiJkpbq6KZX_Ufrif8t8HwFYCtiMEgA"
+          url: "https://docs.google.com/document/d/1LQoypRy8xrTD2hafNqlpK6siTL_Ud08tCCWWZLuqSF4/edit?usp=sharing"
           description: "Attentes du laboratoire, directives de sécurité et politiques du groupe"
 
     - title: "Ressources computationnelles"
       description: "Outils, logiciels et ressources informatiques"
       items:
         - name: "Outils de travail"
-          url: "https://drive.google.com/open?id=100Sojqhm0aZ7Y18p7dmlqy1OhiacIu18KMLGGre-USk"
+          url: "https://docs.google.com/document/d/1fljHKryuqQOucrL4k2LJCa5W2CvNiltu0u-tmS-VXpU/edit?usp=sharing"
           description: "Outils et logiciels computationnels essentiels pour la recherche"
 
     - title: "Informations sur les réunions"
