@@ -162,18 +162,18 @@
         const button = document.querySelector('.theme-toggle');
         if (!button) return;
 
-        let iconClass, title;
+        let iconHTML, title;
 
         // Toggle between light and dark only
         if (theme === THEMES.DARK) {
-            iconClass = 'fa-solid fa-moon';
+            iconHTML = '<i class="fa-solid fa-moon" style="color: inherit; font-size: 20px;"></i>';
             title = 'Dark theme active. Click for light theme.';
         } else {
-            iconClass = 'fa-solid fa-sun';
+            iconHTML = '<i class="fa-solid fa-sun" style="color: inherit; font-size: 20px;"></i>';
             title = 'Light theme active. Click for dark theme.';
         }
 
-        button.innerHTML = '<i class="' + iconClass + '"></i>';
+        button.innerHTML = iconHTML;
         button.setAttribute('title', title);
         button.setAttribute('aria-label', title);
     }
