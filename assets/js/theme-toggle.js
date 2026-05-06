@@ -123,7 +123,6 @@
             height: 48px;
             cursor: pointer;
             font-size: 20px;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", system-ui, sans-serif;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -163,18 +162,18 @@
         const button = document.querySelector('.theme-toggle');
         if (!button) return;
 
-        let icon, title;
+        let iconClass, title;
 
         // Toggle between light and dark only
         if (theme === THEMES.DARK) {
-            icon = '🌙';
+            iconClass = 'fa-solid fa-moon';
             title = 'Dark theme active. Click for light theme.';
         } else {
-            icon = '☀️';
+            iconClass = 'fa-solid fa-sun';
             title = 'Light theme active. Click for dark theme.';
         }
 
-        button.textContent = icon;
+        button.innerHTML = '<i class="' + iconClass + '"></i>';
         button.setAttribute('title', title);
         button.setAttribute('aria-label', title);
     }
@@ -188,7 +187,6 @@
             .theme-toggle {
                 --toggle-bg: rgba(255, 255, 255, 0.9);
                 --toggle-border: #ddd;
-                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", system-ui, sans-serif;
             }
 
             [data-theme="dark"] .theme-toggle {
