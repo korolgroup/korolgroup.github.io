@@ -188,6 +188,7 @@
                 --toggle-bg: rgba(255, 255, 255, 0.9);
                 --toggle-border: #ddd;
                 color: #2a2a2a;
+                padding: 0 !important;
             }
 
             .theme-toggle i {
