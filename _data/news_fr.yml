@@ -2,6 +2,12 @@
 # Format: Liste YAML, articles les plus récents en premier
 # Chaque entrée sera affichée sur la page de nouvelles
 
+- date: "2026-05-14"
+  year: 2026
+  title: "Roman Korol rejoint l'Institut Quantique"
+  content: |
+    Roman Korol est devenu membre de l'[Institut Quantique (Quantum Institute)](https://www.usherbrooke.ca/iq/fr/) de l'Université de Sherbrooke, un centre de recherche de premier plan en science de l'information quantique et technologies quantiques au Canada.
+
 - date: "2026-05-04"
   year: 2026
   title: "Trois nouveaux membres se joignent à l'équipe pour l'été 2026"
