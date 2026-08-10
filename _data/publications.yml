@@ -2,6 +2,58 @@
 # Single source of truth for all publications
 # Generates: English website, French website, LaTeX CV, LaTeX publication list
 
+- id: 15
+  doi: 10.48550/arXiv.2603.10271
+  title: Light-Matter Interactions Beyond the Dipole Approximation in Extended Systems Without Multipole Expansion
+  authors:
+  - family: Dora
+    given: R
+  - family: Korol
+    given: R
+  - family: Tiwari
+    given: V
+  - family: Chourasiya
+    given: R
+  - family: Franco
+    given: I
+    corresponding: true
+  journal:
+    full: arXiv preprint
+    abbrev: arXiv
+  year: 2026
+  image: 15.jpg
+  highlight: true
+  alt_text:
+    en: Figure illustrating beyond-dipole light-matter interactions in extended materials computed with localized Wannier functions
+    fr: Figure illustrant les interactions lumière-matière au-delà de l'approximation dipolaire dans des matériaux étendus, calculées à l'aide de fonctions de Wannier localisées
+  summary:
+    en: The standard "dipole approximation" used to model how light interacts with materials can break down for materials larger than the wavelength of light or under non-uniform illumination. We present a computational framework, based on first-principles electronic structure and localized Wannier functions, that captures these "beyond-dipole" effects at essentially the same computational cost as a standard calculation. We find the usual approximation works well for thin, uniformly-lit 1-D and 2-D materials, but breaks down for 3-D materials, oblique illumination, or partial lighting—cases increasingly relevant for nanoscale devices and quantum materials.
+    fr: L'« approximation dipolaire » habituellement utilisée pour modéliser l'interaction de la lumière avec la matière peut s'avérer inadéquate pour des matériaux plus grands que la longueur d'onde de la lumière ou sous un éclairage non uniforme. Nous présentons un cadre de calcul, fondé sur une structure électronique ab initio et des fonctions de Wannier localisées, qui capture ces effets « au-delà du dipôle » à un coût de calcul essentiellement identique à celui d'un calcul standard. Nous montrons que l'approximation habituelle fonctionne bien pour les matériaux minces 1D et 2D uniformément éclairés, mais qu'elle échoue pour les matériaux 3D, un éclairage oblique ou un éclairage partiel—des cas de plus en plus pertinents pour les dispositifs nanométriques et les matériaux quantiques.
+
+- id: 14
+  doi: 10.48550/arXiv.2608.00733
+  title: How NOT to Build Control-Target Gates in Semiconductor Quantum Dots and Beyond
+  authors:
+  - family: Korol
+    given: R
+    corresponding: true
+  - family: Nichol
+    given: J
+  - family: Franco
+    given: I
+  journal:
+    full: arXiv preprint
+    abbrev: arXiv
+  year: 2026
+  image: 14.jpg
+  highlight: true
+  alt_text:
+    en: Figure illustrating a fast single-pulse CNOT gate built by housing neighboring silicon spin qubits in different energy levels
+    fr: Figure illustrant une porte CNOT rapide à impulsion unique construite en logeant des qubits de spin voisins dans du silicium à des niveaux d'énergie différents
+  summary:
+    en: Quantum computers need fast, low-error controlled-NOT (CNOT) gates, but the natural interactions between neighboring qubits usually treat both qubits the same way, forcing researchers to assemble a CNOT from several slower operations. We show that by "housing" two neighboring silicon spin qubits in different energy levels, the resulting asymmetry allows a CNOT gate to be implemented with a single electrical pulse. Simulations under realistic noise and control imperfections show this gate retains over 99% fidelity, and the design can be tested on existing device architectures.
+    fr: Les ordinateurs quantiques ont besoin de portes NON-contrôlées (CNOT) rapides et peu sujettes aux erreurs, mais les interactions naturelles entre qubits voisins traitent généralement les deux qubits de façon symétrique, ce qui oblige à construire la porte CNOT à partir de plusieurs opérations plus lentes. Nous montrons qu'en « logeant » deux qubits de spin voisins dans du silicium à des niveaux d'énergie différents, l'asymétrie ainsi introduite permet de réaliser une porte CNOT à l'aide d'une seule impulsion électrique. Nos simulations, tenant compte du bruit et des imperfections réalistes du dispositif, montrent que cette porte conserve une fidélité supérieure à 99 %, et que la conception proposée peut être testée sur des architectures de dispositifs existantes.
+
 - id: 13
   doi: 10.1103/5ywx-7dbs
   title: Robust Purely Optical Signatures of Floquet States in Laser-Dressed Crystals
